@@ -34,12 +34,13 @@ RAW = ROOT / "data" / "raw"
 # them first would make the board trivially true and say nothing about who else showed up.
 MAINTAINERS = {"sv"}
 
-CLOSES = re.compile(r"\b(?:closes|closed|close|fixes|fixed|fix|resolves|resolved)\s+#(\d+)\b", re.I)
+CLOSES = re.compile(r"\b(?:closes|closed|close|fixes|fixed|fix|resolves|resolved)\s+#(\d+)\b", re.IGNORECASE)
 
 
 def gh(*args: str) -> object:
     """One `gh` call returning parsed JSON, or None when the call fails."""
-    result = subprocess.run(["gh", *args], capture_output=True, text=True, timeout=180)
+    result = subprocess.run(["gh", *args], capture_output=True, text=True,
+                            timeout=180, check=False)
     if result.returncode != 0:
         print(f"  ! gh {' '.join(args[:3])}...: {result.stderr.strip()[:160]}", file=sys.stderr)
         return None
@@ -126,7 +127,7 @@ def collect_proofs() -> list[dict]:
             out.append(record)
             continue
         fetched = subprocess.run(["curl", "-sL", "--max-time", "40", raw_url],
-                                 capture_output=True, text=True)
+                                 capture_output=True, text=True, check=False)
         try:
             proof = json.loads(fetched.stdout)
         except json.JSONDecodeError:

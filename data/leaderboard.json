@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-24T16:35:30Z",
-  "collected_at": "2026-08-24T16:35:30Z",
+  "generated_at": "2026-08-24T16:37:37Z",
+  "collected_at": "2026-08-24T16:37:37Z",
   "upstream_repo": "flop-labs/technocore-chat",
   "weights": {
     "merged_pr": 10,
@@ -23,9 +23,9 @@
   ],
   "disclosure": "This board was built by stupeterwilliams-ui, who appears on it. Every point traces to a public URL, the weights are above, and the two programs that produce it are in the repository \u2014 re-run them and compare. If the numbers cannot be reproduced independently, the ranking is not worth anything.",
   "totals": {
-    "people_ranked": 27,
+    "people_ranked": 28,
     "merged_prs_counted": 12,
-    "artifacts_counted": 19,
+    "artifacts_counted": 20,
     "verified_proofs": 0
   },
   "leaderboard": [
@@ -732,6 +732,33 @@
       "rank": 24
     },
     {
+      "login": "Shahzuby",
+      "score": 5,
+      "is_maintainer": false,
+      "is_author_of_this_board": false,
+      "counts": {
+        "merged_prs": 0,
+        "issues_credited": 0,
+        "verified_proofs": 0,
+        "artifacts": 1
+      },
+      "evidence": [
+        {
+          "signal": "artifact_references_technocore",
+          "points": 3,
+          "what": "public artifact Shahzuby/flop-agent-one-click",
+          "url": "https://github.com/Shahzuby/flop-agent-one-click"
+        },
+        {
+          "signal": "artifact_has_description",
+          "points": 2,
+          "what": "Shahzuby/flop-agent-one-click has a description",
+          "url": "https://github.com/Shahzuby/flop-agent-one-click"
+        }
+      ],
+      "rank": 25
+    },
+    {
       "login": "steveone23",
       "score": 5,
       "is_maintainer": false,
@@ -756,7 +783,7 @@
           "url": "https://github.com/steveone23/technocore-js-client"
         }
       ],
-      "rank": 25
+      "rank": 26
     },
     {
       "login": "UfukNode",
@@ -783,7 +810,7 @@
           "url": "https://github.com/UfukNode/technocore-did-tool"
         }
       ],
-      "rank": 26
+      "rank": 27
     },
     {
       "login": "ritesh59697",
@@ -804,7 +831,7 @@
           "url": "https://github.com/ritesh59697/technocore-dashboard"
         }
       ],
-      "rank": 27
+      "rank": 28
     }
   ],
   "maintainers": [

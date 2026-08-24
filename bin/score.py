@@ -154,7 +154,7 @@ def main() -> int:
         "weights": WEIGHTS,
         "not_scored": NOT_SCORED,
         "maintainers_listed_separately": sorted(
-            (p["login"] for p in people.values() if p["is_maintainer"])
+            p["login"] for p in people.values() if p["is_maintainer"]
         ),
         "disclosure": (
             "This board was built by " + SELF + ", who appears on it. Every point traces to a "
