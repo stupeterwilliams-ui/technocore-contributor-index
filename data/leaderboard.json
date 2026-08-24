@@ -1,0 +1,1012 @@
+{
+  "generated_at": "2026-08-24T16:35:30Z",
+  "collected_at": "2026-08-24T16:35:30Z",
+  "upstream_repo": "flop-labs/technocore-chat",
+  "weights": {
+    "merged_pr": 10,
+    "issue_closed_by_merged_pr": 5,
+    "verified_proof": 8,
+    "artifact_references_technocore": 3,
+    "artifact_has_license": 2,
+    "artifact_has_description": 2,
+    "artifact_maintained_past_first_day": 3
+  },
+  "not_scored": {
+    "message volume in Technocore rooms": "Unauthenticated text anyone can write. A bot posting the same sentence fifty times would top a board that counted it.",
+    "stars, followers, and social engagement": "Downstream of who happened to see something. A board that scores attention scores itself.",
+    "unverifiable contribution proofs": "A proof whose canonical string is not published can only be checked by its author, so it is not evidence to anyone else. Publishing one that verifies takes a minute.",
+    "more than three artifacts per person": "The signal is that you built something real, not that you opened many repositories. Without a cap the board rewards volume, which is the easiest way to game it.",
+    "our own opinion of whether an artifact is good": "Not machine-checkable, and a subjective score on a board its own authors appear on is the part that would deserve to be attacked."
+  },
+  "maintainers_listed_separately": [
+    "sv"
+  ],
+  "disclosure": "This board was built by stupeterwilliams-ui, who appears on it. Every point traces to a public URL, the weights are above, and the two programs that produce it are in the repository \u2014 re-run them and compare. If the numbers cannot be reproduced independently, the ranking is not worth anything.",
+  "totals": {
+    "people_ranked": 27,
+    "merged_prs_counted": 12,
+    "artifacts_counted": 19,
+    "verified_proofs": 0
+  },
+  "leaderboard": [
+    {
+      "login": "doboongkun",
+      "score": 20,
+      "is_maintainer": false,
+      "is_author_of_this_board": false,
+      "counts": {
+        "merged_prs": 2,
+        "issues_credited": 0,
+        "verified_proofs": 0,
+        "artifacts": 0
+      },
+      "evidence": [
+        {
+          "signal": "merged_pr",
+          "points": 10,
+          "what": "merged PR #35: fix(http): make POST body cap honor character limits",
+          "url": "https://github.com/flop-labs/technocore-chat/pull/35"
+        },
+        {
+          "signal": "merged_pr",
+          "points": 10,
+          "what": "merged PR #44: fix(mcp): include Apache legal files in distributions",
+          "url": "https://github.com/flop-labs/technocore-chat/pull/44"
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "login": "khenzarr",
+      "score": 20,
+      "is_maintainer": false,
+      "is_author_of_this_board": false,
+      "counts": {
+        "merged_prs": 2,
+        "issues_credited": 0,
+        "verified_proofs": 0,
+        "artifacts": 0
+      },
+      "evidence": [
+        {
+          "signal": "merged_pr",
+          "points": 10,
+          "what": "merged PR #21: fix: validate MCP request IDs",
+          "url": "https://github.com/flop-labs/technocore-chat/pull/21"
+        },
+        {
+          "signal": "merged_pr",
+          "points": 10,
+          "what": "merged PR #23: docs: correct long-poll timeout wording",
+          "url": "https://github.com/flop-labs/technocore-chat/pull/23"
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "login": "yinchun6969",
+      "score": 20,
+      "is_maintainer": false,
+      "is_author_of_this_board": false,
+      "counts": {
+        "merged_prs": 2,
+        "issues_credited": 0,
+        "verified_proofs": 0,
+        "artifacts": 0
+      },
+      "evidence": [
+        {
+          "signal": "merged_pr",
+          "points": 10,
+          "what": "merged PR #50: fix(humans): align name input limits with server",
+          "url": "https://github.com/flop-labs/technocore-chat/pull/50"
+        },
+        {
+          "signal": "merged_pr",
+          "points": 10,
+          "what": "merged PR #58: fix(mcp): reject falsey non-object request params",
+          "url": "https://github.com/flop-labs/technocore-chat/pull/58"
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "login": "2TheMoom",
+      "score": 15,
+      "is_maintainer": false,
+      "is_author_of_this_board": false,
+      "counts": {
+        "merged_prs": 1,
+        "issues_credited": 1,
+        "verified_proofs": 0,
+        "artifacts": 0
+      },
+      "evidence": [
+        {
+          "signal": "merged_pr",
+          "points": 10,
+          "what": "merged PR #46: Add untrustedContentHint to write_note's WebMCP annotations",
+          "url": "https://github.com/flop-labs/technocore-chat/pull/46"
+        },
+        {
+          "signal": "issue_closed_by_merged_pr",
+          "points": 5,
+          "what": "issue #41 fixed by merged PR #46: write_note WebMCP tool missing untrustedContentHint annotation",
+          "url": "https://github.com/flop-labs/technocore-chat/issues/41"
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "login": "stupeterwilliams-ui",
+      "score": 14,
+      "is_maintainer": false,
+      "is_author_of_this_board": true,
+      "counts": {
+        "merged_prs": 0,
+        "issues_credited": 0,
+        "verified_proofs": 0,
+        "artifacts": 2
+      },
+      "evidence": [
+        {
+          "signal": "artifact_references_technocore",
+          "points": 3,
+          "what": "public artifact stupeterwilliams-ui/technocore-sdk",
+          "url": "https://github.com/stupeterwilliams-ui/technocore-sdk"
+        },
+        {
+          "signal": "artifact_has_license",
+          "points": 2,
+          "what": "stupeterwilliams-ui/technocore-sdk has a licence",
+          "url": "https://github.com/stupeterwilliams-ui/technocore-sdk"
+        },
+        {
+          "signal": "artifact_has_description",
+          "points": 2,
+          "what": "stupeterwilliams-ui/technocore-sdk has a description",
+          "url": "https://github.com/stupeterwilliams-ui/technocore-sdk"
+        },
+        {
+          "signal": "artifact_references_technocore",
+          "points": 3,
+          "what": "public artifact stupeterwilliams-ui/technocore-cc",
+          "url": "https://github.com/stupeterwilliams-ui/technocore-cc"
+        },
+        {
+          "signal": "artifact_has_license",
+          "points": 2,
+          "what": "stupeterwilliams-ui/technocore-cc has a licence",
+          "url": "https://github.com/stupeterwilliams-ui/technocore-cc"
+        },
+        {
+          "signal": "artifact_has_description",
+          "points": 2,
+          "what": "stupeterwilliams-ui/technocore-cc has a description",
+          "url": "https://github.com/stupeterwilliams-ui/technocore-cc"
+        }
+      ],
+      "rank": 5
+    },
+    {
+      "login": "aashiruu",
+      "score": 10,
+      "is_maintainer": false,
+      "is_author_of_this_board": false,
+      "counts": {
+        "merged_prs": 1,
+        "issues_credited": 0,
+        "verified_proofs": 0,
+        "artifacts": 0
+      },
+      "evidence": [
+        {
+          "signal": "merged_pr",
+          "points": 10,
+          "what": "merged PR #17: fix(did): reject padded signatures and cover signed write transports",
+          "url": "https://github.com/flop-labs/technocore-chat/pull/17"
+        }
+      ],
+      "rank": 6
+    },
+    {
+      "login": "CryptoFridge",
+      "score": 10,
+      "is_maintainer": false,
+      "is_author_of_this_board": false,
+      "counts": {
+        "merged_prs": 1,
+        "issues_credited": 0,
+        "verified_proofs": 0,
+        "artifacts": 0
+      },
+      "evidence": [
+        {
+          "signal": "merged_pr",
+          "points": 10,
+          "what": "merged PR #28: perf(read_json): accumulate the body in a bytearray",
+          "url": "https://github.com/flop-labs/technocore-chat/pull/28"
+        }
+      ],
+      "rank": 7
+    },
+    {
+      "login": "floppyagent",
+      "score": 10,
+      "is_maintainer": false,
+      "is_author_of_this_board": false,
+      "counts": {
+        "merged_prs": 0,
+        "issues_credited": 0,
+        "verified_proofs": 0,
+        "artifacts": 1
+      },
+      "evidence": [
+        {
+          "signal": "artifact_references_technocore",
+          "points": 3,
+          "what": "public artifact floppyagent/floppy-mockup",
+          "url": "https://github.com/floppyagent/floppy-mockup"
+        },
+        {
+          "signal": "artifact_has_license",
+          "points": 2,
+          "what": "floppyagent/floppy-mockup has a licence",
+          "url": "https://github.com/floppyagent/floppy-mockup"
+        },
+        {
+          "signal": "artifact_has_description",
+          "points": 2,
+          "what": "floppyagent/floppy-mockup has a description",
+          "url": "https://github.com/floppyagent/floppy-mockup"
+        },
+        {
+          "signal": "artifact_maintained_past_first_day",
+          "points": 3,
+          "what": "floppyagent/floppy-mockup had commits after its first day",
+          "url": "https://github.com/floppyagent/floppy-mockup"
+        }
+      ],
+      "rank": 8
+    },
+    {
+      "login": "kocaemre",
+      "score": 10,
+      "is_maintainer": false,
+      "is_author_of_this_board": false,
+      "counts": {
+        "merged_prs": 1,
+        "issues_credited": 0,
+        "verified_proofs": 0,
+        "artifacts": 0
+      },
+      "evidence": [
+        {
+          "signal": "merged_pr",
+          "points": 10,
+          "what": "merged PR #19: fix: include write budget on room POST replies",
+          "url": "https://github.com/flop-labs/technocore-chat/pull/19"
+        }
+      ],
+      "rank": 9
+    },
+    {
+      "login": "kuky123100-create",
+      "score": 10,
+      "is_maintainer": false,
+      "is_author_of_this_board": false,
+      "counts": {
+        "merged_prs": 1,
+        "issues_credited": 0,
+        "verified_proofs": 0,
+        "artifacts": 0
+      },
+      "evidence": [
+        {
+          "signal": "merged_pr",
+          "points": 10,
+          "what": "merged PR #48: docs: correct nonce replay window guidance",
+          "url": "https://github.com/flop-labs/technocore-chat/pull/48"
+        }
+      ],
+      "rank": 10
+    },
+    {
+      "login": "sinirlibiber",
+      "score": 10,
+      "is_maintainer": false,
+      "is_author_of_this_board": false,
+      "counts": {
+        "merged_prs": 1,
+        "issues_credited": 0,
+        "verified_proofs": 0,
+        "artifacts": 0
+      },
+      "evidence": [
+        {
+          "signal": "merged_pr",
+          "points": 10,
+          "what": "merged PR #29: docs: add CONTRIBUTING.md",
+          "url": "https://github.com/flop-labs/technocore-chat/pull/29"
+        }
+      ],
+      "rank": 11
+    },
+    {
+      "login": "bloobsy",
+      "score": 7,
+      "is_maintainer": false,
+      "is_author_of_this_board": false,
+      "counts": {
+        "merged_prs": 0,
+        "issues_credited": 0,
+        "verified_proofs": 0,
+        "artifacts": 1
+      },
+      "evidence": [
+        {
+          "signal": "artifact_references_technocore",
+          "points": 3,
+          "what": "public artifact bloobsy/technocore-windows-agent",
+          "url": "https://github.com/bloobsy/technocore-windows-agent"
+        },
+        {
+          "signal": "artifact_has_license",
+          "points": 2,
+          "what": "bloobsy/technocore-windows-agent has a licence",
+          "url": "https://github.com/bloobsy/technocore-windows-agent"
+        },
+        {
+          "signal": "artifact_has_description",
+          "points": 2,
+          "what": "bloobsy/technocore-windows-agent has a description",
+          "url": "https://github.com/bloobsy/technocore-windows-agent"
+        }
+      ],
+      "rank": 12
+    },
+    {
+      "login": "bunnyyxtan",
+      "score": 7,
+      "is_maintainer": false,
+      "is_author_of_this_board": false,
+      "counts": {
+        "merged_prs": 0,
+        "issues_credited": 0,
+        "verified_proofs": 0,
+        "artifacts": 1
+      },
+      "evidence": [
+        {
+          "signal": "artifact_references_technocore",
+          "points": 3,
+          "what": "public artifact bunnyyxtan/technocore-verify",
+          "url": "https://github.com/bunnyyxtan/technocore-verify"
+        },
+        {
+          "signal": "artifact_has_license",
+          "points": 2,
+          "what": "bunnyyxtan/technocore-verify has a licence",
+          "url": "https://github.com/bunnyyxtan/technocore-verify"
+        },
+        {
+          "signal": "artifact_has_description",
+          "points": 2,
+          "what": "bunnyyxtan/technocore-verify has a description",
+          "url": "https://github.com/bunnyyxtan/technocore-verify"
+        }
+      ],
+      "rank": 13
+    },
+    {
+      "login": "cameldick",
+      "score": 7,
+      "is_maintainer": false,
+      "is_author_of_this_board": false,
+      "counts": {
+        "merged_prs": 0,
+        "issues_credited": 0,
+        "verified_proofs": 0,
+        "artifacts": 1
+      },
+      "evidence": [
+        {
+          "signal": "artifact_references_technocore",
+          "points": 3,
+          "what": "public artifact cameldick/technocore-py",
+          "url": "https://github.com/cameldick/technocore-py"
+        },
+        {
+          "signal": "artifact_has_license",
+          "points": 2,
+          "what": "cameldick/technocore-py has a licence",
+          "url": "https://github.com/cameldick/technocore-py"
+        },
+        {
+          "signal": "artifact_has_description",
+          "points": 2,
+          "what": "cameldick/technocore-py has a description",
+          "url": "https://github.com/cameldick/technocore-py"
+        }
+      ],
+      "rank": 14
+    },
+    {
+      "login": "kiwashere",
+      "score": 7,
+      "is_maintainer": false,
+      "is_author_of_this_board": false,
+      "counts": {
+        "merged_prs": 0,
+        "issues_credited": 0,
+        "verified_proofs": 0,
+        "artifacts": 1
+      },
+      "evidence": [
+        {
+          "signal": "artifact_references_technocore",
+          "points": 3,
+          "what": "public artifact kiwashere/technocore-guide",
+          "url": "https://github.com/kiwashere/technocore-guide"
+        },
+        {
+          "signal": "artifact_has_license",
+          "points": 2,
+          "what": "kiwashere/technocore-guide has a licence",
+          "url": "https://github.com/kiwashere/technocore-guide"
+        },
+        {
+          "signal": "artifact_has_description",
+          "points": 2,
+          "what": "kiwashere/technocore-guide has a description",
+          "url": "https://github.com/kiwashere/technocore-guide"
+        }
+      ],
+      "rank": 15
+    },
+    {
+      "login": "snoodoodles",
+      "score": 7,
+      "is_maintainer": false,
+      "is_author_of_this_board": false,
+      "counts": {
+        "merged_prs": 0,
+        "issues_credited": 0,
+        "verified_proofs": 0,
+        "artifacts": 1
+      },
+      "evidence": [
+        {
+          "signal": "artifact_references_technocore",
+          "points": 3,
+          "what": "public artifact snoodoodles/technocore-hermes",
+          "url": "https://github.com/snoodoodles/technocore-hermes"
+        },
+        {
+          "signal": "artifact_has_license",
+          "points": 2,
+          "what": "snoodoodles/technocore-hermes has a licence",
+          "url": "https://github.com/snoodoodles/technocore-hermes"
+        },
+        {
+          "signal": "artifact_has_description",
+          "points": 2,
+          "what": "snoodoodles/technocore-hermes has a description",
+          "url": "https://github.com/snoodoodles/technocore-hermes"
+        }
+      ],
+      "rank": 16
+    },
+    {
+      "login": "solotop999",
+      "score": 7,
+      "is_maintainer": false,
+      "is_author_of_this_board": false,
+      "counts": {
+        "merged_prs": 0,
+        "issues_credited": 0,
+        "verified_proofs": 0,
+        "artifacts": 1
+      },
+      "evidence": [
+        {
+          "signal": "artifact_references_technocore",
+          "points": 3,
+          "what": "public artifact solotop999/flop-technocore-guide",
+          "url": "https://github.com/solotop999/flop-technocore-guide"
+        },
+        {
+          "signal": "artifact_has_license",
+          "points": 2,
+          "what": "solotop999/flop-technocore-guide has a licence",
+          "url": "https://github.com/solotop999/flop-technocore-guide"
+        },
+        {
+          "signal": "artifact_has_description",
+          "points": 2,
+          "what": "solotop999/flop-technocore-guide has a description",
+          "url": "https://github.com/solotop999/flop-technocore-guide"
+        }
+      ],
+      "rank": 17
+    },
+    {
+      "login": "uzzaarr",
+      "score": 7,
+      "is_maintainer": false,
+      "is_author_of_this_board": false,
+      "counts": {
+        "merged_prs": 0,
+        "issues_credited": 0,
+        "verified_proofs": 0,
+        "artifacts": 1
+      },
+      "evidence": [
+        {
+          "signal": "artifact_references_technocore",
+          "points": 3,
+          "what": "public artifact uzzaarr/technocore-agent-playbook",
+          "url": "https://github.com/uzzaarr/technocore-agent-playbook"
+        },
+        {
+          "signal": "artifact_has_license",
+          "points": 2,
+          "what": "uzzaarr/technocore-agent-playbook has a licence",
+          "url": "https://github.com/uzzaarr/technocore-agent-playbook"
+        },
+        {
+          "signal": "artifact_has_description",
+          "points": 2,
+          "what": "uzzaarr/technocore-agent-playbook has a description",
+          "url": "https://github.com/uzzaarr/technocore-agent-playbook"
+        }
+      ],
+      "rank": 18
+    },
+    {
+      "login": "zunmax",
+      "score": 7,
+      "is_maintainer": false,
+      "is_author_of_this_board": false,
+      "counts": {
+        "merged_prs": 0,
+        "issues_credited": 0,
+        "verified_proofs": 0,
+        "artifacts": 1
+      },
+      "evidence": [
+        {
+          "signal": "artifact_references_technocore",
+          "points": 3,
+          "what": "public artifact zunmax/technocore-did-starter",
+          "url": "https://github.com/zunmax/technocore-did-starter"
+        },
+        {
+          "signal": "artifact_has_license",
+          "points": 2,
+          "what": "zunmax/technocore-did-starter has a licence",
+          "url": "https://github.com/zunmax/technocore-did-starter"
+        },
+        {
+          "signal": "artifact_has_description",
+          "points": 2,
+          "what": "zunmax/technocore-did-starter has a description",
+          "url": "https://github.com/zunmax/technocore-did-starter"
+        }
+      ],
+      "rank": 19
+    },
+    {
+      "login": "0xcii",
+      "score": 5,
+      "is_maintainer": false,
+      "is_author_of_this_board": false,
+      "counts": {
+        "merged_prs": 0,
+        "issues_credited": 0,
+        "verified_proofs": 0,
+        "artifacts": 1
+      },
+      "evidence": [
+        {
+          "signal": "artifact_references_technocore",
+          "points": 3,
+          "what": "public artifact 0xcii/flop-chat-skill",
+          "url": "https://github.com/0xcii/flop-chat-skill"
+        },
+        {
+          "signal": "artifact_has_license",
+          "points": 2,
+          "what": "0xcii/flop-chat-skill has a licence",
+          "url": "https://github.com/0xcii/flop-chat-skill"
+        }
+      ],
+      "rank": 20
+    },
+    {
+      "login": "cryptoonurdev",
+      "score": 5,
+      "is_maintainer": false,
+      "is_author_of_this_board": false,
+      "counts": {
+        "merged_prs": 0,
+        "issues_credited": 0,
+        "verified_proofs": 0,
+        "artifacts": 1
+      },
+      "evidence": [
+        {
+          "signal": "artifact_references_technocore",
+          "points": 3,
+          "what": "public artifact cryptoonurdev/technocore-agent",
+          "url": "https://github.com/cryptoonurdev/technocore-agent"
+        },
+        {
+          "signal": "artifact_has_license",
+          "points": 2,
+          "what": "cryptoonurdev/technocore-agent has a licence",
+          "url": "https://github.com/cryptoonurdev/technocore-agent"
+        }
+      ],
+      "rank": 21
+    },
+    {
+      "login": "davidqw",
+      "score": 5,
+      "is_maintainer": false,
+      "is_author_of_this_board": false,
+      "counts": {
+        "merged_prs": 0,
+        "issues_credited": 0,
+        "verified_proofs": 0,
+        "artifacts": 1
+      },
+      "evidence": [
+        {
+          "signal": "artifact_references_technocore",
+          "points": 3,
+          "what": "public artifact davidqw/flop-node",
+          "url": "https://github.com/davidqw/flop-node"
+        },
+        {
+          "signal": "artifact_has_description",
+          "points": 2,
+          "what": "davidqw/flop-node has a description",
+          "url": "https://github.com/davidqw/flop-node"
+        }
+      ],
+      "rank": 22
+    },
+    {
+      "login": "jojay64",
+      "score": 5,
+      "is_maintainer": false,
+      "is_author_of_this_board": false,
+      "counts": {
+        "merged_prs": 0,
+        "issues_credited": 0,
+        "verified_proofs": 0,
+        "artifacts": 1
+      },
+      "evidence": [
+        {
+          "signal": "artifact_references_technocore",
+          "points": 3,
+          "what": "public artifact jojay64/technocore-agent-demo",
+          "url": "https://github.com/jojay64/technocore-agent-demo"
+        },
+        {
+          "signal": "artifact_has_description",
+          "points": 2,
+          "what": "jojay64/technocore-agent-demo has a description",
+          "url": "https://github.com/jojay64/technocore-agent-demo"
+        }
+      ],
+      "rank": 23
+    },
+    {
+      "login": "latest63",
+      "score": 5,
+      "is_maintainer": false,
+      "is_author_of_this_board": false,
+      "counts": {
+        "merged_prs": 0,
+        "issues_credited": 0,
+        "verified_proofs": 0,
+        "artifacts": 1
+      },
+      "evidence": [
+        {
+          "signal": "artifact_references_technocore",
+          "points": 3,
+          "what": "public artifact latest63/technocore-onboarding",
+          "url": "https://github.com/latest63/technocore-onboarding"
+        },
+        {
+          "signal": "artifact_has_description",
+          "points": 2,
+          "what": "latest63/technocore-onboarding has a description",
+          "url": "https://github.com/latest63/technocore-onboarding"
+        }
+      ],
+      "rank": 24
+    },
+    {
+      "login": "steveone23",
+      "score": 5,
+      "is_maintainer": false,
+      "is_author_of_this_board": false,
+      "counts": {
+        "merged_prs": 0,
+        "issues_credited": 0,
+        "verified_proofs": 0,
+        "artifacts": 1
+      },
+      "evidence": [
+        {
+          "signal": "artifact_references_technocore",
+          "points": 3,
+          "what": "public artifact steveone23/technocore-js-client",
+          "url": "https://github.com/steveone23/technocore-js-client"
+        },
+        {
+          "signal": "artifact_has_description",
+          "points": 2,
+          "what": "steveone23/technocore-js-client has a description",
+          "url": "https://github.com/steveone23/technocore-js-client"
+        }
+      ],
+      "rank": 25
+    },
+    {
+      "login": "UfukNode",
+      "score": 5,
+      "is_maintainer": false,
+      "is_author_of_this_board": false,
+      "counts": {
+        "merged_prs": 0,
+        "issues_credited": 0,
+        "verified_proofs": 0,
+        "artifacts": 1
+      },
+      "evidence": [
+        {
+          "signal": "artifact_references_technocore",
+          "points": 3,
+          "what": "public artifact UfukNode/technocore-did-tool",
+          "url": "https://github.com/UfukNode/technocore-did-tool"
+        },
+        {
+          "signal": "artifact_has_license",
+          "points": 2,
+          "what": "UfukNode/technocore-did-tool has a licence",
+          "url": "https://github.com/UfukNode/technocore-did-tool"
+        }
+      ],
+      "rank": 26
+    },
+    {
+      "login": "ritesh59697",
+      "score": 3,
+      "is_maintainer": false,
+      "is_author_of_this_board": false,
+      "counts": {
+        "merged_prs": 0,
+        "issues_credited": 0,
+        "verified_proofs": 0,
+        "artifacts": 1
+      },
+      "evidence": [
+        {
+          "signal": "artifact_references_technocore",
+          "points": 3,
+          "what": "public artifact ritesh59697/technocore-dashboard",
+          "url": "https://github.com/ritesh59697/technocore-dashboard"
+        }
+      ],
+      "rank": 27
+    }
+  ],
+  "maintainers": [
+    {
+      "login": "sv",
+      "score": 300,
+      "is_maintainer": true,
+      "is_author_of_this_board": false,
+      "counts": {
+        "merged_prs": 29,
+        "issues_credited": 2,
+        "verified_proofs": 0,
+        "artifacts": 0
+      },
+      "evidence": [
+        {
+          "signal": "merged_pr",
+          "points": 10,
+          "what": "merged PR #1: Close 14 Dependabot alerts, and the header that let callers pick their own rate-limit identity",
+          "url": "https://github.com/flop-labs/technocore-chat/pull/1"
+        },
+        {
+          "signal": "merged_pr",
+          "points": 10,
+          "what": "merged PR #2: Publish the protocol in forms a machine can read (0.3.0)",
+          "url": "https://github.com/flop-labs/technocore-chat/pull/2"
+        },
+        {
+          "signal": "merged_pr",
+          "points": 10,
+          "what": "merged PR #3: Stop serving the manual noindex, and publish four discovery documents (0.3.1)",
+          "url": "https://github.com/flop-labs/technocore-chat/pull/3"
+        },
+        {
+          "signal": "merged_pr",
+          "points": 10,
+          "what": "merged PR #4: Serve /auth.md, which says there is nothing to register for (0.3.2)",
+          "url": "https://github.com/flop-labs/technocore-chat/pull/4"
+        },
+        {
+          "signal": "merged_pr",
+          "points": 10,
+          "what": "merged PR #5: Serve an AI Catalog (0.3.3)",
+          "url": "https://github.com/flop-labs/technocore-chat/pull/5"
+        },
+        {
+          "signal": "merged_pr",
+          "points": 10,
+          "what": "merged PR #6: Add glama.json and a Docker image for the MCP stdio server",
+          "url": "https://github.com/flop-labs/technocore-chat/pull/6"
+        },
+        {
+          "signal": "merged_pr",
+          "points": 10,
+          "what": "merged PR #7: Add related servers to glama.json configuration",
+          "url": "https://github.com/flop-labs/technocore-chat/pull/7"
+        },
+        {
+          "signal": "merged_pr",
+          "points": 10,
+          "what": "merged PR #8: Add first-post instruction to activate lobby on agent onboarding",
+          "url": "https://github.com/flop-labs/technocore-chat/pull/8"
+        },
+        {
+          "signal": "merged_pr",
+          "points": 10,
+          "what": "merged PR #9: Release 0.4.0",
+          "url": "https://github.com/flop-labs/technocore-chat/pull/9"
+        },
+        {
+          "signal": "merged_pr",
+          "points": 10,
+          "what": "merged PR #10: Fix truncated pattern 4 e2e format in patterns.md",
+          "url": "https://github.com/flop-labs/technocore-chat/pull/10"
+        },
+        {
+          "signal": "merged_pr",
+          "points": 10,
+          "what": "merged PR #18: Raise the room cap 10x, budget room creation per IP, and rework /humans",
+          "url": "https://github.com/flop-labs/technocore-chat/pull/18"
+        },
+        {
+          "signal": "merged_pr",
+          "points": 10,
+          "what": "merged PR #25: refactor(mcp): generate tool schemas from signatures; flatten U+2028/9 (#24)",
+          "url": "https://github.com/flop-labs/technocore-chat/pull/25"
+        },
+        {
+          "signal": "issue_closed_by_merged_pr",
+          "points": 5,
+          "what": "issue #24 fixed by merged PR #25: Flatten Unicode line and paragraph separators in clean_text",
+          "url": "https://github.com/flop-labs/technocore-chat/issues/24"
+        },
+        {
+          "signal": "merged_pr",
+          "points": 10,
+          "what": "merged PR #26: chore: add a pull request template",
+          "url": "https://github.com/flop-labs/technocore-chat/pull/26"
+        },
+        {
+          "signal": "merged_pr",
+          "points": 10,
+          "what": "merged PR #27: chore: align the service, the MCP wrapper and the skill on one version (0.6.0)",
+          "url": "https://github.com/flop-labs/technocore-chat/pull/27"
+        },
+        {
+          "signal": "merged_pr",
+          "points": 10,
+          "what": "merged PR #31: feat(humans): expose the service's lanes as WebMCP tools",
+          "url": "https://github.com/flop-labs/technocore-chat/pull/31"
+        },
+        {
+          "signal": "merged_pr",
+          "points": 10,
+          "what": "merged PR #32: test: add a DNS for AI Discovery probe",
+          "url": "https://github.com/flop-labs/technocore-chat/pull/32"
+        },
+        {
+          "signal": "merged_pr",
+          "points": 10,
+          "what": "merged PR #33: fix(rooms): mark the caller-chosen name and topic on the enumeration path (0.7.0)",
+          "url": "https://github.com/flop-labs/technocore-chat/pull/33"
+        },
+        {
+          "signal": "merged_pr",
+          "points": 10,
+          "what": "merged PR #37: ci: harden actions and cancel superseded builds",
+          "url": "https://github.com/flop-labs/technocore-chat/pull/37"
+        },
+        {
+          "signal": "merged_pr",
+          "points": 10,
+          "what": "merged PR #38: test: harden edge and error coverage",
+          "url": "https://github.com/flop-labs/technocore-chat/pull/38"
+        },
+        {
+          "signal": "merged_pr",
+          "points": 10,
+          "what": "merged PR #40: fix(http): send Allow on 405, correct nine OpenAPI mismatches, and pin the lifecycle",
+          "url": "https://github.com/flop-labs/technocore-chat/pull/40"
+        },
+        {
+          "signal": "merged_pr",
+          "points": 10,
+          "what": "merged PR #47: docs: teach the signed owned-room claim everywhere it is taught",
+          "url": "https://github.com/flop-labs/technocore-chat/pull/47"
+        },
+        {
+          "signal": "merged_pr",
+          "points": 10,
+          "what": "merged PR #51: chore: ignore agent workspaces, scratch worktrees and local quint WIP",
+          "url": "https://github.com/flop-labs/technocore-chat/pull/51"
+        },
+        {
+          "signal": "merged_pr",
+          "points": 10,
+          "what": "merged PR #52: chore(tooling): core-size ratchet (sz.py), AGENTS.md, and a move-only split of test_app.py",
+          "url": "https://github.com/flop-labs/technocore-chat/pull/52"
+        },
+        {
+          "signal": "merged_pr",
+          "points": 10,
+          "what": "merged PR #53: refactor(app): extract the MANUAL prose into src/manual.md",
+          "url": "https://github.com/flop-labs/technocore-chat/pull/53"
+        },
+        {
+          "signal": "merged_pr",
+          "points": 10,
+          "what": "merged PR #54: examples: beautiful_chat.sh end-to-end demo + scripts/sign.py did:key signer",
+          "url": "https://github.com/flop-labs/technocore-chat/pull/54"
+        },
+        {
+          "signal": "merged_pr",
+          "points": 10,
+          "what": "merged PR #57: test: parse-surface properties + signer CLI contract + the example in CI",
+          "url": "https://github.com/flop-labs/technocore-chat/pull/57"
+        },
+        {
+          "signal": "issue_closed_by_merged_pr",
+          "points": 5,
+          "what": "issue #56 fixed by merged PR #57: CI: exercise the example demo and signer CLI contract (all 4 PR-54 review findings lived in this gap)",
+          "url": "https://github.com/flop-labs/technocore-chat/issues/56"
+        },
+        {
+          "signal": "merged_pr",
+          "points": 10,
+          "what": "merged PR #59: feat(config): one overridable home for the CHAT_* knobs (src/config.py)",
+          "url": "https://github.com/flop-labs/technocore-chat/pull/59"
+        },
+        {
+          "signal": "merged_pr",
+          "points": 10,
+          "what": "merged PR #61: refactor(limit): extract the abuse budget into src/limit.py",
+          "url": "https://github.com/flop-labs/technocore-chat/pull/61"
+        },
+        {
+          "signal": "merged_pr",
+          "points": 10,
+          "what": "merged PR #62: chore: tinygrad adoptions closeout \u2014 sz caps, CHAT_DEBUG, three-lane parity, alias cleanup",
+          "url": "https://github.com/flop-labs/technocore-chat/pull/62"
+        }
+      ]
+    }
+  ]
+}

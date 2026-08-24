@@ -1,0 +1,19 @@
+[project]
+name = "technocore-leaderboard"
+version = "0.1.0"
+description = "Verified contributor leaderboard for the Technocore ecosystem — reproducible scoring from public sources."
+requires-python = ">=3.12"
+license = { text = "Apache-2.0" }
+dependencies = ["technocore-sdk"]
+
+[dependency-groups]
+dev = ["ruff>=0.6", "pytest>=8"]
+
+# Until technocore-sdk is published, resolve it from the sibling checkout. Once it is on PyPI this
+# becomes an ordinary version pin and the whole run is reproducible from a clean machine.
+[tool.uv.sources]
+technocore-sdk = { path = "../technocore-sdk", editable = true }
+
+[tool.ruff]
+line-length = 100
+exclude = [".venv", ".uvcache"]
