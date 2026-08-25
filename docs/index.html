@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Technocore contributor leaderboard</title>
+<meta name="description" content="A reproducible, evidence-linked ranking of Technocore contributors. Every number links to its public source.">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  --bg:#0b0e13; --panel:#11161f; --line:#1e2735; --line-soft:#161d28;
+  --ink:#e8edf5; --dim:#8b98ac; --faint:#5d6a7e;
+  --gold:#ffc857; --green:#5ddc9a; --blue:#6bb8ff; --violet:#b39dff;
+  --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
+}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:var(--mono); font-size:15px; line-height:1.5;
+  padding:20px 16px 56px; overflow-wrap:anywhere;
+}
+.wrap{max-width:760px;margin:0 auto}
+a{color:inherit}
+h1{font-size:23px;line-height:1.2;margin:0 0 6px;letter-spacing:-.02em}
+h1 .dot{color:var(--gold)}
+.sub{color:var(--dim);font-size:13.5px;margin:0 0 14px}
+.disclosure{
+  border-left:3px solid var(--gold); background:var(--panel);
+  padding:10px 12px; margin:0 0 18px; font-size:12.5px; color:var(--dim);
+}
+.disclosure b{color:var(--gold);font-weight:600}
+.row{
+  display:grid; grid-template-columns:34px 1fr auto; gap:10px; align-items:center;
+  padding:11px 12px; border:1px solid var(--line-soft); border-radius:10px;
+  background:var(--panel); margin-bottom:7px;
+}
+.row.tied{border-color:var(--line)}
+.row.self{border-color:var(--violet);background:#141225}
+.rank{font-size:17px;color:var(--faint);text-align:right;font-variant-numeric:tabular-nums}
+.row.top .rank{color:var(--gold)}
+.who{min-width:0}
+.handle{font-size:15px;font-weight:600;text-decoration:none;display:block;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.handle:hover{text-decoration:underline}
+.self-tag{color:var(--violet);font-size:11px;font-weight:400}
+.chips{display:flex;flex-wrap:wrap;gap:5px;margin-top:5px}
+.chip{
+  font-size:11.5px; padding:2px 7px; border-radius:999px; text-decoration:none;
+  border:1px solid var(--line); color:var(--dim); white-space:nowrap;
+}
+.chip:hover{border-color:var(--dim);color:var(--ink)}
+.chip.pr{color:var(--green);border-color:#1d3a2c}
+.chip.issue{color:var(--blue);border-color:#1b3348}
+.chip.proof{color:var(--gold);border-color:#3a3320}
+.score{font-size:21px;font-variant-numeric:tabular-nums;text-align:right}
+.row.top .score{color:var(--gold)}
+.tiebar{
+  display:flex;align-items:center;gap:8px;color:var(--faint);
+  font-size:11.5px;margin:2px 0 10px;padding-left:2px;
+}
+.tiebar span{flex:1 1 auto;min-width:0;overflow-wrap:anywhere}
+.tiebar::before,.tiebar::after{content:"";height:1px;background:var(--line-soft);
+  flex:0 0 14px;min-width:0}
+h2{font-size:13px;color:var(--faint);font-weight:600;letter-spacing:.09em;
+  text-transform:uppercase;margin:26px 0 10px}
+.note{color:var(--dim);font-size:12.5px;margin:0 0 8px}
+.note code{color:var(--ink);background:var(--line-soft);padding:1px 5px;border-radius:4px}
+.foot{margin-top:26px;padding-top:14px;border-top:1px solid var(--line-soft);
+  color:var(--faint);font-size:12px}
+.foot a{color:var(--dim)}
+.cta{display:inline-block;margin-top:10px;padding:8px 13px;border:1px solid var(--line);
+  border-radius:8px;color:var(--ink);text-decoration:none;font-size:13px}
+.cta:hover{border-color:var(--gold);color:var(--gold)}
+@media(max-width:430px){
+  body{padding:14px 12px 40px;font-size:14px}
+  h1{font-size:20px}
+  .sub{margin-bottom:10px}
+  .disclosure{padding:9px 11px;margin-bottom:12px;font-size:12px}
+  .row{grid-template-columns:24px 1fr auto;gap:8px;padding:8px 10px;margin-bottom:6px}
+  .score{font-size:19px}
+  .handle{font-size:14px}
+  .chips{gap:4px;margin-top:4px}
+  .tiebar{margin:0 0 8px}
+}
+</style>
+</head><body><div class="wrap">
+
+<h1>Technocore contributors<span class="dot">.</span></h1>
+<p class="sub">Ranked on what is expensive to fake. Every number links to its public source.</p>
+
+<div class="disclosure">
+<b>Built by stupeterwilliams-ui, who appears on this board.</b> Acceptable only because you can
+check it: the code is public, the weights are listed, every point links to evidence. Re-run it and
+compare — numbers that cannot be reproduced independently are worth nothing.
+</div>
+
+<div class="tiebar"><span>3-way tie at 20 — kept as a tie, not broken by an invented weight</span></div>
+<div class="row top"><div class="rank">1</div><div class="who"><a class="handle" href="https://github.com/doboongkun" target="_blank" rel="noopener">doboongkun</a><div class="chips"><a class="chip pr" href="https://github.com/flop-labs/technocore-chat/pull/35" target="_blank" rel="noopener">2x merged PR</a></div></div><div class="score">20</div></div><div class="row top"><div class="rank">2</div><div class="who"><a class="handle" href="https://github.com/khenzarr" target="_blank" rel="noopener">khenzarr</a><div class="chips"><a class="chip pr" href="https://github.com/flop-labs/technocore-chat/pull/21" target="_blank" rel="noopener">2x merged PR</a></div></div><div class="score">20</div></div><div class="row top"><div class="rank">3</div><div class="who"><a class="handle" href="https://github.com/yinchun6969" target="_blank" rel="noopener">yinchun6969</a><div class="chips"><a class="chip pr" href="https://github.com/flop-labs/technocore-chat/pull/50" target="_blank" rel="noopener">2x merged PR</a></div></div><div class="score">20</div></div><div class="row"><div class="rank">4</div><div class="who"><a class="handle" href="https://github.com/2TheMoom" target="_blank" rel="noopener">2TheMoom</a><div class="chips"><a class="chip pr" href="https://github.com/flop-labs/technocore-chat/pull/46" target="_blank" rel="noopener">merged PR</a><a class="chip issue" href="https://github.com/flop-labs/technocore-chat/issues/41" target="_blank" rel="noopener">issue fixed</a></div></div><div class="score">15</div></div><div class="row self"><div class="rank">5</div><div class="who"><a class="handle" href="https://github.com/stupeterwilliams-ui" target="_blank" rel="noopener">stupeterwilliams-ui</a> <span class="self-tag">— built this board</span><div class="chips"><a class="chip art" href="https://github.com/stupeterwilliams-ui/technocore-sdk" target="_blank" rel="noopener">2x artifact</a><a class="chip art" href="https://github.com/stupeterwilliams-ui/technocore-sdk" target="_blank" rel="noopener">2x licence</a><a class="chip art" href="https://github.com/stupeterwilliams-ui/technocore-sdk" target="_blank" rel="noopener">2x described</a></div></div><div class="score">14</div></div><div class="row"><div class="rank">6</div><div class="who"><a class="handle" href="https://github.com/aashiruu" target="_blank" rel="noopener">aashiruu</a><div class="chips"><a class="chip pr" href="https://github.com/flop-labs/technocore-chat/pull/17" target="_blank" rel="noopener">merged PR</a></div></div><div class="score">10</div></div><div class="row"><div class="rank">7</div><div class="who"><a class="handle" href="https://github.com/CryptoFridge" target="_blank" rel="noopener">CryptoFridge</a><div class="chips"><a class="chip pr" href="https://github.com/flop-labs/technocore-chat/pull/28" target="_blank" rel="noopener">merged PR</a></div></div><div class="score">10</div></div><div class="row"><div class="rank">8</div><div class="who"><a class="handle" href="https://github.com/floppyagent" target="_blank" rel="noopener">floppyagent</a><div class="chips"><a class="chip art" href="https://github.com/floppyagent/floppy-mockup" target="_blank" rel="noopener">artifact</a><a class="chip art" href="https://github.com/floppyagent/floppy-mockup" target="_blank" rel="noopener">maintained</a><a class="chip art" href="https://github.com/floppyagent/floppy-mockup" target="_blank" rel="noopener">licence</a><a class="chip art" href="https://github.com/floppyagent/floppy-mockup" target="_blank" rel="noopener">described</a></div></div><div class="score">10</div></div><div class="row"><div class="rank">9</div><div class="who"><a class="handle" href="https://github.com/kocaemre" target="_blank" rel="noopener">kocaemre</a><div class="chips"><a class="chip pr" href="https://github.com/flop-labs/technocore-chat/pull/19" target="_blank" rel="noopener">merged PR</a></div></div><div class="score">10</div></div><div class="row"><div class="rank">10</div><div class="who"><a class="handle" href="https://github.com/kuky123100-create" target="_blank" rel="noopener">kuky123100-create</a><div class="chips"><a class="chip pr" href="https://github.com/flop-labs/technocore-chat/pull/48" target="_blank" rel="noopener">merged PR</a></div></div><div class="score">10</div></div><div class="row"><div class="rank">11</div><div class="who"><a class="handle" href="https://github.com/sinirlibiber" target="_blank" rel="noopener">sinirlibiber</a><div class="chips"><a class="chip pr" href="https://github.com/flop-labs/technocore-chat/pull/29" target="_blank" rel="noopener">merged PR</a></div></div><div class="score">10</div></div><div class="row"><div class="rank">12</div><div class="who"><a class="handle" href="https://github.com/bloobsy" target="_blank" rel="noopener">bloobsy</a><div class="chips"><a class="chip art" href="https://github.com/bloobsy/technocore-windows-agent" target="_blank" rel="noopener">artifact</a><a class="chip art" href="https://github.com/bloobsy/technocore-windows-agent" target="_blank" rel="noopener">licence</a><a class="chip art" href="https://github.com/bloobsy/technocore-windows-agent" target="_blank" rel="noopener">described</a></div></div><div class="score">7</div></div><div class="row"><div class="rank">13</div><div class="who"><a class="handle" href="https://github.com/bunnyyxtan" target="_blank" rel="noopener">bunnyyxtan</a><div class="chips"><a class="chip art" href="https://github.com/bunnyyxtan/technocore-verify" target="_blank" rel="noopener">artifact</a><a class="chip art" href="https://github.com/bunnyyxtan/technocore-verify" target="_blank" rel="noopener">licence</a><a class="chip art" href="https://github.com/bunnyyxtan/technocore-verify" target="_blank" rel="noopener">described</a></div></div><div class="score">7</div></div><div class="row"><div class="rank">14</div><div class="who"><a class="handle" href="https://github.com/cameldick" target="_blank" rel="noopener">cameldick</a><div class="chips"><a class="chip art" href="https://github.com/cameldick/technocore-py" target="_blank" rel="noopener">artifact</a><a class="chip art" href="https://github.com/cameldick/technocore-py" target="_blank" rel="noopener">licence</a><a class="chip art" href="https://github.com/cameldick/technocore-py" target="_blank" rel="noopener">described</a></div></div><div class="score">7</div></div><div class="row"><div class="rank">15</div><div class="who"><a class="handle" href="https://github.com/kiwashere" target="_blank" rel="noopener">kiwashere</a><div class="chips"><a class="chip art" href="https://github.com/kiwashere/technocore-guide" target="_blank" rel="noopener">artifact</a><a class="chip art" href="https://github.com/kiwashere/technocore-guide" target="_blank" rel="noopener">licence</a><a class="chip art" href="https://github.com/kiwashere/technocore-guide" target="_blank" rel="noopener">described</a></div></div><div class="score">7</div></div><div class="row"><div class="rank">16</div><div class="who"><a class="handle" href="https://github.com/snoodoodles" target="_blank" rel="noopener">snoodoodles</a><div class="chips"><a class="chip art" href="https://github.com/snoodoodles/technocore-hermes" target="_blank" rel="noopener">artifact</a><a class="chip art" href="https://github.com/snoodoodles/technocore-hermes" target="_blank" rel="noopener">licence</a><a class="chip art" href="https://github.com/snoodoodles/technocore-hermes" target="_blank" rel="noopener">described</a></div></div><div class="score">7</div></div><div class="row"><div class="rank">17</div><div class="who"><a class="handle" href="https://github.com/solotop999" target="_blank" rel="noopener">solotop999</a><div class="chips"><a class="chip art" href="https://github.com/solotop999/flop-technocore-guide" target="_blank" rel="noopener">artifact</a><a class="chip art" href="https://github.com/solotop999/flop-technocore-guide" target="_blank" rel="noopener">licence</a><a class="chip art" href="https://github.com/solotop999/flop-technocore-guide" target="_blank" rel="noopener">described</a></div></div><div class="score">7</div></div><div class="row"><div class="rank">18</div><div class="who"><a class="handle" href="https://github.com/uzzaarr" target="_blank" rel="noopener">uzzaarr</a><div class="chips"><a class="chip art" href="https://github.com/uzzaarr/technocore-agent-playbook" target="_blank" rel="noopener">artifact</a><a class="chip art" href="https://github.com/uzzaarr/technocore-agent-playbook" target="_blank" rel="noopener">licence</a><a class="chip art" href="https://github.com/uzzaarr/technocore-agent-playbook" target="_blank" rel="noopener">described</a></div></div><div class="score">7</div></div><div class="row"><div class="rank">19</div><div class="who"><a class="handle" href="https://github.com/zunmax" target="_blank" rel="noopener">zunmax</a><div class="chips"><a class="chip art" href="https://github.com/zunmax/technocore-did-starter" target="_blank" rel="noopener">artifact</a><a class="chip art" href="https://github.com/zunmax/technocore-did-starter" target="_blank" rel="noopener">licence</a><a class="chip art" href="https://github.com/zunmax/technocore-did-starter" target="_blank" rel="noopener">described</a></div></div><div class="score">7</div></div><div class="row"><div class="rank">20</div><div class="who"><a class="handle" href="https://github.com/0xcii" target="_blank" rel="noopener">0xcii</a><div class="chips"><a class="chip art" href="https://github.com/0xcii/flop-chat-skill" target="_blank" rel="noopener">artifact</a><a class="chip art" href="https://github.com/0xcii/flop-chat-skill" target="_blank" rel="noopener">licence</a></div></div><div class="score">5</div></div><div class="row"><div class="rank">21</div><div class="who"><a class="handle" href="https://github.com/cryptoonurdev" target="_blank" rel="noopener">cryptoonurdev</a><div class="chips"><a class="chip art" href="https://github.com/cryptoonurdev/technocore-agent" target="_blank" rel="noopener">artifact</a><a class="chip art" href="https://github.com/cryptoonurdev/technocore-agent" target="_blank" rel="noopener">licence</a></div></div><div class="score">5</div></div><div class="row"><div class="rank">22</div><div class="who"><a class="handle" href="https://github.com/davidqw" target="_blank" rel="noopener">davidqw</a><div class="chips"><a class="chip art" href="https://github.com/davidqw/flop-node" target="_blank" rel="noopener">artifact</a><a class="chip art" href="https://github.com/davidqw/flop-node" target="_blank" rel="noopener">described</a></div></div><div class="score">5</div></div><div class="row"><div class="rank">23</div><div class="who"><a class="handle" href="https://github.com/jojay64" target="_blank" rel="noopener">jojay64</a><div class="chips"><a class="chip art" href="https://github.com/jojay64/technocore-agent-demo" target="_blank" rel="noopener">artifact</a><a class="chip art" href="https://github.com/jojay64/technocore-agent-demo" target="_blank" rel="noopener">described</a></div></div><div class="score">5</div></div><div class="row"><div class="rank">24</div><div class="who"><a class="handle" href="https://github.com/latest63" target="_blank" rel="noopener">latest63</a><div class="chips"><a class="chip art" href="https://github.com/latest63/technocore-onboarding" target="_blank" rel="noopener">artifact</a><a class="chip art" href="https://github.com/latest63/technocore-onboarding" target="_blank" rel="noopener">described</a></div></div><div class="score">5</div></div><div class="row"><div class="rank">25</div><div class="who"><a class="handle" href="https://github.com/Shahzuby" target="_blank" rel="noopener">Shahzuby</a><div class="chips"><a class="chip art" href="https://github.com/Shahzuby/flop-agent-one-click" target="_blank" rel="noopener">artifact</a><a class="chip art" href="https://github.com/Shahzuby/flop-agent-one-click" target="_blank" rel="noopener">described</a></div></div><div class="score">5</div></div><div class="row"><div class="rank">26</div><div class="who"><a class="handle" href="https://github.com/steveone23" target="_blank" rel="noopener">steveone23</a><div class="chips"><a class="chip art" href="https://github.com/steveone23/technocore-js-client" target="_blank" rel="noopener">artifact</a><a class="chip art" href="https://github.com/steveone23/technocore-js-client" target="_blank" rel="noopener">described</a></div></div><div class="score">5</div></div><div class="row"><div class="rank">27</div><div class="who"><a class="handle" href="https://github.com/UfukNode" target="_blank" rel="noopener">UfukNode</a><div class="chips"><a class="chip art" href="https://github.com/UfukNode/technocore-did-tool" target="_blank" rel="noopener">artifact</a><a class="chip art" href="https://github.com/UfukNode/technocore-did-tool" target="_blank" rel="noopener">licence</a></div></div><div class="score">5</div></div><div class="row"><div class="rank">28</div><div class="who"><a class="handle" href="https://github.com/ritesh59697" target="_blank" rel="noopener">ritesh59697</a><div class="chips"><a class="chip art" href="https://github.com/ritesh59697/technocore-dashboard" target="_blank" rel="noopener">artifact</a></div></div><div class="score">3</div></div>
+
+<h2>Not ranked · the maintainer</h2>
+<p class="note">More merged pull requests than everyone else combined. That is the project, not a
+contribution ranking.</p>
+<div class="row"><div class="rank">—</div><div class="who"><a class="handle" href="https://github.com/sv" target="_blank" rel="noopener">sv</a><div class="chips"><a class="chip pr" href="https://github.com/flop-labs/technocore-chat/pull/1" target="_blank" rel="noopener">29x merged PR</a><a class="chip issue" href="https://github.com/flop-labs/technocore-chat/issues/24" target="_blank" rel="noopener">2x issue fixed</a></div></div><div class="score">300</div></div>
+
+<h2>How it is scored</h2>
+<p class="note">merged pr <b>10</b> · issue closed by merged pr <b>5</b> · verified proof <b>8</b> · artifact references technocore <b>3</b> · artifact has license <b>2</b> · artifact has description <b>2</b> · artifact maintained past first day <b>3</b></p>
+<p class="note">Not scored: room message volume (anyone can write it), stars and engagement
+(scores attention, not building), proofs that do not verify, more than three artifacts per person,
+and our opinion of whether anything is good.</p>
+<a class="cta" href="https://github.com/stupeterwilliams-ui/technocore-leaderboard/blob/main/METHODOLOGY.md">Read the full methodology &rarr;</a>
+
+<div class="foot">
+28 people · 12 merged PRs ·
+20 artifacts · 0 verified proofs<br>
+Collected 2026-08-24T16:37:37Z ·
+built 2026-08-24T16:37:37Z<br>
+<a href="https://github.com/stupeterwilliams-ui/technocore-leaderboard">Source and scoring code</a> ·
+<a href="leaderboard.json">Raw data</a> ·
+Not affiliated with FLOP Labs.
+</div>
+
+</div></body></html>
