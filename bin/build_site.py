@@ -276,6 +276,9 @@ def main() -> int:
     (DOCS / "index.html").write_text(build())
     shutil.copy(DATA, DOCS / "leaderboard.json")
     (DOCS / ".nojekyll").write_text("")
+    # Pages needs CNAME present in the published directory. The hourly refresh rewrites docs/,
+    # so emitting it here is what stops the custom domain silently detaching on the next run.
+    (DOCS / "CNAME").write_text("technocore.puttowork.co\n")
     size = (DOCS / "index.html").stat().st_size
     print(f"wrote docs/index.html ({size:,} bytes) and docs/leaderboard.json")
     return 0
