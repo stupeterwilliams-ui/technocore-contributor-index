@@ -70,33 +70,30 @@ h1{
 }
 .disclosure b{color:var(--ink);font-weight:500}
 .row{
-  display:grid; grid-template-columns:44px 1fr auto; gap:14px; align-items:center;
-  padding:14px 0; border-bottom:1px solid var(--line-soft);
+  display:grid; grid-template-columns:34px 1fr 56px; gap:12px; align-items:center;
+  padding:9px 0; border-bottom:1px solid var(--line-soft);
 }
 .row.self{background:var(--panel);padding-left:10px;padding-right:10px;
   border-bottom:1px solid var(--line)}
 .rank{
-  font-family:var(--display); font-size:26px; line-height:1;
+  font-family:var(--display); font-size:20px; line-height:1;
   color:var(--faint); text-align:right; letter-spacing:1px;
 }
 .row.top .rank{color:var(--ink)}
 .who{min-width:0}
-.handle{font-size:16px;font-weight:500;text-decoration:none;display:block;
+.handle{font-size:14.5px;font-weight:500;text-decoration:none;display:block;
   overflow:hidden;text-overflow:ellipsis;white-space:nowrap;letter-spacing:0.2px}
 .handle:hover{text-decoration:underline}
 .self-tag{color:var(--faint);font-size:11px;font-weight:400;letter-spacing:0.4px;
   text-transform:uppercase}
-.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:7px}
-.chip{
-  font-size:11px; padding:3px 8px; text-decoration:none; letter-spacing:0.3px;
-  border:1px solid var(--line); color:var(--dim); white-space:nowrap;
-  text-transform:uppercase;
-}
-.chip:hover{border-color:var(--ink);color:var(--ink)}
-.chip.pr{color:var(--ink);border-color:rgba(255,255,255,0.45)}
-.chip.forfeit{color:var(--faint);border-style:dashed;text-decoration:line-through}
-.score{font-family:var(--display);font-size:32px;line-height:1;text-align:right;
-  letter-spacing:1px;color:var(--faint)}
+.chips{font-size:11.5px;color:var(--faint);line-height:1.45}
+.ev{color:var(--faint);text-decoration:none;border-bottom:1px solid transparent}
+.ev:hover{color:var(--ink);border-bottom-color:var(--line)}
+.ev.pr{color:var(--dim)}
+.ev.forfeit{text-decoration:line-through}
+.evsep{color:rgba(255,255,255,0.18)}
+.score{font-family:var(--display);font-size:30px;line-height:1;text-align:right;
+  letter-spacing:1px;color:var(--dim)}
 .row.top .score{color:var(--ink)}
 .tiebar{display:flex;align-items:center;gap:10px;color:var(--faint);
   font-size:11px;margin:14px 0 6px;letter-spacing:0.4px;text-transform:uppercase}
@@ -114,10 +111,11 @@ h2{font-family:var(--display);font-size:20px;color:var(--ink);font-weight:400;
 .cta:hover{border-color:var(--ink)}
 @media(max-width:430px){
   body{padding:20px 14px 44px;font-size:14px}
-  .row{grid-template-columns:32px 1fr auto;gap:10px;padding:12px 0}
-  .rank{font-size:21px}
-  .score{font-size:26px}
-  .handle{font-size:15px}
+  .row{grid-template-columns:26px 1fr 48px;gap:9px;padding:8px 0}
+  .rank{font-size:17px}
+  .score{font-size:25px}
+  .handle{font-size:14px}
+  .chips{font-size:11px}
   .disclosure{font-size:12px;padding:10px 0;margin-bottom:14px}
   h1{font-size:2rem}
 }
@@ -125,30 +123,31 @@ h2{font-family:var(--display);font-size:20px;color:var(--ink);font-weight:400;
 
 
 def chips_for(entry: dict) -> str:
-    """One clickable chip per distinct piece of evidence, deduped and counted.
+    """Evidence as one compact line of links.
 
-    Evidence we deliberately did not score still appears, marked. Hiding it would make the
-    forfeit invisible, and the forfeit is the part worth seeing.
+    This was a grid of uppercase boxes, three to five per row. It buried the two things a
+    leaderboard exists to show — who is ahead, and by how much — under the supporting detail, and
+    pushed the visible list down to five people. The links still have to be here (a number that
+    cannot be traced is not evidence), so they get one quiet line instead of the row.
     """
     groups: dict[str, dict] = {}
     for item in entry["evidence"]:
         label, cls = SIGNAL_LABELS.get(item["signal"], (item["signal"], ""))
         if item.get("forfeited"):
             label, cls = label + " (not scored)", "forfeit"
-        key = label
-        groups.setdefault(key, {"count": 0, "url": item["url"], "cls": cls, "label": label})
-        groups[key]["count"] += 1
-    order = ["merged PR", "issue fixed", "verified proof", "artifact", "maintained",
-             "licence", "described"]
-    out = []
+        groups.setdefault(label, {"count": 0, "url": item["url"], "cls": cls})
+        groups[label]["count"] += 1
+    order = ["merged PR", "issue fixed", "verified proof", "verified proof (not scored)",
+             "artifact", "maintained", "licence", "described"]
+    parts = []
     for label in sorted(groups, key=lambda k: order.index(k) if k in order else 99):
         g = groups[label]
-        text = f"{g['count']}x {label}" if g["count"] > 1 else label
-        out.append(
-            f'<a class="chip {g["cls"]}" href="{html.escape(g["url"])}" '
+        text = f"{g['count']}\u00d7 {label}" if g["count"] > 1 else label
+        parts.append(
+            f'<a class="ev {g["cls"]}" href="{html.escape(g["url"])}" '
             f'target="_blank" rel="noopener">{html.escape(text)}</a>'
         )
-    return "".join(out)
+    return '<span class="evsep"> · </span>'.join(parts)
 
 
 def build() -> str:
