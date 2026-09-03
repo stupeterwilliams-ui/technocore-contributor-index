@@ -76,6 +76,12 @@ MAX_SCORED_ARTIFACTS = 3
 # publishes a verifying proof gets all 8, and it takes about a minute.
 SELF_AUTHORED_SIGNALS = {"verified_proof"}
 
+# The instrument does not score itself. This repository is a measuring tool for the ecosystem, not
+# a contribution to it, and counting it moved its own author from 73rd to 27th the first time the
+# collector noticed it existed. That is circular however real the repository is, and it is the same
+# reasoning as forfeiting a signal we wrote the specification for.
+EXCLUDED_ARTIFACTS = {"stupeterwilliams-ui/technocore-contributor-index"}
+
 
 def load(name: str):
     return json.loads((RAW / f"{name}.json").read_text())
@@ -147,6 +153,8 @@ def main() -> int:
     for art in artifacts:
         if art.get("is_fork") or art.get("size_kb", 0) == 0:
             continue  # a fork is not a contribution, and an empty repo is not an artifact
+        if art["repo"] in EXCLUDED_ARTIFACTS:
+            continue  # the instrument does not score itself
         by_owner.setdefault(art["owner"], []).append(art)
 
     for owner, owned in by_owner.items():
@@ -183,6 +191,7 @@ def main() -> int:
             p["login"] for p in people.values() if p["is_maintainer"]
         ),
         "self_authored_signals_forfeited": sorted(SELF_AUTHORED_SIGNALS),
+        "artifacts_excluded_from_scoring": sorted(EXCLUDED_ARTIFACTS),
         "disclosure": (
             "This board was built by " + SELF + ", who appears on it. Every point traces to a "
             "public URL, the weights are above, and the programs that produce it are in the "

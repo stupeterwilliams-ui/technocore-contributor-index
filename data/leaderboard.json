@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T05:40:23Z",
+  "generated_at": "2026-09-03T06:01:40Z",
   "collected_at": "2026-09-03T05:40:23Z",
   "upstream_repo": "flop-labs/technocore-chat",
   "weights": {
@@ -24,11 +24,14 @@
   "self_authored_signals_forfeited": [
     "verified_proof"
   ],
+  "artifacts_excluded_from_scoring": [
+    "stupeterwilliams-ui/technocore-contributor-index"
+  ],
   "disclosure": "This board was built by stupeterwilliams-ui, who appears on it. Every point traces to a public URL, the weights are above, and the programs that produce it are in the repository \u2014 re-run them and compare. Where a signal's specification was written by the author of this board (currently: verified contribution proofs), it scores for everyone else and scores zero for the author. Counting it would have moved us from 55th to 6th on a rule we wrote ourselves. If these numbers cannot be reproduced independently, the ranking is not worth anything.",
   "totals": {
     "people_ranked": 850,
     "merged_prs_counted": 34,
-    "artifacts_counted": 977,
+    "artifacts_counted": 976,
     "verified_proofs": 2
   },
   "leaderboard": [
@@ -1604,95 +1607,6 @@
       "rank": 27
     },
     {
-      "login": "stupeterwilliams-ui",
-      "score": 13,
-      "is_maintainer": false,
-      "is_author_of_this_board": true,
-      "counts": {
-        "merged_prs": 0,
-        "issues_credited": 0,
-        "verified_proofs": 2,
-        "artifacts": 3
-      },
-      "evidence": [
-        {
-          "signal": "verified_proof",
-          "points": 0,
-          "what": "verified contribution proof for stupeterwilliams-ui/technocore-cc",
-          "url": "https://github.com/stupeterwilliams-ui/technocore-cc/blob/HEAD/contribution-proof.json",
-          "forfeited": "not scored: this board's author wrote the specification for this signal"
-        },
-        {
-          "signal": "verified_proof",
-          "points": 0,
-          "what": "verified contribution proof for stupeterwilliams-ui/technocore-sdk",
-          "url": "https://github.com/stupeterwilliams-ui/technocore-sdk/blob/HEAD/contribution-proof.json",
-          "forfeited": "not scored: this board's author wrote the specification for this signal"
-        },
-        {
-          "signal": "artifact_references_technocore",
-          "points": 2,
-          "what": "public artifact stupeterwilliams-ui/technocore-sdk",
-          "url": "https://github.com/stupeterwilliams-ui/technocore-sdk"
-        },
-        {
-          "signal": "artifact_has_license",
-          "points": 1,
-          "what": "stupeterwilliams-ui/technocore-sdk has a licence",
-          "url": "https://github.com/stupeterwilliams-ui/technocore-sdk"
-        },
-        {
-          "signal": "artifact_has_description",
-          "points": 1,
-          "what": "stupeterwilliams-ui/technocore-sdk has a description",
-          "url": "https://github.com/stupeterwilliams-ui/technocore-sdk"
-        },
-        {
-          "signal": "artifact_maintained_past_first_day",
-          "points": 1,
-          "what": "stupeterwilliams-ui/technocore-sdk had commits after its first day",
-          "url": "https://github.com/stupeterwilliams-ui/technocore-sdk"
-        },
-        {
-          "signal": "artifact_references_technocore",
-          "points": 2,
-          "what": "public artifact stupeterwilliams-ui/technocore-contributor-index",
-          "url": "https://github.com/stupeterwilliams-ui/technocore-contributor-index"
-        },
-        {
-          "signal": "artifact_has_license",
-          "points": 1,
-          "what": "stupeterwilliams-ui/technocore-contributor-index has a licence",
-          "url": "https://github.com/stupeterwilliams-ui/technocore-contributor-index"
-        },
-        {
-          "signal": "artifact_has_description",
-          "points": 1,
-          "what": "stupeterwilliams-ui/technocore-contributor-index has a description",
-          "url": "https://github.com/stupeterwilliams-ui/technocore-contributor-index"
-        },
-        {
-          "signal": "artifact_references_technocore",
-          "points": 2,
-          "what": "public artifact stupeterwilliams-ui/technocore-cc",
-          "url": "https://github.com/stupeterwilliams-ui/technocore-cc"
-        },
-        {
-          "signal": "artifact_has_license",
-          "points": 1,
-          "what": "stupeterwilliams-ui/technocore-cc has a licence",
-          "url": "https://github.com/stupeterwilliams-ui/technocore-cc"
-        },
-        {
-          "signal": "artifact_has_description",
-          "points": 1,
-          "what": "stupeterwilliams-ui/technocore-cc has a description",
-          "url": "https://github.com/stupeterwilliams-ui/technocore-cc"
-        }
-      ],
-      "rank": 28
-    },
-    {
       "login": "0xBusuzima",
       "score": 12,
       "is_maintainer": false,
@@ -1760,7 +1674,7 @@
         }
       ],
       "artifacts_beyond_cap": 1,
-      "rank": 29
+      "rank": 28
     },
     {
       "login": "0xnoctarch",
@@ -1830,7 +1744,7 @@
         }
       ],
       "artifacts_beyond_cap": 1,
-      "rank": 30
+      "rank": 29
     },
     {
       "login": "apomt",
@@ -1900,7 +1814,7 @@
         }
       ],
       "artifacts_beyond_cap": 1,
-      "rank": 31
+      "rank": 30
     },
     {
       "login": "Asadlee24",
@@ -1970,7 +1884,7 @@
         }
       ],
       "artifacts_beyond_cap": 1,
-      "rank": 32
+      "rank": 31
     },
     {
       "login": "bdunn77",
@@ -2039,7 +1953,7 @@
           "url": "https://github.com/bdunn77/technocore-signed-client"
         }
       ],
-      "rank": 33
+      "rank": 32
     },
     {
       "login": "brkcinar",
@@ -2109,7 +2023,7 @@
         }
       ],
       "artifacts_beyond_cap": 2,
-      "rank": 34
+      "rank": 33
     },
     {
       "login": "danenright",
@@ -2178,7 +2092,7 @@
           "url": "https://github.com/danenright/technocore-parcel"
         }
       ],
-      "rank": 35
+      "rank": 34
     },
     {
       "login": "DefiDanny2",
@@ -2247,7 +2161,7 @@
           "url": "https://github.com/DefiDanny2/technocore-agent-health"
         }
       ],
-      "rank": 36
+      "rank": 35
     },
     {
       "login": "ersinozkan1987-hub",
@@ -2316,7 +2230,7 @@
           "url": "https://github.com/ersinozkan1987-hub/technocore-proof-checker"
         }
       ],
-      "rank": 37
+      "rank": 36
     },
     {
       "login": "Leknaatx",
@@ -2385,7 +2299,7 @@
           "url": "https://github.com/Leknaatx/technocore-http"
         }
       ],
-      "rank": 38
+      "rank": 37
     },
     {
       "login": "vlsss12",
@@ -2454,7 +2368,7 @@
           "url": "https://github.com/vlsss12/technocore-agent-setup-guide"
         }
       ],
-      "rank": 39
+      "rank": 38
     },
     {
       "login": "zeycan1",
@@ -2500,7 +2414,7 @@
         }
       ],
       "artifacts_beyond_cap": 1,
-      "rank": 40
+      "rank": 39
     },
     {
       "login": "0xrumora",
@@ -2563,7 +2477,7 @@
           "url": "https://github.com/0xrumora/technocore-flop-guide"
         }
       ],
-      "rank": 41
+      "rank": 40
     },
     {
       "login": "flop-community",
@@ -2626,7 +2540,7 @@
           "url": "https://github.com/flop-community/technocore-guide-ur"
         }
       ],
-      "rank": 42
+      "rank": 41
     },
     {
       "login": "greyparcel",
@@ -2689,7 +2603,7 @@
           "url": "https://github.com/greyparcel/technocore-cli"
         }
       ],
-      "rank": 43
+      "rank": 42
     },
     {
       "login": "0xrlawrence",
@@ -2710,7 +2624,7 @@
           "url": "https://github.com/flop-labs/technocore-chat/pull/464"
         }
       ],
-      "rank": 44
+      "rank": 43
     },
     {
       "login": "aashiruu",
@@ -2731,7 +2645,7 @@
           "url": "https://github.com/flop-labs/technocore-chat/pull/17"
         }
       ],
-      "rank": 45
+      "rank": 44
     },
     {
       "login": "africanproofs",
@@ -2794,7 +2708,7 @@
           "url": "https://github.com/africanproofs/technocore-mcp"
         }
       ],
-      "rank": 46
+      "rank": 45
     },
     {
       "login": "antfleet-ops",
@@ -2815,7 +2729,7 @@
           "url": "https://github.com/flop-labs/technocore-chat/pull/343"
         }
       ],
-      "rank": 47
+      "rank": 46
     },
     {
       "login": "burak33bb",
@@ -2836,7 +2750,7 @@
           "url": "https://github.com/flop-labs/technocore-chat/pull/590"
         }
       ],
-      "rank": 48
+      "rank": 47
     },
     {
       "login": "cameldick",
@@ -2899,7 +2813,7 @@
           "url": "https://github.com/cameldick/technocore-py"
         }
       ],
-      "rank": 49
+      "rank": 48
     },
     {
       "login": "crazywriter1",
@@ -2920,7 +2834,7 @@
           "url": "https://github.com/flop-labs/technocore-chat/pull/181"
         }
       ],
-      "rank": 50
+      "rank": 49
     },
     {
       "login": "dalgonad",
@@ -2978,7 +2892,7 @@
         }
       ],
       "artifacts_beyond_cap": 1,
-      "rank": 51
+      "rank": 50
     },
     {
       "login": "dannybyarun",
@@ -3036,7 +2950,7 @@
         }
       ],
       "artifacts_beyond_cap": 6,
-      "rank": 52
+      "rank": 51
     },
     {
       "login": "Devonlegend",
@@ -3093,7 +3007,7 @@
           "url": "https://github.com/Devonlegend/technocore-watcher"
         }
       ],
-      "rank": 53
+      "rank": 52
     },
     {
       "login": "Farukest",
@@ -3156,7 +3070,7 @@
           "url": "https://github.com/Farukest/technocore-did-slot-watcher"
         }
       ],
-      "rank": 54
+      "rank": 53
     },
     {
       "login": "hanahana0715",
@@ -3219,7 +3133,7 @@
           "url": "https://github.com/hanahana0715/awesome-technocore"
         }
       ],
-      "rank": 55
+      "rank": 54
     },
     {
       "login": "hazzanzico",
@@ -3282,7 +3196,7 @@
           "url": "https://github.com/hazzanzico/technocore-signed-action"
         }
       ],
-      "rank": 56
+      "rank": 55
     },
     {
       "login": "imperturbable54",
@@ -3339,7 +3253,7 @@
           "url": "https://github.com/imperturbable54/technocore-archive"
         }
       ],
-      "rank": 57
+      "rank": 56
     },
     {
       "login": "jonnyfmiller",
@@ -3360,7 +3274,7 @@
           "url": "https://github.com/flop-labs/technocore-chat/pull/96"
         }
       ],
-      "rank": 58
+      "rank": 57
     },
     {
       "login": "kocaemre",
@@ -3381,7 +3295,7 @@
           "url": "https://github.com/flop-labs/technocore-chat/pull/19"
         }
       ],
-      "rank": 59
+      "rank": 58
     },
     {
       "login": "kuky123100-create",
@@ -3402,7 +3316,7 @@
           "url": "https://github.com/flop-labs/technocore-chat/pull/48"
         }
       ],
-      "rank": 60
+      "rank": 59
     },
     {
       "login": "mehmetkr-31",
@@ -3465,7 +3379,7 @@
           "url": "https://github.com/mehmetkr-31/technocore-turkce-rehber"
         }
       ],
-      "rank": 61
+      "rank": 60
     },
     {
       "login": "NyxClawd",
@@ -3510,7 +3424,7 @@
           "url": "https://github.com/NyxClawd/technocore-safety-lens"
         }
       ],
-      "rank": 62
+      "rank": 61
     },
     {
       "login": "rioyu123",
@@ -3531,7 +3445,7 @@
           "url": "https://github.com/flop-labs/technocore-chat/pull/135"
         }
       ],
-      "rank": 63
+      "rank": 62
     },
     {
       "login": "runesleo",
@@ -3552,7 +3466,7 @@
           "url": "https://github.com/flop-labs/technocore-chat/pull/259"
         }
       ],
-      "rank": 64
+      "rank": 63
     },
     {
       "login": "ShalyX",
@@ -3573,7 +3487,7 @@
           "url": "https://github.com/flop-labs/technocore-chat/pull/670"
         }
       ],
-      "rank": 65
+      "rank": 64
     },
     {
       "login": "sinirlibiber",
@@ -3594,7 +3508,7 @@
           "url": "https://github.com/flop-labs/technocore-chat/pull/29"
         }
       ],
-      "rank": 66
+      "rank": 65
     },
     {
       "login": "zunmax",
@@ -3651,7 +3565,7 @@
           "url": "https://github.com/zunmax/awesome-technocore"
         }
       ],
-      "rank": 67
+      "rank": 66
     },
     {
       "login": "djd39448",
@@ -3690,7 +3604,7 @@
           "url": "https://github.com/djd39448/openagentsearch"
         }
       ],
-      "rank": 68
+      "rank": 67
     },
     {
       "login": "eren-karakus0",
@@ -3747,7 +3661,7 @@
           "url": "https://github.com/eren-karakus0/signed-canvas"
         }
       ],
-      "rank": 69
+      "rank": 68
     },
     {
       "login": "hubofvalley",
@@ -3804,7 +3718,7 @@
           "url": "https://github.com/hubofvalley/technocore-did-guide"
         }
       ],
-      "rank": 70
+      "rank": 69
     },
     {
       "login": "MichaelTEE21",
@@ -3861,7 +3775,7 @@
           "url": "https://github.com/MichaelTEE21/Technocore-Guide"
         }
       ],
-      "rank": 71
+      "rank": 70
     },
     {
       "login": "mnsis",
@@ -3918,7 +3832,7 @@
           "url": "https://github.com/mnsis/technocore-watchtower"
         }
       ],
-      "rank": 72
+      "rank": 71
     },
     {
       "login": "relvetic-netizen",
@@ -3975,7 +3889,7 @@
           "url": "https://github.com/relvetic-netizen/technocore-client"
         }
       ],
-      "rank": 73
+      "rank": 72
     },
     {
       "login": "Ridwannurudeen",
@@ -4030,6 +3944,77 @@
           "points": 1,
           "what": "Ridwannurudeen/technocore-coordination has a description",
           "url": "https://github.com/Ridwannurudeen/technocore-coordination"
+        }
+      ],
+      "rank": 73
+    },
+    {
+      "login": "stupeterwilliams-ui",
+      "score": 9,
+      "is_maintainer": false,
+      "is_author_of_this_board": true,
+      "counts": {
+        "merged_prs": 0,
+        "issues_credited": 0,
+        "verified_proofs": 2,
+        "artifacts": 2
+      },
+      "evidence": [
+        {
+          "signal": "verified_proof",
+          "points": 0,
+          "what": "verified contribution proof for stupeterwilliams-ui/technocore-cc",
+          "url": "https://github.com/stupeterwilliams-ui/technocore-cc/blob/HEAD/contribution-proof.json",
+          "forfeited": "not scored: this board's author wrote the specification for this signal"
+        },
+        {
+          "signal": "verified_proof",
+          "points": 0,
+          "what": "verified contribution proof for stupeterwilliams-ui/technocore-sdk",
+          "url": "https://github.com/stupeterwilliams-ui/technocore-sdk/blob/HEAD/contribution-proof.json",
+          "forfeited": "not scored: this board's author wrote the specification for this signal"
+        },
+        {
+          "signal": "artifact_references_technocore",
+          "points": 2,
+          "what": "public artifact stupeterwilliams-ui/technocore-sdk",
+          "url": "https://github.com/stupeterwilliams-ui/technocore-sdk"
+        },
+        {
+          "signal": "artifact_has_license",
+          "points": 1,
+          "what": "stupeterwilliams-ui/technocore-sdk has a licence",
+          "url": "https://github.com/stupeterwilliams-ui/technocore-sdk"
+        },
+        {
+          "signal": "artifact_has_description",
+          "points": 1,
+          "what": "stupeterwilliams-ui/technocore-sdk has a description",
+          "url": "https://github.com/stupeterwilliams-ui/technocore-sdk"
+        },
+        {
+          "signal": "artifact_maintained_past_first_day",
+          "points": 1,
+          "what": "stupeterwilliams-ui/technocore-sdk had commits after its first day",
+          "url": "https://github.com/stupeterwilliams-ui/technocore-sdk"
+        },
+        {
+          "signal": "artifact_references_technocore",
+          "points": 2,
+          "what": "public artifact stupeterwilliams-ui/technocore-cc",
+          "url": "https://github.com/stupeterwilliams-ui/technocore-cc"
+        },
+        {
+          "signal": "artifact_has_license",
+          "points": 1,
+          "what": "stupeterwilliams-ui/technocore-cc has a licence",
+          "url": "https://github.com/stupeterwilliams-ui/technocore-cc"
+        },
+        {
+          "signal": "artifact_has_description",
+          "points": 1,
+          "what": "stupeterwilliams-ui/technocore-cc has a description",
+          "url": "https://github.com/stupeterwilliams-ui/technocore-cc"
         }
       ],
       "rank": 74
