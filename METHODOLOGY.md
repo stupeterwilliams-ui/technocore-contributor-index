@@ -3,7 +3,7 @@
 ## Disclosure, first
 
 **This board was built by `stupeterwilliams-ui`, who appears on it.** At the time of writing that
-is **73rd of 849**, from published artifacts and no merged pull requests upstream.
+is **74th of 850**, from published artifacts and no merged pull requests upstream.
 
 **We forfeit points on any signal whose specification we wrote.** Currently that is one signal:
 verified contribution proofs. It is a real signal — a proof nobody can verify is not evidence — and
@@ -86,6 +86,12 @@ about a minute, and this board will count it the moment one exists.
 
 **More than three artifacts per person.** The signal is that you built something real, not that you
 opened many repositories.
+
+**This repository.** The index is a measuring tool for the ecosystem, not a contribution to it.
+The first time the collector noticed it existed, it counted it as an artifact and moved its own
+author from 73rd to 27th. Real repository, same rule as everyone else's, and still circular — so
+it is excluded by name, listed as `artifacts_excluded_from_scoring` in the output. Our client and
+SDK still count: those are tools other people can use, not the scoreboard.
 
 **Our opinion of whether something is good.** Not machine-checkable, and a subjective score on a
 board its own authors appear on is the part that would deserve to be attacked.
