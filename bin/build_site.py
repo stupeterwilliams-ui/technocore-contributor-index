@@ -15,6 +15,7 @@ import html
 import json
 import pathlib
 import shutil
+import subprocess
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = ROOT / "data" / "leaderboard.json"
@@ -231,6 +232,18 @@ def build() -> str:
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
 <title>Technocore contributor leaderboard</title>
 <meta name="description" content="A reproducible, evidence-linked ranking of Technocore contributors. Every number links to its public source.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Put Me to Work">
+<meta property="og:url" content="https://technocore.puttowork.co/">
+<meta property="og:title" content="Technocore contributor index">
+<meta property="og:description" content="{totals['people_ranked']} people ranked on what is expensive to fake — merged PRs, issues that led to a fix, real artifacts, proofs that verify. Every number links to its public source.">
+<meta property="og:image" content="https://technocore.puttowork.co/card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Technocore contributor index">
+<meta name="twitter:description" content="{totals['people_ranked']} people ranked on evidence. Every number links to its public source, and the scoring code is open.">
+<meta name="twitter:image" content="https://technocore.puttowork.co/card.png">
 <style>{CSS}</style>
 </head><body><div class="wrap">
 
@@ -279,11 +292,71 @@ Not affiliated with FLOP Labs.
 """
 
 
+CARD_HTML = """<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{{margin:0;padding:0;box-sizing:border-box}}
+body{{width:1200px;height:630px;background:#000;color:#fff;
+ font-family:'Space Grotesk',sans-serif;display:flex;flex-direction:column;
+ justify-content:center;padding:70px 80px;overflow:hidden}}
+h1{{font-family:'Bebas Neue',sans-serif;font-size:104px;line-height:0.88;
+ letter-spacing:4px;text-transform:uppercase;margin-bottom:26px}}
+.stat{{font-family:'Bebas Neue',sans-serif;font-size:150px;line-height:0.85;letter-spacing:3px}}
+.stat small{{font-family:'Space Grotesk',sans-serif;font-size:26px;letter-spacing:0;
+ color:rgba(255,255,255,0.62);display:block;margin-top:10px;font-weight:400}}
+.row{{display:flex;gap:96px;align-items:flex-end;margin:14px 0 30px}}
+.rule{{height:1px;background:rgba(255,255,255,0.18);margin:6px 0 26px}}
+.foot{{display:flex;justify-content:space-between;align-items:baseline;
+ color:rgba(255,255,255,0.62);font-size:25px}}
+.foot b{{color:#fff;font-weight:500}}
+</style></head><body>
+<h1>Technocore<br>contributors</h1>
+<div class="rule"></div>
+<div class="row">
+  <div class="stat">{ranked}<small>people ranked on evidence</small></div>
+  <div class="stat">{verified}<small>of {proofs} published proofs verify</small></div>
+</div>
+<div class="foot"><span><b>technocore.puttowork.co</b></span>
+<span>every number links to its source</span></div>
+</body></html>"""
+
+CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+
+
+def build_card() -> bool:
+    """Render the social card with the current numbers.
+
+    Regenerated every build on purpose: a card is the first and often only thing anyone sees of
+    this, and one showing last week's totals beside a page showing this week's is the same
+    stale-data failure the hourly refresh exists to prevent. Best effort — if Chrome is missing
+    the previous card stays, which is better than shipping none.
+    """
+    if not pathlib.Path(CHROME).exists():
+        return False
+    payload = json.loads(DATA.read_text())
+    proofs = json.loads((ROOT / "data" / "raw" / "proofs.json").read_text())
+    html_path = ROOT / "state" / "og-card.html"
+    html_path.parent.mkdir(exist_ok=True)
+    html_path.write_text(CARD_HTML.format(
+        ranked=len(payload["leaderboard"]),
+        verified=sum(1 for p in proofs if p.get("verifies")),
+        proofs=len(proofs),
+    ))
+    result = subprocess.run(
+        [CHROME, "--headless=new", "--disable-gpu", "--hide-scrollbars",
+         "--virtual-time-budget=6000", f"--screenshot={DOCS / 'card.png'}",
+         "--window-size=1200,630", f"file://{html_path}"],
+        capture_output=True, timeout=180, check=False,
+    )
+    return (DOCS / "card.png").exists() and result.returncode == 0
+
+
 def main() -> int:
     DOCS.mkdir(exist_ok=True)
     (DOCS / "index.html").write_text(build())
     shutil.copy(DATA, DOCS / "leaderboard.json")
     (DOCS / ".nojekyll").write_text("")
+    print("  social card:", "rendered" if build_card() else "skipped (Chrome unavailable)")
     # Pages needs CNAME present in the published directory. The hourly refresh rewrites docs/,
     # so emitting it here is what stops the custom domain silently detaching on the next run.
     (DOCS / "CNAME").write_text("technocore.puttowork.co\n")
