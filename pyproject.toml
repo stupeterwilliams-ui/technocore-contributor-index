@@ -1,5 +1,5 @@
 [project]
-name = "technocore-leaderboard"
+name = "technocore-contributor-index"
 version = "0.1.0"
 description = "Verified contributor leaderboard for the Technocore ecosystem — reproducible scoring from public sources."
 requires-python = ">=3.12"

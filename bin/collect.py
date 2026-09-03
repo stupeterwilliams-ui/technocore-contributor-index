@@ -103,10 +103,23 @@ def collect_proofs() -> list[dict]:
     should be able to show that it looked and what it found.
     """
     print("contribution proofs")
-    search = gh("api", "-X", "GET", "search/code",
-                "-f", "q=technocore-contribution-proof-v1", "-f", "per_page=100") or {}
+    # Code search alone under-discovers badly: it reports a total_count it does not return, does
+    # not index every repository, and lags. It missed our own proofs entirely, which is how the
+    # gap was noticed. So every artifact repo already discovered is also probed directly for a
+    # root contribution-proof.json — the same check for everyone, rather than a special case for
+    # the repos we happen to know about.
+    items = search_all("search/code", "technocore-contribution-proof-v1")
+    known = {(i["repository"]["full_name"], i["path"]) for i in items}
+    try:
+        for art in json.loads((RAW / "artifacts.json").read_text()):
+            if (art["repo"], "contribution-proof.json") not in known:
+                items.append({"repository": {"full_name": art["repo"]},
+                              "path": "contribution-proof.json"})
+    except (OSError, ValueError):
+        pass
+
     out = []
-    for item in (search.get("items") or []):
+    for item in items:
         repo = item["repository"]["full_name"]
         path = item["path"]
         raw_url = f"https://raw.githubusercontent.com/{repo}/HEAD/{path}"
@@ -126,10 +139,14 @@ def collect_proofs() -> list[dict]:
             record["note"] = "schema name appears in source code, not in a proof file"
             out.append(record)
             continue
-        fetched = subprocess.run(["curl", "-sL", "--max-time", "40", raw_url],
-                                 capture_output=True, text=True, check=False)
+        fetched = subprocess.run(
+            ["curl", "-sL", "--max-time", "40", "-w", "\n%{http_code}", raw_url],
+            capture_output=True, text=True, check=False)
+        body, _, status = fetched.stdout.rpartition("\n")
+        if status.strip() != "200":
+            continue  # no proof published here; silence, not a finding
         try:
-            proof = json.loads(fetched.stdout)
+            proof = json.loads(body)
         except json.JSONDecodeError:
             record["note"] = "could not parse the file as JSON"
             out.append(record)
@@ -168,6 +185,26 @@ ECOSYSTEM_MARKERS = (
 )
 
 
+# A README fetch per candidate is ~1s of subprocess, and there are hundreds of candidates. Cached
+# on disk so a scheduled refresh costs one call per *new* repository rather than a full sweep —
+# which is what makes an hourly unattended run possible at all.
+_EVIDENCE_CACHE = ROOT / "data" / "evidence-cache.json"
+
+
+def _load_cache() -> dict:
+    try:
+        return json.loads(_EVIDENCE_CACHE.read_text())
+    except (OSError, ValueError):
+        return {}
+
+
+def _save_cache(cache: dict) -> None:
+    _EVIDENCE_CACHE.parent.mkdir(parents=True, exist_ok=True)
+    tmp = _EVIDENCE_CACHE.with_suffix(".tmp")
+    tmp.write_text(json.dumps(cache, indent=0, sort_keys=True))
+    tmp.replace(_EVIDENCE_CACHE)
+
+
 def _reference_evidence(repo: str, description: str) -> str:
     """Why we believe this repository is about the agent service. Empty string means we do not."""
     def judge(text: str, where: str) -> str:
@@ -198,6 +235,25 @@ def _reference_evidence(repo: str, description: str) -> str:
     return judge(text, "README")
 
 
+def search_all(endpoint: str, query: str, max_pages: int = 8) -> list[dict]:
+    """Every page of a search, not just the first.
+
+    The original took `per_page=100` with no pagination and `sort=updated`, so it saw only the 100
+    most recently touched repositories per query and silently dropped everything older — including
+    our own, which is how the omission was noticed. A ranking that quietly excludes contributors
+    whose repo has not been pushed this week is worse than no ranking.
+    """
+    out: list[dict] = []
+    for page in range(1, max_pages + 1):
+        result = gh("api", "-X", "GET", endpoint,
+                    "-f", f"q={query}", "-f", "per_page=100", "-f", f"page={page}")
+        items = (result or {}).get("items") or []
+        out.extend(items)
+        if len(items) < 100:
+            break
+    return out
+
+
 def collect_artifacts() -> list[dict]:
     """Public repositories that genuinely reference Technocore, with mechanical signals only.
 
@@ -210,20 +266,27 @@ def collect_artifacts() -> list[dict]:
     candidates: dict[str, dict] = {}
     for query in ("technocore.chat in:readme,description",
                   "technocore in:name",
-                  "technocore-chat in:readme,description"):
-        search = gh("api", "-X", "GET", "search/repositories",
-                    "-f", f"q={query}", "-f", "per_page=100", "-f", "sort=updated") or {}
-        for item in (search.get("items") or []):
+                  "technocore-chat in:readme,description",
+                  "tclk in:name,readme,description"):
+        for item in search_all("search/repositories", query):
             full = item["full_name"]
             if full in candidates or full.startswith("flop-labs/"):
                 continue
             candidates[full] = item
 
-    print(f"  {len(candidates)} candidates, checking each for a real reference")
+    cache = _load_cache()
+    fresh = [k for k in candidates if k not in cache]
+    print(f"  {len(candidates)} candidates ({len(fresh)} new, {len(candidates) - len(fresh)} cached)")
     seen: dict[str, dict] = {}
     for full, item in sorted(candidates.items()):
         description = (item.get("description") or "")
-        why = _reference_evidence(full, description)
+        if full in cache:
+            why = cache[full]
+        else:
+            why = _reference_evidence(full, description)
+            cache[full] = why
+            if len(cache) % 25 == 0:
+                _save_cache(cache)
         if not why:
             continue
         created = item.get("created_at") or ""
@@ -250,6 +313,7 @@ def collect_artifacts() -> list[dict]:
             "size_kb": item.get("size", 0),
             "maintained_past_first_day": maintained,
         }
+    _save_cache(cache)
     print(f"  {len(seen)} genuinely reference Technocore")
     return sorted(seen.values(), key=lambda r: r["repo"])
 
