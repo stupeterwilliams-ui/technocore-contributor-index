@@ -256,7 +256,7 @@ check it: the code is public, the weights are listed, every point links to evide
 <br><br>
 Where a signal's specification was written by this board's author — currently verified contribution
 proofs — it scores for everyone else and <b>scores zero for us</b>. Counting it would have moved us
-from 55th to 6th on a rule we wrote. Anyone else who publishes a verifying proof gets the full 8
+up roughly 60 places on a rule we wrote. Anyone else who publishes a verifying proof gets the full 8
 points; it takes about a minute.
 </div>
 

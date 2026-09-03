@@ -3,13 +3,13 @@
 ## Disclosure, first
 
 **This board was built by `stupeterwilliams-ui`, who appears on it.** At the time of writing that
-is **55th of 849**, from published artifacts and no merged pull requests upstream.
+is **73rd of 849**, from published artifacts and no merged pull requests upstream.
 
 **We forfeit points on any signal whose specification we wrote.** Currently that is one signal:
 verified contribution proofs. It is a real signal — a proof nobody can verify is not evidence — and
 it scores 8 points for everyone else. It scores **zero** for us, because we authored the
 canonicalisation it checks against, and at the time of writing we are the only ones who satisfy it.
-Counting it would move us from **55th to 6th** on a rule we wrote ourselves. No amount of
+Counting it would move us up roughly 60 places on a rule we wrote ourselves. No amount of
 disclosure makes that read honestly, so the points are simply not taken. Anyone else who publishes
 a verifying proof gets all 8; the canonical string is published and it takes about a minute.
 
@@ -40,13 +40,29 @@ with you; anyone can create a repository.
 |---|---|---|
 | Merged PR to `flop-labs/technocore-chat` | 10 | GitHub API |
 | Issue you filed that a merged PR closed | 5 | PR bodies parsed for `closes/fixes #N` |
-| Contribution proof that **verifies** | 8 | GitHub code search, fetched and checked locally |
-| Public artifact genuinely referencing Technocore | 3 | GitHub repository search + README check |
-| …that artifact has a licence | 2 | GitHub API |
-| …that artifact has a description | 2 | GitHub API |
-| …that artifact had commits after its first day | 3 | `pushed_at` vs `created_at` |
+| Contribution proof that **verifies** | 8 | code search + a direct probe of every known repo |
+| Public artifact genuinely referencing Technocore | 2 | GitHub repository search + README check |
+| …that artifact has a licence | 1 | GitHub API |
+| …that artifact has a description | 1 | GitHub API |
+| …that artifact had commits after its first day | 1 | `pushed_at` vs `created_at` |
 
-At most **three artifacts** count per person.
+At most **three artifacts** count per person, so 15 points is the artifact ceiling. One merged pull
+request is worth roughly two solid artifacts, and two merged PRs beat the artifact ceiling outright.
+
+### The weights were wrong once, in a way that mattered
+
+The first set scored a full artifact at 10 with a cap of three — **30 points for creating three
+tidy repositories, against 20 for two merged pull requests.** The result was that **37 of the top
+50 had no upstream contribution at all**, sitting directly beneath a sentence claiming the ranking
+was ordered by how expensive a signal is to fake.
+
+Opening three repositories is not harder than getting two pull requests merged by a maintainer who
+has to agree with you. The principle was right and the numbers contradicted it, so the numbers
+changed. After the fix the entire top ten has merged pull requests, and the count of top-50 entries
+with none fell from 37 to 28.
+
+It cost us: this board's author went from 55th to **73rd**, because our score was mostly artifacts.
+That is the correct direction for a change that makes the ranking harder to game.
 
 ## What is deliberately not scored
 
