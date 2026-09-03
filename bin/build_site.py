@@ -20,7 +20,12 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = ROOT / "data" / "leaderboard.json"
 DOCS = ROOT / "docs"
 
-REPO_URL = "https://github.com/stupeterwilliams-ui/technocore-leaderboard"
+REPO_URL = "https://github.com/stupeterwilliams-ui/technocore-contributor-index"
+
+# The page shows the top slice; the full ranking ships beside it as JSON. Rendering all 849 rows
+# produced a 464KB page, which is a poor phone experience for rows nobody scrolls to. The cap is
+# stated on the page — a truncation you do not mention reads as "this is everyone".
+TOP_N = 50
 
 SIGNAL_LABELS = {
     "merged_pr": ("merged PR", "pr"),
@@ -79,6 +84,7 @@ h1 .dot{color:var(--gold)}
 .chip.pr{color:var(--green);border-color:#1d3a2c}
 .chip.issue{color:var(--blue);border-color:#1b3348}
 .chip.proof{color:var(--gold);border-color:#3a3320}
+.chip.forfeit{color:var(--faint);border-color:var(--line-soft);text-decoration:line-through}
 .score{font-size:21px;font-variant-numeric:tabular-nums;text-align:right}
 .row.top .score{color:var(--gold)}
 .tiebar{
@@ -113,10 +119,16 @@ h2{font-size:13px;color:var(--faint);font-weight:600;letter-spacing:.09em;
 
 
 def chips_for(entry: dict) -> str:
-    """One clickable chip per distinct piece of evidence, deduped and counted."""
+    """One clickable chip per distinct piece of evidence, deduped and counted.
+
+    Evidence we deliberately did not score still appears, marked. Hiding it would make the
+    forfeit invisible, and the forfeit is the part worth seeing.
+    """
     groups: dict[str, dict] = {}
     for item in entry["evidence"]:
         label, cls = SIGNAL_LABELS.get(item["signal"], (item["signal"], ""))
+        if item.get("forfeited"):
+            label, cls = label + " (not scored)", "forfeit"
         key = label
         groups.setdefault(key, {"count": 0, "url": item["url"], "cls": cls, "label": label})
         groups[key]["count"] += 1
@@ -140,7 +152,8 @@ def build() -> str:
 
     rows = []
     previous_score = None
-    for entry in board:
+    shown = board[:TOP_N]
+    for entry in shown:
         score = entry["score"]
         tied_with_previous = score == previous_score
         # A tie is left as a tie. Inventing a tiebreak weight to manufacture a single winner is
@@ -167,6 +180,20 @@ def build() -> str:
             f'</div>'
         )
         previous_score = score
+
+    author_row = next((e for e in board if e.get("is_author_of_this_board")), None)
+    if author_row and author_row["rank"] > TOP_N:
+        rows.append(
+            f'<div class="tiebar"><span>…</span></div>'
+            f'<div class="row self">'
+            f'<div class="rank">{author_row["rank"]}</div>'
+            f'<div class="who">'
+            f'<a class="handle" href="https://github.com/{html.escape(author_row["login"])}" '
+            f'target="_blank" rel="noopener">{html.escape(author_row["login"])}</a>'
+            f' <span class="self-tag">— built this board</span>'
+            f'<div class="chips">{chips_for(author_row)}</div>'
+            f'</div><div class="score">{author_row["score"]}</div></div>'
+        )
 
     # Mark the leading tie explicitly, so the flat top reads as arithmetic rather than an accident.
     top_score = board[0]["score"] if board else 0
@@ -204,8 +231,12 @@ def build() -> str:
 
 <div class="disclosure">
 <b>Built by stupeterwilliams-ui, who appears on this board.</b> Acceptable only because you can
-check it: the code is public, the weights are listed, every point links to evidence. Re-run it and
-compare — numbers that cannot be reproduced independently are worth nothing.
+check it: the code is public, the weights are listed, every point links to evidence.
+<br><br>
+Where a signal's specification was written by this board's author — currently verified contribution
+proofs — it scores for everyone else and <b>scores zero for us</b>. Counting it would have moved us
+from 55th to 6th on a rule we wrote. Anyone else who publishes a verifying proof gets the full 8
+points; it takes about a minute.
 </div>
 
 {tie_note}
@@ -220,10 +251,13 @@ contribution ranking.</p>
 <p class="note">{weight_rows}</p>
 <p class="note">Not scored: room message volume (anyone can write it), stars and engagement
 (scores attention, not building), proofs that do not verify, more than three artifacts per person,
-and our opinion of whether anything is good.</p>
+our opinion of whether anything is good, and any signal whose specification this board's author
+wrote — for the author.</p>
 <a class="cta" href="{REPO_URL}/blob/main/METHODOLOGY.md">Read the full methodology &rarr;</a>
 
 <div class="foot">
+Showing the top {len(shown)} of {totals["people_ranked"]} ranked ·
+<a href="leaderboard.json">the full ranking is in the data file</a><br>
 {totals["people_ranked"]} people · {totals["merged_prs_counted"]} merged PRs ·
 {totals["artifacts_counted"]} artifacts · {totals["verified_proofs"]} verified proofs<br>
 Collected {html.escape(str(payload.get("collected_at")))} ·

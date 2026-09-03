@@ -56,6 +56,17 @@ SELF = "stupeterwilliams-ui"
 # is in them, and that is the single easiest way to game a board like this.
 MAX_SCORED_ARTIFACTS = 3
 
+# Signals whose specification this board's author wrote. They score for everyone else and score
+# zero for us.
+#
+# `verified_proof` checks a proof against the canonical string published in technocore-sdk. That
+# is a real signal — a proof nobody can verify is not evidence — but we wrote the canonicalisation,
+# and at the time of writing we are the only ones who satisfy it. Counting it for ourselves moves
+# us from 55th to 6th, which is a rule its own author wrote and then won on. No amount of
+# disclosure makes that read honestly, so we simply do not take the points. Anyone else who
+# publishes a verifying proof gets all 8, and it takes about a minute.
+SELF_AUTHORED_SIGNALS = {"verified_proof"}
+
 
 def load(name: str):
     return json.loads((RAW / f"{name}.json").read_text())
@@ -82,10 +93,16 @@ def main() -> int:
         return people[login]
 
     def award(login: str, key: str, label: str, url: str) -> None:
-        points = WEIGHTS[key]
         entry = person(login)
+        forfeited = login == SELF and key in SELF_AUTHORED_SIGNALS
+        points = 0 if forfeited else WEIGHTS[key]
         entry["score"] += points
-        entry["evidence"].append({"signal": key, "points": points, "what": label, "url": url})
+        item = {"signal": key, "points": points, "what": label, "url": url}
+        if forfeited:
+            item["forfeited"] = (
+                "not scored: this board's author wrote the specification for this signal"
+            )
+        entry["evidence"].append(item)
 
     # 1. Merged pull requests upstream.
     issues_by_number = {i["number"]: i for i in issues}
@@ -156,10 +173,14 @@ def main() -> int:
         "maintainers_listed_separately": sorted(
             p["login"] for p in people.values() if p["is_maintainer"]
         ),
+        "self_authored_signals_forfeited": sorted(SELF_AUTHORED_SIGNALS),
         "disclosure": (
             "This board was built by " + SELF + ", who appears on it. Every point traces to a "
-            "public URL, the weights are above, and the two programs that produce it are in the "
-            "repository — re-run them and compare. If the numbers cannot be reproduced "
+            "public URL, the weights are above, and the programs that produce it are in the "
+            "repository — re-run them and compare. Where a signal's specification was written by "
+            "the author of this board (currently: verified contribution proofs), it scores for "
+            "everyone else and scores zero for the author. Counting it would have moved us from "
+            "55th to 6th on a rule we wrote ourselves. If these numbers cannot be reproduced "
             "independently, the ranking is not worth anything."
         ),
         "totals": {

@@ -3,7 +3,15 @@
 ## Disclosure, first
 
 **This board was built by `stupeterwilliams-ui`, who appears on it.** At the time of writing that
-is 5th place, from published artifacts and no merged pull requests upstream.
+is **55th of 849**, from published artifacts and no merged pull requests upstream.
+
+**We forfeit points on any signal whose specification we wrote.** Currently that is one signal:
+verified contribution proofs. It is a real signal — a proof nobody can verify is not evidence — and
+it scores 8 points for everyone else. It scores **zero** for us, because we authored the
+canonicalisation it checks against, and at the time of writing we are the only ones who satisfy it.
+Counting it would move us from **55th to 6th** on a rule we wrote ourselves. No amount of
+disclosure makes that read honestly, so the points are simply not taken. Anyone else who publishes
+a verifying proof gets all 8; the canonical string is published and it takes about a minute.
 
 That conflict is not resolved by promising to be fair. It is resolved by making the ranking
 reproducible: the two programs that produce it are in this repository, every point traces to a
@@ -96,11 +104,27 @@ farm controller and a mining pool.
 The current rule is the fourth. It errs toward precision: one absurd entry discredits the whole
 board, whereas a missing entry is a fixable omission. If yours is missing, open an issue.
 
+## Two bugs this board had, and what they cost
+
+Recorded because a methodology that only describes the version that worked is not one.
+
+**Search pagination — the board silently omitted ~90% of the ecosystem.** The collector asked for
+`per_page=100` sorted by most-recently-updated and never paged, so it saw only the 100 most
+recently touched repositories per query and dropped everyone else. It went from 118 artifacts to
+**1016**, and from 142 ranked people to **849**, when pagination was added. The omission was
+noticed because *our own* repositories vanished from the board — which is a poor detection
+mechanism, and the reason the fix is paging rather than a special case.
+
+**Proof discovery relied on code search alone.** GitHub code search does not index every
+repository, lags, and reports a `total_count` it does not return. It found 35 proofs and missed
+ours entirely. Every discovered artifact repository is now probed directly for a root
+`contribution-proof.json` — the same check for everyone — which found **143**. Of those, **2**
+verify.
+
 ## Known limitations
 
-- **GitHub code search is not exhaustive.** It reports `total_count: 3` for the proof schema while
-  returning two items, and it does not index every repository. Verified-proof discovery is
-  therefore best-effort and may under-count.
+- **GitHub code search is still not exhaustive**, so proof discovery remains best-effort even with
+  the direct probe layered on top.
 - **Repository search has an indexing lag**, so something published in the last hour may not appear
   in the next run.
 - **Issue credit relies on PR bodies** saying `closes #N`. A fix that never references the issue

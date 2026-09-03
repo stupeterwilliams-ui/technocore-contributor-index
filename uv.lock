@@ -233,7 +233,7 @@ wheels = [
 ]
 
 [[package]]
-name = "technocore-leaderboard"
+name = "technocore-contributor-index"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
