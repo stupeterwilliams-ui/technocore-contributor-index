@@ -40,80 +40,86 @@ SIGNAL_LABELS = {
 CSS = """
 *,*::before,*::after{box-sizing:border-box}
 :root{
-  --bg:#0b0e13; --panel:#11161f; --line:#1e2735; --line-soft:#161d28;
-  --ink:#e8edf5; --dim:#8b98ac; --faint:#5d6a7e;
-  --gold:#ffc857; --green:#5ddc9a; --blue:#6bb8ff; --violet:#b39dff;
-  --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
+  --bg:#000; --ink:#fff;
+  --line:rgba(255,255,255,0.12);
+  --line-soft:rgba(255,255,255,0.07);
+  --dim:rgba(255,255,255,0.62);
+  --faint:rgba(255,255,255,0.38);
+  --panel:rgba(255,255,255,0.035);
+  --display:'Bebas Neue','Space Grotesk',-apple-system,sans-serif;
+  --body:'Space Grotesk',-apple-system,BlinkMacSystemFont,sans-serif;
 }
 html{-webkit-text-size-adjust:100%}
 body{
   margin:0; background:var(--bg); color:var(--ink);
-  font-family:var(--mono); font-size:15px; line-height:1.5;
-  padding:20px 16px 56px; overflow-wrap:anywhere;
+  font-family:var(--body); font-size:15px; line-height:1.5;
+  padding:26px 20px 60px; overflow-wrap:anywhere;
+  -webkit-font-smoothing:antialiased;
 }
 .wrap{max-width:760px;margin:0 auto}
 a{color:inherit}
-h1{font-size:23px;line-height:1.2;margin:0 0 6px;letter-spacing:-.02em}
-h1 .dot{color:var(--gold)}
-.sub{color:var(--dim);font-size:13.5px;margin:0 0 14px}
+h1{
+  font-family:var(--display); font-weight:400;
+  font-size:clamp(2.2rem,7.5vw,3.4rem); line-height:0.92;
+  letter-spacing:3px; text-transform:uppercase; margin:0 0 10px;
+}
+.sub{color:var(--dim);font-size:13.5px;margin:0 0 14px;max-width:52ch}
 .disclosure{
-  border-left:3px solid var(--gold); background:var(--panel);
-  padding:10px 12px; margin:0 0 18px; font-size:12.5px; color:var(--dim);
+  border-top:1px solid var(--line); border-bottom:1px solid var(--line);
+  padding:12px 0; margin:0 0 16px; font-size:12.5px; color:var(--dim);
 }
-.disclosure b{color:var(--gold);font-weight:600}
+.disclosure b{color:var(--ink);font-weight:500}
 .row{
-  display:grid; grid-template-columns:34px 1fr auto; gap:10px; align-items:center;
-  padding:11px 12px; border:1px solid var(--line-soft); border-radius:10px;
-  background:var(--panel); margin-bottom:7px;
+  display:grid; grid-template-columns:44px 1fr auto; gap:14px; align-items:center;
+  padding:14px 0; border-bottom:1px solid var(--line-soft);
 }
-.row.tied{border-color:var(--line)}
-.row.self{border-color:var(--violet);background:#141225}
-.rank{font-size:17px;color:var(--faint);text-align:right;font-variant-numeric:tabular-nums}
-.row.top .rank{color:var(--gold)}
+.row.self{background:var(--panel);padding-left:10px;padding-right:10px;
+  border-bottom:1px solid var(--line)}
+.rank{
+  font-family:var(--display); font-size:26px; line-height:1;
+  color:var(--faint); text-align:right; letter-spacing:1px;
+}
+.row.top .rank{color:var(--ink)}
 .who{min-width:0}
-.handle{font-size:15px;font-weight:600;text-decoration:none;display:block;
-  overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.handle{font-size:16px;font-weight:500;text-decoration:none;display:block;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap;letter-spacing:0.2px}
 .handle:hover{text-decoration:underline}
-.self-tag{color:var(--violet);font-size:11px;font-weight:400}
-.chips{display:flex;flex-wrap:wrap;gap:5px;margin-top:5px}
+.self-tag{color:var(--faint);font-size:11px;font-weight:400;letter-spacing:0.4px;
+  text-transform:uppercase}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:7px}
 .chip{
-  font-size:11.5px; padding:2px 7px; border-radius:999px; text-decoration:none;
+  font-size:11px; padding:3px 8px; text-decoration:none; letter-spacing:0.3px;
   border:1px solid var(--line); color:var(--dim); white-space:nowrap;
+  text-transform:uppercase;
 }
-.chip:hover{border-color:var(--dim);color:var(--ink)}
-.chip.pr{color:var(--green);border-color:#1d3a2c}
-.chip.issue{color:var(--blue);border-color:#1b3348}
-.chip.proof{color:var(--gold);border-color:#3a3320}
-.chip.forfeit{color:var(--faint);border-color:var(--line-soft);text-decoration:line-through}
-.score{font-size:21px;font-variant-numeric:tabular-nums;text-align:right}
-.row.top .score{color:var(--gold)}
-.tiebar{
-  display:flex;align-items:center;gap:8px;color:var(--faint);
-  font-size:11.5px;margin:2px 0 10px;padding-left:2px;
-}
-.tiebar span{flex:1 1 auto;min-width:0;overflow-wrap:anywhere}
-.tiebar::before,.tiebar::after{content:"";height:1px;background:var(--line-soft);
-  flex:0 0 14px;min-width:0}
-h2{font-size:13px;color:var(--faint);font-weight:600;letter-spacing:.09em;
-  text-transform:uppercase;margin:26px 0 10px}
-.note{color:var(--dim);font-size:12.5px;margin:0 0 8px}
-.note code{color:var(--ink);background:var(--line-soft);padding:1px 5px;border-radius:4px}
-.foot{margin-top:26px;padding-top:14px;border-top:1px solid var(--line-soft);
+.chip:hover{border-color:var(--ink);color:var(--ink)}
+.chip.pr{color:var(--ink);border-color:rgba(255,255,255,0.45)}
+.chip.forfeit{color:var(--faint);border-style:dashed;text-decoration:line-through}
+.score{font-family:var(--display);font-size:32px;line-height:1;text-align:right;
+  letter-spacing:1px;color:var(--faint)}
+.row.top .score{color:var(--ink)}
+.tiebar{display:flex;align-items:center;gap:10px;color:var(--faint);
+  font-size:11px;margin:14px 0 6px;letter-spacing:0.4px;text-transform:uppercase}
+.tiebar span{flex:1 1 auto;min-width:0}
+.tiebar::after{content:"";height:1px;background:var(--line-soft);flex:0 0 40px}
+h2{font-family:var(--display);font-size:20px;color:var(--ink);font-weight:400;
+  letter-spacing:2px;text-transform:uppercase;margin:36px 0 12px}
+.note{color:var(--dim);font-size:13px;margin:0 0 10px;max-width:62ch}
+.foot{margin-top:34px;padding-top:16px;border-top:1px solid var(--line);
   color:var(--faint);font-size:12px}
 .foot a{color:var(--dim)}
-.cta{display:inline-block;margin-top:10px;padding:8px 13px;border:1px solid var(--line);
-  border-radius:8px;color:var(--ink);text-decoration:none;font-size:13px}
-.cta:hover{border-color:var(--gold);color:var(--gold)}
+.cta{display:inline-block;margin-top:12px;padding:10px 16px;border:1px solid var(--line);
+  color:var(--ink);text-decoration:none;font-size:12px;letter-spacing:1px;
+  text-transform:uppercase}
+.cta:hover{border-color:var(--ink)}
 @media(max-width:430px){
-  body{padding:14px 12px 40px;font-size:14px}
-  h1{font-size:20px}
-  .sub{margin-bottom:10px}
-  .disclosure{padding:9px 11px;margin-bottom:12px;font-size:12px}
-  .row{grid-template-columns:24px 1fr auto;gap:8px;padding:8px 10px;margin-bottom:6px}
-  .score{font-size:19px}
-  .handle{font-size:14px}
-  .chips{gap:4px;margin-top:4px}
-  .tiebar{margin:0 0 8px}
+  body{padding:20px 14px 44px;font-size:14px}
+  .row{grid-template-columns:32px 1fr auto;gap:10px;padding:12px 0}
+  .rank{font-size:21px}
+  .score{font-size:26px}
+  .handle{font-size:15px}
+  .disclosure{font-size:12px;padding:10px 0;margin-bottom:14px}
+  h1{font-size:2rem}
 }
 """
 
@@ -221,12 +227,15 @@ def build() -> str:
 <html lang="en"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
 <title>Technocore contributor leaderboard</title>
 <meta name="description" content="A reproducible, evidence-linked ranking of Technocore contributors. Every number links to its public source.">
 <style>{CSS}</style>
 </head><body><div class="wrap">
 
-<h1>Technocore contributors<span class="dot">.</span></h1>
+<h1>Technocore<br>contributors</h1>
 <p class="sub">Ranked on what is expensive to fake. Every number links to its public source.</p>
 
 <div class="disclosure">
