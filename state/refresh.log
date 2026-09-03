@@ -1,1 +1,37 @@
 [2026-09-03 02:15:58 UTC] === refresh started ===
+collecting at 2026-09-03T02:15:58Z
+
+pull requests
+  wrote data/raw/pulls.json (534 records)
+issues
+  wrote data/raw/issues.json (139 records)
+contribution proofs
+  wrote data/raw/proofs.json (143 records)
+artifacts
+  1473 candidates (4 new, 1469 cached)
+  1018 genuinely reference Technocore
+  wrote data/raw/artifacts.json (1018 records)
+  wrote data/raw/meta.json (1 records)
+
+done
+ranked 849 people -> data/leaderboard.json
+
+   #  who                           pts  PRs iss proof art
+   1  khenzarr                       36    2   0     0   3
+   2  2TheMoom                       35    1   1     0   2
+   3  doboongkun                     34    2   0     0   2
+   4  zkasuran                       34    1   0     0   3
+   5  Magicianhax                    33    2   1     0   1
+   6  bunnyyxtan                     30    0   0     0   3
+   7  miyawakiclaude                 30    0   0     0   3
+   8  alisemut0711-dev               29    1   0     0   3
+   9  Elfet                          28    2   0     0   1
+  10  Rizkijack                      27    0   0     0   3
+  11  kenmori                        26    0   0     0   3
+  12  iamiskender                    25    0   0     0   3
+  13  Makabeez                       25    0   0     0   3
+  14  Arafat128                      24    0   0     0   3
+  15  bono574-cloud                  24    0   0     0   3
+wrote docs/index.html (41,370 bytes) and docs/leaderboard.json
+[2026-09-03 02:21:55 UTC] ranking changed: 849 people
+[2026-09-03 02:21:56 UTC] PUBLISHED
