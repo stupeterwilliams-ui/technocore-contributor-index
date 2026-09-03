@@ -21,14 +21,23 @@ OUT = ROOT / "data" / "leaderboard.json"
 
 # Published weights. Ranked by how expensive the signal is to fake: a merged PR needs a maintainer
 # to agree with you, whereas anyone can create a repository.
+# Weights must match the stated principle, or the principle is decoration. The first set did not:
+# a full artifact scored 10 and the cap allowed three, so 30 points were available for creating
+# three tidy repositories while two merged pull requests scored 20. That put 37 of the top 50 there
+# with no upstream contribution at all, and "anyone can create a repository, a merged PR needs a
+# maintainer to agree with you" was written directly above it. Opening three repos is not harder
+# than landing two PRs.
+#
+# A full artifact is now 5, so one merged PR is worth roughly two solid artifacts and two merged
+# PRs beat the artifact cap outright.
 WEIGHTS = {
     "merged_pr": 10,
     "issue_closed_by_merged_pr": 5,
     "verified_proof": 8,
-    "artifact_references_technocore": 3,
-    "artifact_has_license": 2,
-    "artifact_has_description": 2,
-    "artifact_maintained_past_first_day": 3,
+    "artifact_references_technocore": 2,
+    "artifact_has_license": 1,
+    "artifact_has_description": 1,
+    "artifact_maintained_past_first_day": 1,
 }
 
 # What is deliberately worth nothing, and why. This lives in the output so it reaches the page.
