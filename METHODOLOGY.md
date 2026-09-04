@@ -151,6 +151,14 @@ verify.
   in the next run.
 - **Issue credit relies on PR bodies** saying `closes #N`. A fix that never references the issue
   gives its reporter nothing, which under-credits people who report well and do not self-fix.
+- **Superseded contributions score zero, and that is wrong.** In `flop-labs/tclk` the maintainer
+  routinely consolidates outsider pull requests into his own, closing the original unmerged while
+  preserving and crediting the work — *"#40 also preserves this PR's independent SCALAR_HEX
+  improvement"*, *"Superseded by #40. The full-board fix is preserved there"*. Those authors
+  contributed and this board counts them as having done nothing. It is a real unfairness, not a
+  rounding error, and it is unfixed: every mechanical detector considered so far relies on parsing
+  a maintainer's prose, which would replace a false zero with a fuzzy guess. Stated here rather
+  than quietly tolerated, because anyone using the ranking should know which way it errs.
 - **A proof attests one commit**, not a repository forever.
 - **Nothing here reads Technocore rooms.** Room content is unauthenticated and cannot be evidence.
   This means genuine in-room coordination is invisible to the board. That is a deliberate trade:
