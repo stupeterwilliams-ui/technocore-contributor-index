@@ -1530,3 +1530,688 @@ ranked 852 people -> data/leaderboard.json
 wrote docs/index.html (43,869 bytes) and docs/leaderboard.json
 [2026-09-04 21:43:08 UTC] ranking changed: 852 people
 [2026-09-04 21:43:10 UTC] PUBLISHED
+[2026-09-04 22:43:10 UTC] === refresh started ===
+collecting at 2026-09-04T22:43:10Z
+
+pull requests
+  wrote data/raw/pulls.json (555 records)
+issues
+  wrote data/raw/issues.json (148 records)
+contribution proofs
+  wrote data/raw/proofs.json (145 records)
+artifacts
+  1484 candidates (0 new, 1484 cached)
+  1027 genuinely reference Technocore
+  wrote data/raw/artifacts.json (1027 records)
+  wrote data/raw/meta.json (1 records)
+
+done
+ranked 856 people -> data/leaderboard.json
+
+   #  who                           pts  PRs iss proof art
+   1  khenzarr                       30    2   0     0   3
+   2  Magicianhax                    29    2   1     0   1
+   3  doboongkun                     28    2   0     0   2
+   4  2TheMoom                       25    1   1     0   2
+   5  Elfet                          24    2   0     0   1
+   6  zkasuran                       23    1   0     0   3
+   7  Orvynel                        20    2   0     0   0
+   8  yinchun6969                    20    2   0     0   0
+   9  erhnysr                        19    1   0     0   3
+  10  teyrebaz33                     18    1   1     0   1
+  11  alisemut0711-dev               17    1   0     0   2
+  12  bunnyyxtan                     15    0   0     0   3
+  13  emberkelp                      15    1   1     0   0
+  14  miyawakiclaude                 15    0   0     0   3
+  15  WIZARDspace                    15    1   1     0   0
+  social card: rendered
+wrote docs/index.html (43,869 bytes) and docs/leaderboard.json
+[2026-09-04 22:49:38 UTC] ranking changed: 856 people
+[2026-09-04 22:49:39 UTC] PUBLISHED
+[2026-09-04 23:49:40 UTC] === refresh started ===
+collecting at 2026-09-04T23:49:40Z
+
+pull requests
+  wrote data/raw/pulls.json (556 records)
+issues
+  wrote data/raw/issues.json (148 records)
+contribution proofs
+  wrote data/raw/proofs.json (146 records)
+artifacts
+  1486 candidates (2 new, 1484 cached)
+  1029 genuinely reference Technocore
+  wrote data/raw/artifacts.json (1029 records)
+  wrote data/raw/meta.json (1 records)
+
+done
+ranked 856 people -> data/leaderboard.json
+
+   #  who                           pts  PRs iss proof art
+   1  khenzarr                       30    2   0     0   3
+   2  Magicianhax                    29    2   1     0   1
+   3  doboongkun                     28    2   0     0   2
+   4  2TheMoom                       25    1   1     0   2
+   5  Elfet                          24    2   0     0   1
+   6  zkasuran                       23    1   0     0   3
+   7  Orvynel                        20    2   0     0   0
+   8  yinchun6969                    20    2   0     0   0
+   9  erhnysr                        19    1   0     0   3
+  10  teyrebaz33                     18    1   1     0   1
+  11  alisemut0711-dev               17    1   0     0   2
+  12  bunnyyxtan                     15    0   0     0   3
+  13  emberkelp                      15    1   1     0   0
+  14  miyawakiclaude                 15    0   0     0   3
+  15  WIZARDspace                    15    1   1     0   0
+  social card: rendered
+wrote docs/index.html (43,869 bytes) and docs/leaderboard.json
+[2026-09-04 23:55:31 UTC] no ranking change; nothing published
+[2026-09-05 00:55:31 UTC] === refresh started ===
+collecting at 2026-09-05T00:55:31Z
+
+pull requests
+  wrote data/raw/pulls.json (556 records)
+issues
+  wrote data/raw/issues.json (149 records)
+contribution proofs
+  wrote data/raw/proofs.json (146 records)
+artifacts
+  1484 candidates (0 new, 1484 cached)
+  1024 genuinely reference Technocore
+  wrote data/raw/artifacts.json (1024 records)
+  wrote data/raw/meta.json (1 records)
+
+done
+ranked 852 people -> data/leaderboard.json
+
+   #  who                           pts  PRs iss proof art
+   1  khenzarr                       30    2   0     0   3
+   2  Magicianhax                    29    2   1     0   1
+   3  doboongkun                     28    2   0     0   2
+   4  2TheMoom                       25    1   1     0   2
+   5  Elfet                          24    2   0     0   1
+   6  zkasuran                       23    1   0     0   3
+   7  Orvynel                        20    2   0     0   0
+   8  yinchun6969                    20    2   0     0   0
+   9  erhnysr                        19    1   0     0   3
+  10  teyrebaz33                     18    1   1     0   1
+  11  alisemut0711-dev               17    1   0     0   2
+  12  bunnyyxtan                     15    0   0     0   3
+  13  emberkelp                      15    1   1     0   0
+  14  miyawakiclaude                 15    0   0     0   3
+  15  WIZARDspace                    15    1   1     0   0
+  social card: rendered
+wrote docs/index.html (43,869 bytes) and docs/leaderboard.json
+[2026-09-05 01:01:51 UTC] ranking changed: 852 people
+[2026-09-05 01:01:52 UTC] PUBLISHED
+[2026-09-05 02:01:52 UTC] === refresh started ===
+collecting at 2026-09-05T02:01:52Z
+
+pull requests
+  wrote data/raw/pulls.json (556 records)
+issues
+  wrote data/raw/issues.json (149 records)
+contribution proofs
+  wrote data/raw/proofs.json (144 records)
+artifacts
+  1485 candidates (1 new, 1484 cached)
+  1025 genuinely reference Technocore
+  wrote data/raw/artifacts.json (1025 records)
+  wrote data/raw/meta.json (1 records)
+
+done
+ranked 852 people -> data/leaderboard.json
+
+   #  who                           pts  PRs iss proof art
+   1  khenzarr                       30    2   0     0   3
+   2  Magicianhax                    29    2   1     0   1
+   3  doboongkun                     28    2   0     0   2
+   4  2TheMoom                       25    1   1     0   2
+   5  Elfet                          24    2   0     0   1
+   6  zkasuran                       23    1   0     0   3
+   7  Orvynel                        20    2   0     0   0
+   8  yinchun6969                    20    2   0     0   0
+   9  erhnysr                        19    1   0     0   3
+  10  teyrebaz33                     18    1   1     0   1
+  11  alisemut0711-dev               17    1   0     0   2
+  12  bunnyyxtan                     15    0   0     0   3
+  13  emberkelp                      15    1   1     0   0
+  14  miyawakiclaude                 15    0   0     0   3
+  15  WIZARDspace                    15    1   1     0   0
+  social card: rendered
+wrote docs/index.html (43,869 bytes) and docs/leaderboard.json
+[2026-09-05 02:07:38 UTC] ranking changed: 852 people
+[2026-09-05 02:07:40 UTC] PUBLISHED
+[2026-09-05 03:07:40 UTC] === refresh started ===
+collecting at 2026-09-05T03:07:40Z
+
+pull requests
+  wrote data/raw/pulls.json (558 records)
+issues
+  wrote data/raw/issues.json (149 records)
+contribution proofs
+  wrote data/raw/proofs.json (145 records)
+artifacts
+  1487 candidates (1 new, 1486 cached)
+  1027 genuinely reference Technocore
+  wrote data/raw/artifacts.json (1027 records)
+  wrote data/raw/meta.json (1 records)
+
+done
+ranked 856 people -> data/leaderboard.json
+
+   #  who                           pts  PRs iss proof art
+   1  khenzarr                       30    2   0     0   3
+   2  Magicianhax                    29    2   1     0   1
+   3  doboongkun                     28    2   0     0   2
+   4  2TheMoom                       25    1   1     0   2
+   5  Elfet                          24    2   0     0   1
+   6  zkasuran                       23    1   0     0   3
+   7  Orvynel                        20    2   0     0   0
+   8  yinchun6969                    20    2   0     0   0
+   9  erhnysr                        19    1   0     0   3
+  10  teyrebaz33                     18    1   1     0   1
+  11  alisemut0711-dev               17    1   0     0   2
+  12  bunnyyxtan                     15    0   0     0   3
+  13  emberkelp                      15    1   1     0   0
+  14  miyawakiclaude                 15    0   0     0   3
+  15  WIZARDspace                    15    1   1     0   0
+  social card: rendered
+wrote docs/index.html (43,858 bytes) and docs/leaderboard.json
+[2026-09-05 03:14:02 UTC] ranking changed: 856 people
+[2026-09-05 03:14:04 UTC] PUBLISHED
+[2026-09-05 04:14:04 UTC] === refresh started ===
+  ! gh api repos/Judah5808/Technocore-agent-intelligence/readme...: gh: Not Found (HTTP 404)
+collecting at 2026-09-05T04:14:04Z
+
+pull requests
+  wrote data/raw/pulls.json (560 records)
+issues
+  wrote data/raw/issues.json (149 records)
+contribution proofs
+  wrote data/raw/proofs.json (145 records)
+artifacts
+  1486 candidates (1 new, 1485 cached)
+  1025 genuinely reference Technocore
+  wrote data/raw/artifacts.json (1025 records)
+  wrote data/raw/meta.json (1 records)
+
+done
+ranked 854 people -> data/leaderboard.json
+
+   #  who                           pts  PRs iss proof art
+   1  khenzarr                       30    2   0     0   3
+   2  Magicianhax                    29    2   1     0   1
+   3  doboongkun                     28    2   0     0   2
+   4  2TheMoom                       25    1   1     0   2
+   5  Elfet                          24    2   0     0   1
+   6  zkasuran                       23    1   0     0   3
+   7  Orvynel                        20    2   0     0   0
+   8  yinchun6969                    20    2   0     0   0
+   9  erhnysr                        19    1   0     0   3
+  10  teyrebaz33                     18    1   1     0   1
+  11  alisemut0711-dev               17    1   0     0   2
+  12  bunnyyxtan                     15    0   0     0   3
+  13  emberkelp                      15    1   1     0   0
+  14  miyawakiclaude                 15    0   0     0   3
+  15  WIZARDspace                    15    1   1     0   0
+  social card: rendered
+wrote docs/index.html (43,869 bytes) and docs/leaderboard.json
+[2026-09-05 04:19:49 UTC] ranking changed: 854 people
+[2026-09-05 04:19:51 UTC] PUBLISHED
+[2026-09-05 05:19:51 UTC] === refresh started ===
+collecting at 2026-09-05T05:19:51Z
+
+pull requests
+  wrote data/raw/pulls.json (560 records)
+issues
+  wrote data/raw/issues.json (149 records)
+contribution proofs
+  wrote data/raw/proofs.json (145 records)
+artifacts
+  1491 candidates (1 new, 1490 cached)
+  1029 genuinely reference Technocore
+  wrote data/raw/artifacts.json (1029 records)
+  wrote data/raw/meta.json (1 records)
+
+done
+ranked 858 people -> data/leaderboard.json
+
+   #  who                           pts  PRs iss proof art
+   1  khenzarr                       30    2   0     0   3
+   2  Magicianhax                    29    2   1     0   1
+   3  doboongkun                     28    2   0     0   2
+   4  2TheMoom                       25    1   1     0   2
+   5  Elfet                          24    2   0     0   1
+   6  zkasuran                       23    1   0     0   3
+   7  Orvynel                        20    2   0     0   0
+   8  yinchun6969                    20    2   0     0   0
+   9  erhnysr                        19    1   0     0   3
+  10  teyrebaz33                     18    1   1     0   1
+  11  alisemut0711-dev               17    1   0     0   2
+  12  bunnyyxtan                     15    0   0     0   3
+  13  emberkelp                      15    1   1     0   0
+  14  miyawakiclaude                 15    0   0     0   3
+  15  WIZARDspace                    15    1   1     0   0
+  social card: rendered
+wrote docs/index.html (43,869 bytes) and docs/leaderboard.json
+[2026-09-05 05:26:10 UTC] ranking changed: 858 people
+[2026-09-05 05:26:11 UTC] PUBLISHED
+[2026-09-05 06:26:11 UTC] === refresh started ===
+  ! gh api repos/Lordskid/technocore-agent-performance/readme...: gh: Not Found (HTTP 404)
+collecting at 2026-09-05T06:26:12Z
+
+pull requests
+  wrote data/raw/pulls.json (560 records)
+issues
+  wrote data/raw/issues.json (149 records)
+contribution proofs
+  wrote data/raw/proofs.json (145 records)
+artifacts
+  1493 candidates (2 new, 1491 cached)
+  1030 genuinely reference Technocore
+  wrote data/raw/artifacts.json (1030 records)
+  wrote data/raw/meta.json (1 records)
+
+done
+ranked 859 people -> data/leaderboard.json
+
+   #  who                           pts  PRs iss proof art
+   1  khenzarr                       30    2   0     0   3
+   2  Magicianhax                    29    2   1     0   1
+   3  doboongkun                     28    2   0     0   2
+   4  2TheMoom                       25    1   1     0   2
+   5  Elfet                          24    2   0     0   1
+   6  zkasuran                       23    1   0     0   3
+   7  Orvynel                        20    2   0     0   0
+   8  yinchun6969                    20    2   0     0   0
+   9  erhnysr                        19    1   0     0   3
+  10  teyrebaz33                     18    1   1     0   1
+  11  alisemut0711-dev               17    1   0     0   2
+  12  bunnyyxtan                     15    0   0     0   3
+  13  emberkelp                      15    1   1     0   0
+  14  miyawakiclaude                 15    0   0     0   3
+  15  WIZARDspace                    15    1   1     0   0
+  social card: rendered
+wrote docs/index.html (43,869 bytes) and docs/leaderboard.json
+[2026-09-05 06:32:01 UTC] ranking changed: 859 people
+[2026-09-05 06:32:03 UTC] PUBLISHED
+[2026-09-05 07:32:03 UTC] === refresh started ===
+collecting at 2026-09-05T07:32:03Z
+
+pull requests
+  wrote data/raw/pulls.json (560 records)
+issues
+  wrote data/raw/issues.json (149 records)
+contribution proofs
+  wrote data/raw/proofs.json (145 records)
+artifacts
+  1493 candidates (1 new, 1492 cached)
+  1032 genuinely reference Technocore
+  wrote data/raw/artifacts.json (1032 records)
+  wrote data/raw/meta.json (1 records)
+
+done
+ranked 860 people -> data/leaderboard.json
+
+   #  who                           pts  PRs iss proof art
+   1  khenzarr                       30    2   0     0   3
+   2  Magicianhax                    29    2   1     0   1
+   3  doboongkun                     28    2   0     0   2
+   4  2TheMoom                       25    1   1     0   2
+   5  Elfet                          24    2   0     0   1
+   6  zkasuran                       23    1   0     0   3
+   7  Orvynel                        20    2   0     0   0
+   8  yinchun6969                    20    2   0     0   0
+   9  erhnysr                        19    1   0     0   3
+  10  teyrebaz33                     18    1   1     0   1
+  11  alisemut0711-dev               17    1   0     0   2
+  12  bunnyyxtan                     15    0   0     0   3
+  13  emberkelp                      15    1   1     0   0
+  14  miyawakiclaude                 15    0   0     0   3
+  15  WIZARDspace                    15    1   1     0   0
+  social card: rendered
+wrote docs/index.html (43,869 bytes) and docs/leaderboard.json
+[2026-09-05 07:38:33 UTC] ranking changed: 860 people
+[2026-09-05 07:38:35 UTC] PUBLISHED
+[2026-09-05 08:38:35 UTC] === refresh started ===
+collecting at 2026-09-05T08:38:35Z
+
+pull requests
+  wrote data/raw/pulls.json (560 records)
+issues
+  wrote data/raw/issues.json (149 records)
+contribution proofs
+  wrote data/raw/proofs.json (145 records)
+artifacts
+  1493 candidates (3 new, 1490 cached)
+  1033 genuinely reference Technocore
+  wrote data/raw/artifacts.json (1033 records)
+  wrote data/raw/meta.json (1 records)
+
+done
+ranked 859 people -> data/leaderboard.json
+
+   #  who                           pts  PRs iss proof art
+   1  khenzarr                       30    2   0     0   3
+   2  Magicianhax                    29    2   1     0   1
+   3  doboongkun                     28    2   0     0   2
+   4  2TheMoom                       25    1   1     0   2
+   5  Elfet                          24    2   0     0   1
+   6  zkasuran                       23    1   0     0   3
+   7  Orvynel                        20    2   0     0   0
+   8  yinchun6969                    20    2   0     0   0
+   9  erhnysr                        19    1   0     0   3
+  10  teyrebaz33                     18    1   1     0   1
+  11  alisemut0711-dev               17    1   0     0   2
+  12  bunnyyxtan                     15    0   0     0   3
+  13  emberkelp                      15    1   1     0   0
+  14  miyawakiclaude                 15    0   0     0   3
+  15  WIZARDspace                    15    1   1     0   0
+  social card: rendered
+wrote docs/index.html (43,869 bytes) and docs/leaderboard.json
+[2026-09-05 08:44:33 UTC] ranking changed: 859 people
+[2026-09-05 08:44:35 UTC] PUBLISHED
+[2026-09-05 09:44:35 UTC] === refresh started ===
+collecting at 2026-09-05T09:44:35Z
+
+pull requests
+  wrote data/raw/pulls.json (560 records)
+issues
+  wrote data/raw/issues.json (149 records)
+contribution proofs
+  wrote data/raw/proofs.json (146 records)
+artifacts
+  1493 candidates (0 new, 1493 cached)
+  1033 genuinely reference Technocore
+  wrote data/raw/artifacts.json (1033 records)
+  wrote data/raw/meta.json (1 records)
+
+done
+ranked 863 people -> data/leaderboard.json
+
+   #  who                           pts  PRs iss proof art
+   1  khenzarr                       30    2   0     0   3
+   2  Magicianhax                    29    2   1     0   1
+   3  doboongkun                     28    2   0     0   2
+   4  2TheMoom                       25    1   1     0   2
+   5  Elfet                          24    2   0     0   1
+   6  zkasuran                       23    1   0     0   3
+   7  Orvynel                        20    2   0     0   0
+   8  yinchun6969                    20    2   0     0   0
+   9  erhnysr                        19    1   0     0   3
+  10  teyrebaz33                     18    1   1     0   1
+  11  alisemut0711-dev               17    1   0     0   2
+  12  bunnyyxtan                     15    0   0     0   3
+  13  emberkelp                      15    1   1     0   0
+  14  miyawakiclaude                 15    0   0     0   3
+  15  WIZARDspace                    15    1   1     0   0
+  social card: rendered
+wrote docs/index.html (43,869 bytes) and docs/leaderboard.json
+[2026-09-05 09:51:14 UTC] ranking changed: 863 people
+[2026-09-05 09:51:15 UTC] PUBLISHED
+[2026-09-05 10:51:15 UTC] === refresh started ===
+collecting at 2026-09-05T10:51:15Z
+
+pull requests
+  wrote data/raw/pulls.json (560 records)
+issues
+  wrote data/raw/issues.json (149 records)
+contribution proofs
+  wrote data/raw/proofs.json (147 records)
+artifacts
+  1495 candidates (2 new, 1493 cached)
+  1035 genuinely reference Technocore
+  wrote data/raw/artifacts.json (1035 records)
+  wrote data/raw/meta.json (1 records)
+
+done
+ranked 863 people -> data/leaderboard.json
+
+   #  who                           pts  PRs iss proof art
+   1  khenzarr                       30    2   0     0   3
+   2  Magicianhax                    29    2   1     0   1
+   3  doboongkun                     28    2   0     0   2
+   4  2TheMoom                       25    1   1     0   2
+   5  Elfet                          24    2   0     0   1
+   6  zkasuran                       23    1   0     0   3
+   7  Orvynel                        20    2   0     0   0
+   8  yinchun6969                    20    2   0     0   0
+   9  erhnysr                        19    1   0     0   3
+  10  teyrebaz33                     18    1   1     0   1
+  11  alisemut0711-dev               17    1   0     0   2
+  12  bunnyyxtan                     15    0   0     0   3
+  13  emberkelp                      15    1   1     0   0
+  14  miyawakiclaude                 15    0   0     0   3
+  15  WIZARDspace                    15    1   1     0   0
+  social card: rendered
+wrote docs/index.html (43,869 bytes) and docs/leaderboard.json
+[2026-09-05 10:57:18 UTC] no ranking change; nothing published
+[2026-09-05 11:57:18 UTC] === refresh started ===
+collecting at 2026-09-05T11:57:18Z
+
+pull requests
+  wrote data/raw/pulls.json (561 records)
+issues
+  wrote data/raw/issues.json (149 records)
+contribution proofs
+  wrote data/raw/proofs.json (147 records)
+artifacts
+  1495 candidates (0 new, 1495 cached)
+  1035 genuinely reference Technocore
+  wrote data/raw/artifacts.json (1035 records)
+  wrote data/raw/meta.json (1 records)
+
+done
+ranked 864 people -> data/leaderboard.json
+
+   #  who                           pts  PRs iss proof art
+   1  khenzarr                       30    2   0     0   3
+   2  Magicianhax                    29    2   1     0   1
+   3  doboongkun                     28    2   0     0   2
+   4  2TheMoom                       25    1   1     0   2
+   5  Elfet                          24    2   0     0   1
+   6  zkasuran                       23    1   0     0   3
+   7  Orvynel                        20    2   0     0   0
+   8  yinchun6969                    20    2   0     0   0
+   9  erhnysr                        19    1   0     0   3
+  10  teyrebaz33                     18    1   1     0   1
+  11  alisemut0711-dev               17    1   0     0   2
+  12  bunnyyxtan                     15    0   0     0   3
+  13  emberkelp                      15    1   1     0   0
+  14  miyawakiclaude                 15    0   0     0   3
+  15  WIZARDspace                    15    1   1     0   0
+  social card: rendered
+wrote docs/index.html (43,870 bytes) and docs/leaderboard.json
+[2026-09-05 12:04:04 UTC] ranking changed: 864 people
+[2026-09-05 12:04:06 UTC] PUBLISHED
+[2026-09-05 13:04:06 UTC] === refresh started ===
+  ! gh api repos/enesalp19/technocore-identity/readme...: gh: Not Found (HTTP 404)
+collecting at 2026-09-05T13:04:06Z
+
+pull requests
+  wrote data/raw/pulls.json (562 records)
+issues
+  wrote data/raw/issues.json (149 records)
+contribution proofs
+  wrote data/raw/proofs.json (147 records)
+artifacts
+  1495 candidates (1 new, 1494 cached)
+  1035 genuinely reference Technocore
+  wrote data/raw/artifacts.json (1035 records)
+  wrote data/raw/meta.json (1 records)
+
+done
+ranked 863 people -> data/leaderboard.json
+
+   #  who                           pts  PRs iss proof art
+   1  khenzarr                       30    2   0     0   3
+   2  Magicianhax                    29    2   1     0   1
+   3  doboongkun                     28    2   0     0   2
+   4  2TheMoom                       25    1   1     0   2
+   5  Elfet                          24    2   0     0   1
+   6  zkasuran                       23    1   0     0   3
+   7  Orvynel                        20    2   0     0   0
+   8  yinchun6969                    20    2   0     0   0
+   9  erhnysr                        19    1   0     0   3
+  10  teyrebaz33                     18    1   1     0   1
+  11  alisemut0711-dev               17    1   0     0   2
+  12  bunnyyxtan                     15    0   0     0   3
+  13  emberkelp                      15    1   1     0   0
+  14  miyawakiclaude                 15    0   0     0   3
+  15  WIZARDspace                    15    1   1     0   0
+  social card: rendered
+wrote docs/index.html (43,870 bytes) and docs/leaderboard.json
+[2026-09-05 13:10:12 UTC] ranking changed: 863 people
+[2026-09-05 13:10:14 UTC] PUBLISHED
+[2026-09-05 14:10:14 UTC] === refresh started ===
+collecting at 2026-09-05T14:10:14Z
+
+pull requests
+  wrote data/raw/pulls.json (562 records)
+issues
+  wrote data/raw/issues.json (149 records)
+contribution proofs
+  wrote data/raw/proofs.json (147 records)
+artifacts
+  1495 candidates (1 new, 1494 cached)
+  1035 genuinely reference Technocore
+  wrote data/raw/artifacts.json (1035 records)
+  wrote data/raw/meta.json (1 records)
+
+done
+ranked 862 people -> data/leaderboard.json
+
+   #  who                           pts  PRs iss proof art
+   1  khenzarr                       30    2   0     0   3
+   2  Magicianhax                    29    2   1     0   1
+   3  doboongkun                     28    2   0     0   2
+   4  2TheMoom                       25    1   1     0   2
+   5  Elfet                          24    2   0     0   1
+   6  zkasuran                       23    1   0     0   3
+   7  Orvynel                        20    2   0     0   0
+   8  yinchun6969                    20    2   0     0   0
+   9  erhnysr                        19    1   0     0   3
+  10  teyrebaz33                     18    1   1     0   1
+  11  alisemut0711-dev               17    1   0     0   2
+  12  bunnyyxtan                     15    0   0     0   3
+  13  emberkelp                      15    1   1     0   0
+  14  miyawakiclaude                 15    0   0     0   3
+  15  WIZARDspace                    15    1   1     0   0
+  social card: rendered
+wrote docs/index.html (43,870 bytes) and docs/leaderboard.json
+[2026-09-05 14:16:57 UTC] ranking changed: 862 people
+[2026-09-05 14:16:58 UTC] PUBLISHED
+[2026-09-05 15:16:58 UTC] === refresh started ===
+collecting at 2026-09-05T15:16:59Z
+
+pull requests
+  wrote data/raw/pulls.json (562 records)
+issues
+  wrote data/raw/issues.json (149 records)
+contribution proofs
+  wrote data/raw/proofs.json (147 records)
+artifacts
+  1494 candidates (0 new, 1494 cached)
+  1034 genuinely reference Technocore
+  wrote data/raw/artifacts.json (1034 records)
+  wrote data/raw/meta.json (1 records)
+
+done
+ranked 863 people -> data/leaderboard.json
+
+   #  who                           pts  PRs iss proof art
+   1  khenzarr                       30    2   0     0   3
+   2  Magicianhax                    29    2   1     0   1
+   3  doboongkun                     28    2   0     0   2
+   4  2TheMoom                       25    1   1     0   2
+   5  Elfet                          24    2   0     0   1
+   6  zkasuran                       23    1   0     0   3
+   7  Orvynel                        20    2   0     0   0
+   8  yinchun6969                    20    2   0     0   0
+   9  erhnysr                        19    1   0     0   3
+  10  teyrebaz33                     18    1   1     0   1
+  11  alisemut0711-dev               17    1   0     0   2
+  12  bunnyyxtan                     15    0   0     0   3
+  13  emberkelp                      15    1   1     0   0
+  14  miyawakiclaude                 15    0   0     0   3
+  15  WIZARDspace                    15    1   1     0   0
+  social card: rendered
+wrote docs/index.html (43,870 bytes) and docs/leaderboard.json
+[2026-09-05 15:23:12 UTC] ranking changed: 863 people
+[2026-09-05 15:23:14 UTC] PUBLISHED
+[2026-09-05 16:23:15 UTC] === refresh started ===
+collecting at 2026-09-05T16:23:15Z
+
+pull requests
+  wrote data/raw/pulls.json (562 records)
+issues
+  wrote data/raw/issues.json (149 records)
+contribution proofs
+  wrote data/raw/proofs.json (147 records)
+artifacts
+  1495 candidates (1 new, 1494 cached)
+  1035 genuinely reference Technocore
+  wrote data/raw/artifacts.json (1035 records)
+  wrote data/raw/meta.json (1 records)
+
+done
+ranked 863 people -> data/leaderboard.json
+
+   #  who                           pts  PRs iss proof art
+   1  khenzarr                       30    2   0     0   3
+   2  Magicianhax                    29    2   1     0   1
+   3  doboongkun                     28    2   0     0   2
+   4  2TheMoom                       25    1   1     0   2
+   5  Elfet                          24    2   0     0   1
+   6  zkasuran                       23    1   0     0   3
+   7  alisemut0711-dev               21    1   0     0   3
+   8  Orvynel                        20    2   0     0   0
+   9  yinchun6969                    20    2   0     0   0
+  10  erhnysr                        19    1   0     0   3
+  11  teyrebaz33                     18    1   1     0   1
+  12  bunnyyxtan                     15    0   0     0   3
+  13  emberkelp                      15    1   1     0   0
+  14  miyawakiclaude                 15    0   0     0   3
+  15  WIZARDspace                    15    1   1     0   0
+  social card: rendered
+wrote docs/index.html (43,874 bytes) and docs/leaderboard.json
+[2026-09-05 16:29:59 UTC] ranking changed: 863 people
+[2026-09-05 16:30:00 UTC] PUBLISHED
+[2026-09-05 17:30:00 UTC] === refresh started ===
+collecting at 2026-09-05T17:30:00Z
+
+pull requests
+  wrote data/raw/pulls.json (564 records)
+issues
+  wrote data/raw/issues.json (149 records)
+contribution proofs
+  wrote data/raw/proofs.json (148 records)
+artifacts
+  1497 candidates (2 new, 1495 cached)
+  1038 genuinely reference Technocore
+  wrote data/raw/artifacts.json (1038 records)
+  wrote data/raw/meta.json (1 records)
+
+done
+ranked 865 people -> data/leaderboard.json
+
+   #  who                           pts  PRs iss proof art
+   1  khenzarr                       30    2   0     0   3
+   2  Magicianhax                    29    2   1     0   1
+   3  doboongkun                     28    2   0     0   2
+   4  2TheMoom                       25    1   1     0   2
+   5  Elfet                          24    2   0     0   1
+   6  zkasuran                       23    1   0     0   3
+   7  Orvynel                        20    2   0     0   0
+   8  yinchun6969                    20    2   0     0   0
+   9  erhnysr                        19    1   0     0   3
+  10  teyrebaz33                     18    1   1     0   1
+  11  alisemut0711-dev               17    1   0     0   2
+  12  bunnyyxtan                     15    0   0     0   3
+  13  emberkelp                      15    1   1     0   0
+  14  miyawakiclaude                 15    0   0     0   3
+  15  WIZARDspace                    15    1   1     0   0
+  social card: rendered
+wrote docs/index.html (43,870 bytes) and docs/leaderboard.json
+[2026-09-05 17:36:10 UTC] ranking changed: 865 people
+[2026-09-05 17:36:23 UTC] PUBLISHED

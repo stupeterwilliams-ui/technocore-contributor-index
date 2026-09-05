@@ -285,6 +285,7 @@ Collected {html.escape(str(payload.get("collected_at")))} ·
 built {html.escape(str(payload.get("generated_at")))}<br>
 <a href="{REPO_URL}">Source and scoring code</a> ·
 <a href="leaderboard.json">Raw data</a> ·
+<a href="corpus.json">What was enumerated</a> ·
 Not affiliated with FLOP Labs.
 </div>
 
@@ -355,6 +356,9 @@ def main() -> int:
     DOCS.mkdir(exist_ok=True)
     (DOCS / "index.html").write_text(build())
     shutil.copy(DATA, DOCS / "leaderboard.json")
+    corpus = ROOT / "data" / "corpus.json"
+    if corpus.exists():
+        shutil.copy(corpus, DOCS / "corpus.json")
     (DOCS / ".nojekyll").write_text("")
     print("  social card:", "rendered" if build_card() else "skipped (Chrome unavailable)")
     # Pages needs CNAME present in the published directory. The hourly refresh rewrites docs/,
