@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-05T20:56:14Z",
+  "generated_at": "2026-09-05T22:02:21Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -744,8 +744,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1038,
-      "digest": "sha256:759ff94ff66f0d9dd75d86e30417635ba0edb06f2968de53642ea318dcd54cb6",
+      "count": 1039,
+      "digest": "sha256:2342e513819e9c9e5e8662a74d387614e7b73ec9af85c2a70eeec13498c59b66",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/flopkit-sdk",
@@ -1760,6 +1760,7 @@
         "yourpoookie/technocore-webhooks",
         "yoyoyo1213/technocore-operator-notes",
         "ysnkhc/technocore-room-auditor",
+        "yusufky63/CoreMesh",
         "yusufky63/trace-core",
         "z3rdix/technocore-inspector",
         "zachbuilds26/technocore-monitor",
@@ -1791,7 +1792,7 @@
       "description": "Contribution proofs found by code search, plus a direct probe of every discovered artifact repository for a root contribution-proof.json.",
       "method": "search/code 'technocore-contribution-proof-v1', all pages, unioned with a direct fetch per artifact repo",
       "count": 149,
-      "digest": "sha256:1077acc4d2497e13f8b63ff5afd50b22dff73edb9fea9cee992fa34f7ff3154e",
+      "digest": "sha256:e0be88847a4e273192d10e76942f32eaed42ff02922f87f92521df13e0c268f2",
       "identifiers": [
         "0o0r7/flop-did-contributor-kit/technocore_agent.py",
         "0o0r7/flopkit-sdk/sdk/src/flopkit/proofs.py",
@@ -1804,6 +1805,7 @@
         "0xnurrabby/technocore-beginner-guide/contribution-proof.json",
         "0xzahra/seykota-contributions/proof-gh.dolores.json",
         "1Fuad01/technocore-evidence-kit/contribution-proof.json",
+        "1azyd3v/technocore-did/contribution-proof.json",
         "244whopper-cyber/technocore-japanese-guide/contribution-proof.json",
         "ARR03/flop-airdrop-tool/contribution-proof.json",
         "Abdulwasih29/technocore-flop-agent/contribution-proof.json",
@@ -1833,7 +1835,6 @@
         "Krusherk/technocore-agent-identity-guide/contribution-proof.json",
         "Leknaatx/technocore-http/contribution-proof.json",
         "Leknaatx/technocore-roomscan/contribution-proof.json",
-        "McDownalts/technocore-did/contribution-proof.json",
         "MiyukiNakama1/technocore-did-tools/contribution-proof.json",
         "Nathbabu/technocore-explorer/contribution-proof.json",
         "RockDockMusic/technocore-nonce-reconciler/contribution-proof.json",
@@ -1924,7 +1925,6 @@
         "spinoza19/technocore-receipts/contribution-proof.json",
         "stupeterwilliams-ui/technocore-cc/contribution-proof.json",
         "stupeterwilliams-ui/technocore-sdk/contribution-proof.json",
-        "surixbt/technocore-did-guide/contribution-proof.json",
         "techbone/technocore-conformance/contribution-proof.json",
         "tensorflowyt-eng/flop-technocore-digest/contribution-proof.json",
         "uzzaarr/technocore-agent-playbook/EXPERIMENT.md",
@@ -1940,6 +1940,7 @@
         "ysnkhc/technocore-room-auditor/contribution-proof.json",
         "z3rdix/technocore-inspector/contribution-proof.json",
         "zaddy6969/TECHNOCORE-DID-STARTER/contribution-proof.json",
+        "zengjingsi/technocore-did-starter/contribution-proof.json",
         "zorba999/technocore-did-starter/contribution-proof.json",
         "zunmax/technocore-did-starter/technocore_agent.py"
       ]
