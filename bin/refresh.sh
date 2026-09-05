@@ -34,6 +34,11 @@ if ! uv run ./bin/score.py >>"$LOG" 2>&1; then
   exit 1
 fi
 
+if ! uv run ./bin/corpus.py >>"$LOG" 2>&1; then
+  log "CORPUS FAILED"
+  exit 1
+fi
+
 if ! uv run ./bin/build_site.py >>"$LOG" 2>&1; then
   log "BUILD FAILED"
   exit 1
