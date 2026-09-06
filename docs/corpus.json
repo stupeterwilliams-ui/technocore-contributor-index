@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-06T14:43:13Z",
+  "generated_at": "2026-09-06T15:43:14Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -576,8 +576,8 @@
     "issues": {
       "description": "Every issue against the upstream repo, all states.",
       "method": "gh issue list --repo flop-labs/technocore-chat --state all --limit 300",
-      "count": 152,
-      "digest": "sha256:45006dfc1fb1017ca43c5fb02d178e4dee2e1d384c2022464216e84098192a0f",
+      "count": 153,
+      "digest": "sha256:55257122296c45010815b4424d741bcfb2068d6bbe7c6e07114a32f08e71f96b",
       "identifiers": [
         "issue#101",
         "issue#105",
@@ -726,6 +726,7 @@
         "issue#724",
         "issue#738",
         "issue#740",
+        "issue#742",
         "issue#75",
         "issue#76",
         "issue#77",
@@ -736,8 +737,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1041,
-      "digest": "sha256:f3ff1b6ef63c6fe1a43f10d9b406387fcdc49f632e4e8098fed7cd6a85dcafb2",
+      "count": 1042,
+      "digest": "sha256:63ee937109a00285ddad8a55a827c8581ed8bf89a398fc16b3e10e29048884d3",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/flopkit-sdk",
@@ -1215,7 +1216,6 @@
         "dalgonad/technocore-bot",
         "dalgonad/technocore-playground",
         "dalgonad/technocore-py",
-        "damiaotothemoon-hash/technocore-contribution-kit",
         "danenright/technocore-contributor-onboarding",
         "danenright/technocore-deploy",
         "danenright/technocore-parcel",
@@ -1241,6 +1241,7 @@
         "devorun/awesome-technocore",
         "devorun/technocore-link-guard",
         "dfihrn/flop-technocore-guide",
+        "dharmanan/flop-status",
         "dharmanan/technocore-agent-console",
         "dhasap/anatomi-technocore",
         "didin-lab/technocore-agent-onboarding",
@@ -1418,6 +1419,7 @@
         "justin201507-rgb/technocore-field-notes",
         "jvaleskadevs/technocore-quickstart",
         "jxiexyz/technocore-daily-checkin",
+        "kabla1696-ctrl/technocore-protocol-observatory",
         "kamils333/technocore-keyring-tool",
         "kaminarioyaji/technocore-windows-safe-start-ja",
         "kamitakami687/flop-agent-did-guide",
