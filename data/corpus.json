@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-06T16:49:52Z",
+  "generated_at": "2026-09-06T17:56:08Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -11,8 +11,8 @@
     "pulls": {
       "description": "Every pull request against the upstream repo, all states.",
       "method": "gh pr list --repo flop-labs/technocore-chat --state {merged,open,closed} --limit 300",
-      "count": 557,
-      "digest": "sha256:f6d40b1eb39069f66dbf1156f5157e48f7bcacc7d8424286ec571a1b3497fa95",
+      "count": 558,
+      "digest": "sha256:07f453a655e9b3608ffd2417732e5ddaced34ed230d84615571fec5f4d83547c",
       "identifiers": [
         "pr#1",
         "pr#10",
@@ -558,6 +558,7 @@
         "pr#739",
         "pr#74",
         "pr#741",
+        "pr#747",
         "pr#78",
         "pr#8",
         "pr#81",
@@ -576,8 +577,8 @@
     "issues": {
       "description": "Every issue against the upstream repo, all states.",
       "method": "gh issue list --repo flop-labs/technocore-chat --state all --limit 300",
-      "count": 154,
-      "digest": "sha256:46c0eec20324be10f9ed3486d7163a4f9f8d3eddc244567656b548e32b48ce16",
+      "count": 157,
+      "digest": "sha256:f205fb90ff15bac943e7d5c58add6f91064101632a49101b86566b1a79a96cd0",
       "identifiers": [
         "issue#101",
         "issue#105",
@@ -728,6 +729,9 @@
         "issue#740",
         "issue#742",
         "issue#743",
+        "issue#744",
+        "issue#745",
+        "issue#746",
         "issue#75",
         "issue#76",
         "issue#77",
@@ -739,7 +743,7 @@
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
       "count": 1042,
-      "digest": "sha256:930e87e69783c5c998cc9238a52c606fbeedb94b7dcbaaa4a1cdb80c91a7e3b5",
+      "digest": "sha256:ac9bc4b2d263718d6640ff12da31e16426f7e084ca824ac55ec41203991e9092",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/flopkit-sdk",
@@ -1217,7 +1221,6 @@
         "dalgonad/technocore-bot",
         "dalgonad/technocore-playground",
         "dalgonad/technocore-py",
-        "damiaotothemoon-hash/technocore-contribution-kit",
         "danenright/technocore-contributor-onboarding",
         "danenright/technocore-deploy",
         "danenright/technocore-parcel",
@@ -1421,6 +1424,7 @@
         "justin201507-rgb/technocore-field-notes",
         "jvaleskadevs/technocore-quickstart",
         "jxiexyz/technocore-daily-checkin",
+        "kabla1696-ctrl/technocore-protocol-observatory",
         "kamils333/technocore-keyring-tool",
         "kaminarioyaji/technocore-windows-safe-start-ja",
         "kamitakami687/flop-agent-did-guide",
