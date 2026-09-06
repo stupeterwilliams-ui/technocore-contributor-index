@@ -29,6 +29,13 @@ if ! uv run ./bin/collect.py >>"$LOG" 2>&1; then
   exit 1
 fi
 
+# Absorbed contributions. Its own step because it reads closure comments one pull request at a
+# time; the disk cache means only newly-closed ones cost a call. A failure here is not fatal —
+# the previous absorbed.json stays and the ranking is merely as stale as it was before.
+if ! uv run ./bin/absorbed.py >>"$LOG" 2>&1; then
+  log "ABSORBED FAILED (continuing with the previous absorbed.json)"
+fi
+
 if ! uv run ./bin/score.py >>"$LOG" 2>&1; then
   log "SCORE FAILED"
   exit 1
