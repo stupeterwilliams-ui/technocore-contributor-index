@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-06T04:39:02Z",
+  "generated_at": "2026-09-06T05:45:23Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -11,8 +11,8 @@
     "pulls": {
       "description": "Every pull request against the upstream repo, all states.",
       "method": "gh pr list --repo flop-labs/technocore-chat --state {merged,open,closed} --limit 300",
-      "count": 552,
-      "digest": "sha256:e1eac9d4b2b2b5f2e0f97e6921a42dad5ba551bd28c551d0a636e3891d6254c6",
+      "count": 551,
+      "digest": "sha256:e7ca95fdbdf7c9e613db84e09aea74aafad14bc4673a15780b23d72575cc9858",
       "identifiers": [
         "pr#1",
         "pr#10",
@@ -560,7 +560,6 @@
         "pr#87",
         "pr#88",
         "pr#9",
-        "pr#92",
         "pr#94",
         "pr#96",
         "pr#97",
