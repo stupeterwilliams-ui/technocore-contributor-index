@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-06T14:36:34Z",
+  "generated_at": "2026-09-06T14:36:56Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -736,8 +736,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1039,
-      "digest": "sha256:d48572f37ef4d3755e87b5cd8ecab2a7cf356de55d371ae691abc5de28ef0a37",
+      "count": 1040,
+      "digest": "sha256:fa03c698f816a9c7c891809f34098f54228f89224b208cd2dd5089fe4c322c56",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/flopkit-sdk",
@@ -1215,7 +1215,6 @@
         "dalgonad/technocore-bot",
         "dalgonad/technocore-playground",
         "dalgonad/technocore-py",
-        "damiaotothemoon-hash/technocore-contribution-kit",
         "danenright/technocore-contributor-onboarding",
         "danenright/technocore-deploy",
         "danenright/technocore-parcel",
@@ -1235,6 +1234,7 @@
         "dcpf1/technocore-py",
         "deanetolan/deanetolan",
         "deanetolan/technocore-bots-cookbook",
+        "defrankszn/technocore-lobby-analysis",
         "dejagold123/technocore-survival-check",
         "devanaHJK/technocore-flop-panduan-indonesia",
         "devorun/awesome-technocore",
@@ -1463,6 +1463,7 @@
         "laobeizi1996/technocore-did-guide-zh",
         "latest63/technocore-onboarding",
         "lela-lenin/lela-lenin",
+        "lela-lenin/technocore-security-notes",
         "leoserein/serein-technocore",
         "levdur/technocore-keepalive",
         "liokapod/technocore-rb",
@@ -1612,7 +1613,7 @@
         "sadsadsadgf/technocore-did-tool",
         "sajicosaji/technocore-note-refresh",
         "sajicosaji/technocore-note-refresh-v2",
-        "sammybr1m1xalt/kibble",
+        "sammybr1m1xalt/kibble-verifier",
         "sanshos1/technocore-room-exporter",
         "sanukiudonholic/technocore-agent-kit",
         "sckggj/technocore-relay",
