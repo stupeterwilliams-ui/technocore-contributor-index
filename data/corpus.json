@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-06T12:23:54Z",
+  "generated_at": "2026-09-06T13:30:08Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -12,7 +12,7 @@
       "description": "Every pull request against the upstream repo, all states.",
       "method": "gh pr list --repo flop-labs/technocore-chat --state {merged,open,closed} --limit 300",
       "count": 556,
-      "digest": "sha256:8c6c476f3137f579e554ca4f6d117a05359982f1cb7c252d641f958ee90cb9f5",
+      "digest": "sha256:a99ed09186605b2df97d55c6ba3dcb482cdde876e1bb09e0df460e17be1e47fe",
       "identifiers": [
         "pr#1",
         "pr#10",
@@ -555,6 +555,7 @@
         "pr#735",
         "pr#736",
         "pr#737",
+        "pr#739",
         "pr#74",
         "pr#78",
         "pr#8",
@@ -568,15 +569,14 @@
         "pr#94",
         "pr#96",
         "pr#97",
-        "pr#98",
-        "pr#99"
+        "pr#98"
       ]
     },
     "issues": {
       "description": "Every issue against the upstream repo, all states.",
       "method": "gh issue list --repo flop-labs/technocore-chat --state all --limit 300",
-      "count": 151,
-      "digest": "sha256:cab14148d2a40630971cda440ddc145292fdc53559486320b9879a671478583e",
+      "count": 152,
+      "digest": "sha256:45006dfc1fb1017ca43c5fb02d178e4dee2e1d384c2022464216e84098192a0f",
       "identifiers": [
         "issue#101",
         "issue#105",
@@ -724,6 +724,7 @@
         "issue#714",
         "issue#724",
         "issue#738",
+        "issue#740",
         "issue#75",
         "issue#76",
         "issue#77",
@@ -735,7 +736,7 @@
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
       "count": 1039,
-      "digest": "sha256:af40f17b7d1fb5885fbf82ef4482faa55cd81844d994c8de649d7624b1b10d8a",
+      "digest": "sha256:d48572f37ef4d3755e87b5cd8ecab2a7cf356de55d371ae691abc5de28ef0a37",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/flopkit-sdk",
@@ -1191,6 +1192,7 @@
         "congge918/technocore-human-approved-signer",
         "congge918/technocore-network-observatory",
         "congge918/technocore-signal-gate",
+        "congge918/technocore-tclk-deal-scout",
         "corcricy/corcricy",
         "corruptors/flop-agent-installation",
         "coupedeglitch/technocore-agent-guide",
@@ -1212,6 +1214,7 @@
         "dalgonad/technocore-bot",
         "dalgonad/technocore-playground",
         "dalgonad/technocore-py",
+        "damiaotothemoon-hash/technocore-contribution-kit",
         "danenright/technocore-contributor-onboarding",
         "danenright/technocore-deploy",
         "danenright/technocore-parcel",
@@ -1231,7 +1234,6 @@
         "dcpf1/technocore-py",
         "deanetolan/deanetolan",
         "deanetolan/technocore-bots-cookbook",
-        "defrankszn/technocore-lobby-analysis",
         "dejagold123/technocore-survival-check",
         "devanaHJK/technocore-flop-panduan-indonesia",
         "devorun/awesome-technocore",
@@ -1460,7 +1462,6 @@
         "laobeizi1996/technocore-did-guide-zh",
         "latest63/technocore-onboarding",
         "lela-lenin/lela-lenin",
-        "lela-lenin/technocore-security-notes",
         "leoserein/serein-technocore",
         "levdur/technocore-keepalive",
         "liokapod/technocore-rb",
