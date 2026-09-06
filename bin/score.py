@@ -30,9 +30,16 @@ OUT = ROOT / "data" / "leaderboard.json"
 #
 # A full artifact is now 5, so one merged PR is worth roughly two solid artifacts and two merged
 # PRs beat the artifact cap outright.
+# `absorbed_into_merged_pr` is the fix for what METHODOLOGY.md called a known flaw with no
+# mechanical detector. A contribution closed as a duplicate, with a merged pull request named as
+# the survivor, reached the tree — a maintainer just kept someone else's version of it. Scoring
+# that zero undercounts systematically, and in the direction of the people who arrive second on a
+# crowded file. It is worth less than a merged pull request, because a maintainer chose otherwise,
+# and the same as filing an issue that a merged PR fixed: the contribution shaped what landed.
 WEIGHTS = {
     "merged_pr": 10,
     "issue_closed_by_merged_pr": 5,
+    "absorbed_into_merged_pr": 5,
     "verified_proof": 8,
     "artifact_references_technocore": 2,
     "artifact_has_license": 1,
@@ -102,7 +109,7 @@ def main() -> int:
                 "is_maintainer": login in maintainers,
                 "is_author_of_this_board": login == SELF,
                 "counts": {"merged_prs": 0, "issues_credited": 0, "verified_proofs": 0,
-                           "artifacts": 0},
+                           "artifacts": 0, "absorbed": 0},
                 "evidence": [],
             }
         return people[login]
@@ -136,6 +143,21 @@ def main() -> int:
                       f"issue #{number} fixed by merged PR #{pr['number']}: {issue['title']}",
                       issue["url"])
                 person(issue["author"])["counts"]["issues_credited"] += 1
+
+    # 2b. Contributions absorbed into someone else's merged pull request. Scoped to the repo this
+    # board enumerates: crediting a tclk closure here would award points from a corpus the
+    # manifest does not claim to cover.
+    try:
+        absorbed = json.loads((RAW / "absorbed.json").read_text())
+    except (OSError, ValueError):
+        absorbed = []
+    for row in absorbed:
+        if row.get("repo") != "flop-labs/technocore-chat" or not row.get("author"):
+            continue
+        award(row["author"], "absorbed_into_merged_pr",
+              f"PR #{row['number']} closed for merged #{row['survivor']}: {row['title']}",
+              row["url"])
+        person(row["author"])["counts"]["absorbed"] += 1
 
     # 3. Contribution proofs that actually verify.
     for proof in proofs:

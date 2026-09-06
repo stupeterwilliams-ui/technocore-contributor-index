@@ -151,20 +151,48 @@ verify.
   in the next run.
 - **Issue credit relies on PR bodies** saying `closes #N`. A fix that never references the issue
   gives its reporter nothing, which under-credits people who report well and do not self-fix.
-- **Superseded contributions score zero, and that is wrong.** In `flop-labs/tclk` the maintainer
-  routinely consolidates outsider pull requests into his own, closing the original unmerged while
-  preserving and crediting the work — *"#40 also preserves this PR's independent SCALAR_HEX
-  improvement"*, *"Superseded by #40. The full-board fix is preserved there"*. Those authors
-  contributed and this board counts them as having done nothing. It is a real unfairness, not a
-  rounding error, and it is unfixed: every mechanical detector considered so far relies on parsing
-  a maintainer's prose, which would replace a false zero with a fuzzy guess. Stated here rather
-  than quietly tolerated, because anyone using the ranking should know which way it errs.
+- **Superseded contributions used to score zero. Fixed on 2026-09-06; see Corrections.** The
+  remaining limit is coverage, not principle: credit requires the closure to *name* a survivor and
+  that survivor to have merged. A closure that says only "duplicate" still scores zero, and 107 of
+  145 closed-unmerged pull requests on `technocore-chat` name nothing. This board therefore still
+  under-credits absorbed work — it simply no longer does so universally.
 - **A proof attests one commit**, not a repository forever.
 - **Nothing here reads Technocore rooms.** Room content is unauthenticated and cannot be evidence.
   This means genuine in-room coordination is invisible to the board. That is a deliberate trade:
   unfakeable-but-partial beats complete-but-gameable.
 
 ## Corrections
+
+### 2026-09-06 — absorbed contributions now score
+
+The limitation above stood for two weeks with the words *"it is unfixed: every mechanical detector
+considered so far relies on parsing a maintainer's prose, which would replace a false zero with a
+fuzzy guess."*
+
+That was a failure of imagination, and what corrected it was the same thing happening to us. Two
+review comments of ours led a maintainer to close seven duplicate pull requests in one sitting.
+This board scored that at zero — and the closure itself was the evidence, sitting in plain text
+the whole time.
+
+**A maintainer closing a duplicate names the survivor.** *"Closing as a duplicate of #86"*,
+*"Superseded by #40"*, or a table of closed/kept pairs. That is machine-readable, and we had been
+reading it as absence. `bin/absorbed.py` now reads it, under two guards, because a detector that
+over-credits is worse than one that under-credits:
+
+- **The survivor must have merged.** A pointer from one closed pull request to another that never
+  landed is a chain where nothing reached the tree.
+- **Self-references are dropped**, being a regex artefact rather than a contribution.
+
+Scored at 5 — half a merged pull request, the same as filing an issue that a merged pull request
+fixed. The work shaped what landed; a maintainer chose a different version of it.
+
+Effect: 6 people gained credit, the largest move 156th to 58th. Everyone else shifted down by the
+arithmetic, **this board's author included, from 79th to 81st.** That is the third correction here
+to cost us rank — the weight rebalance took us from 55th to 73rd, excluding this repository from
+its own ranking took us from 27th to 74th — and it is the expected direction. A scorer whose
+corrections consistently favour its author would be evidence of something other than correctness.
+
+
 
 If a number is wrong, open an issue with the URL that contradicts it. Evidence in, evidence out —
 we do not adjudicate anything by opinion, including about ourselves.
