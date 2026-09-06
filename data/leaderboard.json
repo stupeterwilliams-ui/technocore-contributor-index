@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-06T06:51:30Z",
-  "collected_at": "2026-09-06T06:51:29Z",
+  "generated_at": "2026-09-06T07:58:14Z",
+  "collected_at": "2026-09-06T07:58:14Z",
   "upstream_repo": "flop-labs/technocore-chat",
   "weights": {
     "merged_pr": 10,
@@ -7254,45 +7254,6 @@
       "rank": 143
     },
     {
-      "login": "AgentTeams",
-      "score": 5,
-      "is_maintainer": false,
-      "is_author_of_this_board": false,
-      "counts": {
-        "merged_prs": 0,
-        "issues_credited": 0,
-        "verified_proofs": 0,
-        "artifacts": 1
-      },
-      "evidence": [
-        {
-          "signal": "artifact_references_technocore",
-          "points": 2,
-          "what": "public artifact AgentTeams/technocore-contribution-node",
-          "url": "https://github.com/AgentTeams/technocore-contribution-node"
-        },
-        {
-          "signal": "artifact_has_license",
-          "points": 1,
-          "what": "AgentTeams/technocore-contribution-node has a licence",
-          "url": "https://github.com/AgentTeams/technocore-contribution-node"
-        },
-        {
-          "signal": "artifact_has_description",
-          "points": 1,
-          "what": "AgentTeams/technocore-contribution-node has a description",
-          "url": "https://github.com/AgentTeams/technocore-contribution-node"
-        },
-        {
-          "signal": "artifact_maintained_past_first_day",
-          "points": 1,
-          "what": "AgentTeams/technocore-contribution-node had commits after its first day",
-          "url": "https://github.com/AgentTeams/technocore-contribution-node"
-        }
-      ],
-      "rank": 144
-    },
-    {
       "login": "amin-yutori",
       "score": 5,
       "is_maintainer": false,
@@ -7329,7 +7290,7 @@
           "url": "https://github.com/amin-yutori/technocore-did-check"
         }
       ],
-      "rank": 145
+      "rank": 144
     },
     {
       "login": "arayflex",
@@ -7362,7 +7323,7 @@
           "url": "https://github.com/arayflex/technocore-lobby-guide"
         }
       ],
-      "rank": 146
+      "rank": 145
     },
     {
       "login": "asa-ai-code",
@@ -7401,7 +7362,7 @@
           "url": "https://github.com/asa-ai-code/technocore-toolkit"
         }
       ],
-      "rank": 147
+      "rank": 146
     },
     {
       "login": "Blindripper",
@@ -7440,7 +7401,7 @@
           "url": "https://github.com/Blindripper/OpenSwarmAgents"
         }
       ],
-      "rank": 148
+      "rank": 147
     },
     {
       "login": "bloobsy",
@@ -7479,7 +7440,7 @@
           "url": "https://github.com/bloobsy/technocore-windows-agent"
         }
       ],
-      "rank": 149
+      "rank": 148
     },
     {
       "login": "choku-777",
@@ -7518,7 +7479,7 @@
           "url": "https://github.com/choku-777/flop-agent-mesh"
         }
       ],
-      "rank": 150
+      "rank": 149
     },
     {
       "login": "coupedeglitch",
@@ -7557,7 +7518,7 @@
           "url": "https://github.com/coupedeglitch/technocore-agent-guide"
         }
       ],
-      "rank": 151
+      "rank": 150
     },
     {
       "login": "dada050505",
@@ -7596,46 +7557,7 @@
           "url": "https://github.com/dada050505/technocore-agent-inspector"
         }
       ],
-      "rank": 152
-    },
-    {
-      "login": "damiaotothemoon-hash",
-      "score": 5,
-      "is_maintainer": false,
-      "is_author_of_this_board": false,
-      "counts": {
-        "merged_prs": 0,
-        "issues_credited": 0,
-        "verified_proofs": 0,
-        "artifacts": 1
-      },
-      "evidence": [
-        {
-          "signal": "artifact_references_technocore",
-          "points": 2,
-          "what": "public artifact damiaotothemoon-hash/technocore-contribution-kit",
-          "url": "https://github.com/damiaotothemoon-hash/technocore-contribution-kit"
-        },
-        {
-          "signal": "artifact_has_license",
-          "points": 1,
-          "what": "damiaotothemoon-hash/technocore-contribution-kit has a licence",
-          "url": "https://github.com/damiaotothemoon-hash/technocore-contribution-kit"
-        },
-        {
-          "signal": "artifact_has_description",
-          "points": 1,
-          "what": "damiaotothemoon-hash/technocore-contribution-kit has a description",
-          "url": "https://github.com/damiaotothemoon-hash/technocore-contribution-kit"
-        },
-        {
-          "signal": "artifact_maintained_past_first_day",
-          "points": 1,
-          "what": "damiaotothemoon-hash/technocore-contribution-kit had commits after its first day",
-          "url": "https://github.com/damiaotothemoon-hash/technocore-contribution-kit"
-        }
-      ],
-      "rank": 153
+      "rank": 151
     },
     {
       "login": "dcpf1",
@@ -7674,7 +7596,7 @@
           "url": "https://github.com/dcpf1/technocore-py"
         }
       ],
-      "rank": 154
+      "rank": 152
     },
     {
       "login": "dejagold123",
@@ -7713,7 +7635,7 @@
           "url": "https://github.com/dejagold123/technocore-survival-check"
         }
       ],
-      "rank": 155
+      "rank": 153
     },
     {
       "login": "dizcorvus",
@@ -7752,7 +7674,7 @@
           "url": "https://github.com/dizcorvus/flop-airdrop-skill"
         }
       ],
-      "rank": 156
+      "rank": 154
     },
     {
       "login": "djd39448",
@@ -7773,7 +7695,7 @@
           "url": "https://github.com/flop-labs/technocore-chat/issues/237"
         }
       ],
-      "rank": 157
+      "rank": 155
     },
     {
       "login": "dolmaciabdullah-byte",
@@ -7806,7 +7728,7 @@
           "url": "https://github.com/dolmaciabdullah-byte/technocore-did-tool"
         }
       ],
-      "rank": 158
+      "rank": 156
     },
     {
       "login": "edwarderlick",
@@ -7839,7 +7761,7 @@
           "url": "https://github.com/edwarderlick/zoro-agent"
         }
       ],
-      "rank": 159
+      "rank": 157
     },
     {
       "login": "floppy-labs-eightfivetwo",
@@ -7878,7 +7800,7 @@
           "url": "https://github.com/floppy-labs-eightfivetwo/technocore-pulse"
         }
       ],
-      "rank": 160
+      "rank": 158
     },
     {
       "login": "Foejacquard7779",
@@ -7917,7 +7839,7 @@
           "url": "https://github.com/Foejacquard7779/technocore-did-starter"
         }
       ],
-      "rank": 161
+      "rank": 159
     },
     {
       "login": "frianowzki",
@@ -7956,7 +7878,7 @@
           "url": "https://github.com/frianowzki/technocore-DID-studio"
         }
       ],
-      "rank": 162
+      "rank": 160
     },
     {
       "login": "gentlejay",
@@ -7989,7 +7911,7 @@
           "url": "https://github.com/gentlejay/Technocore-Logo-Spec"
         }
       ],
-      "rank": 163
+      "rank": 161
     },
     {
       "login": "Git-on-my-level",
@@ -8028,7 +7950,7 @@
           "url": "https://github.com/Git-on-my-level/technocore-tools"
         }
       ],
-      "rank": 164
+      "rank": 162
     },
     {
       "login": "greerso",
@@ -8067,7 +7989,7 @@
           "url": "https://github.com/greerso/flop-nostr"
         }
       ],
-      "rank": 165
+      "rank": 163
     },
     {
       "login": "greg2718",
@@ -8106,7 +8028,7 @@
           "url": "https://github.com/greg2718/flop-router"
         }
       ],
-      "rank": 166
+      "rank": 164
     },
     {
       "login": "gusha625",
@@ -8145,7 +8067,7 @@
           "url": "https://github.com/gusha625/technocore-mcp"
         }
       ],
-      "rank": 167
+      "rank": 165
     },
     {
       "login": "hal1zip234",
@@ -8184,7 +8106,7 @@
           "url": "https://github.com/hal1zip234/flop-status-ledger"
         }
       ],
-      "rank": 168
+      "rank": 166
     },
     {
       "login": "HarryLin1024",
@@ -8223,7 +8145,7 @@
           "url": "https://github.com/HarryLin1024/technocore-safe-agent-cn"
         }
       ],
-      "rank": 169
+      "rank": 167
     },
     {
       "login": "hayulpapax",
@@ -8262,7 +8184,7 @@
           "url": "https://github.com/hayulpapax/technocore-tc"
         }
       ],
-      "rank": 170
+      "rank": 168
     },
     {
       "login": "heathley",
@@ -8301,7 +8223,7 @@
           "url": "https://github.com/heathley/agent-guild"
         }
       ],
-      "rank": 171
+      "rank": 169
     },
     {
       "login": "Ineu02",
@@ -8340,7 +8262,7 @@
           "url": "https://github.com/Ineu02/technocore-did-starter"
         }
       ],
-      "rank": 172
+      "rank": 170
     },
     {
       "login": "iyop666",
@@ -8379,7 +8301,7 @@
           "url": "https://github.com/iyop666/technocore-py"
         }
       ],
-      "rank": 173
+      "rank": 171
     },
     {
       "login": "JDNINJAH2",
@@ -8418,7 +8340,7 @@
           "url": "https://github.com/JDNINJAH2/technocore-task-lock"
         }
       ],
-      "rank": 174
+      "rank": 172
     },
     {
       "login": "jiangzhijie",
@@ -8457,7 +8379,7 @@
           "url": "https://github.com/jiangzhijie/technocore-hanrelay-zh"
         }
       ],
-      "rank": 175
+      "rank": 173
     },
     {
       "login": "jokazza84",
@@ -8496,7 +8418,7 @@
           "url": "https://github.com/jokazza84/technocore-workflow-bridge"
         }
       ],
-      "rank": 176
+      "rank": 174
     },
     {
       "login": "jonjonflo",
@@ -8517,7 +8439,7 @@
           "url": "https://github.com/flop-labs/technocore-chat/issues/655"
         }
       ],
-      "rank": 177
+      "rank": 175
     },
     {
       "login": "JspIIV",
@@ -8556,7 +8478,7 @@
           "url": "https://github.com/JspIIV/technocore-agent"
         }
       ],
-      "rank": 178
+      "rank": 176
     },
     {
       "login": "justin201507-rgb",
@@ -8595,7 +8517,7 @@
           "url": "https://github.com/justin201507-rgb/technocore-field-notes"
         }
       ],
-      "rank": 179
+      "rank": 177
     },
     {
       "login": "kamitakami687",
@@ -8634,7 +8556,7 @@
           "url": "https://github.com/kamitakami687/flop-agent-did-guide"
         }
       ],
-      "rank": 180
+      "rank": 178
     },
     {
       "login": "katazrofi",
@@ -8673,7 +8595,7 @@
           "url": "https://github.com/katazrofi/openclaw-technocore-reference"
         }
       ],
-      "rank": 181
+      "rank": 179
     },
     {
       "login": "KendineCrypto",
@@ -8712,7 +8634,7 @@
           "url": "https://github.com/KendineCrypto/technoqueue"
         }
       ],
-      "rank": 182
+      "rank": 180
     },
     {
       "login": "ksk7777m",
@@ -8751,7 +8673,7 @@
           "url": "https://github.com/ksk7777m/flop-agent-intelligence"
         }
       ],
-      "rank": 183
+      "rank": 181
     },
     {
       "login": "kyosuke25",
@@ -8790,7 +8712,7 @@
           "url": "https://github.com/kyosuke25/technocore-did-windows"
         }
       ],
-      "rank": 184
+      "rank": 182
     },
     {
       "login": "loopjockey",
@@ -8829,7 +8751,7 @@
           "url": "https://github.com/loopjockey/flopagent"
         }
       ],
-      "rank": 185
+      "rank": 183
     },
     {
       "login": "lopital2023-max",
@@ -8868,7 +8790,7 @@
           "url": "https://github.com/lopital2023-max/flop-sentinel"
         }
       ],
-      "rank": 186
+      "rank": 184
     },
     {
       "login": "Mabolla",
@@ -8907,7 +8829,7 @@
           "url": "https://github.com/Mabolla/technocore-task-relay"
         }
       ],
-      "rank": 187
+      "rank": 185
     },
     {
       "login": "mahathir69",
@@ -8946,7 +8868,7 @@
           "url": "https://github.com/mahathir69/technocore-safe"
         }
       ],
-      "rank": 188
+      "rank": 186
     },
     {
       "login": "Maje53",
@@ -8985,7 +8907,7 @@
           "url": "https://github.com/Maje53/technocore-explorer"
         }
       ],
-      "rank": 189
+      "rank": 187
     },
     {
       "login": "Mrcredible909",
@@ -9024,7 +8946,7 @@
           "url": "https://github.com/Mrcredible909/flop-technocore-guide"
         }
       ],
-      "rank": 190
+      "rank": 188
     },
     {
       "login": "MrFaruk0",
@@ -9063,7 +8985,7 @@
           "url": "https://github.com/MrFaruk0/technocore-conformance"
         }
       ],
-      "rank": 191
+      "rank": 189
     },
     {
       "login": "MrZeroYT",
@@ -9102,7 +9024,7 @@
           "url": "https://github.com/MrZeroYT/technocore-ts"
         }
       ],
-      "rank": 192
+      "rank": 190
     },
     {
       "login": "N5342689605",
@@ -9141,7 +9063,7 @@
           "url": "https://github.com/N5342689605/technocore-signing"
         }
       ],
-      "rank": 193
+      "rank": 191
     },
     {
       "login": "naninu123",
@@ -9174,7 +9096,7 @@
           "url": "https://github.com/naninu123/tc-sentinel"
         }
       ],
-      "rank": 194
+      "rank": 192
     },
     {
       "login": "nolimitool",
@@ -9213,7 +9135,7 @@
           "url": "https://github.com/nolimitool/technocore-analytics"
         }
       ],
-      "rank": 195
+      "rank": 193
     },
     {
       "login": "nycrypto",
@@ -9252,7 +9174,7 @@
           "url": "https://github.com/nycrypto/technocore-did-explorer"
         }
       ],
-      "rank": 196
+      "rank": 194
     },
     {
       "login": "obiman88",
@@ -9291,7 +9213,7 @@
           "url": "https://github.com/obiman88/technocore-census"
         }
       ],
-      "rank": 197
+      "rank": 195
     },
     {
       "login": "Obionecoinobi01",
@@ -9330,7 +9252,7 @@
           "url": "https://github.com/Obionecoinobi01/freezetime"
         }
       ],
-      "rank": 198
+      "rank": 196
     },
     {
       "login": "oxatik",
@@ -9369,7 +9291,7 @@
           "url": "https://github.com/oxatik/technocore-agent"
         }
       ],
-      "rank": 199
+      "rank": 197
     },
     {
       "login": "oxz888",
@@ -9408,7 +9330,7 @@
           "url": "https://github.com/oxz888/technocore-security-field-guide"
         }
       ],
-      "rank": 200
+      "rank": 198
     },
     {
       "login": "oz-specter",
@@ -9447,7 +9369,7 @@
           "url": "https://github.com/oz-specter/technocore-activity-observatory"
         }
       ],
-      "rank": 201
+      "rank": 199
     },
     {
       "login": "P-U-C",
@@ -9486,7 +9408,7 @@
           "url": "https://github.com/P-U-C/awesome-technocore"
         }
       ],
-      "rank": 202
+      "rank": 200
     },
     {
       "login": "philpher0x",
@@ -9519,7 +9441,7 @@
           "url": "https://github.com/philpher0x/technocore-defi-watch"
         }
       ],
-      "rank": 203
+      "rank": 201
     },
     {
       "login": "posaune0423",
@@ -9558,7 +9480,7 @@
           "url": "https://github.com/posaune0423/flop-agent"
         }
       ],
-      "rank": 204
+      "rank": 202
     },
     {
       "login": "rabi-neco",
@@ -9597,7 +9519,7 @@
           "url": "https://github.com/rabi-neco/technocore-agent-kit"
         }
       ],
-      "rank": 205
+      "rank": 203
     },
     {
       "login": "RaffiHu",
@@ -9636,7 +9558,7 @@
           "url": "https://github.com/RaffiHu/technocore-swarm-lab"
         }
       ],
-      "rank": 206
+      "rank": 204
     },
     {
       "login": "retard-dev",
@@ -9675,7 +9597,7 @@
           "url": "https://github.com/retard-dev/technochad-hq"
         }
       ],
-      "rank": 207
+      "rank": 205
     },
     {
       "login": "se7enbyte",
@@ -9714,7 +9636,7 @@
           "url": "https://github.com/se7enbyte/technocore-safeproof-cli"
         }
       ],
-      "rank": 208
+      "rank": 206
     },
     {
       "login": "Seqo01",
@@ -9753,7 +9675,7 @@
           "url": "https://github.com/Seqo01/technocore-signed-agent-bridge"
         }
       ],
-      "rank": 209
+      "rank": 207
     },
     {
       "login": "shadow4810",
@@ -9792,7 +9714,7 @@
           "url": "https://github.com/shadow4810/technocore-guide-ja"
         }
       ],
-      "rank": 210
+      "rank": 208
     },
     {
       "login": "Shun-toda",
@@ -9831,7 +9753,7 @@
           "url": "https://github.com/Shun-toda/technocore-cc"
         }
       ],
-      "rank": 211
+      "rank": 209
     },
     {
       "login": "simazoi0626-source",
@@ -9870,7 +9792,7 @@
           "url": "https://github.com/simazoi0626-source/technocore-jp-starter"
         }
       ],
-      "rank": 212
+      "rank": 210
     },
     {
       "login": "spacerug",
@@ -9909,7 +9831,7 @@
           "url": "https://github.com/spacerug/technocore-agent-dashboard"
         }
       ],
-      "rank": 213
+      "rank": 211
     },
     {
       "login": "SparcleAI",
@@ -9948,7 +9870,7 @@
           "url": "https://github.com/SparcleAI/technocore-capacity-watch"
         }
       ],
-      "rank": 214
+      "rank": 212
     },
     {
       "login": "stacydav99",
@@ -9987,7 +9909,7 @@
           "url": "https://github.com/stacydav99/flop-monitor"
         }
       ],
-      "rank": 215
+      "rank": 213
     },
     {
       "login": "StanCan321",
@@ -10026,7 +9948,7 @@
           "url": "https://github.com/StanCan321/flop-contributions"
         }
       ],
-      "rank": 216
+      "rank": 214
     },
     {
       "login": "tanyatyan20191",
@@ -10065,7 +9987,7 @@
           "url": "https://github.com/tanyatyan20191/technocore-did-tool"
         }
       ],
-      "rank": 217
+      "rank": 215
     },
     {
       "login": "techbone",
@@ -10104,7 +10026,7 @@
           "url": "https://github.com/techbone/technocore-conformance"
         }
       ],
-      "rank": 218
+      "rank": 216
     },
     {
       "login": "thanhphuc85",
@@ -10143,7 +10065,7 @@
           "url": "https://github.com/thanhphuc85/technocore-crypto-agent"
         }
       ],
-      "rank": 219
+      "rank": 217
     },
     {
       "login": "theealphaman",
@@ -10182,7 +10104,7 @@
           "url": "https://github.com/theealphaman/technocore-opportunity-radar"
         }
       ],
-      "rank": 220
+      "rank": 218
     },
     {
       "login": "toma86hawk",
@@ -10221,7 +10143,7 @@
           "url": "https://github.com/toma86hawk/technocore-flop-japan"
         }
       ],
-      "rank": 221
+      "rank": 219
     },
     {
       "login": "tomuisan",
@@ -10260,7 +10182,7 @@
           "url": "https://github.com/tomuisan/technocore-starter-agent"
         }
       ],
-      "rank": 222
+      "rank": 220
     },
     {
       "login": "ToxiTea",
@@ -10299,7 +10221,7 @@
           "url": "https://github.com/ToxiTea/open-compute-basis"
         }
       ],
-      "rank": 223
+      "rank": 221
     },
     {
       "login": "tracepaths",
@@ -10338,7 +10260,7 @@
           "url": "https://github.com/tracepaths/technocore-py"
         }
       ],
-      "rank": 224
+      "rank": 222
     },
     {
       "login": "tunahanarik",
@@ -10377,7 +10299,7 @@
           "url": "https://github.com/tunahanarik/technocore-station"
         }
       ],
-      "rank": 225
+      "rank": 223
     },
     {
       "login": "uzzaarr",
@@ -10416,7 +10338,7 @@
           "url": "https://github.com/uzzaarr/technocore-agent-playbook"
         }
       ],
-      "rank": 226
+      "rank": 224
     },
     {
       "login": "Vacas-Coded",
@@ -10455,7 +10377,7 @@
           "url": "https://github.com/Vacas-Coded/flop-technocore-probe-flipflopper"
         }
       ],
-      "rank": 227
+      "rank": 225
     },
     {
       "login": "Vegeta451",
@@ -10494,7 +10416,7 @@
           "url": "https://github.com/Vegeta451/technocore-actionlock"
         }
       ],
-      "rank": 228
+      "rank": 226
     },
     {
       "login": "Virmage",
@@ -10533,7 +10455,7 @@
           "url": "https://github.com/Virmage/technocore-client"
         }
       ],
-      "rank": 229
+      "rank": 227
     },
     {
       "login": "VolksTiger",
@@ -10572,7 +10494,7 @@
           "url": "https://github.com/VolksTiger/technocore-pulse"
         }
       ],
-      "rank": 230
+      "rank": 228
     },
     {
       "login": "walkonwayvs",
@@ -10611,7 +10533,7 @@
           "url": "https://github.com/walkonwayvs/technocore-agent"
         }
       ],
-      "rank": 231
+      "rank": 229
     },
     {
       "login": "wattsap-dev",
@@ -10650,7 +10572,7 @@
           "url": "https://github.com/wattsap-dev/technocore-scan"
         }
       ],
-      "rank": 232
+      "rank": 230
     },
     {
       "login": "wrvnnull",
@@ -10689,7 +10611,7 @@
           "url": "https://github.com/wrvnnull/technocore-guide-id"
         }
       ],
-      "rank": 233
+      "rank": 231
     },
     {
       "login": "xbyteid",
@@ -10728,7 +10650,7 @@
           "url": "https://github.com/xbyteid/technocore-tools"
         }
       ],
-      "rank": 234
+      "rank": 232
     },
     {
       "login": "ygd58",
@@ -10761,7 +10683,7 @@
           "url": "https://github.com/ygd58/Technocore-Tool"
         }
       ],
-      "rank": 235
+      "rank": 233
     },
     {
       "login": "Yuzunekotokyo",
@@ -10800,7 +10722,7 @@
           "url": "https://github.com/Yuzunekotokyo/technocore-pulse"
         }
       ],
-      "rank": 236
+      "rank": 234
     },
     {
       "login": "zachbuilds26",
@@ -10833,7 +10755,7 @@
           "url": "https://github.com/zachbuilds26/technocore-monitor"
         }
       ],
-      "rank": 237
+      "rank": 235
     },
     {
       "login": "zannyzette",
@@ -10872,7 +10794,7 @@
           "url": "https://github.com/zannyzette/technocore-did-gameplay"
         }
       ],
-      "rank": 238
+      "rank": 236
     },
     {
       "login": "00anon0X",
@@ -10905,7 +10827,7 @@
           "url": "https://github.com/00anon0X/technocore-signed-did-client"
         }
       ],
-      "rank": 239
+      "rank": 237
     },
     {
       "login": "0o0r7",
@@ -10938,7 +10860,7 @@
           "url": "https://github.com/0o0r7/flopkit-sdk"
         }
       ],
-      "rank": 240
+      "rank": 238
     },
     {
       "login": "0xcourt",
@@ -10965,7 +10887,7 @@
           "url": "https://github.com/0xcourt/technocore-analytics-dashboard"
         }
       ],
-      "rank": 241
+      "rank": 239
     },
     {
       "login": "0xdirosa",
@@ -10998,7 +10920,7 @@
           "url": "https://github.com/0xdirosa/technocore-agent-client"
         }
       ],
-      "rank": 242
+      "rank": 240
     },
     {
       "login": "0xdungki",
@@ -11031,7 +10953,7 @@
           "url": "https://github.com/0xdungki/technocore-did-toolkit"
         }
       ],
-      "rank": 243
+      "rank": 241
     },
     {
       "login": "0xgoodcrypto",
@@ -11064,7 +10986,7 @@
           "url": "https://github.com/0xgoodcrypto/technocore-e2e"
         }
       ],
-      "rank": 244
+      "rank": 242
     },
     {
       "login": "0xkinno",
@@ -11097,7 +11019,7 @@
           "url": "https://github.com/0xkinno/flop-labs-simplified-technocore-guide"
         }
       ],
-      "rank": 245
+      "rank": 243
     },
     {
       "login": "0xmugetso",
@@ -11130,7 +11052,7 @@
           "url": "https://github.com/0xmugetso/technocore-inspector"
         }
       ],
-      "rank": 246
+      "rank": 244
     },
     {
       "login": "0xrohitsen",
@@ -11163,7 +11085,7 @@
           "url": "https://github.com/0xrohitsen/flopfinance-verify"
         }
       ],
-      "rank": 247
+      "rank": 245
     },
     {
       "login": "0xSessho",
@@ -11196,7 +11118,7 @@
           "url": "https://github.com/0xSessho/technocore-client"
         }
       ],
-      "rank": 248
+      "rank": 246
     },
     {
       "login": "0xsheva",
@@ -11229,7 +11151,7 @@
           "url": "https://github.com/0xsheva/technocore-keyhole"
         }
       ],
-      "rank": 249
+      "rank": 247
     },
     {
       "login": "0xsoli",
@@ -11262,7 +11184,7 @@
           "url": "https://github.com/0xsoli/technocore-telegram-bot"
         }
       ],
-      "rank": 250
+      "rank": 248
     },
     {
       "login": "0xWarg2",
@@ -11295,7 +11217,7 @@
           "url": "https://github.com/0xWarg2/technocore-kit"
         }
       ],
-      "rank": 251
+      "rank": 249
     },
     {
       "login": "0xwhalelabs",
@@ -11328,7 +11250,7 @@
           "url": "https://github.com/0xwhalelabs/technocore-protocol-observer"
         }
       ],
-      "rank": 252
+      "rank": 250
     },
     {
       "login": "0xZagh",
@@ -11361,7 +11283,7 @@
           "url": "https://github.com/0xZagh/flop-technocore-agent"
         }
       ],
-      "rank": 253
+      "rank": 251
     },
     {
       "login": "0xzero1910",
@@ -11394,7 +11316,7 @@
           "url": "https://github.com/0xzero1910/tc-cli"
         }
       ],
-      "rank": 254
+      "rank": 252
     },
     {
       "login": "10tenchan109",
@@ -11427,7 +11349,7 @@
           "url": "https://github.com/10tenchan109/technocore-census"
         }
       ],
-      "rank": 255
+      "rank": 253
     },
     {
       "login": "123Sisimpur",
@@ -11460,7 +11382,7 @@
           "url": "https://github.com/123Sisimpur/technocore-java"
         }
       ],
-      "rank": 256
+      "rank": 254
     },
     {
       "login": "486087411",
@@ -11493,7 +11415,7 @@
           "url": "https://github.com/486087411/technocore-hermes-kit"
         }
       ],
-      "rank": 257
+      "rank": 255
     },
     {
       "login": "7s4dtv665g-alt",
@@ -11526,7 +11448,7 @@
           "url": "https://github.com/7s4dtv665g-alt/miiin"
         }
       ],
-      "rank": 258
+      "rank": 256
     },
     {
       "login": "aaronellis440",
@@ -11559,7 +11481,7 @@
           "url": "https://github.com/aaronellis440/technocore-did-toolkit"
         }
       ],
-      "rank": 259
+      "rank": 257
     },
     {
       "login": "abbacushitt",
@@ -11592,7 +11514,7 @@
           "url": "https://github.com/abbacushitt/technocore-agents"
         }
       ],
-      "rank": 260
+      "rank": 258
     },
     {
       "login": "AbstrusImad",
@@ -11625,7 +11547,7 @@
           "url": "https://github.com/AbstrusImad/technocore-room-metrics"
         }
       ],
-      "rank": 261
+      "rank": 259
     },
     {
       "login": "addnad",
@@ -11658,7 +11580,7 @@
           "url": "https://github.com/addnad/technocore-ts"
         }
       ],
-      "rank": 262
+      "rank": 260
     },
     {
       "login": "adityaypz",
@@ -11691,7 +11613,7 @@
           "url": "https://github.com/adityaypz/technocore-lens"
         }
       ],
-      "rank": 263
+      "rank": 261
     },
     {
       "login": "AdnanMrabet",
@@ -11724,7 +11646,7 @@
           "url": "https://github.com/AdnanMrabet/technocore-did-fingerprint"
         }
       ],
-      "rank": 264
+      "rank": 262
     },
     {
       "login": "agalunov",
@@ -11757,7 +11679,7 @@
           "url": "https://github.com/agalunov/technocore-py"
         }
       ],
-      "rank": 265
+      "rank": 263
     },
     {
       "login": "agentprooflab",
@@ -11790,7 +11712,7 @@
           "url": "https://github.com/agentprooflab/technocore-contribution-agent"
         }
       ],
-      "rank": 266
+      "rank": 264
     },
     {
       "login": "aikaopenclaw-spec",
@@ -11823,7 +11745,7 @@
           "url": "https://github.com/aikaopenclaw-spec/technocore-agent-starter"
         }
       ],
-      "rank": 267
+      "rank": 265
     },
     {
       "login": "Alanwiz00",
@@ -11856,7 +11778,7 @@
           "url": "https://github.com/Alanwiz00/technocore-did-starter"
         }
       ],
-      "rank": 268
+      "rank": 266
     },
     {
       "login": "aldiboncel49-lgtm",
@@ -11889,7 +11811,7 @@
           "url": "https://github.com/aldiboncel49-lgtm/tcverify"
         }
       ],
-      "rank": 269
+      "rank": 267
     },
     {
       "login": "Alex1357909",
@@ -11922,7 +11844,7 @@
           "url": "https://github.com/Alex1357909/technocore-did-guide-ru"
         }
       ],
-      "rank": 270
+      "rank": 268
     },
     {
       "login": "alexwang91",
@@ -11955,7 +11877,7 @@
           "url": "https://github.com/alexwang91/agentic-engineering-skill"
         }
       ],
-      "rank": 271
+      "rank": 269
     },
     {
       "login": "alphabat81",
@@ -11988,7 +11910,7 @@
           "url": "https://github.com/alphabat81/technocore-flop-participation"
         }
       ],
-      "rank": 272
+      "rank": 270
     },
     {
       "login": "alstep07",
@@ -12021,7 +11943,7 @@
           "url": "https://github.com/alstep07/technocore-signal"
         }
       ],
-      "rank": 273
+      "rank": 271
     },
     {
       "login": "Alvinagustus",
@@ -12054,7 +11976,7 @@
           "url": "https://github.com/Alvinagustus/technocore-kit"
         }
       ],
-      "rank": 274
+      "rank": 272
     },
     {
       "login": "anrethen",
@@ -12087,7 +12009,7 @@
           "url": "https://github.com/anrethen/technocore-fleet"
         }
       ],
-      "rank": 275
+      "rank": 273
     },
     {
       "login": "antyzo",
@@ -12120,7 +12042,7 @@
           "url": "https://github.com/antyzo/technocore-audit"
         }
       ],
-      "rank": 276
+      "rank": 274
     },
     {
       "login": "ARR03",
@@ -12153,7 +12075,7 @@
           "url": "https://github.com/ARR03/flop-airdrop-tool"
         }
       ],
-      "rank": 277
+      "rank": 275
     },
     {
       "login": "AykoMoana",
@@ -12186,7 +12108,7 @@
           "url": "https://github.com/AykoMoana/technocore-js"
         }
       ],
-      "rank": 278
+      "rank": 276
     },
     {
       "login": "aziraiga21",
@@ -12219,7 +12141,7 @@
           "url": "https://github.com/aziraiga21/technocore-security-checklist"
         }
       ],
-      "rank": 279
+      "rank": 277
     },
     {
       "login": "AzkaAtta",
@@ -12252,7 +12174,7 @@
           "url": "https://github.com/AzkaAtta/technocore-tail"
         }
       ],
-      "rank": 280
+      "rank": 278
     },
     {
       "login": "bactiar291",
@@ -12285,7 +12207,7 @@
           "url": "https://github.com/bactiar291/technocore-verify"
         }
       ],
-      "rank": 281
+      "rank": 279
     },
     {
       "login": "Badboyszn02",
@@ -12318,7 +12240,7 @@
           "url": "https://github.com/Badboyszn02/Technocore-Guide"
         }
       ],
-      "rank": 282
+      "rank": 280
     },
     {
       "login": "Baejoohyun",
@@ -12351,7 +12273,7 @@
           "url": "https://github.com/Baejoohyun/technocore-heartbeat"
         }
       ],
-      "rank": 283
+      "rank": 281
     },
     {
       "login": "BambooTuna",
@@ -12384,7 +12306,7 @@
           "url": "https://github.com/BambooTuna/technocore-did"
         }
       ],
-      "rank": 284
+      "rank": 282
     },
     {
       "login": "Bandaju",
@@ -12417,7 +12339,7 @@
           "url": "https://github.com/Bandaju/technocore-registry-audit"
         }
       ],
-      "rank": 285
+      "rank": 283
     },
     {
       "login": "barraccon",
@@ -12450,7 +12372,7 @@
           "url": "https://github.com/barraccon/flop-contribution-radar"
         }
       ],
-      "rank": 286
+      "rank": 284
     },
     {
       "login": "bayxd",
@@ -12483,7 +12405,7 @@
           "url": "https://github.com/bayxd/technocore-tools"
         }
       ],
-      "rank": 287
+      "rank": 285
     },
     {
       "login": "befmatsumoto-svg",
@@ -12516,7 +12438,7 @@
           "url": "https://github.com/befmatsumoto-svg/technocore-connector"
         }
       ],
-      "rank": 288
+      "rank": 286
     },
     {
       "login": "BenderBot07",
@@ -12549,7 +12471,7 @@
           "url": "https://github.com/BenderBot07/technoreceipt"
         }
       ],
-      "rank": 289
+      "rank": 287
     },
     {
       "login": "BigLateef",
@@ -12582,7 +12504,7 @@
           "url": "https://github.com/BigLateef/technocore-termux-toolkit"
         }
       ],
-      "rank": 290
+      "rank": 288
     },
     {
       "login": "Bigoscrypt",
@@ -12615,7 +12537,7 @@
           "url": "https://github.com/Bigoscrypt/technocore-did-toolkit"
         }
       ],
-      "rank": 291
+      "rank": 289
     },
     {
       "login": "binasalama12",
@@ -12648,7 +12570,7 @@
           "url": "https://github.com/binasalama12/technocore-did-verifier"
         }
       ],
-      "rank": 292
+      "rank": 290
     },
     {
       "login": "Blissaire",
@@ -12681,7 +12603,7 @@
           "url": "https://github.com/Blissaire/awesome-technocore"
         }
       ],
-      "rank": 293
+      "rank": 291
     },
     {
       "login": "boladeboss",
@@ -12714,7 +12636,7 @@
           "url": "https://github.com/boladeboss/technocore-guide"
         }
       ],
-      "rank": 294
+      "rank": 292
     },
     {
       "login": "boomelant",
@@ -12747,7 +12669,7 @@
           "url": "https://github.com/boomelant/technocore-pui"
         }
       ],
-      "rank": 295
+      "rank": 293
     },
     {
       "login": "btcmama08",
@@ -12780,7 +12702,7 @@
           "url": "https://github.com/btcmama08/technocore-kit"
         }
       ],
-      "rank": 296
+      "rank": 294
     },
     {
       "login": "btk080428",
@@ -12813,7 +12735,7 @@
           "url": "https://github.com/btk080428/technocore-proof-explorer"
         }
       ],
-      "rank": 297
+      "rank": 295
     },
     {
       "login": "bulliscoming",
@@ -12846,7 +12768,7 @@
           "url": "https://github.com/bulliscoming/technocore-guide"
         }
       ],
-      "rank": 298
+      "rank": 296
     },
     {
       "login": "bunbun2t",
@@ -12879,7 +12801,7 @@
           "url": "https://github.com/bunbun2t/Technocore-Windows-DID-Toolkit"
         }
       ],
-      "rank": 299
+      "rank": 297
     },
     {
       "login": "caprice1026-disc",
@@ -12912,7 +12834,7 @@
           "url": "https://github.com/caprice1026-disc/technocore-did-toolkit"
         }
       ],
-      "rank": 300
+      "rank": 298
     },
     {
       "login": "captainbishop",
@@ -12945,7 +12867,7 @@
           "url": "https://github.com/captainbishop/technocore-tools"
         }
       ],
-      "rank": 301
+      "rank": 299
     },
     {
       "login": "CCCIC",
@@ -12978,7 +12900,7 @@
           "url": "https://github.com/CCCIC/technocore-kimchi"
         }
       ],
-      "rank": 302
+      "rank": 300
     },
     {
       "login": "chapaevv123",
@@ -13011,7 +12933,7 @@
           "url": "https://github.com/chapaevv123/technocore-agent-proof-monitor"
         }
       ],
-      "rank": 303
+      "rank": 301
     },
     {
       "login": "chegaa69",
@@ -13044,7 +12966,7 @@
           "url": "https://github.com/chegaa69/technocore-monitor"
         }
       ],
-      "rank": 304
+      "rank": 302
     },
     {
       "login": "chugarchugarr",
@@ -13077,7 +12999,7 @@
           "url": "https://github.com/chugarchugarr/resolution-receipt-technocore"
         }
       ],
-      "rank": 305
+      "rank": 303
     },
     {
       "login": "cilokesteh",
@@ -13110,7 +13032,7 @@
           "url": "https://github.com/cilokesteh/technocore-hermes-skill"
         }
       ],
-      "rank": 306
+      "rank": 304
     },
     {
       "login": "corcricy",
@@ -13143,7 +13065,7 @@
           "url": "https://github.com/corcricy/corcricy"
         }
       ],
-      "rank": 307
+      "rank": 305
     },
     {
       "login": "cryptgaku",
@@ -13176,7 +13098,7 @@
           "url": "https://github.com/cryptgaku/flop-agent"
         }
       ],
-      "rank": 308
+      "rank": 306
     },
     {
       "login": "CryptoDombili",
@@ -13209,7 +13131,7 @@
           "url": "https://github.com/CryptoDombili/technocore-agent-onboarding"
         }
       ],
-      "rank": 309
+      "rank": 307
     },
     {
       "login": "cryptohakka",
@@ -13242,7 +13164,7 @@
           "url": "https://github.com/cryptohakka/technocore-observatory"
         }
       ],
-      "rank": 310
+      "rank": 308
     },
     {
       "login": "CryptoPassionF",
@@ -13275,7 +13197,7 @@
           "url": "https://github.com/CryptoPassionF/technocore-secure-windows-guide-fr"
         }
       ],
-      "rank": 311
+      "rank": 309
     },
     {
       "login": "cudokub",
@@ -13308,7 +13230,7 @@
           "url": "https://github.com/cudokub/technocore-24h-experiment"
         }
       ],
-      "rank": 312
+      "rank": 310
     },
     {
       "login": "cumaaaaa",
@@ -13341,7 +13263,7 @@
           "url": "https://github.com/cumaaaaa/technocore-cli"
         }
       ],
-      "rank": 313
+      "rank": 311
     },
     {
       "login": "Dalbybo",
@@ -13374,7 +13296,7 @@
           "url": "https://github.com/Dalbybo/technocore-unity"
         }
       ],
-      "rank": 314
+      "rank": 312
     },
     {
       "login": "daniel170999",
@@ -13407,7 +13329,7 @@
           "url": "https://github.com/daniel170999/DANFLOPFUN"
         }
       ],
-      "rank": 315
+      "rank": 313
     },
     {
       "login": "DasRasyo",
@@ -13440,7 +13362,7 @@
           "url": "https://github.com/DasRasyo/technocore-e2e"
         }
       ],
-      "rank": 316
+      "rank": 314
     },
     {
       "login": "Daviddforth",
@@ -13473,7 +13395,7 @@
           "url": "https://github.com/Daviddforth/technocore-did-starter"
         }
       ],
-      "rank": 317
+      "rank": 315
     },
     {
       "login": "Devin1-tri",
@@ -13506,7 +13428,7 @@
           "url": "https://github.com/Devin1-tri/technocore-measure"
         }
       ],
-      "rank": 318
+      "rank": 316
     },
     {
       "login": "Dexanode",
@@ -13539,7 +13461,7 @@
           "url": "https://github.com/Dexanode/technocore-did"
         }
       ],
-      "rank": 319
+      "rank": 317
     },
     {
       "login": "dharmanan",
@@ -13572,7 +13494,7 @@
           "url": "https://github.com/dharmanan/technocore-agent-console"
         }
       ],
-      "rank": 320
+      "rank": 318
     },
     {
       "login": "discodirector",
@@ -13605,7 +13527,7 @@
           "url": "https://github.com/discodirector/technocore-preflight"
         }
       ],
-      "rank": 321
+      "rank": 319
     },
     {
       "login": "Doooty",
@@ -13638,7 +13560,7 @@
           "url": "https://github.com/Doooty/awesome-technocore"
         }
       ],
-      "rank": 322
+      "rank": 320
     },
     {
       "login": "dreyyyy1",
@@ -13671,7 +13593,7 @@
           "url": "https://github.com/dreyyyy1/technocore-signed-lobby"
         }
       ],
-      "rank": 323
+      "rank": 321
     },
     {
       "login": "ds4316",
@@ -13704,7 +13626,7 @@
           "url": "https://github.com/ds4316/technocore-starter-kit"
         }
       ],
-      "rank": 324
+      "rank": 322
     },
     {
       "login": "eigenmaxi",
@@ -13737,7 +13659,7 @@
           "url": "https://github.com/eigenmaxi/technocore-payload-lab"
         }
       ],
-      "rank": 325
+      "rank": 323
     },
     {
       "login": "Ephrett",
@@ -13770,7 +13692,7 @@
           "url": "https://github.com/Ephrett/technocore-verify"
         }
       ],
-      "rank": 326
+      "rank": 324
     },
     {
       "login": "evrendag",
@@ -13803,7 +13725,7 @@
           "url": "https://github.com/evrendag/technocore-living-network"
         }
       ],
-      "rank": 327
+      "rank": 325
     },
     {
       "login": "Faisalsathu786",
@@ -13836,7 +13758,7 @@
           "url": "https://github.com/Faisalsathu786/agentid"
         }
       ],
-      "rank": 328
+      "rank": 326
     },
     {
       "login": "fanqieBTC",
@@ -13869,7 +13791,7 @@
           "url": "https://github.com/fanqieBTC/technocore-secure-agent"
         }
       ],
-      "rank": 329
+      "rank": 327
     },
     {
       "login": "farzad-eth",
@@ -13902,7 +13824,7 @@
           "url": "https://github.com/farzad-eth/technocore-explorer"
         }
       ],
-      "rank": 330
+      "rank": 328
     },
     {
       "login": "fazlul667",
@@ -13935,7 +13857,7 @@
           "url": "https://github.com/fazlul667/technocore-archiver"
         }
       ],
-      "rank": 331
+      "rank": 329
     },
     {
       "login": "ferdinand-code-max",
@@ -13968,7 +13890,7 @@
           "url": "https://github.com/ferdinand-code-max/technocore-zero"
         }
       ],
-      "rank": 332
+      "rank": 330
     },
     {
       "login": "fewfinellama",
@@ -14001,7 +13923,7 @@
           "url": "https://github.com/fewfinellama/flopscope"
         }
       ],
-      "rank": 333
+      "rank": 331
     },
     {
       "login": "fhryzal",
@@ -14034,7 +13956,7 @@
           "url": "https://github.com/fhryzal/technocore-quickstart"
         }
       ],
-      "rank": 334
+      "rank": 332
     },
     {
       "login": "flop-labs-dev",
@@ -14067,7 +13989,7 @@
           "url": "https://github.com/flop-labs-dev/technocore-chat"
         }
       ],
-      "rank": 335
+      "rank": 333
     },
     {
       "login": "flopbuilder-dev",
@@ -14100,7 +14022,7 @@
           "url": "https://github.com/flopbuilder-dev/technocore-room-slot-watcher"
         }
       ],
-      "rank": 336
+      "rank": 334
     },
     {
       "login": "flupyxyz",
@@ -14133,7 +14055,7 @@
           "url": "https://github.com/flupyxyz/technocore-idn"
         }
       ],
-      "rank": 337
+      "rank": 335
     },
     {
       "login": "fredogalang17",
@@ -14166,7 +14088,7 @@
           "url": "https://github.com/fredogalang17/my-repo"
         }
       ],
-      "rank": 338
+      "rank": 336
     },
     {
       "login": "gghity01-netizen",
@@ -14199,7 +14121,7 @@
           "url": "https://github.com/gghity01-netizen/technocore-mesh"
         }
       ],
-      "rank": 339
+      "rank": 337
     },
     {
       "login": "ght25",
@@ -14232,7 +14154,7 @@
           "url": "https://github.com/ght25/technocore-vault"
         }
       ],
-      "rank": 340
+      "rank": 338
     },
     {
       "login": "Gmhax",
@@ -14265,7 +14187,7 @@
           "url": "https://github.com/Gmhax/technocore-one-command"
         }
       ],
-      "rank": 341
+      "rank": 339
     },
     {
       "login": "gnoesy",
@@ -14298,7 +14220,7 @@
           "url": "https://github.com/gnoesy/proofkit-technocore"
         }
       ],
-      "rank": 342
+      "rank": 340
     },
     {
       "login": "Goodluckigweze",
@@ -14331,7 +14253,7 @@
           "url": "https://github.com/Goodluckigweze/technocore-helper-tool"
         }
       ],
-      "rank": 343
+      "rank": 341
     },
     {
       "login": "gregoire-byte",
@@ -14364,7 +14286,7 @@
           "url": "https://github.com/gregoire-byte/technocore-fr"
         }
       ],
-      "rank": 344
+      "rank": 342
     },
     {
       "login": "greyfox1234",
@@ -14397,7 +14319,7 @@
           "url": "https://github.com/greyfox1234/technocore-pulse"
         }
       ],
-      "rank": 345
+      "rank": 343
     },
     {
       "login": "grimore8",
@@ -14430,7 +14352,7 @@
           "url": "https://github.com/grimore8/technocore-agent"
         }
       ],
-      "rank": 346
+      "rank": 344
     },
     {
       "login": "Griptonite",
@@ -14463,7 +14385,7 @@
           "url": "https://github.com/Griptonite/technocore-conformance"
         }
       ],
-      "rank": 347
+      "rank": 345
     },
     {
       "login": "gunawanbud20-coder",
@@ -14496,7 +14418,7 @@
           "url": "https://github.com/gunawanbud20-coder/technocore-receipt-verifier"
         }
       ],
-      "rank": 348
+      "rank": 346
     },
     {
       "login": "habluxy",
@@ -14529,7 +14451,7 @@
           "url": "https://github.com/habluxy/Technocore.NET"
         }
       ],
-      "rank": 349
+      "rank": 347
     },
     {
       "login": "hahiri",
@@ -14562,7 +14484,7 @@
           "url": "https://github.com/hahiri/technocore-did-agent"
         }
       ],
-      "rank": 350
+      "rank": 348
     },
     {
       "login": "hakurido",
@@ -14595,7 +14517,7 @@
           "url": "https://github.com/hakurido/tcx"
         }
       ],
-      "rank": 351
+      "rank": 349
     },
     {
       "login": "hanamaru777",
@@ -14628,7 +14550,7 @@
           "url": "https://github.com/hanamaru777/technocore-safe-agent"
         }
       ],
-      "rank": 352
+      "rank": 350
     },
     {
       "login": "hashimura-3rd",
@@ -14661,7 +14583,7 @@
           "url": "https://github.com/hashimura-3rd/technocore-did-tool"
         }
       ],
-      "rank": 353
+      "rank": 351
     },
     {
       "login": "havelaw",
@@ -14694,7 +14616,7 @@
           "url": "https://github.com/havelaw/technocore-ko"
         }
       ],
-      "rank": 354
+      "rank": 352
     },
     {
       "login": "heromu0000-maker",
@@ -14727,7 +14649,7 @@
           "url": "https://github.com/heromu0000-maker/flop-technocore-kit"
         }
       ],
-      "rank": 355
+      "rank": 353
     },
     {
       "login": "Herrsosa",
@@ -14760,7 +14682,7 @@
           "url": "https://github.com/Herrsosa/technocore-secure-did"
         }
       ],
-      "rank": 356
+      "rank": 354
     },
     {
       "login": "hexitlabs",
@@ -14793,7 +14715,7 @@
           "url": "https://github.com/hexitlabs/technocore-signed-agent"
         }
       ],
-      "rank": 357
+      "rank": 355
     },
     {
       "login": "HichamSlimani",
@@ -14826,7 +14748,7 @@
           "url": "https://github.com/HichamSlimani/technocore-append-only-checker"
         }
       ],
-      "rank": 358
+      "rank": 356
     },
     {
       "login": "highwill",
@@ -14859,7 +14781,7 @@
           "url": "https://github.com/highwill/technocore-flop-agent"
         }
       ],
-      "rank": 359
+      "rank": 357
     },
     {
       "login": "hiiro22",
@@ -14892,7 +14814,7 @@
           "url": "https://github.com/hiiro22/proof_check"
         }
       ],
-      "rank": 360
+      "rank": 358
     },
     {
       "login": "hirschga",
@@ -14925,7 +14847,7 @@
           "url": "https://github.com/hirschga/ace-technocore-guide"
         }
       ],
-      "rank": 361
+      "rank": 359
     },
     {
       "login": "hnumey31",
@@ -14958,7 +14880,7 @@
           "url": "https://github.com/hnumey31/technocore-nonce-allocator"
         }
       ],
-      "rank": 362
+      "rank": 360
     },
     {
       "login": "hunter20000002-pixel",
@@ -14991,7 +14913,7 @@
           "url": "https://github.com/hunter20000002-pixel/awesome-technocore"
         }
       ],
-      "rank": 363
+      "rank": 361
     },
     {
       "login": "huongswt",
@@ -15024,7 +14946,7 @@
           "url": "https://github.com/huongswt/technocore-sentinel"
         }
       ],
-      "rank": 364
+      "rank": 362
     },
     {
       "login": "HyperliquidIsGod",
@@ -15057,7 +14979,7 @@
           "url": "https://github.com/HyperliquidIsGod/technocore-agent-node"
         }
       ],
-      "rank": 365
+      "rank": 363
     },
     {
       "login": "hyperoxy",
@@ -15090,7 +15012,7 @@
           "url": "https://github.com/hyperoxy/technocore-client"
         }
       ],
-      "rank": 366
+      "rank": 364
     },
     {
       "login": "HZJ0523",
@@ -15123,7 +15045,7 @@
           "url": "https://github.com/HZJ0523/technocore-guide-zh"
         }
       ],
-      "rank": 367
+      "rank": 365
     },
     {
       "login": "i-love-hamster",
@@ -15156,7 +15078,40 @@
           "url": "https://github.com/i-love-hamster/technocore-readiness-watcher"
         }
       ],
-      "rank": 368
+      "rank": 366
+    },
+    {
+      "login": "iammikedavis",
+      "score": 4,
+      "is_maintainer": false,
+      "is_author_of_this_board": false,
+      "counts": {
+        "merged_prs": 0,
+        "issues_credited": 0,
+        "verified_proofs": 0,
+        "artifacts": 1
+      },
+      "evidence": [
+        {
+          "signal": "artifact_references_technocore",
+          "points": 2,
+          "what": "public artifact iammikedavis/technocore-safe-did-windows",
+          "url": "https://github.com/iammikedavis/technocore-safe-did-windows"
+        },
+        {
+          "signal": "artifact_has_license",
+          "points": 1,
+          "what": "iammikedavis/technocore-safe-did-windows has a licence",
+          "url": "https://github.com/iammikedavis/technocore-safe-did-windows"
+        },
+        {
+          "signal": "artifact_has_description",
+          "points": 1,
+          "what": "iammikedavis/technocore-safe-did-windows has a description",
+          "url": "https://github.com/iammikedavis/technocore-safe-did-windows"
+        }
+      ],
+      "rank": 367
     },
     {
       "login": "iansamonte",
@@ -15189,7 +15144,7 @@
           "url": "https://github.com/iansamonte/technocore-preflight"
         }
       ],
-      "rank": 369
+      "rank": 368
     },
     {
       "login": "ideateLabs358",
@@ -15222,7 +15177,7 @@
           "url": "https://github.com/ideateLabs358/technocore-guide-ja"
         }
       ],
-      "rank": 370
+      "rank": 369
     },
     {
       "login": "ikura1111",
@@ -15255,7 +15210,7 @@
           "url": "https://github.com/ikura1111/technocore-proof-auditor"
         }
       ],
-      "rank": 371
+      "rank": 370
     },
     {
       "login": "infinityprocode",
@@ -15288,7 +15243,7 @@
           "url": "https://github.com/infinityprocode/technocore-checkin"
         }
       ],
-      "rank": 372
+      "rank": 371
     },
     {
       "login": "ipmy5",
@@ -15321,7 +15276,7 @@
           "url": "https://github.com/ipmy5/technocore-resilient"
         }
       ],
-      "rank": 373
+      "rank": 372
     },
     {
       "login": "IsaacAtunbi15",
@@ -15354,7 +15309,7 @@
           "url": "https://github.com/IsaacAtunbi15/technocore-receipts"
         }
       ],
-      "rank": 374
+      "rank": 373
     },
     {
       "login": "Isaiah-54",
@@ -15381,7 +15336,7 @@
           "url": "https://github.com/Isaiah-54/technocore-contribution-vault"
         }
       ],
-      "rank": 375
+      "rank": 374
     },
     {
       "login": "itsabhishekgup",
@@ -15414,7 +15369,7 @@
           "url": "https://github.com/itsabhishekgup/technocore-doctor"
         }
       ],
-      "rank": 376
+      "rank": 375
     },
     {
       "login": "itskirit",
@@ -15447,7 +15402,7 @@
           "url": "https://github.com/itskirit/technocore-sentinel"
         }
       ],
-      "rank": 377
+      "rank": 376
     },
     {
       "login": "jackL1020",
@@ -15480,7 +15435,7 @@
           "url": "https://github.com/jackL1020/technocore-cn-guide"
         }
       ],
-      "rank": 378
+      "rank": 377
     },
     {
       "login": "JasperGwyn",
@@ -15513,7 +15468,7 @@
           "url": "https://github.com/JasperGwyn/technocore-guia-es"
         }
       ],
-      "rank": 379
+      "rank": 378
     },
     {
       "login": "JaypeeNice",
@@ -15546,7 +15501,7 @@
           "url": "https://github.com/JaypeeNice/technocore-did-starter"
         }
       ],
-      "rank": 380
+      "rank": 379
     },
     {
       "login": "jeni3188",
@@ -15579,7 +15534,7 @@
           "url": "https://github.com/jeni3188/technocore-termux-guide"
         }
       ],
-      "rank": 381
+      "rank": 380
     },
     {
       "login": "JimmyOgb",
@@ -15612,7 +15567,7 @@
           "url": "https://github.com/JimmyOgb/awesome-technocore"
         }
       ],
-      "rank": 382
+      "rank": 381
     },
     {
       "login": "jojay64",
@@ -15645,7 +15600,7 @@
           "url": "https://github.com/jojay64/technocore-agent-demo"
         }
       ],
-      "rank": 383
+      "rank": 382
     },
     {
       "login": "jong6598",
@@ -15678,7 +15633,7 @@
           "url": "https://github.com/jong6598/technocore-safe-adapter"
         }
       ],
-      "rank": 384
+      "rank": 383
     },
     {
       "login": "jtripp11",
@@ -15711,7 +15666,7 @@
           "url": "https://github.com/jtripp11/revenue-handoff-v1"
         }
       ],
-      "rank": 385
+      "rank": 384
     },
     {
       "login": "juanashowerf",
@@ -15744,7 +15699,7 @@
           "url": "https://github.com/juanashowerf/juanashowerf"
         }
       ],
-      "rank": 386
+      "rank": 385
     },
     {
       "login": "Jubbic",
@@ -15777,7 +15732,7 @@
           "url": "https://github.com/Jubbic/technocore-did-beginner-guide"
         }
       ],
-      "rank": 387
+      "rank": 386
     },
     {
       "login": "jvaleskadevs",
@@ -15810,7 +15765,7 @@
           "url": "https://github.com/jvaleskadevs/technocore-quickstart"
         }
       ],
-      "rank": 388
+      "rank": 387
     },
     {
       "login": "kamils333",
@@ -15843,7 +15798,7 @@
           "url": "https://github.com/kamils333/technocore-keyring-tool"
         }
       ],
-      "rank": 389
+      "rank": 388
     },
     {
       "login": "kaminarioyaji",
@@ -15876,7 +15831,7 @@
           "url": "https://github.com/kaminarioyaji/technocore-windows-safe-start-ja"
         }
       ],
-      "rank": 390
+      "rank": 389
     },
     {
       "login": "kankral",
@@ -15909,7 +15864,7 @@
           "url": "https://github.com/kankral/technocore-proof-verifier"
         }
       ],
-      "rank": 391
+      "rank": 390
     },
     {
       "login": "KanrojiTsuuka",
@@ -15942,7 +15897,7 @@
           "url": "https://github.com/KanrojiTsuuka/technocore-agent-safety-toolkit"
         }
       ],
-      "rank": 392
+      "rank": 391
     },
     {
       "login": "KAOUTHAR91998",
@@ -15975,7 +15930,7 @@
           "url": "https://github.com/KAOUTHAR91998/technocore-forge"
         }
       ],
-      "rank": 393
+      "rank": 392
     },
     {
       "login": "KattyFury",
@@ -16008,7 +15963,7 @@
           "url": "https://github.com/KattyFury/build-with-technocore"
         }
       ],
-      "rank": 394
+      "rank": 393
     },
     {
       "login": "katunari08",
@@ -16041,7 +15996,7 @@
           "url": "https://github.com/katunari08/technocore-quickstart-ja"
         }
       ],
-      "rank": 395
+      "rank": 394
     },
     {
       "login": "kawasemaster3130-dev",
@@ -16074,7 +16029,7 @@
           "url": "https://github.com/kawasemaster3130-dev/technocore-live"
         }
       ],
-      "rank": 396
+      "rank": 395
     },
     {
       "login": "keyneszeng",
@@ -16107,7 +16062,7 @@
           "url": "https://github.com/keyneszeng/technocore-guide-zh"
         }
       ],
-      "rank": 397
+      "rank": 396
     },
     {
       "login": "khairounmohsine",
@@ -16140,7 +16095,7 @@
           "url": "https://github.com/khairounmohsine/technocore-did-activity-index"
         }
       ],
-      "rank": 398
+      "rank": 397
     },
     {
       "login": "khoragee",
@@ -16173,7 +16128,7 @@
           "url": "https://github.com/khoragee/flop-onboarding-guide"
         }
       ],
-      "rank": 399
+      "rank": 398
     },
     {
       "login": "kiranoye94-cmd",
@@ -16206,7 +16161,7 @@
           "url": "https://github.com/kiranoye94-cmd/technocore-monitor"
         }
       ],
-      "rank": 400
+      "rank": 399
     },
     {
       "login": "kiwashere",
@@ -16239,7 +16194,7 @@
           "url": "https://github.com/kiwashere/technocore-guide"
         }
       ],
-      "rank": 401
+      "rank": 400
     },
     {
       "login": "koserii",
@@ -16272,7 +16227,7 @@
           "url": "https://github.com/koserii/roomshape"
         }
       ],
-      "rank": 402
+      "rank": 401
     },
     {
       "login": "kosk-t",
@@ -16305,7 +16260,7 @@
           "url": "https://github.com/kosk-t/technocore-safe-participation-ja"
         }
       ],
-      "rank": 403
+      "rank": 402
     },
     {
       "login": "kriptolia",
@@ -16338,7 +16293,7 @@
           "url": "https://github.com/kriptolia/technocore-did-studio"
         }
       ],
-      "rank": 404
+      "rank": 403
     },
     {
       "login": "krishna-505",
@@ -16371,7 +16326,7 @@
           "url": "https://github.com/krishna-505/technonoise"
         }
       ],
-      "rank": 405
+      "rank": 404
     },
     {
       "login": "krismodju",
@@ -16404,7 +16359,7 @@
           "url": "https://github.com/krismodju/krismodju"
         }
       ],
-      "rank": 406
+      "rank": 405
     },
     {
       "login": "kudalaut01",
@@ -16437,7 +16392,7 @@
           "url": "https://github.com/kudalaut01/technocore-tc"
         }
       ],
-      "rank": 407
+      "rank": 406
     },
     {
       "login": "kurimanjuu9",
@@ -16470,7 +16425,7 @@
           "url": "https://github.com/kurimanjuu9/aa-agent-toolkit"
         }
       ],
-      "rank": 408
+      "rank": 407
     },
     {
       "login": "kuromi04",
@@ -16501,6 +16456,39 @@
           "points": 1,
           "what": "kuromi04/termuxtechnocore has a description",
           "url": "https://github.com/kuromi04/termuxtechnocore"
+        }
+      ],
+      "rank": 408
+    },
+    {
+      "login": "laobeizi1996",
+      "score": 4,
+      "is_maintainer": false,
+      "is_author_of_this_board": false,
+      "counts": {
+        "merged_prs": 0,
+        "issues_credited": 0,
+        "verified_proofs": 0,
+        "artifacts": 1
+      },
+      "evidence": [
+        {
+          "signal": "artifact_references_technocore",
+          "points": 2,
+          "what": "public artifact laobeizi1996/technocore-did-guide-zh",
+          "url": "https://github.com/laobeizi1996/technocore-did-guide-zh"
+        },
+        {
+          "signal": "artifact_has_license",
+          "points": 1,
+          "what": "laobeizi1996/technocore-did-guide-zh has a licence",
+          "url": "https://github.com/laobeizi1996/technocore-did-guide-zh"
+        },
+        {
+          "signal": "artifact_has_description",
+          "points": 1,
+          "what": "laobeizi1996/technocore-did-guide-zh has a description",
+          "url": "https://github.com/laobeizi1996/technocore-did-guide-zh"
         }
       ],
       "rank": 409
