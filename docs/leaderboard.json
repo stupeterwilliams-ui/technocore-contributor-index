@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-06T10:10:56Z",
-  "collected_at": "2026-09-06T10:10:56Z",
+  "generated_at": "2026-09-06T11:17:08Z",
+  "collected_at": "2026-09-06T11:17:08Z",
   "upstream_repo": "flop-labs/technocore-chat",
   "weights": {
     "merged_pr": 10,
@@ -5547,6 +5547,52 @@
       "rank": 103
     },
     {
+      "login": "raya3211",
+      "score": 8,
+      "is_maintainer": false,
+      "is_author_of_this_board": false,
+      "counts": {
+        "merged_prs": 0,
+        "issues_credited": 0,
+        "verified_proofs": 0,
+        "artifacts": 3
+      },
+      "evidence": [
+        {
+          "signal": "artifact_references_technocore",
+          "points": 2,
+          "what": "public artifact raya3211/tclk-sandbox",
+          "url": "https://github.com/raya3211/tclk-sandbox"
+        },
+        {
+          "signal": "artifact_maintained_past_first_day",
+          "points": 1,
+          "what": "raya3211/tclk-sandbox had commits after its first day",
+          "url": "https://github.com/raya3211/tclk-sandbox"
+        },
+        {
+          "signal": "artifact_references_technocore",
+          "points": 2,
+          "what": "public artifact raya3211/technocore-did-registry-mirror",
+          "url": "https://github.com/raya3211/technocore-did-registry-mirror"
+        },
+        {
+          "signal": "artifact_has_license",
+          "points": 1,
+          "what": "raya3211/technocore-did-registry-mirror has a licence",
+          "url": "https://github.com/raya3211/technocore-did-registry-mirror"
+        },
+        {
+          "signal": "artifact_references_technocore",
+          "points": 2,
+          "what": "public artifact raya3211/FLOP-Chat-Room",
+          "url": "https://github.com/raya3211/FLOP-Chat-Room"
+        }
+      ],
+      "artifacts_beyond_cap": 2,
+      "rank": 104
+    },
+    {
       "login": "SakiAoiaoi",
       "score": 8,
       "is_maintainer": false,
@@ -5577,7 +5623,7 @@
           "url": "https://github.com/SakiAoiaoi/technocore-signed-client"
         }
       ],
-      "rank": 104
+      "rank": 105
     },
     {
       "login": "sinamugnolx",
@@ -5628,7 +5674,7 @@
           "url": "https://github.com/sinamugnolx/sinamugnolx"
         }
       ],
-      "rank": 105
+      "rank": 106
     },
     {
       "login": "skyemclar",
@@ -5679,7 +5725,7 @@
           "url": "https://github.com/skyemclar/skyemclar"
         }
       ],
-      "rank": 106
+      "rank": 107
     },
     {
       "login": "sm00thh",
@@ -5730,7 +5776,7 @@
           "url": "https://github.com/sm00thh/technocore-mcp-server"
         }
       ],
-      "rank": 107
+      "rank": 108
     },
     {
       "login": "snoodoodles",
@@ -5781,7 +5827,7 @@
           "url": "https://github.com/snoodoodles/technocore-hermes"
         }
       ],
-      "rank": 108
+      "rank": 109
     },
     {
       "login": "UfukNode",
@@ -5832,7 +5878,7 @@
           "url": "https://github.com/UfukNode/Technocore-Live-Workstream"
         }
       ],
-      "rank": 109
+      "rank": 110
     },
     {
       "login": "zakazaka95",
@@ -5883,7 +5929,7 @@
           "url": "https://github.com/zakazaka95/zakazaka95"
         }
       ],
-      "rank": 110
+      "rank": 111
     },
     {
       "login": "Zeeyan05",
@@ -5934,7 +5980,7 @@
           "url": "https://github.com/Zeeyan05/technocore-sdk"
         }
       ],
-      "rank": 111
+      "rank": 112
     },
     {
       "login": "0xricechan",
@@ -5979,7 +6025,7 @@
           "url": "https://github.com/0xricechan/esp32-technocore-lastseq"
         }
       ],
-      "rank": 112
+      "rank": 113
     },
     {
       "login": "bobbymarc00",
@@ -6024,7 +6070,7 @@
           "url": "https://github.com/bobbymarc00/technocore-contributor-guide"
         }
       ],
-      "rank": 113
+      "rank": 114
     },
     {
       "login": "Capheus11",
@@ -6069,7 +6115,7 @@
           "url": "https://github.com/Capheus11/technocore-arena"
         }
       ],
-      "rank": 114
+      "rank": 115
     },
     {
       "login": "dnshtm9",
@@ -6114,7 +6160,7 @@
           "url": "https://github.com/dnshtm9/technocore-keepalive-action"
         }
       ],
-      "rank": 115
+      "rank": 116
     },
     {
       "login": "maragung",
@@ -6159,7 +6205,7 @@
           "url": "https://github.com/maragung/flop-app"
         }
       ],
-      "rank": 116
+      "rank": 117
     },
     {
       "login": "POLYHINTPROJECT",
@@ -6204,46 +6250,6 @@
           "url": "https://github.com/POLYHINTPROJECT/technocore-preflight"
         }
       ],
-      "rank": 117
-    },
-    {
-      "login": "raya3211",
-      "score": 7,
-      "is_maintainer": false,
-      "is_author_of_this_board": false,
-      "counts": {
-        "merged_prs": 0,
-        "issues_credited": 0,
-        "verified_proofs": 0,
-        "artifacts": 3
-      },
-      "evidence": [
-        {
-          "signal": "artifact_references_technocore",
-          "points": 2,
-          "what": "public artifact raya3211/technocore-did-registry-mirror",
-          "url": "https://github.com/raya3211/technocore-did-registry-mirror"
-        },
-        {
-          "signal": "artifact_has_license",
-          "points": 1,
-          "what": "raya3211/technocore-did-registry-mirror has a licence",
-          "url": "https://github.com/raya3211/technocore-did-registry-mirror"
-        },
-        {
-          "signal": "artifact_references_technocore",
-          "points": 2,
-          "what": "public artifact raya3211/tclk-sandbox",
-          "url": "https://github.com/raya3211/tclk-sandbox"
-        },
-        {
-          "signal": "artifact_references_technocore",
-          "points": 2,
-          "what": "public artifact raya3211/FLOP-Chat-Room",
-          "url": "https://github.com/raya3211/FLOP-Chat-Room"
-        }
-      ],
-      "artifacts_beyond_cap": 2,
       "rank": 118
     },
     {
