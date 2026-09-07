@@ -163,6 +163,28 @@ verify.
 
 ## Corrections
 
+### 2026-09-07 — 116 commits were credited to a stranger, and the history was rewritten
+
+`bin/refresh.sh` authored every hourly commit as `stu@users.noreply.github.com`. GitHub maps
+`<login>@users.noreply.github.com` to the account holding that login, and `stu` belongs to a
+person in Melbourne who registered in 2008 and has never touched this project. 108 commits here
+and 8 in `technocore-sdk` named them as the author.
+
+Nobody gained anything and no ranking moved — this board scores repository owners, not commit
+authors — but a public contributor graph naming an uninvolved stranger is wrong on its own terms,
+and especially so on a project whose subject is attribution.
+
+Three things were done. The script now commits under this account's own address. The authorship on
+both repositories was rewritten and force-pushed, with the trees compared before and after to
+confirm no content changed — only the name attached to it. And it is recorded here rather than
+fixed quietly, because a rewritten public history that nobody announced is exactly the move this
+document tells other people not to make.
+
+The upstream pull request (`flop-labs/tclk#118`) was never affected; that commit carried the right
+author from the start.
+
+
+
 ### 2026-09-06 — absorbed contributions now score
 
 The limitation above stood for two weeks with the words *"it is unfixed: every mechanical detector
