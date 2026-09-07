@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-07T09:26:50Z",
+  "generated_at": "2026-09-07T10:33:56Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -11,8 +11,8 @@
     "pulls": {
       "description": "Every pull request against the upstream repo, all states.",
       "method": "gh pr list --repo flop-labs/technocore-chat --state {merged,open,closed} --limit 300",
-      "count": 568,
-      "digest": "sha256:9f93f8fa80569e4013cc043edb6437f18a12120263203c2aa43ed157cd8b916e",
+      "count": 569,
+      "digest": "sha256:bec44b8835fbaa49cdf66763eda5e25d061b49f9ec72d339034874813b1ce3c7",
       "identifiers": [
         "pr#1",
         "pr#10",
@@ -570,6 +570,7 @@
         "pr#777",
         "pr#778",
         "pr#78",
+        "pr#781",
         "pr#8",
         "pr#81",
         "pr#83",
@@ -587,8 +588,8 @@
     "issues": {
       "description": "Every issue against the upstream repo, all states.",
       "method": "gh issue list --repo flop-labs/technocore-chat --state all --limit 300",
-      "count": 169,
-      "digest": "sha256:f3f1e8ab40da3cceeb40147e528b538e9c9f49e2f71b86626019795be4acba7b",
+      "count": 171,
+      "digest": "sha256:c8b1534c88b9055ee310cc75ef9faead5513f92a46a5de438ecb9fe9627c8934",
       "identifiers": [
         "issue#101",
         "issue#105",
@@ -757,6 +758,8 @@
         "issue#769",
         "issue#77",
         "issue#775",
+        "issue#779",
+        "issue#780",
         "issue#85",
         "issue#95"
       ]
@@ -764,8 +767,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1044,
-      "digest": "sha256:3891cdede46231d9091089b05a40a4ceead27a722b9637941f783ccd83743128",
+      "count": 1043,
+      "digest": "sha256:999bfb87c21bcd8a1d62c7f7c6b647618aafcb5f11e2b58f3439dc88b128d66d",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/flopkit-sdk",
@@ -1285,7 +1288,6 @@
         "dolmaciabdullah-byte/technocore-did-tool",
         "dolmaciabdullah-byte/technocore-logo",
         "domwalker203/technocore-client",
-        "domwalker203/technocore-signal-relay",
         "donibond/flop-technocore-xbot",
         "doublefaceqz/technocore-client",
         "dprincecoder/technocore-agent",
@@ -1532,7 +1534,6 @@
         "miscaz/technocore-cli",
         "mitsuri5/technocore-portable-proof",
         "miyawakiclaude/lineageauth",
-        "miyawakiclaude/technocore-core-hex",
         "miyawakiclaude/technocore-ja",
         "miyawakiclaude/technocore-rpc",
         "mmorgsmorgan/FLOP-Labs-Technocore-Agent-Guide",
@@ -1542,6 +1543,7 @@
         "mobiltekno/awesome-technocore",
         "moc33/technocore-agent-bridge",
         "mochiexude/technocore-react",
+        "mochitran2411/technocore-did-kit",
         "mohamadgueniari/technocore-room-auditor",
         "mohamedsilah/technocore-ghost-agent",
         "mojeebdev/didcore",
@@ -1604,6 +1606,7 @@
         "penggunalayanan/technocore-room-verifier",
         "philpher0x/technocore-cyberbeer-bot",
         "philpher0x/technocore-defi-watch",
+        "piotrostr/technocore-swarm-replay",
         "plasmaxdn/technocore-monitor",
         "ponsuke1469/technocore-human-board",
         "pookiebear57/technocore-agent-sdk",
@@ -1728,7 +1731,6 @@
         "tolga06060/Technocore-did-rehber",
         "toma86hawk/technocore-flop-japan",
         "tomatantan/technocore-js",
-        "tomj94129/Technocore-did-guide",
         "tomuisan/technocore-starter-agent",
         "tora-ai-bot/awesome-technocore",
         "tosun7/technocore-measurements",
