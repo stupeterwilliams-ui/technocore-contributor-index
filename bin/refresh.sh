@@ -84,7 +84,12 @@ if [[ "$DRY" == "--dry" ]]; then
 fi
 
 git add -A data/ docs/ >/dev/null 2>&1
-git -c user.name="Stu" -c user.email="stu@users.noreply.github.com" \
+# Author explicitly, and with OUR noreply address. `stu@users.noreply.github.com` was here for
+# 108 commits and it is not ours — GitHub maps `<login>@users.noreply.github.com` to the account
+# with that login, and `stu` is a real person in Melbourne who registered in 2008 and has never
+# touched this repository. Every hourly refresh was publicly credited to them.
+git -c user.name="stupeterwilliams-ui" \
+    -c user.email="257534982+stupeterwilliams-ui@users.noreply.github.com" \
     commit -q -m "data: refresh leaderboard ($RANKED ranked)" >>"$LOG" 2>&1
 
 if git push -q origin main >>"$LOG" 2>&1; then
