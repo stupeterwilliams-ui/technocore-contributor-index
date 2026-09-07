@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-07T02:46:58Z",
+  "generated_at": "2026-09-07T03:53:30Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -12,13 +12,12 @@
       "description": "Every pull request against the upstream repo, all states.",
       "method": "gh pr list --repo flop-labs/technocore-chat --state {merged,open,closed} --limit 300",
       "count": 567,
-      "digest": "sha256:8ceba1cbf8db2e931aab4c1b253fb4bb87f75560c8f1266b76a0f2aea65676e5",
+      "digest": "sha256:a2e9c279a5edc0ea170ba04db80b209c2b936e09eeb54138a8f72f0f42e51aa5",
       "identifiers": [
         "pr#1",
         "pr#10",
         "pr#100",
         "pr#103",
-        "pr#106",
         "pr#107",
         "pr#108",
         "pr#110",
@@ -568,6 +567,7 @@
         "pr#760",
         "pr#761",
         "pr#762",
+        "pr#770",
         "pr#78",
         "pr#8",
         "pr#81",
@@ -586,8 +586,8 @@
     "issues": {
       "description": "Every issue against the upstream repo, all states.",
       "method": "gh issue list --repo flop-labs/technocore-chat --state all --limit 300",
-      "count": 161,
-      "digest": "sha256:b48745138504581c8e42071f4df67afb48799a98bf8264052121aaf1c56298ec",
+      "count": 168,
+      "digest": "sha256:02dc1284d77458aae98bed8029604594328bdf9ae0999252a9eab045cccbf571",
       "identifiers": [
         "issue#101",
         "issue#105",
@@ -747,6 +747,13 @@
         "issue#758",
         "issue#759",
         "issue#76",
+        "issue#763",
+        "issue#764",
+        "issue#765",
+        "issue#766",
+        "issue#767",
+        "issue#768",
+        "issue#769",
         "issue#77",
         "issue#85",
         "issue#95"
@@ -1805,8 +1812,8 @@
     "proofs": {
       "description": "Contribution proofs found by code search, plus a direct probe of every discovered artifact repository for a root contribution-proof.json.",
       "method": "search/code 'technocore-contribution-proof-v1', all pages, unioned with a direct fetch per artifact repo",
-      "count": 152,
-      "digest": "sha256:7319b77cda9534b9ba92314778dbf7c8e61823e0f3368c9bf8d98fba47f2dc3b",
+      "count": 151,
+      "digest": "sha256:5175ab837558486f3ba5685a20d6c59823e76501837b60b8e86f2236c20346e3",
       "identifiers": [
         "0o0r7/flop-did-contributor-kit/technocore_agent.py",
         "0o0r7/flopkit-sdk/sdk/src/flopkit/proofs.py",
@@ -1899,7 +1906,6 @@
         "kforc/technocore-proof/src/verification.ts",
         "khairounmohsine/technocore-did-activity-index/contribution-proof.json",
         "kiranoye94-cmd/technocore-monitor/contribution-proof.json",
-        "laobeizi1996/technocore-did-guide-zh/contribution-proof.json",
         "loneewolflone-debug/technocore-flow/contribution-proof.json",
         "m7mdd77/flop-technocore-agent/contribution-proof.json",
         "mehmetkr-31/technocore-turkce-rehber/README.md",
