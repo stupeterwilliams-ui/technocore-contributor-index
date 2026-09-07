@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-07T16:08:58Z",
+  "generated_at": "2026-09-07T17:16:04Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -775,8 +775,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1048,
-      "digest": "sha256:e462ab3a818f933451d310b2e16310ef04d59a15feb7cb2d589ee757dd51783b",
+      "count": 1047,
+      "digest": "sha256:97aef88c1a1932103575ed1db84a8478de4a27c9661a60877568003d66abe423",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/flopkit-sdk",
@@ -1411,7 +1411,6 @@
         "highwill/technocore-flop-agent",
         "hiiro22/proof_check",
         "hirschga/ace-technocore-guide",
-        "hittosuy/flop-agent-kit",
         "hkermanin/technocore-telegram-bot",
         "hnumey31/technocore-nonce-allocator",
         "hokazone/technocore-ja-guide",
