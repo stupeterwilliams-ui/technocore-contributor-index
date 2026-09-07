@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-07T18:22:40Z",
-  "collected_at": "2026-09-07T18:22:36Z",
+  "generated_at": "2026-09-07T19:29:36Z",
+  "collected_at": "2026-09-07T19:29:34Z",
   "upstream_repo": "flop-labs/technocore-chat",
   "weights": {
     "merged_pr": 10,
@@ -4704,6 +4704,64 @@
       "rank": 86
     },
     {
+      "login": "parkzen11",
+      "score": 9,
+      "is_maintainer": false,
+      "is_author_of_this_board": false,
+      "counts": {
+        "merged_prs": 0,
+        "issues_credited": 0,
+        "verified_proofs": 0,
+        "artifacts": 2,
+        "absorbed": 0
+      },
+      "evidence": [
+        {
+          "signal": "artifact_references_technocore",
+          "points": 2,
+          "what": "public artifact parkzen11/flop-harness",
+          "url": "https://github.com/parkzen11/flop-harness"
+        },
+        {
+          "signal": "artifact_has_license",
+          "points": 1,
+          "what": "parkzen11/flop-harness has a licence",
+          "url": "https://github.com/parkzen11/flop-harness"
+        },
+        {
+          "signal": "artifact_has_description",
+          "points": 1,
+          "what": "parkzen11/flop-harness has a description",
+          "url": "https://github.com/parkzen11/flop-harness"
+        },
+        {
+          "signal": "artifact_maintained_past_first_day",
+          "points": 1,
+          "what": "parkzen11/flop-harness had commits after its first day",
+          "url": "https://github.com/parkzen11/flop-harness"
+        },
+        {
+          "signal": "artifact_references_technocore",
+          "points": 2,
+          "what": "public artifact parkzen11/tclk-portfolio",
+          "url": "https://github.com/parkzen11/tclk-portfolio"
+        },
+        {
+          "signal": "artifact_has_license",
+          "points": 1,
+          "what": "parkzen11/tclk-portfolio has a licence",
+          "url": "https://github.com/parkzen11/tclk-portfolio"
+        },
+        {
+          "signal": "artifact_has_description",
+          "points": 1,
+          "what": "parkzen11/tclk-portfolio has a description",
+          "url": "https://github.com/parkzen11/tclk-portfolio"
+        }
+      ],
+      "rank": 87
+    },
+    {
       "login": "relvetic-netizen",
       "score": 9,
       "is_maintainer": false,
@@ -4759,7 +4817,7 @@
           "url": "https://github.com/relvetic-netizen/technocore-client"
         }
       ],
-      "rank": 87
+      "rank": 88
     },
     {
       "login": "stupeterwilliams-ui",
@@ -4831,7 +4889,7 @@
           "url": "https://github.com/stupeterwilliams-ui/technocore-cc"
         }
       ],
-      "rank": 88
+      "rank": 89
     },
     {
       "login": "thangvmt",
@@ -4889,7 +4947,7 @@
           "url": "https://github.com/thangvmt/technocore-mark"
         }
       ],
-      "rank": 89
+      "rank": 90
     },
     {
       "login": "0xnurrabby",
@@ -4935,7 +4993,7 @@
           "url": "https://github.com/0xnurrabby/Flop-Didbook"
         }
       ],
-      "rank": 90
+      "rank": 91
     },
     {
       "login": "244whopper-cyber",
@@ -4987,7 +5045,7 @@
           "url": "https://github.com/244whopper-cyber/technocore-easy-setup"
         }
       ],
-      "rank": 91
+      "rank": 92
     },
     {
       "login": "alwialhuda11",
@@ -5039,7 +5097,7 @@
           "url": "https://github.com/alwialhuda11/technocore-client"
         }
       ],
-      "rank": 92
+      "rank": 93
     },
     {
       "login": "brycenitro",
@@ -5091,7 +5149,7 @@
           "url": "https://github.com/brycenitro/awesome-technocore"
         }
       ],
-      "rank": 93
+      "rank": 94
     },
     {
       "login": "championrx",
@@ -5143,7 +5201,7 @@
           "url": "https://github.com/championrx/technocore-safe-verify"
         }
       ],
-      "rank": 94
+      "rank": 95
     },
     {
       "login": "chip1chapa",
@@ -5195,7 +5253,7 @@
           "url": "https://github.com/chip1chapa/technocore-contribution-action"
         }
       ],
-      "rank": 95
+      "rank": 96
     },
     {
       "login": "d4ncboz",
@@ -5247,7 +5305,7 @@
           "url": "https://github.com/d4ncboz/awesome-technocore"
         }
       ],
-      "rank": 96
+      "rank": 97
     },
     {
       "login": "deanetolan",
@@ -5299,7 +5357,7 @@
           "url": "https://github.com/deanetolan/deanetolan"
         }
       ],
-      "rank": 97
+      "rank": 98
     },
     {
       "login": "devorun",
@@ -5351,7 +5409,7 @@
           "url": "https://github.com/devorun/awesome-technocore"
         }
       ],
-      "rank": 98
+      "rank": 99
     },
     {
       "login": "dharmanan",
@@ -5403,7 +5461,7 @@
           "url": "https://github.com/dharmanan/technocore-agent-console"
         }
       ],
-      "rank": 99
+      "rank": 100
     },
     {
       "login": "egg2006",
@@ -5455,7 +5513,7 @@
           "url": "https://github.com/egg2006/technocore-logo"
         }
       ],
-      "rank": 100
+      "rank": 101
     },
     {
       "login": "eigenmaxi",
@@ -5507,7 +5565,7 @@
           "url": "https://github.com/eigenmaxi/technocore-did-tutorial"
         }
       ],
-      "rank": 101
+      "rank": 102
     },
     {
       "login": "flop-labs-dev",
@@ -5559,7 +5617,7 @@
           "url": "https://github.com/flop-labs-dev/tclk"
         }
       ],
-      "rank": 102
+      "rank": 103
     },
     {
       "login": "githubbjj",
@@ -5611,7 +5669,7 @@
           "url": "https://github.com/githubbjj/technocore-audit"
         }
       ],
-      "rank": 103
+      "rank": 104
     },
     {
       "login": "heresyxx001",
@@ -5663,7 +5721,7 @@
           "url": "https://github.com/heresyxx001/technocore-telegram-monitor"
         }
       ],
-      "rank": 104
+      "rank": 105
     },
     {
       "login": "infinity-nashi",
@@ -5715,7 +5773,7 @@
           "url": "https://github.com/infinity-nashi/technocore-conformance-ledger"
         }
       ],
-      "rank": 105
+      "rank": 106
     },
     {
       "login": "jesbennp",
@@ -5767,7 +5825,7 @@
           "url": "https://github.com/jesbennp/jesbennp"
         }
       ],
-      "rank": 106
+      "rank": 107
     },
     {
       "login": "kaylenenotca",
@@ -5819,7 +5877,7 @@
           "url": "https://github.com/kaylenenotca/kaylenenotca"
         }
       ],
-      "rank": 107
+      "rank": 108
     },
     {
       "login": "lela-lenin",
@@ -5871,7 +5929,7 @@
           "url": "https://github.com/lela-lenin/lela-lenin"
         }
       ],
-      "rank": 108
+      "rank": 109
     },
     {
       "login": "maffmoff",
@@ -5923,7 +5981,7 @@
           "url": "https://github.com/maffmoff/technocore-safe-onboarding-ja"
         }
       ],
-      "rank": 109
+      "rank": 110
     },
     {
       "login": "nevermnind",
@@ -5975,7 +6033,7 @@
           "url": "https://github.com/nevermnind/technocore-explorer"
         }
       ],
-      "rank": 110
+      "rank": 111
     },
     {
       "login": "noncesense67-spec",
@@ -6025,58 +6083,6 @@
           "points": 1,
           "what": "noncesense67-spec/deal-or-no-deal has a description",
           "url": "https://github.com/noncesense67-spec/deal-or-no-deal"
-        }
-      ],
-      "rank": 111
-    },
-    {
-      "login": "parkzen11",
-      "score": 8,
-      "is_maintainer": false,
-      "is_author_of_this_board": false,
-      "counts": {
-        "merged_prs": 0,
-        "issues_credited": 0,
-        "verified_proofs": 0,
-        "artifacts": 2,
-        "absorbed": 0
-      },
-      "evidence": [
-        {
-          "signal": "artifact_references_technocore",
-          "points": 2,
-          "what": "public artifact parkzen11/flop-harness",
-          "url": "https://github.com/parkzen11/flop-harness"
-        },
-        {
-          "signal": "artifact_has_license",
-          "points": 1,
-          "what": "parkzen11/flop-harness has a licence",
-          "url": "https://github.com/parkzen11/flop-harness"
-        },
-        {
-          "signal": "artifact_has_description",
-          "points": 1,
-          "what": "parkzen11/flop-harness has a description",
-          "url": "https://github.com/parkzen11/flop-harness"
-        },
-        {
-          "signal": "artifact_references_technocore",
-          "points": 2,
-          "what": "public artifact parkzen11/tclk-portfolio",
-          "url": "https://github.com/parkzen11/tclk-portfolio"
-        },
-        {
-          "signal": "artifact_has_license",
-          "points": 1,
-          "what": "parkzen11/tclk-portfolio has a licence",
-          "url": "https://github.com/parkzen11/tclk-portfolio"
-        },
-        {
-          "signal": "artifact_has_description",
-          "points": 1,
-          "what": "parkzen11/tclk-portfolio has a description",
-          "url": "https://github.com/parkzen11/tclk-portfolio"
         }
       ],
       "rank": 112
