@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-07T03:53:30Z",
+  "generated_at": "2026-09-07T04:59:35Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -12,7 +12,7 @@
       "description": "Every pull request against the upstream repo, all states.",
       "method": "gh pr list --repo flop-labs/technocore-chat --state {merged,open,closed} --limit 300",
       "count": 567,
-      "digest": "sha256:a2e9c279a5edc0ea170ba04db80b209c2b936e09eeb54138a8f72f0f42e51aa5",
+      "digest": "sha256:f6d92243ce2ac103a43bdf41fd0ac18d8c568d0ca2583c44f1e01e4f058769d9",
       "identifiers": [
         "pr#1",
         "pr#10",
@@ -20,16 +20,12 @@
         "pr#103",
         "pr#107",
         "pr#108",
-        "pr#110",
         "pr#111",
-        "pr#112",
         "pr#113",
         "pr#114",
-        "pr#117",
         "pr#119",
         "pr#12",
         "pr#120",
-        "pr#121",
         "pr#122",
         "pr#123",
         "pr#124",
@@ -568,6 +564,10 @@
         "pr#761",
         "pr#762",
         "pr#770",
+        "pr#771",
+        "pr#772",
+        "pr#773",
+        "pr#774",
         "pr#78",
         "pr#8",
         "pr#81",
@@ -586,8 +586,8 @@
     "issues": {
       "description": "Every issue against the upstream repo, all states.",
       "method": "gh issue list --repo flop-labs/technocore-chat --state all --limit 300",
-      "count": 168,
-      "digest": "sha256:02dc1284d77458aae98bed8029604594328bdf9ae0999252a9eab045cccbf571",
+      "count": 169,
+      "digest": "sha256:f3f1e8ab40da3cceeb40147e528b538e9c9f49e2f71b86626019795be4acba7b",
       "identifiers": [
         "issue#101",
         "issue#105",
@@ -755,6 +755,7 @@
         "issue#768",
         "issue#769",
         "issue#77",
+        "issue#775",
         "issue#85",
         "issue#95"
       ]
