@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-07T10:33:56Z",
-  "collected_at": "2026-09-07T10:33:54Z",
+  "generated_at": "2026-09-07T11:40:44Z",
+  "collected_at": "2026-09-07T11:40:42Z",
   "upstream_repo": "flop-labs/technocore-chat",
   "weights": {
     "merged_pr": 10,
@@ -4176,6 +4176,70 @@
       "rank": 74
     },
     {
+      "login": "Qwealzy",
+      "score": 10,
+      "is_maintainer": false,
+      "is_author_of_this_board": false,
+      "counts": {
+        "merged_prs": 0,
+        "issues_credited": 0,
+        "verified_proofs": 0,
+        "artifacts": 2,
+        "absorbed": 0
+      },
+      "evidence": [
+        {
+          "signal": "artifact_references_technocore",
+          "points": 2,
+          "what": "public artifact Qwealzy/tclk-audit",
+          "url": "https://github.com/Qwealzy/tclk-audit"
+        },
+        {
+          "signal": "artifact_has_license",
+          "points": 1,
+          "what": "Qwealzy/tclk-audit has a licence",
+          "url": "https://github.com/Qwealzy/tclk-audit"
+        },
+        {
+          "signal": "artifact_has_description",
+          "points": 1,
+          "what": "Qwealzy/tclk-audit has a description",
+          "url": "https://github.com/Qwealzy/tclk-audit"
+        },
+        {
+          "signal": "artifact_maintained_past_first_day",
+          "points": 1,
+          "what": "Qwealzy/tclk-audit had commits after its first day",
+          "url": "https://github.com/Qwealzy/tclk-audit"
+        },
+        {
+          "signal": "artifact_references_technocore",
+          "points": 2,
+          "what": "public artifact Qwealzy/technocore-client",
+          "url": "https://github.com/Qwealzy/technocore-client"
+        },
+        {
+          "signal": "artifact_has_license",
+          "points": 1,
+          "what": "Qwealzy/technocore-client has a licence",
+          "url": "https://github.com/Qwealzy/technocore-client"
+        },
+        {
+          "signal": "artifact_has_description",
+          "points": 1,
+          "what": "Qwealzy/technocore-client has a description",
+          "url": "https://github.com/Qwealzy/technocore-client"
+        },
+        {
+          "signal": "artifact_maintained_past_first_day",
+          "points": 1,
+          "what": "Qwealzy/technocore-client had commits after its first day",
+          "url": "https://github.com/Qwealzy/technocore-client"
+        }
+      ],
+      "rank": 75
+    },
+    {
       "login": "Ridwannurudeen",
       "score": 10,
       "is_maintainer": false,
@@ -4237,7 +4301,7 @@
           "url": "https://github.com/Ridwannurudeen/technocore-coordination"
         }
       ],
-      "rank": 75
+      "rank": 76
     },
     {
       "login": "rioyu123",
@@ -4259,7 +4323,7 @@
           "url": "https://github.com/flop-labs/technocore-chat/pull/135"
         }
       ],
-      "rank": 76
+      "rank": 77
     },
     {
       "login": "runesleo",
@@ -4281,7 +4345,7 @@
           "url": "https://github.com/flop-labs/technocore-chat/pull/259"
         }
       ],
-      "rank": 77
+      "rank": 78
     },
     {
       "login": "ShalyX",
@@ -4303,7 +4367,7 @@
           "url": "https://github.com/flop-labs/technocore-chat/pull/670"
         }
       ],
-      "rank": 78
+      "rank": 79
     },
     {
       "login": "sinirlibiber",
@@ -4325,7 +4389,7 @@
           "url": "https://github.com/flop-labs/technocore-chat/pull/29"
         }
       ],
-      "rank": 79
+      "rank": 80
     },
     {
       "login": "zunmax",
@@ -4383,7 +4447,7 @@
           "url": "https://github.com/zunmax/awesome-technocore"
         }
       ],
-      "rank": 80
+      "rank": 81
     },
     {
       "login": "alitiknazoglu",
@@ -4423,7 +4487,7 @@
           "url": "https://github.com/alitiknazoglu/flop-index-api"
         }
       ],
-      "rank": 81
+      "rank": 82
     },
     {
       "login": "eren-karakus0",
@@ -4481,7 +4545,7 @@
           "url": "https://github.com/eren-karakus0/signed-canvas"
         }
       ],
-      "rank": 82
+      "rank": 83
     },
     {
       "login": "hubofvalley",
@@ -4539,7 +4603,7 @@
           "url": "https://github.com/hubofvalley/technocore-did-guide"
         }
       ],
-      "rank": 83
+      "rank": 84
     },
     {
       "login": "MichaelTEE21",
@@ -4597,7 +4661,7 @@
           "url": "https://github.com/MichaelTEE21/Technocore-Guide"
         }
       ],
-      "rank": 84
+      "rank": 85
     },
     {
       "login": "mnsis",
@@ -4655,7 +4719,7 @@
           "url": "https://github.com/mnsis/technocore-watchtower"
         }
       ],
-      "rank": 85
+      "rank": 86
     },
     {
       "login": "relvetic-netizen",
@@ -4713,7 +4777,7 @@
           "url": "https://github.com/relvetic-netizen/technocore-client"
         }
       ],
-      "rank": 86
+      "rank": 87
     },
     {
       "login": "stupeterwilliams-ui",
@@ -4785,7 +4849,7 @@
           "url": "https://github.com/stupeterwilliams-ui/technocore-cc"
         }
       ],
-      "rank": 87
+      "rank": 88
     },
     {
       "login": "thangvmt",
@@ -4843,7 +4907,7 @@
           "url": "https://github.com/thangvmt/technocore-mark"
         }
       ],
-      "rank": 88
+      "rank": 89
     },
     {
       "login": "0xnurrabby",
@@ -4889,7 +4953,7 @@
           "url": "https://github.com/0xnurrabby/Flop-Didbook"
         }
       ],
-      "rank": 89
+      "rank": 90
     },
     {
       "login": "244whopper-cyber",
@@ -4941,7 +5005,7 @@
           "url": "https://github.com/244whopper-cyber/technocore-easy-setup"
         }
       ],
-      "rank": 90
+      "rank": 91
     },
     {
       "login": "alwialhuda11",
@@ -4993,7 +5057,7 @@
           "url": "https://github.com/alwialhuda11/technocore-client"
         }
       ],
-      "rank": 91
+      "rank": 92
     },
     {
       "login": "brycenitro",
@@ -5045,7 +5109,7 @@
           "url": "https://github.com/brycenitro/awesome-technocore"
         }
       ],
-      "rank": 92
+      "rank": 93
     },
     {
       "login": "championrx",
@@ -5097,7 +5161,7 @@
           "url": "https://github.com/championrx/technocore-safe-verify"
         }
       ],
-      "rank": 93
+      "rank": 94
     },
     {
       "login": "chip1chapa",
@@ -5149,7 +5213,7 @@
           "url": "https://github.com/chip1chapa/technocore-contribution-action"
         }
       ],
-      "rank": 94
+      "rank": 95
     },
     {
       "login": "d4ncboz",
@@ -5201,7 +5265,7 @@
           "url": "https://github.com/d4ncboz/awesome-technocore"
         }
       ],
-      "rank": 95
+      "rank": 96
     },
     {
       "login": "deanetolan",
@@ -5253,7 +5317,7 @@
           "url": "https://github.com/deanetolan/deanetolan"
         }
       ],
-      "rank": 96
+      "rank": 97
     },
     {
       "login": "devorun",
@@ -5305,7 +5369,7 @@
           "url": "https://github.com/devorun/awesome-technocore"
         }
       ],
-      "rank": 97
+      "rank": 98
     },
     {
       "login": "dharmanan",
@@ -5357,7 +5421,7 @@
           "url": "https://github.com/dharmanan/technocore-agent-console"
         }
       ],
-      "rank": 98
+      "rank": 99
     },
     {
       "login": "egg2006",
@@ -5409,7 +5473,7 @@
           "url": "https://github.com/egg2006/technocore-logo"
         }
       ],
-      "rank": 99
+      "rank": 100
     },
     {
       "login": "flop-labs-dev",
@@ -5461,7 +5525,7 @@
           "url": "https://github.com/flop-labs-dev/tclk"
         }
       ],
-      "rank": 100
+      "rank": 101
     },
     {
       "login": "githubbjj",
@@ -5513,7 +5577,7 @@
           "url": "https://github.com/githubbjj/technocore-audit"
         }
       ],
-      "rank": 101
+      "rank": 102
     },
     {
       "login": "heresyxx001",
@@ -5565,7 +5629,7 @@
           "url": "https://github.com/heresyxx001/technocore-telegram-monitor"
         }
       ],
-      "rank": 102
+      "rank": 103
     },
     {
       "login": "infinity-nashi",
@@ -5617,7 +5681,7 @@
           "url": "https://github.com/infinity-nashi/technocore-conformance-ledger"
         }
       ],
-      "rank": 103
+      "rank": 104
     },
     {
       "login": "jesbennp",
@@ -5669,7 +5733,7 @@
           "url": "https://github.com/jesbennp/jesbennp"
         }
       ],
-      "rank": 104
+      "rank": 105
     },
     {
       "login": "kaylenenotca",
@@ -5721,7 +5785,7 @@
           "url": "https://github.com/kaylenenotca/kaylenenotca"
         }
       ],
-      "rank": 105
+      "rank": 106
     },
     {
       "login": "lela-lenin",
@@ -5773,7 +5837,7 @@
           "url": "https://github.com/lela-lenin/lela-lenin"
         }
       ],
-      "rank": 106
+      "rank": 107
     },
     {
       "login": "maffmoff",
@@ -5825,7 +5889,7 @@
           "url": "https://github.com/maffmoff/technocore-safe-onboarding-ja"
         }
       ],
-      "rank": 107
+      "rank": 108
     },
     {
       "login": "nevermnind",
@@ -5877,7 +5941,7 @@
           "url": "https://github.com/nevermnind/technocore-explorer"
         }
       ],
-      "rank": 108
+      "rank": 109
     },
     {
       "login": "noncesense67-spec",
@@ -5929,7 +5993,7 @@
           "url": "https://github.com/noncesense67-spec/deal-or-no-deal"
         }
       ],
-      "rank": 109
+      "rank": 110
     },
     {
       "login": "parkzen11",
@@ -5979,58 +6043,6 @@
           "points": 1,
           "what": "parkzen11/tclk-portfolio has a description",
           "url": "https://github.com/parkzen11/tclk-portfolio"
-        }
-      ],
-      "rank": 110
-    },
-    {
-      "login": "Qwealzy",
-      "score": 8,
-      "is_maintainer": false,
-      "is_author_of_this_board": false,
-      "counts": {
-        "merged_prs": 0,
-        "issues_credited": 0,
-        "verified_proofs": 0,
-        "artifacts": 2,
-        "absorbed": 0
-      },
-      "evidence": [
-        {
-          "signal": "artifact_references_technocore",
-          "points": 2,
-          "what": "public artifact Qwealzy/tclk-audit",
-          "url": "https://github.com/Qwealzy/tclk-audit"
-        },
-        {
-          "signal": "artifact_has_license",
-          "points": 1,
-          "what": "Qwealzy/tclk-audit has a licence",
-          "url": "https://github.com/Qwealzy/tclk-audit"
-        },
-        {
-          "signal": "artifact_has_description",
-          "points": 1,
-          "what": "Qwealzy/tclk-audit has a description",
-          "url": "https://github.com/Qwealzy/tclk-audit"
-        },
-        {
-          "signal": "artifact_references_technocore",
-          "points": 2,
-          "what": "public artifact Qwealzy/technocore-client",
-          "url": "https://github.com/Qwealzy/technocore-client"
-        },
-        {
-          "signal": "artifact_has_license",
-          "points": 1,
-          "what": "Qwealzy/technocore-client has a licence",
-          "url": "https://github.com/Qwealzy/technocore-client"
-        },
-        {
-          "signal": "artifact_has_description",
-          "points": 1,
-          "what": "Qwealzy/technocore-client has a description",
-          "url": "https://github.com/Qwealzy/technocore-client"
         }
       ],
       "rank": 111
