@@ -51,14 +51,6 @@ if ! uv run ./bin/build_site.py >>"$LOG" 2>&1; then
   exit 1
 fi
 
-# Sign what was just built. Last, because it attests the published bytes and anything that ran
-# after it would invalidate what it says. Not fatal: an unsigned refresh is the state this board
-# was in for two weeks, whereas a refresh that stops on a signing error publishes nothing at all.
-if ! uv run --project "$HOME/Projects/technocore-sdk" ./bin/sign_release.py >>"$LOG" 2>&1; then
-  log "SIGN FAILED (publishing unsigned; the previous SIGNATURE.json no longer matches)"
-  rm -f docs/SIGNATURE.json
-fi
-
 # `generated_at` changes on every run, so it is not evidence that anything moved. Compare the
 # ranking itself — otherwise a timer would commit an identical board every hour forever.
 CHANGED="$(python3 - <<'PY'
@@ -91,6 +83,15 @@ if [[ "$DRY" == "--dry" ]]; then
   exit 0
 fi
 
+# Sign here and nowhere earlier. Signing straight after the build attested bytes that the
+# no-change branch above then discarded with `git checkout -- docs/`, leaving a SIGNATURE.json
+# describing a build that never shipped — which is how a wrong signature reached the site once.
+# A signature belongs to the commit it travels in, so it is produced immediately before the add.
+if ! uv run --project "$HOME/Projects/technocore-sdk" ./bin/sign_release.py >>"$LOG" 2>&1; then
+  log "SIGN FAILED (publishing unsigned rather than stale)"
+  rm -f docs/SIGNATURE.json
+fi
+
 git add -A data/ docs/ >/dev/null 2>&1
 # Author explicitly, and with OUR noreply address. `stu@users.noreply.github.com` was here for
 # 108 commits and it is not ours — GitHub maps `<login>@users.noreply.github.com` to the account
@@ -100,7 +101,16 @@ git -c user.name="stupeterwilliams-ui" \
     -c user.email="257534982+stupeterwilliams-ui@users.noreply.github.com" \
     commit -q -m "data: refresh leaderboard ($RANKED ranked)" >>"$LOG" 2>&1
 
-if git push -q origin main >>"$LOG" 2>&1; then
+if # Verify the signature against what the commit actually holds, before pushing. The working tree
+# is not the artifact — the commit is, and the two disagreed once already. A signature describing
+# bytes nobody can fetch is worse than none: it invites a reader to conclude we tampered rather
+# than that we mis-ordered two steps.
+if [[ -f docs/SIGNATURE.json ]] && ! python3 ./bin/verify_release.py --from-commit >>"$LOG" 2>&1; then
+  log "SIGNATURE/COMMIT MISMATCH — not pushing"
+  exit 1
+fi
+
+git push -q origin main >>"$LOG" 2>&1; then
   log "PUBLISHED"
 else
   log "PUSH FAILED"
