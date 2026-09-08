@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-08T09:56:44Z",
+  "generated_at": "2026-09-08T11:04:04Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -781,7 +781,7 @@
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
       "count": 1053,
-      "digest": "sha256:560adbeb84328055ad10e3dbe8b14dfc1672c738f5df921a7fe6f6b6f9e7caa2",
+      "digest": "sha256:3b0403c202370b568fa35c4cc0833b37020889b6c890ddc20cac0235afa03840",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/Fri",
@@ -966,7 +966,6 @@
         "Johndurux/technocore-sentinel",
         "Jr-kenny/technocore-guide",
         "JspIIV/technocore-agent",
-        "Jubbic/technocore-did-beginner-guide",
         "KAOUTHAR91998/technocore-forge",
         "KanrojiTsuuka/technocore-agent-safety-toolkit",
         "Kastor13/technocore-mcp",
@@ -1516,6 +1515,7 @@
         "kuromi04/termuxtechnocore",
         "kutluhaneth46/technocore-agent",
         "kvzuobai/technocore-agent-workflows",
+        "kyosuke25/agent-elite-wrestling",
         "kyosuke25/technocore-did-windows",
         "latest63/technocore-onboarding",
         "lela-lenin/lela-lenin",
@@ -1842,7 +1842,7 @@
       "description": "Contribution proofs found by code search, plus a direct probe of every discovered artifact repository for a root contribution-proof.json.",
       "method": "search/code 'technocore-contribution-proof-v1', all pages, unioned with a direct fetch per artifact repo",
       "count": 154,
-      "digest": "sha256:e0241817e145be51915398e07841ebbc71ba7416a0d7a4e584ae6816c1d5aed2",
+      "digest": "sha256:89ac5a8a58f22cc138f2977c5fba24e964236114a56dfa5ca068582655896e17",
       "identifiers": [
         "0o0r7/Fri/docs/PROJECT_CONTEXT.md",
         "0o0r7/flop-did-contributor-kit/technocore_agent.py",
@@ -1859,7 +1859,6 @@
         "1azyd3v/technocore-did/contribution-proof.json",
         "244whopper-cyber/technocore-japanese-guide/contribution-proof.json",
         "ARR03/flop-airdrop-tool/contribution-proof.json",
-        "Abdulwasih29/technocore-flop-agent/contribution-proof.json",
         "AbstrusImad/technocore-room-metrics/contribution-proof.json",
         "Adelekejr/technocore-room-monitor/contribution-proof.json",
         "Admuad/technocore-studio/app.js",
@@ -1871,6 +1870,7 @@
         "Bigoscrypt/technocore-did-toolkit/contribution-proof.json",
         "Blindripper/OpenSwarmAgents/contribution-proof.json",
         "Blissaire/awesome-technocore/contribution-proof.json",
+        "Carlys17/technocore-did-starter/contribution-proof.json",
         "Dark-Brain07/FLOOP.UNIVERSE/public/index.html",
         "Dark-Brain07/FLOOP.UNIVERSE/server/crypto-helper.js",
         "DasRasyo/technocore-e2e/contribution-proof.json",
