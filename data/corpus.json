@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-08T15:33:47Z",
+  "generated_at": "2026-09-08T16:41:05Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -782,8 +782,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1054,
-      "digest": "sha256:538101c60175020573a7f25111d4696ac87abe934788f40dadc905c5ee4845f2",
+      "count": 1056,
+      "digest": "sha256:e5e2c37f8603f4f94342412aff5de7e99874ed15244555b6eb55e96eac6a84d8",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/Fri",
@@ -1385,6 +1385,7 @@
         "gowthamaran/Flop",
         "greerso/flop-nostr",
         "greg2718/flop-router",
+        "greg2718/flop-work-exchange",
         "gregoire-byte/technocore-fr",
         "greyfox1234/technocore-pulse",
         "greyparcel/technocore-cli",
@@ -1642,6 +1643,7 @@
         "rabi-neco/technocore-agent-kit",
         "radenabi/technocore-tools",
         "raheelnaziir/flop-technocore-did",
+        "ramakanthgade/flop-board-auditor",
         "ramu0793/technocore-get-client",
         "rann-xyz/technocore-did-tutorial",
         "raya3211/FLOP-Chat-Room",
