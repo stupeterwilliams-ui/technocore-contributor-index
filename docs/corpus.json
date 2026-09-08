@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-08T20:03:38Z",
+  "generated_at": "2026-09-08T21:10:54Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -12,7 +12,7 @@
       "description": "Every pull request against the upstream repo, all states.",
       "method": "gh pr list --repo flop-labs/technocore-chat --state {merged,open,closed} --limit 300",
       "count": 582,
-      "digest": "sha256:d2ddfd13a1f135f0d3a5d7dfdc3749f8411c98f1968aae261100214f2c8395da",
+      "digest": "sha256:f2ceb1987412b10d837dd8c4b6c67cbc86a91b31a8e2a1eb1faac31cf7c35629",
       "identifiers": [
         "pr#1",
         "pr#10",
@@ -36,7 +36,6 @@
         "pr#138",
         "pr#140",
         "pr#142",
-        "pr#146",
         "pr#147",
         "pr#148",
         "pr#150",
@@ -585,6 +584,7 @@
         "pr#802",
         "pr#803",
         "pr#804",
+        "pr#806",
         "pr#81",
         "pr#83",
         "pr#84",
@@ -601,8 +601,8 @@
     "issues": {
       "description": "Every issue against the upstream repo, all states.",
       "method": "gh issue list --repo flop-labs/technocore-chat --state all --limit 300",
-      "count": 176,
-      "digest": "sha256:a44ddf242092a3fe016522bfbc168b82167799542eeee2fa41da97397d2251fc",
+      "count": 177,
+      "digest": "sha256:2d502776a132229ee9aa350e81b3bec250ac4ec903d87d8f09b9243dcc53b302",
       "identifiers": [
         "issue#101",
         "issue#105",
@@ -778,6 +778,7 @@
         "issue#789",
         "issue#793",
         "issue#799",
+        "issue#805",
         "issue#85",
         "issue#95"
       ]
@@ -785,8 +786,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1059,
-      "digest": "sha256:4b5e14c968c9cbd7055d7b97518b6ba10a4ab9e6baf99e7b1aa1cf889860de54",
+      "count": 1060,
+      "digest": "sha256:27be736005e95b1d836b7c9c6d59527e6ffcce4509161a1f4a608fd9e81a5c09",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/Fri",
@@ -995,6 +996,7 @@
         "Magicianhax/technocore-js",
         "Maje53/technocore-explorer",
         "Makabeez/awesome-technocore",
+        "Makabeez/credence-score",
         "Makabeez/technocore-did-starter",
         "Makabeez/technocore-mark",
         "Makabeez/technocore-verify",
@@ -1210,8 +1212,6 @@
         "brkcinar/technocore-companion",
         "brkcinar/technocore-matrix",
         "brkcinar/technocore-websub",
-        "brycenitro/awesome-technocore",
-        "brycenitro/technocore-did",
         "btcmama08/technocore-kit",
         "btk080428/technocore-proof-explorer",
         "bulliscoming/technocore-guide",
@@ -1233,6 +1233,7 @@
         "championrx/technocore-wsl-agent-guide",
         "chapaevv123/technocore-agent-proof-monitor",
         "chegaa69/technocore-monitor",
+        "chibykeholdxn/technocore-did-verification",
         "chip1chapa/technocore-contribution-action",
         "chip1chapa/technocore-room-analyzer",
         "choku-777/flop-agent-mesh",
@@ -1802,6 +1803,7 @@
         "wrvnnull/technocore-guide-id",
         "wuyueyelei/floppy-quiz-bot",
         "xadro23/technocore-did-quickstart",
+        "xbross/technocore-agent",
         "xbyteid/technocore-tools",
         "xiaohei-info/technocore-agent-cn",
         "xiaozhanghe/Technocore-contribuyion",
