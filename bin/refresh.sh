@@ -51,6 +51,14 @@ if ! uv run ./bin/build_site.py >>"$LOG" 2>&1; then
   exit 1
 fi
 
+# Sign what was just built. Last, because it attests the published bytes and anything that ran
+# after it would invalidate what it says. Not fatal: an unsigned refresh is the state this board
+# was in for two weeks, whereas a refresh that stops on a signing error publishes nothing at all.
+if ! uv run --project "$HOME/Projects/technocore-sdk" ./bin/sign_release.py >>"$LOG" 2>&1; then
+  log "SIGN FAILED (publishing unsigned; the previous SIGNATURE.json no longer matches)"
+  rm -f docs/SIGNATURE.json
+fi
+
 # `generated_at` changes on every run, so it is not evidence that anything moved. Compare the
 # ranking itself — otherwise a timer would commit an identical board every hour forever.
 CHANGED="$(python3 - <<'PY'
