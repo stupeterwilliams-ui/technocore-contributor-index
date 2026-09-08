@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-08T13:18:57Z",
+  "generated_at": "2026-09-08T14:26:15Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -782,8 +782,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1051,
-      "digest": "sha256:357817a502833c4ff6fd9a71393268f5aa96b291e16883723dcdfcc2c9ee03b2",
+      "count": 1052,
+      "digest": "sha256:a703c5b7214f41c55ec86b427b5ac2f6c5bdc5fdf84318511e937952853aa5bd",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/Fri",
@@ -1646,7 +1646,6 @@
         "raya3211/FLOP-Chat-Room",
         "raya3211/tclk-sandbox",
         "raya3211/technocore-chat-town",
-        "raya3211/technocore-did-registry-mirror",
         "raya3211/technocore-tictactoe",
         "recails/technocore-nonce-inspector",
         "relvetic-netizen/technocore-census",
@@ -1654,6 +1653,7 @@
         "renaldhy07/technocore-id-pipeline",
         "renma45/technocore-tutorial",
         "retard-dev/technochad-hq",
+        "retardio73-boop/flop-conformance-lab",
         "riho114514-svg/technocore-telegram-bridge",
         "rimurutempestxv/standalone-agent-monitoring-dashboard",
         "rimurutempestxv/technochat-bar",
@@ -1828,6 +1828,7 @@
         "zeycan1/Technocore-did-rehberi",
         "zeycan1/zeycan1",
         "zidanptr/flop-airdrop-id",
+        "zkasuran/flop-poker",
         "zkasuran/technocore-census",
         "zkasuran/technocore-onboarding-in",
         "zkasuran/technocore-onboarding-world",
