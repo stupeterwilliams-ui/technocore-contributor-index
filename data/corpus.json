@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-08T01:02:18Z",
+  "generated_at": "2026-09-08T02:08:52Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -777,7 +777,7 @@
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
       "count": 1048,
-      "digest": "sha256:fb030c67ee72726187740315ba7d0779f691bb8d1c252798d952983880a64a55",
+      "digest": "sha256:c59da1666d0768f2c6f3fde56a752944a5c952fdad5358792ce53e8631c4ab0b",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/flopkit-sdk",
@@ -940,7 +940,6 @@
         "Griptonite/technocore-conformance",
         "Guglielmo15/FLOP-Labs-Technocore-Tutorial-Italiano",
         "HZJ0523/technocore-guide-zh",
-        "HarryLin1024/technocore-safe-agent-cn",
         "HelpKeepMyMoney/technocore-agent-identity",
         "Herrsosa/technocore-secure-did",
         "HichamSlimani/technocore-append-only-checker",
@@ -1715,6 +1714,7 @@
         "stealths1907/isg-technocore-bridge",
         "steveone23/technocore-js-client",
         "stickyman32/technocore-flop-guide",
+        "stupeterwilliams-ui/tclk-conformance",
         "stupeterwilliams-ui/technocore-cc",
         "stupeterwilliams-ui/technocore-contributor-index",
         "stupeterwilliams-ui/technocore-sdk",
