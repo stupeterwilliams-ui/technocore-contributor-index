@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-08T16:41:05Z",
+  "generated_at": "2026-09-08T17:48:48Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -782,8 +782,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1056,
-      "digest": "sha256:e5e2c37f8603f4f94342412aff5de7e99874ed15244555b6eb55e96eac6a84d8",
+      "count": 1058,
+      "digest": "sha256:1d21999a326e3140b312aca9bc43f94d5b80d64081ce3aace08354cf74796d58",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/Fri",
@@ -1384,6 +1384,8 @@
         "golgocat/flop",
         "gowthamaran/Flop",
         "greerso/flop-nostr",
+        "greg2718/flop-capability-tournament",
+        "greg2718/flop-code-bounty-foundry",
         "greg2718/flop-router",
         "greg2718/flop-work-exchange",
         "gregoire-byte/technocore-fr",
@@ -1642,6 +1644,7 @@
         "quaimmm/technocore-catchup",
         "rabi-neco/technocore-agent-kit",
         "radenabi/technocore-tools",
+        "rafavinc/technocore-tui",
         "raheelnaziir/flop-technocore-did",
         "ramakanthgade/flop-board-auditor",
         "ramu0793/technocore-get-client",
@@ -1654,7 +1657,6 @@
         "recails/technocore-nonce-inspector",
         "relvetic-netizen/technocore-census",
         "relvetic-netizen/technocore-client",
-        "renaldhy07/technocore-id-pipeline",
         "renma45/technocore-tutorial",
         "retard-dev/technochad-hq",
         "retardio73-boop/flop-conformance-lab",
