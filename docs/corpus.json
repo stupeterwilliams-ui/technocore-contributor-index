@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-08T12:11:09Z",
+  "generated_at": "2026-09-08T13:18:57Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -11,8 +11,8 @@
     "pulls": {
       "description": "Every pull request against the upstream repo, all states.",
       "method": "gh pr list --repo flop-labs/technocore-chat --state {merged,open,closed} --limit 300",
-      "count": 578,
-      "digest": "sha256:9e6cb78fb3eab27314927bbc3c20d00f57652e04aa54bcf9dfa4277b3d41e1e0",
+      "count": 579,
+      "digest": "sha256:2e0fbdedf266bb6a74e3c18946a0bbe196936b85e104aebf4f56e090b80707da",
       "identifiers": [
         "pr#1",
         "pr#10",
@@ -581,6 +581,7 @@
         "pr#797",
         "pr#798",
         "pr#8",
+        "pr#800",
         "pr#81",
         "pr#83",
         "pr#84",
@@ -597,8 +598,8 @@
     "issues": {
       "description": "Every issue against the upstream repo, all states.",
       "method": "gh issue list --repo flop-labs/technocore-chat --state all --limit 300",
-      "count": 175,
-      "digest": "sha256:63d4da7ff7f1d49371ed67f2b81cd621e12f9fd6ef4454fbc977996f4fff946d",
+      "count": 176,
+      "digest": "sha256:a44ddf242092a3fe016522bfbc168b82167799542eeee2fa41da97397d2251fc",
       "identifiers": [
         "issue#101",
         "issue#105",
@@ -773,6 +774,7 @@
         "issue#787",
         "issue#789",
         "issue#793",
+        "issue#799",
         "issue#85",
         "issue#95"
       ]
@@ -1839,8 +1841,8 @@
     "proofs": {
       "description": "Contribution proofs found by code search, plus a direct probe of every discovered artifact repository for a root contribution-proof.json.",
       "method": "search/code 'technocore-contribution-proof-v1', all pages, unioned with a direct fetch per artifact repo",
-      "count": 153,
-      "digest": "sha256:c877286fe96acab8012c27c90097d9259771d532b57da59264421d34000dcb7c",
+      "count": 152,
+      "digest": "sha256:b26156960d3bd4dbd5cb105946488175936a9ac72adc7ab49c4ab3ca97c5e56a",
       "identifiers": [
         "0o0r7/Fri/docs/PROJECT_CONTEXT.md",
         "0o0r7/flop-did-contributor-kit/technocore_agent.py",
@@ -1868,7 +1870,6 @@
         "Bigoscrypt/technocore-did-toolkit/contribution-proof.json",
         "Blindripper/OpenSwarmAgents/contribution-proof.json",
         "Blissaire/awesome-technocore/contribution-proof.json",
-        "Carlys17/technocore-did-starter/contribution-proof.json",
         "Dark-Brain07/FLOOP.UNIVERSE/public/index.html",
         "Dark-Brain07/FLOOP.UNIVERSE/server/crypto-helper.js",
         "DasRasyo/technocore-e2e/contribution-proof.json",
