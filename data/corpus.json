@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-08T05:28:08Z",
+  "generated_at": "2026-09-08T06:35:13Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -779,9 +779,10 @@
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
       "count": 1049,
-      "digest": "sha256:496ca636d9dd0c6bda7d1b852ff603ed3162ef90fbad57121abf695132c1971f",
+      "digest": "sha256:53ccef0f95d4d63297cdcee1cc0eb496c326d346dccedb0efe60c3e2b82fb435",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
+        "0o0r7/Fri",
         "0o0r7/flopkit-sdk",
         "0xAJPanda/technocore-sentinel",
         "0xAnhlabs/technocore-status",
@@ -1515,7 +1516,6 @@
         "lela-lenin/technocore-security-notes",
         "leoserein/serein-technocore",
         "levdur/technocore-keepalive",
-        "linny006/awesome-agent-skills",
         "liokapod/technocore-rb",
         "loneewolflone-debug/technocore-flow",
         "long1977/technocore-contribution",
@@ -1835,9 +1835,10 @@
     "proofs": {
       "description": "Contribution proofs found by code search, plus a direct probe of every discovered artifact repository for a root contribution-proof.json.",
       "method": "search/code 'technocore-contribution-proof-v1', all pages, unioned with a direct fetch per artifact repo",
-      "count": 153,
-      "digest": "sha256:876abf7fe2c4cda1e1b56bfb56c891938dc5f68cc72ef9ebde2f92355bf720f4",
+      "count": 154,
+      "digest": "sha256:e0241817e145be51915398e07841ebbc71ba7416a0d7a4e584ae6816c1d5aed2",
       "identifiers": [
+        "0o0r7/Fri/docs/PROJECT_CONTEXT.md",
         "0o0r7/flop-did-contributor-kit/technocore_agent.py",
         "0o0r7/flopkit-sdk/sdk/src/flopkit/proofs.py",
         "0xWarg2/technocore-kit/README.md",
