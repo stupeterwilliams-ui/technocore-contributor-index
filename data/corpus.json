@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-09T19:53:12Z",
+  "generated_at": "2026-09-09T21:01:27Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -803,7 +803,7 @@
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
       "count": 1064,
-      "digest": "sha256:6005d68adfc909f2b3d52a40296d8f48ee2f3f4e0d1721b9911e189096255928",
+      "digest": "sha256:b35e9533c3cb4111672bcfc3dbbf7a935bf59c8190fe55b578404a919527af12",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/Fri",
@@ -1459,7 +1459,6 @@
         "iamiskender/awesome-technocore",
         "iamiskender/iamiskender",
         "iammikedavis/technocore-safe-did-windows",
-        "iammsb/technocorechat-did-starter",
         "iansamonte/technocore-preflight",
         "ibadanbuzz/technocore-did-windows-guide",
         "iceiceic3/technocore-did-creator",
@@ -1707,6 +1706,7 @@
         "sekuler/technocore-did-rehberi-tr",
         "sekuler/technocore-leaderboard",
         "sekuler/technocore-tr-bridge",
+        "selaslan72/technocore-proof-ledger",
         "shadow4810/technocore-guide-ja",
         "shaonturaj/TechnocoreKit",
         "shaqwtmg/technocore-did-guide",
@@ -1874,8 +1874,8 @@
     "proofs": {
       "description": "Contribution proofs found by code search, plus a direct probe of every discovered artifact repository for a root contribution-proof.json.",
       "method": "search/code 'technocore-contribution-proof-v1', all pages, unioned with a direct fetch per artifact repo",
-      "count": 153,
-      "digest": "sha256:aed4606abd8ff41b163782cb15d78022a930320ce31e28fcea088114f8d1de73",
+      "count": 154,
+      "digest": "sha256:b4edcb66c079c0e6fda27ed0b524b7135e8b09ed25cbf99f26f075f6bdbe7cea",
       "identifiers": [
         "0o0r7/Fri/docs/PROJECT_CONTEXT.md",
         "0o0r7/flop-did-contributor-kit/technocore_agent.py",
@@ -1898,6 +1898,7 @@
         "Admuad/technocore-studio/app.js",
         "AdnanMrabet/technocore-did-fingerprint/contribution-proof.json",
         "Alex1357909/technocore-did-guide-ru/contribution-proof.json",
+        "Ansh77765/technocore-did-guide/contribution-proof.json",
         "AykoMoana/technocore-js/contribution-proof.json",
         "Batinho13/technocore-agent-guide/contribution-proof.json",
         "Bigoscrypt/technocore-did-toolkit/contribution-proof.json",
