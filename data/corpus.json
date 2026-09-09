@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-09T11:50:04Z",
+  "generated_at": "2026-09-09T12:59:12Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -12,7 +12,7 @@
       "description": "Every pull request against the upstream repo, all states.",
       "method": "gh pr list --repo flop-labs/technocore-chat --state {merged,open,closed} --limit 300",
       "count": 584,
-      "digest": "sha256:338762eb6ed2d49a05c33566f9252a0c5911f0f2210387b74bfbf7a9e49771a0",
+      "digest": "sha256:b0a2508eabde8ed289d3d8ae205301115bfb1a7f2cfb567493019c9528594fc2",
       "identifiers": [
         "pr#1",
         "pr#10",
@@ -36,7 +36,6 @@
         "pr#138",
         "pr#140",
         "pr#142",
-        "pr#147",
         "pr#148",
         "pr#150",
         "pr#151",
@@ -588,6 +587,7 @@
         "pr#808",
         "pr#81",
         "pr#811",
+        "pr#812",
         "pr#83",
         "pr#84",
         "pr#86",
@@ -792,7 +792,7 @@
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
       "count": 1061,
-      "digest": "sha256:0490f52e11a0da245a2c1e645f1069ec15305bf1ed7ab82b267a37c012e034fc",
+      "digest": "sha256:3750d60d4b469e360603f3c4c5fb88f27fcded301214173e9fb563648365327b",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/Fri",
@@ -1052,6 +1052,7 @@
         "RaffiHu/technocore-swarm-lab",
         "RamaVenom/technocore-did-guide",
         "Ratchezz/technocore-did-monitor",
+        "Rawbeew/flop-toolkit",
         "RayoRey/technocore-guia-espanol",
         "RayoRey/technocore-notification-bot",
         "Redox-Coding/technocore-conformance-probe",
@@ -1662,7 +1663,6 @@
         "raya3211/FLOP-Chat-Room",
         "raya3211/tclk-sandbox",
         "raya3211/technocore-chat-town",
-        "raya3211/technocore-did-registry-mirror",
         "raya3211/technocore-tictactoe",
         "recails/technocore-nonce-inspector",
         "relvetic-netizen/technocore-census",
