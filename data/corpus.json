@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-09T02:46:26Z",
+  "generated_at": "2026-09-09T03:53:15Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -789,7 +789,7 @@
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
       "count": 1061,
-      "digest": "sha256:176cb543308e45f2ef1ee4c341004b537aa2d1dd7eb6d34b54cf6b11a5de8f05",
+      "digest": "sha256:c7c9b6ea9865b348fe1be0a2f32683066d11056e46b8b37e45815270420de4f6",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/Fri",
@@ -1233,6 +1233,7 @@
         "caprice1026-disc/technocore-did-toolkit",
         "captainbishop/technocore-tools",
         "castro33dev/technocore-sign-ts",
+        "championrx/tclk-deal-explorer",
         "championrx/technocore-safe-verify",
         "championrx/technocore-wsl-agent-guide",
         "chapaevv123/technocore-agent-proof-monitor",
@@ -1479,7 +1480,6 @@
         "jumfarm001/technocore-cheatsheet",
         "jumfarm033815/tc-room-watch",
         "jumfarm0421301/technocore-limits",
-        "justin201507-rgb/technocore-field-notes",
         "jvaleskadevs/technocore-quickstart",
         "jxiexyz/technocore-daily-checkin",
         "kamils333/technocore-keyring-tool",
