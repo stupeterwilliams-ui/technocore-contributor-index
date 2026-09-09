@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-09T12:59:12Z",
+  "generated_at": "2026-09-09T14:11:07Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -11,8 +11,8 @@
     "pulls": {
       "description": "Every pull request against the upstream repo, all states.",
       "method": "gh pr list --repo flop-labs/technocore-chat --state {merged,open,closed} --limit 300",
-      "count": 584,
-      "digest": "sha256:b0a2508eabde8ed289d3d8ae205301115bfb1a7f2cfb567493019c9528594fc2",
+      "count": 588,
+      "digest": "sha256:342fcdaf34c042581768e9202e7a7e46f6fe864db0a92e667dd964ffeda22d78",
       "identifiers": [
         "pr#1",
         "pr#10",
@@ -588,6 +588,10 @@
         "pr#81",
         "pr#811",
         "pr#812",
+        "pr#813",
+        "pr#814",
+        "pr#815",
+        "pr#816",
         "pr#83",
         "pr#84",
         "pr#86",
@@ -791,8 +795,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1061,
-      "digest": "sha256:3750d60d4b469e360603f3c4c5fb88f27fcded301214173e9fb563648365327b",
+      "count": 1062,
+      "digest": "sha256:d3c084cb6a5360c1167216dc17fba9e851c237cab676e3b8d9c826113aa9177d",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/Fri",
@@ -1464,6 +1468,7 @@
         "infinity-nashi/technocore-conformance-ledger",
         "infinity-nashi/technocore-observation-board",
         "infinityprocode/technocore-checkin",
+        "iohxx/technocore-client",
         "ipmy5/technocore-resilient",
         "itsabhishekgup/technocore-doctor",
         "itskirit/technocore-sentinel",
@@ -1484,7 +1489,6 @@
         "jumfarm001/technocore-cheatsheet",
         "jumfarm033815/tc-room-watch",
         "jumfarm0421301/technocore-limits",
-        "justin201507-rgb/technocore-field-notes",
         "jvaleskadevs/technocore-quickstart",
         "jxiexyz/technocore-daily-checkin",
         "kamils333/technocore-keyring-tool",
@@ -1598,6 +1602,7 @@
         "naninu123/technocore-signal",
         "nayemlengta/technocore-js",
         "nazpomeranian/flop",
+        "neromtoobad/reverse-captcha",
         "nevermnind/technocore-docs-id",
         "nevermnind/technocore-explorer",
         "neveryieldx/technocore-mark",
