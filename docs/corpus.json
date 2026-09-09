@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-09T10:41:17Z",
+  "generated_at": "2026-09-09T11:50:04Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -791,8 +791,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1062,
-      "digest": "sha256:fb4ebad88a8dc1d9410708f4e3e3139178ad829307b57b0f68a15ecdb6d49031",
+      "count": 1061,
+      "digest": "sha256:0490f52e11a0da245a2c1e645f1069ec15305bf1ed7ab82b267a37c012e034fc",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/Fri",
@@ -1597,7 +1597,6 @@
         "naninu123/technocore-signal",
         "nayemlengta/technocore-js",
         "nazpomeranian/flop",
-        "neromtoobad/reverse-captcha",
         "nevermnind/technocore-docs-id",
         "nevermnind/technocore-explorer",
         "neveryieldx/technocore-mark",
