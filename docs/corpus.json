@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-09T08:24:48Z",
+  "generated_at": "2026-09-09T10:41:17Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -11,8 +11,8 @@
     "pulls": {
       "description": "Every pull request against the upstream repo, all states.",
       "method": "gh pr list --repo flop-labs/technocore-chat --state {merged,open,closed} --limit 300",
-      "count": 583,
-      "digest": "sha256:c2504ea0562b0a90ffe455ed43a119a641f8085fc439a2e917db45d8a47026da",
+      "count": 584,
+      "digest": "sha256:338762eb6ed2d49a05c33566f9252a0c5911f0f2210387b74bfbf7a9e49771a0",
       "identifiers": [
         "pr#1",
         "pr#10",
@@ -587,6 +587,7 @@
         "pr#806",
         "pr#808",
         "pr#81",
+        "pr#811",
         "pr#83",
         "pr#84",
         "pr#86",
@@ -602,8 +603,8 @@
     "issues": {
       "description": "Every issue against the upstream repo, all states.",
       "method": "gh issue list --repo flop-labs/technocore-chat --state all --limit 300",
-      "count": 179,
-      "digest": "sha256:085c01189d1a1dbdfbb13448f14c1ef0282c4730862c08c7eafe543798fad634",
+      "count": 180,
+      "digest": "sha256:46cadb05043c36d2eb22b14176adc3cbda6082481534f26f689648d1fa35b398",
       "identifiers": [
         "issue#101",
         "issue#105",
@@ -782,6 +783,7 @@
         "issue#805",
         "issue#807",
         "issue#809",
+        "issue#810",
         "issue#85",
         "issue#95"
       ]
@@ -789,8 +791,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1063,
-      "digest": "sha256:3bf78ac516b2ea95da25a42e90daa34656773128a5fd59d3b152a9c5d79c378a",
+      "count": 1062,
+      "digest": "sha256:fb4ebad88a8dc1d9410708f4e3e3139178ad829307b57b0f68a15ecdb6d49031",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/Fri",
@@ -884,6 +886,7 @@
         "Asadlee24/technocore-conformance",
         "Asadlee24/technocore-console",
         "Asadlee24/technocore-explorer",
+        "Asadlee24/technocore-pulse",
         "AykoMoana/technocore-js",
         "AzkaAtta/technocore-tail",
         "Babcan-Inc/my-technocore-agent",
@@ -1230,7 +1233,6 @@
         "busminer/flop-passport",
         "cameldick/technocore-pulse",
         "cameldick/technocore-py",
-        "canoplos/technocore-lobby-report",
         "caprice1026-disc/technocore-did-toolkit",
         "captainbishop/technocore-tools",
         "castro33dev/technocore-sign-ts",
@@ -1465,7 +1467,6 @@
         "itsabhishekgup/technocore-doctor",
         "itskirit/technocore-sentinel",
         "iyop666/technocore-py",
-        "jackL1020/technocore-cn-guide",
         "jawadvip1982-boop/technocore-did-starter",
         "jeni3188/technocore-termux-guide",
         "jesbennp/jesbennp",
@@ -1860,8 +1861,8 @@
     "proofs": {
       "description": "Contribution proofs found by code search, plus a direct probe of every discovered artifact repository for a root contribution-proof.json.",
       "method": "search/code 'technocore-contribution-proof-v1', all pages, unioned with a direct fetch per artifact repo",
-      "count": 153,
-      "digest": "sha256:aed4606abd8ff41b163782cb15d78022a930320ce31e28fcea088114f8d1de73",
+      "count": 154,
+      "digest": "sha256:b4edcb66c079c0e6fda27ed0b524b7135e8b09ed25cbf99f26f075f6bdbe7cea",
       "identifiers": [
         "0o0r7/Fri/docs/PROJECT_CONTEXT.md",
         "0o0r7/flop-did-contributor-kit/technocore_agent.py",
@@ -1884,6 +1885,7 @@
         "Admuad/technocore-studio/app.js",
         "AdnanMrabet/technocore-did-fingerprint/contribution-proof.json",
         "Alex1357909/technocore-did-guide-ru/contribution-proof.json",
+        "Ansh77765/technocore-did-guide/contribution-proof.json",
         "AykoMoana/technocore-js/contribution-proof.json",
         "Batinho13/technocore-agent-guide/contribution-proof.json",
         "Bigoscrypt/technocore-did-toolkit/contribution-proof.json",
