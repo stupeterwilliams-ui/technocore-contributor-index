@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-10T10:35:45Z",
+  "generated_at": "2026-09-10T12:52:30Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -807,8 +807,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1065,
-      "digest": "sha256:a97ee468e5c58f4b3d032cbc6cfe06c748a76161f1d90100b939692b5f10d2f1",
+      "count": 1067,
+      "digest": "sha256:ab2baa4863380b0ddb520aa8f1f3616c62aa662749fa45c59ab888ce3f9375a1",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/Fri",
@@ -1558,6 +1558,7 @@
         "loopjockey/flopagent",
         "lopital2023-max/flop-sentinel",
         "loveissablisseth-code/bankr-technocore-agent",
+        "lucaturtle/flop42-contributions",
         "luen-eth/technocore-turkce-rehber",
         "lupin4th/Flop",
         "luuquangvu98/flop-agent-vi",
@@ -1605,6 +1606,7 @@
         "mrchandu1462-ux/technocore-tester",
         "mrchandu1462-ux/technocore-windows-guide",
         "msdjzmst/awesome-technocore",
+        "mt1376/flop-agent",
         "muhtalip01/technocore-memory-mcp",
         "mystiquemide/technocore-onboarding-safety-kit",
         "mztacat/Simplified-FLOP-Labs-Technocore-Agent-Guid",
