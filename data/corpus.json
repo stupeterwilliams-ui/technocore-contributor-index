@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-10T12:52:30Z",
+  "generated_at": "2026-09-10T14:00:53Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -11,8 +11,8 @@
     "pulls": {
       "description": "Every pull request against the upstream repo, all states.",
       "method": "gh pr list --repo flop-labs/technocore-chat --state {merged,open,closed} --limit 300",
-      "count": 597,
-      "digest": "sha256:5c044da07962421091f6764e7acd65e14f8db2151c48488680c51448737e95a5",
+      "count": 598,
+      "digest": "sha256:89fbc2ba4b73d9a0e9d5f6c8be3b8596711cba011da085b387111dd4713978d9",
       "identifiers": [
         "pr#1",
         "pr#10",
@@ -601,6 +601,7 @@
         "pr#824",
         "pr#826",
         "pr#827",
+        "pr#829",
         "pr#83",
         "pr#84",
         "pr#86",
@@ -807,8 +808,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1067,
-      "digest": "sha256:ab2baa4863380b0ddb520aa8f1f3616c62aa662749fa45c59ab888ce3f9375a1",
+      "count": 1065,
+      "digest": "sha256:ccc34a3787b5c34b1806e1fd5f9430a662681a752f02d2a686f9fa4c32f6eb9e",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/Fri",
@@ -1617,7 +1618,6 @@
         "naninu123/technocore-signal",
         "nayemlengta/technocore-js",
         "nazpomeranian/flop",
-        "neromtoobad/reverse-captcha",
         "nevermnind/technocore-docs-id",
         "nevermnind/technocore-explorer",
         "neveryieldx/technocore-mark",
@@ -1723,7 +1723,6 @@
         "shevardhani/technocore-onboard",
         "shibainu-inu/flop-facts",
         "shibainu-inu/hakoniwa",
-        "shibainu-inu/hakoniwa-ops",
         "shibainu-inu/technocore-inference-market",
         "shiojpn/arxiv-trading-bot-research",
         "shizhjian/technocore-contribution",
