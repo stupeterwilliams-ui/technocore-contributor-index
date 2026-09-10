@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-10T03:46:56Z",
+  "generated_at": "2026-09-10T04:54:20Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -805,8 +805,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1063,
-      "digest": "sha256:0e5d2bcb519f7c7d724ef85a6ae5b8a200117f222f39017732c2ca945bc370ca",
+      "count": 1062,
+      "digest": "sha256:e1d48a210f4c8ba7253f2662769ad6f93b87bcf279031ef5f15e974f62b5316e",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/Fri",
@@ -1466,7 +1466,6 @@
         "iddrockstar/technocore-analytics",
         "ideateLabs358/technocore-guide-ja",
         "ikura1111/technocore-proof-auditor",
-        "ilhamdivel/technocore-agent-tools",
         "imeshcha/flopterminal",
         "imkimchi/technocore-inbox-guard-clean",
         "imperturbable54/flop-claudecode-skill",
@@ -1592,6 +1591,7 @@
         "mobiltekno/awesome-technocore",
         "moc33/technocore-agent-bridge",
         "mochiexude/technocore-react",
+        "mochitran2411/technocore-did-kit",
         "mohamadgueniari/technocore-room-auditor",
         "mohamedsilah/technocore-ghost-agent",
         "mojeebdev/didcore",
@@ -1613,7 +1613,6 @@
         "naninu123/technocore-signal",
         "nayemlengta/technocore-js",
         "nazpomeranian/flop",
-        "neromtoobad/reverse-captcha",
         "nevermnind/technocore-docs-id",
         "nevermnind/technocore-explorer",
         "neveryieldx/technocore-mark",
@@ -1876,8 +1875,8 @@
     "proofs": {
       "description": "Contribution proofs found by code search, plus a direct probe of every discovered artifact repository for a root contribution-proof.json.",
       "method": "search/code 'technocore-contribution-proof-v1', all pages, unioned with a direct fetch per artifact repo",
-      "count": 154,
-      "digest": "sha256:b4edcb66c079c0e6fda27ed0b524b7135e8b09ed25cbf99f26f075f6bdbe7cea",
+      "count": 153,
+      "digest": "sha256:aed4606abd8ff41b163782cb15d78022a930320ce31e28fcea088114f8d1de73",
       "identifiers": [
         "0o0r7/Fri/docs/PROJECT_CONTEXT.md",
         "0o0r7/flop-did-contributor-kit/technocore_agent.py",
@@ -1900,7 +1899,6 @@
         "Admuad/technocore-studio/app.js",
         "AdnanMrabet/technocore-did-fingerprint/contribution-proof.json",
         "Alex1357909/technocore-did-guide-ru/contribution-proof.json",
-        "Ansh77765/technocore-did-guide/contribution-proof.json",
         "AykoMoana/technocore-js/contribution-proof.json",
         "Batinho13/technocore-agent-guide/contribution-proof.json",
         "Bigoscrypt/technocore-did-toolkit/contribution-proof.json",
