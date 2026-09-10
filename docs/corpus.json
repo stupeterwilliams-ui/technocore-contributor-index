@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-10T19:43:35Z",
+  "generated_at": "2026-09-10T20:51:36Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -811,7 +811,7 @@
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
       "count": 1062,
-      "digest": "sha256:a19850885a322c904a2b9da24ab2850c0d597d3ac6d02cc79683ddc89afffa4f",
+      "digest": "sha256:3a5eefc677175b2fc2a08d8e4df483f8c65bf17d891a4b9c46882d05a02d1468",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/Fri",
@@ -822,7 +822,6 @@
         "0xBusuzima/technocore-field-notes",
         "0xBusuzima/technocore-mark",
         "0xBusuzima/technocore-tape",
-        "0xGr1mm/can-i-sell",
         "0xLemurians/technocore-local-kit",
         "0xNexar/flop",
         "0xSessho/technocore-client",
@@ -1608,6 +1607,7 @@
         "msdjzmst/awesome-technocore",
         "mt1376/flop-agent",
         "muhtalip01/technocore-memory-mcp",
+        "muratrahmikurtul/technocore-signature-ledger",
         "mystiquemide/technocore-onboarding-safety-kit",
         "mztacat/Simplified-FLOP-Labs-Technocore-Agent-Guid",
         "nabotz/technocore-agent-toolkit",
@@ -1880,8 +1880,8 @@
     "proofs": {
       "description": "Contribution proofs found by code search, plus a direct probe of every discovered artifact repository for a root contribution-proof.json.",
       "method": "search/code 'technocore-contribution-proof-v1', all pages, unioned with a direct fetch per artifact repo",
-      "count": 153,
-      "digest": "sha256:51f26bff09c9b909b41e7e80af81a1b606daad6d58a631d8500f33db37b1fa16",
+      "count": 154,
+      "digest": "sha256:47d5b2e9ba10ea733a499e11960f808028346354ba6e1a2def7a14bde949988b",
       "identifiers": [
         "0o0r7/Fri/docs/PROJECT_CONTEXT.md",
         "0o0r7/flop-did-contributor-kit/technocore_agent.py",
@@ -1897,6 +1897,7 @@
         "1Fuad01/technocore-evidence-kit/contribution-proof.json",
         "1azyd3v/technocore-did/contribution-proof.json",
         "244whopper-cyber/technocore-japanese-guide/contribution-proof.json",
+        "3200-tech/technocore-cn-guide/contribution-proof.json",
         "ARR03/flop-airdrop-tool/contribution-proof.json",
         "AbstrusImad/technocore-room-metrics/contribution-proof.json",
         "Adelekejr/technocore-room-monitor/contribution-proof.json",
