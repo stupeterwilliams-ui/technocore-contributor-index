@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-10T08:19:17Z",
+  "generated_at": "2026-09-10T10:35:45Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -616,8 +616,8 @@
     "issues": {
       "description": "Every issue against the upstream repo, all states.",
       "method": "gh issue list --repo flop-labs/technocore-chat --state all --limit 300",
-      "count": 182,
-      "digest": "sha256:d938b194705755f8497877a23a01da78ab833ce737fedeafd0318f44d0e09421",
+      "count": 183,
+      "digest": "sha256:370124db0108163ef2f7758a2c2571ff89892013749075d437eace1106d81c78",
       "identifiers": [
         "issue#101",
         "issue#105",
@@ -799,6 +799,7 @@
         "issue#810",
         "issue#818",
         "issue#825",
+        "issue#828",
         "issue#85",
         "issue#95"
       ]
@@ -806,8 +807,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1066,
-      "digest": "sha256:6523dac6a1b44ea0bea70f10b2c5394c2631a433daaa2a009eb9ea0de24880bc",
+      "count": 1065,
+      "digest": "sha256:a97ee468e5c58f4b3d032cbc6cfe06c748a76161f1d90100b939692b5f10d2f1",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/Fri",
@@ -1088,7 +1089,6 @@
         "SalfianF/technocore-contribution",
         "Santos-square/FLOP",
         "Secure-Sentinel/flop-technocore-contribution-kit",
-        "Seqo01/technocore-signed-agent-bridge",
         "Sertug17/technocore-did-tool",
         "Sertug17/technocore-explorer",
         "Shahzuby/flop-agent-one-click",
