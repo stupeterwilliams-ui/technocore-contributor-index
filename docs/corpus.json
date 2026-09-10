@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-10T20:51:36Z",
+  "generated_at": "2026-09-10T21:59:29Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -11,8 +11,8 @@
     "pulls": {
       "description": "Every pull request against the upstream repo, all states.",
       "method": "gh pr list --repo flop-labs/technocore-chat --state {merged,open,closed} --limit 300",
-      "count": 600,
-      "digest": "sha256:bf61212428f875b3a776762c3cf06e04285bc44663d143ed60bc6c841318249e",
+      "count": 601,
+      "digest": "sha256:1028b39397f2b7ea05aa1ac43510d2ca424ad7c346f515237413f525e546e9de",
       "identifiers": [
         "pr#1",
         "pr#10",
@@ -605,6 +605,7 @@
         "pr#83",
         "pr#830",
         "pr#831",
+        "pr#832",
         "pr#84",
         "pr#86",
         "pr#87",
@@ -810,8 +811,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1062,
-      "digest": "sha256:3a5eefc677175b2fc2a08d8e4df483f8c65bf17d891a4b9c46882d05a02d1468",
+      "count": 1061,
+      "digest": "sha256:6c41a91ef15b88fe70af70a8093aa7b63c0590d2312c4f48f45d09c4bd2dec31",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/Fri",
@@ -962,6 +963,7 @@
         "Eisei-Shimizu/flops",
         "Elfet/technocore-identity",
         "Emenike4best/technocore-agent-onboarding",
+        "Ephrett/floppy",
         "Ephrett/technocore-verify",
         "Faisalsathu786/agentid",
         "Farukest/technocore-change-agent",
@@ -1262,7 +1264,6 @@
         "chip1chapa/technocore-contribution-action",
         "chip1chapa/technocore-room-analyzer",
         "choku-777/flop-agent-mesh",
-        "chugarchugarr/resolution-receipt-technocore",
         "chunn-sabuyou/technocore-agent-toolkit",
         "cilokesteh/technocore-hermes-skill",
         "congge918/technocore-handshake",
@@ -1464,7 +1465,6 @@
         "iamiskender/awesome-technocore",
         "iamiskender/iamiskender",
         "iammevak/technocore-room-monitor",
-        "iammikedavis/technocore-safe-did-windows",
         "iansamonte/technocore-preflight",
         "ibadanbuzz/technocore-did-windows-guide",
         "iceiceic3/technocore-did-creator",
@@ -1500,6 +1500,7 @@
         "jumfarm001/technocore-cheatsheet",
         "jumfarm033815/tc-room-watch",
         "jumfarm0421301/technocore-limits",
+        "justuncase1210-del/technocore-archive",
         "jvaleskadevs/technocore-quickstart",
         "jxiexyz/technocore-daily-checkin",
         "kamils333/technocore-keyring-tool",
@@ -1545,7 +1546,6 @@
         "kvzuobai/technocore-agent-workflows",
         "kyosuke25/agent-elite-wrestling",
         "kyosuke25/technocore-did-windows",
-        "laobeizi1996/technocore-did-guide-zh",
         "latest63/technocore-onboarding",
         "lela-lenin/lela-lenin",
         "lela-lenin/technocore-security-notes",
