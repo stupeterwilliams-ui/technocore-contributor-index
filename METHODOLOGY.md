@@ -72,17 +72,41 @@ same sentence fifty times would top a board that counted it, and one currently i
 **Stars, followers, and social engagement.** Downstream of who happened to see something. A board
 that scores attention scores itself.
 
-**Contribution proofs that do not verify.** A proof is only evidence if a third party can check it,
+**Contribution proofs we cannot check.** A proof is only evidence if a third party can check it,
 which requires a published canonical string. Ours is
 `technocore-contribution-proof-v1|<did>|<artifact_url>|<commit>`, pipe-joined and UTF-8, matching
 the shape technocore-chat already uses for its own signed lanes. Verify any proof with
 `python -m technocore_sdk.proof verify`.
 
-To be explicit, because this affects a specific project: the proof in
-`ritesh59697/technocore-dashboard` does not verify here. That is **not** an accusation. The
-signature is well-formed and the DID is a valid Ed25519 key; the schema simply has no published
-canonicalisation, so nobody but its author can check it. Publishing a proof that verifies takes
-about a minute, and this board will count it the moment one exists.
+**Correction, 2026-09-10.** This section used to say "proofs that do not verify" and add that
+publishing one that verifies "takes about a minute". Both were wrong in the same direction: they
+put the failure on the publisher. 113 published proofs are well-formed and do not verify against
+our canonical string, and we went and asked what they actually are, because a public ranking of
+named people should not rest on a guess between "fabricated" and "signed differently".
+
+* **111 of 113 cite commits that exist.** A fabricated proof has no reason to name a real one.
+* **113 of 113 signatures carry a valid Ed25519 scalar** — `S < L`. Uniform random bytes clear
+  that bar about one time in sixteen, so a population of fabricated signatures would fail it
+  roughly 94% of the time. None of these fail it. That does not prove any single signature
+  genuine; across 113 it is not close.
+* **No shared canonicalisation was found.** 340 candidate encodings — every field permutation
+  under three separators, six JSON serialisations with and without sorted keys and trailing
+  newlines, and each of those pre-hashed — were checked against five of these signatures. Nothing
+  matched.
+
+So they are genuine signatures over a canonical string that is not ours. `technocore-contribution-proof-v1`
+is in wide use with no agreed canonicalisation: a publisher has no way to discover ours, and we
+have no way to check theirs. "Does not verify" was a true sentence that read as an accusation, and
+the accurate one is that **there is nothing here to check against**. The evidence is in
+`data/proof-forensics.json` and reproducible with `./bin/proof_forensics.py`.
+
+This does not change the scoring — an unverifiable proof still scores zero, because a proof only a
+publisher can check is not evidence to anyone else. It changes what the board says about the
+people holding them, which was the part that was unfair. The fix is a canonicalisation everyone
+agrees on, which is now proposed upstream rather than asserted here.
+
+The specific case this section used to name, `ritesh59697/technocore-dashboard`, is one of the
+113 and always was: well-formed, valid key, unguessable canonical string.
 
 **More than three artifacts per person.** The signal is that you built something real, not that you
 opened many repositories.

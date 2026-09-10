@@ -1,0 +1,919 @@
+{
+  "schema": "proof-forensics-v1",
+  "subjects": "published proofs that are well-formed and do not verify against our canonical string",
+  "counts": {
+    "subjects": 113,
+    "signatures_examined": 113,
+    "signatures_with_valid_scalar": 113,
+    "commits_checked": 113,
+    "commits_that_exist": 111,
+    "lookups_that_failed": 0
+  },
+  "reading": "Fabricated signatures would fail the scalar test about 94% of the time. These do not fail it, and they cite commits that exist. They are genuine signatures over some canonical string, and it is not ours \u2014 which makes 'does not verify' a statement about the absence of an agreed canonicalisation, not about the people who published them.",
+  "rows": [
+    {
+      "repo": "0xWarg2/technocore-kit",
+      "readable": true,
+      "did": "did:key:z6Mkqh5oSXqRbUUxaEpkCh8jZsdWjwXcxCnZ4PnaXdt9yyqH",
+      "commit": "07192b27d1eb5af8035c91e72d6d55c556b6361d",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "0xmugetso/technocore-inspector",
+      "readable": true,
+      "did": "did:key:z6MknfKUQfnGESR3i9MjvVytbwuv3cdMDYmcrEnpU1rAsQnA",
+      "commit": "5ee996fd1b42fca7bd5d31d48c4d59b85dafc49f",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "0xnurrabby/technocore-beginner-guide",
+      "readable": true,
+      "did": "did:key:z6MkhLBmsmRWctZkQN6SJqmXMXdk1NmDgu8KWxSKyePMbsV1",
+      "commit": "382c91f1d5f83f909dc8bc7070090b941c26dd9b",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "0xzahra/seykota-contributions",
+      "readable": true,
+      "did": "did:key:z6Mkp1xC6UtRr9QfLFGkYHDVW9Mw6qAVPjs3G62YEcbne74T",
+      "commit": "b89e7e65519a532d49a83c7ecd8d85b1d89b29c5",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "1Fuad01/technocore-evidence-kit",
+      "readable": true,
+      "did": "did:key:z6MkoJFHQ3D1TX554VAMJSRxpnJHcwFfjT9vpVGstB1QSfGw",
+      "commit": "1e52614365b0735f069c4f34bb3c48cb4e0bb8ff",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "1azyd3v/technocore-did",
+      "readable": true,
+      "did": "did:key:z6MkhZWok7Lr9mhXcr4Rcu916o68cV1e54jVbEzSs4BKwaCy",
+      "commit": "c9a936809ecdc812ebc390a07606d35cf93cb249",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "244whopper-cyber/technocore-japanese-guide",
+      "readable": true,
+      "did": "did:key:z6Mkgbszn1WLifFr71AxnuCf4rfEPMCjVkAAoYmsrpNEyXzj",
+      "commit": "c89e18b69aefc10cfc4082cdc38a208eecc81b60",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "ARR03/flop-airdrop-tool",
+      "readable": true,
+      "did": "did:key:z6MkvmghvtDPSmik2XsgBLTr2zCzKEn2eXyQZ7xLWebJudtT",
+      "commit": "880cde464d5e4406bb87eddb1b2e34bb3608bb37",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "AbstrusImad/technocore-room-metrics",
+      "readable": true,
+      "did": "did:key:z6MksoUdgDxjbBahBC4WXnBj5oAqq9eNZHcFJ68XQs5DQXDm",
+      "commit": "bbab1e66f61a88f417e9b07120992f129cc73977",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "Adelekejr/technocore-room-monitor",
+      "readable": true,
+      "did": "did:key:z6Mkmvvn818JnGPvtkA7HJwWoRCAX4WB9JwFGm2xjdeKAyxM",
+      "commit": "03dd1ac29f738629e4b29545d4b2a3935ad21bd8",
+      "commit_exists": false,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "AdnanMrabet/technocore-did-fingerprint",
+      "readable": true,
+      "did": "did:key:z6Mkvtn5cKjPAyNpsbDDSmyxo5nMArwnzNMmRGAG8Do9QTBQ",
+      "commit": "52c93de63ecbd7382379ecd5c28b1efdac6eb904",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "Alex1357909/technocore-did-guide-ru",
+      "readable": true,
+      "did": "did:key:z6Mkts6nLaKccLoEWDoZRS31QmU4cNw19yJMDduFJEZqxXRb",
+      "commit": "bcbf298d6e153443eec0ac5aeb4de7c40f34b82e",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "Ansh77765/technocore-did-guide",
+      "readable": true,
+      "did": "did:key:z6MkefpunEMPUQQnKYD34q3PLmbZoP6GeHY61rSVc7LEgvRs",
+      "commit": "fa0af2aad62db729af8025d93ca64c60413addd8",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "AykoMoana/technocore-js",
+      "readable": true,
+      "did": "did:key:z6Mko6BnGoNSeNmgQniTSHnCFbaz1xTu9DGypfkC2eSCGYLn",
+      "commit": "1daa73bfe3a44f0bd428ce08ff4f597eda31564b",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "Batinho13/technocore-agent-guide",
+      "readable": true,
+      "did": "did:key:z6Mkuws6jJeEZXGduy9QDNue2SAJuK2pXxzYvZkexQ7Ry2Uv",
+      "commit": "5084c9106a406e02b0032ba532482429dbd33646",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "Bigoscrypt/technocore-did-toolkit",
+      "readable": true,
+      "did": "did:key:z6MkgiASre4zBhs6ympPUTFNpKPjvnFxBcTtXjsv21CedDp9",
+      "commit": "d035a6ff14d2d0f2372659d82681f512a96404eb",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "Blindripper/OpenSwarmAgents",
+      "readable": true,
+      "did": "did:key:z6MkvG23xuQfyW4dAkZe93XPPNPF7ijSNhFCBxnwtWYAv47F",
+      "commit": "b80377d6d70a38b64bf921132d807b9f951ffc2a",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "Blissaire/awesome-technocore",
+      "readable": true,
+      "did": "did:key:z6MkokqKmnVjoarJBnCwhV6vVhv7Y1Pqdp78sFjH4ybyH7eB",
+      "commit": "98a6bb610181c56c7980674dfff0502663c573f5",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "DasRasyo/technocore-e2e",
+      "readable": true,
+      "did": "did:key:z6MksCRFaQL8KVgnq3S8PgShcnFKPKAaBXsmvBbAse3CtJ3g",
+      "commit": "109534d7bfd22e2aafe3b1599ec3ff60328f046d",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "Daviddforth/technocore-did-starter",
+      "readable": true,
+      "did": "did:key:z6MkrmNbuFX4dyzKVDi3UkwUcbieU28o998rD1MQeMbZB533",
+      "commit": "88257ac891f70efc1796a3124dd45e8b84107ed4",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "HZJ0523/technocore-guide-zh",
+      "readable": true,
+      "did": "did:key:z6MksWUe7FV2x68VRerNQFkjSzv8KRrTp212wRTnqP1FE7Ty",
+      "commit": "c78b666b2e3ff4f3d29c4689a823a0acb9229938",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "HichamSlimani/technocore-append-only-checker",
+      "readable": true,
+      "did": "did:key:z6MkmNQ2KaPNzae5qbjspkamj1rcZGN2E7waMeDHvTAbMErj",
+      "commit": "6da5f2d50053fd436c70687392d7296d313aae57",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "Jr-kenny/technocore-guide",
+      "readable": true,
+      "did": "did:key:z6MkiwPAr6hAiSBcbRPkKM6H2mZYqeati1GQsxPptDExjmwR",
+      "commit": "3a3ae35416de1951cb41cd3be9c89fe532cac3d8",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "KAOUTHAR91998/technocore-forge",
+      "readable": true,
+      "did": "did:key:z6Mkp3ytHgsBdrUhBPfHoad4QtZxcThkqJ1UdgdJAPkpGQ4b",
+      "commit": "fcbe91e734ec3346b57868261c223a8d5b30a5bf",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "Krusherk/technocore-agent-identity-guide",
+      "readable": true,
+      "did": "did:key:z6Mkiju6MFD891Po8DQJR9LLkq3P29Kvjnekx7JePkE3hyfJ",
+      "commit": "0f84b0d2590c4c0e29df10f17b05a50d8fc91d30",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "Leknaatx/technocore-http",
+      "readable": true,
+      "did": "did:key:z6Mkg6HEKndyezR3T3HH1e4BjYusLq5eoMn8YLptRzj1pPFM",
+      "commit": "fc2448a94f90190cd7a79909ac326ce2ff08c25a",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "Leknaatx/technocore-roomscan",
+      "readable": true,
+      "did": "did:key:z6Mkg6HEKndyezR3T3HH1e4BjYusLq5eoMn8YLptRzj1pPFM",
+      "commit": "25e16b66a313960122cf331204c8fc4599306254",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "MiyukiNakama1/technocore-did-tools",
+      "readable": true,
+      "did": "did:key:z6MkmhvUUW1W3iaWeg66aMvPEjSe2WK198tJecQ5y7kTytdc",
+      "commit": "46482b193ed9e068eaeae12a32b53718c289d76c",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "Nathbabu/technocore-explorer",
+      "readable": true,
+      "did": "did:key:z6MkecMwpAGtgcj64rSeDMw91xGRgQcRAW2n8LDGSFeWmstY",
+      "commit": "9643b227ddcef023964ddb5f147641aff23d6452",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "RockDockMusic/technocore-nonce-reconciler",
+      "readable": true,
+      "did": "did:key:z6Mkk1DyY7SuzyxXW8QuGa3SxXPhnYi5YmzaRBgDxSQS9UpW",
+      "commit": "73e2b94c692e01d1e3d532cb2ce95b667ebb741a",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "Shaweeen/newpeee-technocore-field-notes",
+      "readable": true,
+      "did": "did:key:z6MkiqsU6mgKfjLh6zQqT2G7KjdqYjZqFx5hqs31Tqk34qpb",
+      "commit": "59cec6fc4cd6c368543cf61e071615e28407b5c3",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "SipSplit/technocore-signal",
+      "readable": true,
+      "did": "did:key:z6MkeuDstnjFUPUnVtrUcdSZ82cSWBGeE22t6o4d6JHxPkAC",
+      "commit": "45d4fe27a845873b8fda73161da6ea8ab35bd41b",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "SusiloMaarif/technocore-id-hunter-kit",
+      "readable": true,
+      "did": "did:key:z6MkjEGdMw3zwcEhbfGxGkwT1hp7kgjbWXrPx43uo6v95VuJ",
+      "commit": "b2f4fbb0deb9a68babb5c5cbf5d44c0084324fba",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "Tezqee/CLIENT-IDENTITY-INTERFACE",
+      "readable": true,
+      "did": "did:key:z6MkrQwxhQH2kowiCxudRntfrdJHCFPMh5Q7QNBMMH7yWN3V",
+      "commit": "63f84a1a48fda89f705ec0f54213944daab6dc34",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "Ukorvincent/My-technocore-repository",
+      "readable": true,
+      "did": "did:key:z6Mkn3o1YcMA5CEquVgysM1oc6CeJ8DWQCbdiSxQRKuQPf48",
+      "commit": "4cd9dc278819413f3ced3e5a006aaaf3b2c4f1e2",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "alwialhuda11/technocore-client",
+      "readable": true,
+      "did": "did:key:z6MkjEZgjbQkSCZjbuCVEZR2t5JjMqi8XkTMxg22DSTF3Pge",
+      "commit": "0f0168076b9a5c4c63eb0ca55543e18df8701d94",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "alwialhuda11/technocore-harmonia",
+      "readable": true,
+      "did": "did:key:z6MkjEZgjbQkSCZjbuCVEZR2t5JjMqi8XkTMxg22DSTF3Pge",
+      "commit": "e3cae7eead3d5bb92f4e7314ab3554efe36c3195",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "bactiar291/technocore-verify",
+      "readable": true,
+      "did": "did:key:z6MkqPSYVvgFRDmY318KjFp9mPgjCoAFKr2d9eSwXVxqYYKK",
+      "commit": "49568eeffccade2c5f970ca9ed6d7a68fac61443",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "bulliscoming/technocore-guide",
+      "readable": true,
+      "did": "did:key:z6MkfrGe9fCtKQTiGttB25kz8QeyyHhjJYWp1ByfFpdyvDef",
+      "commit": "65ebdb437140b5b3da1d1becbad31c2661dff030",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "chip1chapa/technocore-contribution-action",
+      "readable": true,
+      "did": "did:key:z6MksnVwGC2XiVFXMtzXCakaVs9dibMKghSrc5q8L5RTtNAq",
+      "commit": "58d9784ac582e0b3d399a928a16de4ac77a34255",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "chip1chapa/technocore-room-analyzer",
+      "readable": true,
+      "did": "did:key:z6MksnVwGC2XiVFXMtzXCakaVs9dibMKghSrc5q8L5RTtNAq",
+      "commit": "087f23c6ec1ccc4a10c1f042a24b719b3ff4c476",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "d4ncboz/technocore",
+      "readable": true,
+      "did": "did:key:z6MkqJED4EMffQgdciypq7Scr8XDcAg2R48h1vuhzmk2Vz9m",
+      "commit": "692f2af96943acfae8bca910d25ae2b63990325c",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "defrankszn/technocore-lobby-analysis",
+      "readable": true,
+      "did": "did:key:z6MksXbf4XQdWSiPk4BXRmLKhgY7dWurcpNYTWWquDamTPeB",
+      "commit": "6e0526fadab4353b47f1b63e8377792e7c563029",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "defrankszn/technocore-lobby-analysis",
+      "readable": true,
+      "did": "did:key:z6MksXbf4XQdWSiPk4BXRmLKhgY7dWurcpNYTWWquDamTPeB",
+      "commit": "a24f5dfd34ca06be779f6ba41eeb348aef8d05d2",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "dejagold123/technocore-survival-check",
+      "readable": true,
+      "did": "did:key:z6MkmciFXCgbdaQ4TSQFsm6gXiqUQGAGgm6jv3A8ZXaNbC9T",
+      "commit": "9e1af4a6acd8ea94a21470fbef51cece76870840",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "discodirector/technocore-preflight",
+      "readable": true,
+      "did": "did:key:z6MkiSW9f43mBtAc3isHLGJFWNpaUBUUpB2nMVH3AA186wso",
+      "commit": "9ce219b648ffe601424e18d2443b3903be22e2d4",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "domwalker203/technocore-client",
+      "readable": true,
+      "did": "did:key:z6MkvTDf4u9PaqL25221pTo2HkNGnSXDqKRyNjU94yN9Y61t",
+      "commit": "736df08e5a4fbbbb7291f59f78cd756d6b32b6b3",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "eigenmaxi/technocore-payload-lab",
+      "readable": true,
+      "did": "did:key:z6MkiNduGhxuHbYT9EFt5tDsBxYDxeSw1sVxTBU9Adv3Pai5",
+      "commit": "8d2bc9a3565136be81757ed493db8bf1977e0c22",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "ethcrb/technocore-cursor-lab",
+      "readable": true,
+      "did": "did:key:z6MktxdBDuQZHQ2RjQpvnLRiDnBNuXu1NozvR3tXhqTuKEww",
+      "commit": "d56bd6109362daa16991307763b491501b8b5c3d",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "faisalnugroho/technocore-did-guide",
+      "readable": true,
+      "did": "did:key:z6MkkijAX9cnsy28rpyaMzWhTPJgFDt4WKsRpyFxrg6dJNed",
+      "commit": "1ae3af7dde2c1d95a9d5bef82c53474817cd8f8e",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "faroukobayanju/technocore-ai-manual-setup-guide",
+      "readable": true,
+      "did": "did:key:z6MkoxcwBUkfMVkZjPrHbz6nayna1d4L2T8XS4VRQGpZ5bmW",
+      "commit": "d5bb8e2663bfab6cd10c7ad057d1e23d8eed07b6",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "flupyxyz/technocore-idn",
+      "readable": true,
+      "did": "did:key:z6MkqfEWWqHNo9CBwXFFMALSM6CEpNNQiNjkDMny9VRjDcb2",
+      "commit": "ebd00a9ad4b3080f994fbff290ce569241418ee1",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "gghity01-netizen/technocore-mesh",
+      "readable": true,
+      "did": "did:key:z6MksA9pRzhGTKKfRZ3YzSN2Qfj6gyE2thCm9NSKvPqZXC6z",
+      "commit": "ad5b2d7b15e0798ad4c02f7b31cb234d6f608f52",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "ght25/technocore-vault",
+      "readable": true,
+      "did": "did:key:z6MkkRn83csjWsxyptDMpyAQJ2FpY4zt82c1rKLy38Wu9tpX",
+      "commit": "5bda5967ef875b8eb076d90795c56f9ec1e552d3",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "githubbjj/technocore-audit",
+      "readable": true,
+      "did": "did:key:z6Mkj4smw6yCfe1tdZyWkHxZL3mSX2gwtFhtfPN4m49Spwii",
+      "commit": "0ec8742ef5b689dcb4eb679a6cd66c879c086872",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "greyfox1234/technocore-pulse",
+      "readable": true,
+      "did": "did:key:z6MktT1CcqBixLQEcVTxPrUDXqH8nokXvgCCuefNAifL7RDA",
+      "commit": "a6caea70865c9df77a970452ecba2786fb502322",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "harrxzz/technocore-agent-kit",
+      "readable": true,
+      "did": "did:key:z6MkfYjHKT4SnpawX8U1UYEF9UzSK7ogbXjNokFabknWT4S1",
+      "commit": "0fa5f0342278a15f89e9d8049908ef99d094a10f",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "havelaw/technocore-ko",
+      "readable": true,
+      "did": "did:key:z6MkhzjKH8VbqthVPrPDvVo6GM3fuHZmnTBQ9xdbUYwZJnqi",
+      "commit": "b45fb5e31a8f48d8f471c457f5daae601de417cd",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "heresyxx001/technocore-client-ts",
+      "readable": true,
+      "did": "did:key:z6Mkg6UiponkE2ngZtT6s2ryjX8gpZsXZmEfqbJf6RQxnZ1G",
+      "commit": "164119819ab48f173daac296a40b29e2fccd1828",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "heresyxx001/technocore-telegram-monitor",
+      "readable": true,
+      "did": "did:key:z6Mkg6UiponkE2ngZtT6s2ryjX8gpZsXZmEfqbJf6RQxnZ1G",
+      "commit": "f792952092802cabb52d90c31086ccc33c919db8",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "hubofvalley/technocore-did-guide",
+      "readable": true,
+      "did": "did:key:z6MkjiuDrYh5Q1ck7WsvNDyLfLNLe763vaoAKhfN2JegDMQF",
+      "commit": "d88b633b511752c368177dc4b2d698a483ac8472",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "iyop666/technocore-py",
+      "readable": true,
+      "did": "did:key:z6MkpBJVDkWTk8eUttpcWnUTKVeyHk6458tvvtwKfaKRabht",
+      "commit": "df2652da0c5dd405f1a512637f85311e9f3ce587",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "jiangzhijie/technocore-hanrelay-zh",
+      "readable": true,
+      "did": "did:key:z6MkhdwGTyDRKwJtrWnDxAm8NBs2kbpKDVtxy7xyrCRAqpgq",
+      "commit": "6b2b32bc4dc63d13e888c6345bedcb222b6bd234",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "jvaleskadevs/technocore-quickstart",
+      "readable": true,
+      "did": "did:key:z6MkoC2TUCHZaJctXYuZ5DMA7bc8dMp94wEXALqtCPsYd68G",
+      "commit": "218822fb89fed0b6ef8d4d698863b55718d8645e",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "keyneszeng/technocore-guide-zh",
+      "readable": true,
+      "did": "did:key:z6MkqEqcWhyY6MRcLJtvfLBVgCwrBa3w5FMbm4KGVCnvQxMa",
+      "commit": "972fe9389da30c7cfb45c430c7eb5fb1cb548859",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "khairounmohsine/technocore-did-activity-index",
+      "readable": true,
+      "did": "did:key:z6Mkj5Pp4YoPtkZvMYxPtsdEzbX7rbbUedRAua3QoEacsf8P",
+      "commit": "3a89dc0a21ef6257d1f3ebb0a4a393ffec22195f",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "kiranoye94-cmd/technocore-monitor",
+      "readable": true,
+      "did": "did:key:z6Mktv3vygChprefvkGvebYncRW4FPUxvugdhzi7kVwH8RnJ",
+      "commit": "e904a8ee085c07386cd4e14ea5ce962208baf39c",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "laobeizi1996/technocore-did-guide-zh",
+      "readable": true,
+      "did": "did:key:z6MkfLCwP5zB9H8Z1XSRAnCMZRsYgC7fgoF6LjZNTmdVK4bS",
+      "commit": "1bf4f5ac2e1be8b4132524b5fa5fd8972ed13236",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "loneewolflone-debug/technocore-flow",
+      "readable": true,
+      "did": "did:key:z6MktUHedwoR9PeBvRQTDrC1iFutoNG3Tbz4SPtb5itUNvQS",
+      "commit": "8fc41fc8fcaf0213ddf6a6568b7e598deb0e5377",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "m7mdd77/flop-technocore-agent",
+      "readable": true,
+      "did": "did:key:z6MkgZoWoEWgkXQToiC89J5WPd9cL7TPTvdjosUfNQSNiEoA",
+      "commit": "742db5f0f1e24d968f914247d5d0ed066c222d43",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "mehmetkr-31/technocore-turkce-rehber",
+      "readable": true,
+      "did": "did:key:z6MkgputwyYsihYJpxsd3Wc6so1sxuJUoJR3oEiNPU4tCyYo",
+      "commit": "1a0432784e5301bc3ca4ab6b71ba9d17d1610b76",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "mhizer-fatai/technocore-room-guide",
+      "readable": true,
+      "did": "did:key:z6MkkqYTVtBJYHCRgVUKHfqz1XMQqzNnYKPQH8nPUAqgXD3Y",
+      "commit": "3201bbff166f33c6c2cafed242f43001c7847120",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "mohamadgueniari/technocore-room-auditor",
+      "readable": true,
+      "did": "did:key:z6Mkp3hDPbnTJ5HhhWrGQyrn3t3rb388qcdr4HZfZ5HEKgP2",
+      "commit": "fb45ce3f3fe7f1984fb56763f09f1bce147d0205",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "nevermnind/technocore-docs-id",
+      "readable": true,
+      "did": "did:key:z6MkjPG9tWLcDqKagHeucTUBBTnQjLgC95FpH3pdj2ewh9BR",
+      "commit": "3107379e2fe7f7824b85d04155deae47bf5c9423",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "nevermnind/technocore-explorer",
+      "readable": true,
+      "did": "did:key:z6MkjPG9tWLcDqKagHeucTUBBTnQjLgC95FpH3pdj2ewh9BR",
+      "commit": "875915df4075dd0901c321933528edb8b2c3344a",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "omerbek/technocore-mark-hybrid",
+      "readable": true,
+      "did": "did:key:z6Mkvsqv1GvRkEBmC7rfKiG2wUmgFZFBBkpxXDX2tEtRcAC1",
+      "commit": "5fa4012e503fb582e06af18445d105e1e1ae73cb",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "omerbek/technocore-signal-map",
+      "readable": true,
+      "did": "did:key:z6Mkvsqv1GvRkEBmC7rfKiG2wUmgFZFBBkpxXDX2tEtRcAC1",
+      "commit": "d18483bd1419e7e61a7c515f491a20b803f79e5a",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "omerbek/technocore-tclk-proof",
+      "readable": true,
+      "did": "did:key:z6Mkvsqv1GvRkEBmC7rfKiG2wUmgFZFBBkpxXDX2tEtRcAC1",
+      "commit": "b0df387eca7ff859e716e6a50707c9efaa812f1a",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "omerbek/technoscore-did-starter",
+      "readable": true,
+      "did": "did:key:z6Mkvsqv1GvRkEBmC7rfKiG2wUmgFZFBBkpxXDX2tEtRcAC1",
+      "commit": "8b67d44016f15b40b21ee50d066c7b249afa1eda",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "paiin-arc/technocore-beginner-guide",
+      "readable": true,
+      "did": "did:key:z6MkpW1vaptcaNQa9Zx9vVzf8HBJAegmm7hnGD2fVZB65req",
+      "commit": "1bc89431c32df239cc91cad5ff6e9cbfa9bb9d67",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "papatora/technocore-contribution",
+      "readable": true,
+      "did": "did:key:z6Mkhd6EyVfuBjFwMsutB5yMR21Qs5zfSUZ3QkUXeouFzQMq",
+      "commit": "48e9cd360d5c208af80e3cece4e88d315a688607",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "peaceofheaven777/technocore-safe-write",
+      "readable": true,
+      "did": "did:key:z6MkhFNM9YVpucxHhVdkZyi51WXz63wREoNu9aesHRxJEWtz",
+      "commit": "e5957805aa0f9a0b8eaef871ad8e961797fafcbb",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "plasmaxdn/technocore-monitor",
+      "readable": true,
+      "did": "did:key:z6Mkwd7gk1629D9c17EHwKv4oZCzVKYRC3bZipuSr6CxzfaZ",
+      "commit": "dfdab5d1f45f44539cc332bf6494c947a214b437",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "priagus/technocore-verify",
+      "readable": true,
+      "did": "did:key:z6Mkk99PEdKduSb79xngfVUcnc7Cj3GDZRfyzHnhPYvvrHvS",
+      "commit": "eb9884f76b2bdbc27dcc1d06a27d2381e4f05fb3",
+      "commit_exists": false,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "qlxjcj/technocore-did-guide-zh",
+      "readable": true,
+      "did": "did:key:z6Mkqy35Q58FjajWZZqj4zRoF8SsqyuVS7xeya4JiryDcVx1",
+      "commit": "e7779325c55fabb1490854df7629af3d89ee290e",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "qmanank23/technocore-agent",
+      "readable": true,
+      "did": "did:key:z6MkpM6GWdFZmbdwy8uUbBJiutGHMQR6Fm69e3CYF6jvabi2",
+      "commit": "c5bca15a452cf60727c1e33f29d28e3f8272f328",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "ramu0793/technocore-get-client",
+      "readable": true,
+      "did": "did:key:z6MkqDf29KNKTtM4oJLfwViqv64hdjcCAzsYrF8JbR3tA8Fb",
+      "commit": "04c271b4fe4439aee4a8255c19d27a3b26e2b063",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "rann-xyz/technocore-did-tutorial",
+      "readable": true,
+      "did": "did:key:z6MkgNioUcc6b4wUG4HJWDgKg54k2Pr6T3PbAvWQEk6Wb5W1",
+      "commit": "8c59a92e7f13fc914a1d7bc527198eeebc665ac6",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "retard-dev/technochad-hq",
+      "readable": true,
+      "did": "did:key:z6MkvYBaMuyPWYEgiW8daQm9YkafmggaLSpM9biruKa5u2u5",
+      "commit": "786b928769ac1c661640b6911f3f73f964af897f",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "ritesh59697/technocore-dashboard",
+      "readable": true,
+      "did": "did:key:z6MkfW6f9oXFjVQ3F1khix4RdREiLoFemLKky3rq2HMq33dr",
+      "commit": "1b2bf93a7b542e2aba60ba89959a949368911b61",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "rjuliant/technocore-client",
+      "readable": true,
+      "did": "did:key:z6Mkj8KoshQnZNZCHBbipRJqExJN6t2PxcAMWzbQ6aJ1Px3t",
+      "commit": "62cfba2dccaf68996ea04b6b040b96b68fe6d813",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "sckggj/technocore-relay",
+      "readable": true,
+      "did": "did:key:z6MkhU5sGzzGVA9kbNBoeQ9pkoyWZDxdUKL3oWSj2JkMyLPT",
+      "commit": "bde473e4a42159d7eb4141db5a69949b70bcb4c2",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "searchyy/technocore-agent-guide-zh",
+      "readable": true,
+      "did": "did:key:z6MkfVQ32uwbJhBxKApJe2A78hqmwHGA4ef1A6VCYYJMdifu",
+      "commit": "7b9bd0604de97bdecc89a4399af141c2649e1a44",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "shizhjian/technocore-contribution",
+      "readable": true,
+      "did": "did:key:z6MkgcfEM6xtmpbAv2qL5sr5uN5hMaPGJpUAg4oF9gLtXeyd",
+      "commit": "3e7eafcff62989f0e0cd8806cd756de19e33b3b7",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "sinascorpion/flop_technocore",
+      "readable": true,
+      "did": "did:key:z6MkwgBursHQarJjAMx6sp8TG4C6e6fd7noDW8HnPvvFAVfU",
+      "commit": "37fe9290a41e7b09eb484e7b2a679efbfecce1a6",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "sm00thh/technocore-mcp-server",
+      "readable": true,
+      "did": "did:key:z6MknCJhwGwBqnHVvtjTD3DrmnyjmUbX3uajUDMBPiPHigVu",
+      "commit": "778f2075381bb21189c1cab9dc14d7c66463cb35",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "sm00thh/technocore-proof-verifier",
+      "readable": true,
+      "did": "did:key:z6MknCJhwGwBqnHVvtjTD3DrmnyjmUbX3uajUDMBPiPHigVu",
+      "commit": "0caaf1b4530de064431b378177e810359b6d21c2",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "surixbt/technocore-did-guide",
+      "readable": true,
+      "did": "did:key:z6MkubpXm6LYpbK52gxqytrhPXizzCJGDrAN1ns4ADUQnsVc",
+      "commit": "0e957e87e017907e1f6522c9c1a16100e521d339",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "techbone/technocore-conformance",
+      "readable": true,
+      "did": "did:key:z6MkhzHwQEG4ay9Cb1FzDExcKxZNZpmgVfTtruRtQSy95s8S",
+      "commit": "99dac351caa647d0173339a49a4c85538506c0fe",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "tensorflowyt-eng/flop-technocore-digest",
+      "readable": true,
+      "did": "did:key:z6MktAg4g8fmH3snWaPhr7p5TrBURnLruDdBoFnXQywwZWZC",
+      "commit": "b6911d3353e495c1cac57b573ee6c74e6ced84dc",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "uzzaarr/technocore-agent-playbook",
+      "readable": true,
+      "did": "did:key:z6MkhA3Zgy2QCwjJeTS5urBQ1QQGG48WQxMDWDAAbidXZ4Bb",
+      "commit": "54e44ffc41558e40b880431691904c841b294bb3",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "vickman787/technocore-conformance",
+      "readable": true,
+      "did": "did:key:z6MknVx4fj7nUsGYpMqbG3TvqUq4wMSi6YESGUtzwZajQEnc",
+      "commit": "e3f6adfd609b69785ba77f25408f735fcc279e03",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "vivaldi18/flop-register",
+      "readable": true,
+      "did": "did:key:z6MksBXGaEtKke3xZbooccPxcciJQqqQar2e1ZgH9BLBtAWX",
+      "commit": "1651c36c74d1ea601cc38e66bea118e63b022b54",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "vndrx-collab/my-technocore-contribution",
+      "readable": true,
+      "did": "did:key:z6Mkkjmw7EDSEcqwYyNmDNCMVYRTqEYBLsuvJpn2ci9rbf6W",
+      "commit": "0c4f6382f9e7a0e4bbd71bdd09cdeb9806840e4c",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "wallet233/technocore",
+      "readable": true,
+      "did": "did:key:z6MkmgCsU2SmSSceNchu89TBJnZo1wgUB2N3sVvhhEyCZGxt",
+      "commit": "a1f3d3a8a1d92b5fa2c9f39f569853e88a34e924",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "webski101/technocore-guideguard",
+      "readable": true,
+      "did": "did:key:z6Mkmsk54ysB87U9V5aQnqmVQXv26tdxKhEnaQPfbhUGBDvS",
+      "commit": "a10f8ae6ed19310a2152f131f0b0d6f30f68848e",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "xbyteid/technocore-tools",
+      "readable": true,
+      "did": "did:key:z6MkpJmwjiFyEW9Z5149x6nW2MHS17jYMiRpFoV7nvmhdaQ1",
+      "commit": "ea9bb5c9a8fb4c715d045adf1f6d2f36dfb410fa",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "xiaozhanghe/Technocore-contribuyion",
+      "readable": true,
+      "did": "did:key:z6MkpFFkktjNeCxHWcFcKKnZsrk7DQsJ6ChDbKTB2S3TWYv2",
+      "commit": "b220985259c49d498a12d993967045820d255ed5",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "you-suffer-but-why-dev/technocore-cli",
+      "readable": true,
+      "did": "did:key:z6MkhLZEfW5D6euE2XNricM2BDY1fVHZWPZZWitepqH1KdPA",
+      "commit": "5d6923a53cfb66fe4528c13b60e3c9d7bfd3d638",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "ysnkhc/technocore-room-auditor",
+      "readable": true,
+      "did": "did:key:z6Mks8hsnyLoJkNta4mWJWb1PAnMcoeV9TdRskbHFBLf5yHJ",
+      "commit": "abec711840bf571ae8593fdb01e9714fdab776b8",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "z3rdix/technocore-inspector",
+      "readable": true,
+      "did": "did:key:z6Mku9RTLNvnPq2mUMKGDK7oWQBk9CLmnevPsgt3T37Pj5AT",
+      "commit": "f9d5b463da32eda995cce9b3419e454e5cc48fa0",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "zaddy6969/TECHNOCORE-DID-STARTER",
+      "readable": true,
+      "did": "did:key:z6MkvH2BqKchLJUraDv5xk5ocznJJ2xxTe3huRyk57Av9PWV",
+      "commit": "f598e91be70c38468ee8d06058f8d07292491a76",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    },
+    {
+      "repo": "zorba999/technocore-did-starter",
+      "readable": true,
+      "did": "did:key:z6MkgDkeygs29PYK4CYfjxmtFgvps37xG7jbA2FgJuwyTxK9",
+      "commit": "16e4c0b7f1d1cf0ae78080240068dab4e2e0122f",
+      "commit_exists": true,
+      "signature_scalar_in_range": true
+    }
+  ]
+}

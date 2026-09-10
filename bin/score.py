@@ -54,9 +54,14 @@ NOT_SCORED = {
         "top a board that counted it.",
     "stars, followers, and social engagement":
         "Downstream of who happened to see something. A board that scores attention scores itself.",
-    "unverifiable contribution proofs":
-        "A proof whose canonical string is not published can only be checked by its author, so it "
-        "is not evidence to anyone else. Publishing one that verifies takes a minute.",
+    "contribution proofs we cannot check":
+        "Not an accusation, and the wording here used to imply one. 113 published proofs are "
+        "well-formed and do not verify against our canonical string; 111 cite commits that "
+        "exist, and 113 of 113 signatures carry a valid Ed25519 scalar, which fabricated bytes "
+        "fail about 94% of the time. They are real signatures over a canonical string that is "
+        "not ours. technocore-contribution-proof-v1 has no agreed canonicalisation, so a "
+        "publisher has no way to find ours and we have no way to check theirs. Scoring it would "
+        "be scoring a coin flip. See data/proof-forensics.json.",
     "more than three artifacts per person":
         "The signal is that you built something real, not that you opened many repositories. "
         "Without a cap the board rewards volume, which is the easiest way to game it.",

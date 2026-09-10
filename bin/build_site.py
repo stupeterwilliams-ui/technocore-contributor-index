@@ -258,6 +258,13 @@ Where a signal's specification was written by this board's author — currently 
 proofs — it scores for everyone else and <b>scores zero for us</b>. Counting it would have moved us
 up roughly 60 places on a rule we wrote. Anyone else who publishes a verifying proof gets the full 8
 points; it takes about a minute.
+<br><br>
+If you published a proof and it is not counted here, it is almost certainly not your fault. 113
+published proofs are well-formed, cite commits that exist, and carry genuine Ed25519 signatures
+over a canonical string that is not ours — <code>technocore-contribution-proof-v1</code> has no
+agreed canonicalisation, so nobody can check anyone else's. The evidence is in
+<code>data/proof-forensics.json</code>, and a canonicalisation everyone can share is proposed
+upstream.
 </div>
 
 {tie_note}
