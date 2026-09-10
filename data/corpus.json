@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-10T07:10:43Z",
+  "generated_at": "2026-09-10T08:19:17Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -1881,7 +1881,7 @@
       "description": "Contribution proofs found by code search, plus a direct probe of every discovered artifact repository for a root contribution-proof.json.",
       "method": "search/code 'technocore-contribution-proof-v1', all pages, unioned with a direct fetch per artifact repo",
       "count": 153,
-      "digest": "sha256:aed4606abd8ff41b163782cb15d78022a930320ce31e28fcea088114f8d1de73",
+      "digest": "sha256:e1fe879820ac506800dbd0f10d929db04cd0f714f078cea5f5d985a880c5637e",
       "identifiers": [
         "0o0r7/Fri/docs/PROJECT_CONTEXT.md",
         "0o0r7/flop-did-contributor-kit/technocore_agent.py",
@@ -1898,12 +1898,12 @@
         "1azyd3v/technocore-did/contribution-proof.json",
         "244whopper-cyber/technocore-japanese-guide/contribution-proof.json",
         "ARR03/flop-airdrop-tool/contribution-proof.json",
-        "Abdulwasih29/technocore-flop-agent/contribution-proof.json",
         "AbstrusImad/technocore-room-metrics/contribution-proof.json",
         "Adelekejr/technocore-room-monitor/contribution-proof.json",
         "Admuad/technocore-studio/app.js",
         "AdnanMrabet/technocore-did-fingerprint/contribution-proof.json",
         "Alex1357909/technocore-did-guide-ru/contribution-proof.json",
+        "Ansh77765/technocore-did-guide/contribution-proof.json",
         "AykoMoana/technocore-js/contribution-proof.json",
         "Batinho13/technocore-agent-guide/contribution-proof.json",
         "Bigoscrypt/technocore-did-toolkit/contribution-proof.json",
