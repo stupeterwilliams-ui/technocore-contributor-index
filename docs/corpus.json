@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-10T04:54:20Z",
+  "generated_at": "2026-09-10T06:02:30Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -805,8 +805,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1062,
-      "digest": "sha256:e1d48a210f4c8ba7253f2662769ad6f93b87bcf279031ef5f15e974f62b5316e",
+      "count": 1063,
+      "digest": "sha256:cff00fb2e9633b82feda8cabd156602f9b73b7c30fa1258731e6b39a6af494b0",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/Fri",
@@ -1499,7 +1499,6 @@
         "jvaleskadevs/technocore-quickstart",
         "jxiexyz/technocore-daily-checkin",
         "kamils333/technocore-keyring-tool",
-        "kaminarioyaji/technocore-windows-safe-start-ja",
         "kamitakami687/flop-agent-did-guide",
         "kankral/technocore-proof-verifier",
         "katazrofi/openclaw-technocore-reference",
@@ -1613,6 +1612,7 @@
         "naninu123/technocore-signal",
         "nayemlengta/technocore-js",
         "nazpomeranian/flop",
+        "neromtoobad/reverse-captcha",
         "nevermnind/technocore-docs-id",
         "nevermnind/technocore-explorer",
         "neveryieldx/technocore-mark",
@@ -1718,6 +1718,7 @@
         "shevardhani/technocore-onboard",
         "shibainu-inu/flop-facts",
         "shibainu-inu/hakoniwa",
+        "shibainu-inu/hakoniwa-ops",
         "shibainu-inu/technocore-inference-market",
         "shiojpn/arxiv-trading-bot-research",
         "shizhjian/technocore-contribution",
