@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-10T18:34:55Z",
+  "generated_at": "2026-09-10T19:43:35Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -810,8 +810,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1061,
-      "digest": "sha256:aad63652517f69e6861b2f629acd36da11cb62661bb69e43c880af1d78fd7b02",
+      "count": 1062,
+      "digest": "sha256:a19850885a322c904a2b9da24ab2850c0d597d3ac6d02cc79683ddc89afffa4f",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/Fri",
@@ -872,6 +872,7 @@
         "244whopper-cyber/technocore-japanese-guide",
         "2TheMoom/technocore-archiver",
         "2TheMoom/technocore-keyseal",
+        "3200-tech/technocore-cn-guide",
         "486087411/technocore-hermes-kit",
         "7s4dtv665g-alt/miiin",
         "9XVENOM/technocore-flop-airdrop-DID-android-guide",
@@ -1069,7 +1070,6 @@
         "Qwealzy/technocore-client",
         "RIO8368/technocore-agent-contribution",
         "RZoir/technocore-protocol-deepdive",
-        "RaffiHu/technocore-swarm-lab",
         "RamaVenom/technocore-did-guide",
         "Ratchezz/technocore-did-monitor",
         "Rawbeew/flop-toolkit",
@@ -1464,6 +1464,7 @@
         "iamiskender/arc-technocore-bridge",
         "iamiskender/awesome-technocore",
         "iamiskender/iamiskender",
+        "iammevak/technocore-room-monitor",
         "iammikedavis/technocore-safe-did-windows",
         "iansamonte/technocore-preflight",
         "ibadanbuzz/technocore-did-windows-guide",
@@ -1879,8 +1880,8 @@
     "proofs": {
       "description": "Contribution proofs found by code search, plus a direct probe of every discovered artifact repository for a root contribution-proof.json.",
       "method": "search/code 'technocore-contribution-proof-v1', all pages, unioned with a direct fetch per artifact repo",
-      "count": 151,
-      "digest": "sha256:7270abbd8a1733dfac5c3f30fdbeaf36d60ca175e047f606c033264a44706f60",
+      "count": 153,
+      "digest": "sha256:51f26bff09c9b909b41e7e80af81a1b606daad6d58a631d8500f33db37b1fa16",
       "identifiers": [
         "0o0r7/Fri/docs/PROJECT_CONTEXT.md",
         "0o0r7/flop-did-contributor-kit/technocore_agent.py",
@@ -1937,6 +1938,7 @@
         "adedayoduduyemi210411053-bit/technocore-buddy/technocore_agent.py",
         "alwialhuda11/technocore-client/contribution-proof.json",
         "alwialhuda11/technocore-harmonia/contribution-proof.json",
+        "bactiar291/technocore-verify/contribution-proof.json",
         "btcmama08/technocore-kit/contribution-proof.json",
         "bulliscoming/technocore-guide/contribution-proof.json",
         "chip1chapa/technocore-contribution-action/contribution-proof.json",
@@ -1954,6 +1956,7 @@
         "faroukobayanju/technocore-ai-manual-setup-guide/contribution-proof.json",
         "flupyxyz/technocore-idn/contribution-proof.json",
         "gghity01-netizen/technocore-mesh/contribution-proof.json",
+        "ght25/technocore-vault/contribution-proof.json",
         "githubbjj/technocore-audit/contribution-proof.json",
         "greyfox1234/technocore-pulse/contribution-proof.json",
         "harrxzz/technocore-agent-kit/contribution-proof.json",
