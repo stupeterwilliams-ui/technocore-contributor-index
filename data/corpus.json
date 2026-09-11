@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-11T14:59:18Z",
+  "generated_at": "2026-09-11T16:08:00Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -813,8 +813,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1067,
-      "digest": "sha256:c82d7b95b4e19469677c110333a575672a62b89c9515b45603bc3cfeb168ead9",
+      "count": 1068,
+      "digest": "sha256:34c38562a037f4e89f5abb5cd3d7c26fa34d9ac59797f145d76c2d3e08a06e86",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/Fri",
@@ -1128,6 +1128,7 @@
         "UEddy/technocore-observatory",
         "UfukNode/Technocore-Live-Workstream",
         "UfukNode/technocore-did-tool",
+        "UfukNode/technocore-sonnet-team-desk",
         "Ukorvincent/My-technocore-repository",
         "Usmannazir65/technocore-beginner-guide",
         "VNL-Works/technocore-guard",
@@ -1469,7 +1470,6 @@
         "iamiskender/awesome-technocore",
         "iamiskender/iamiskender",
         "iammevak/technocore-room-monitor",
-        "iammikedavis/technocore-safe-did-windows",
         "iansamonte/technocore-preflight",
         "ibadanbuzz/technocore-did-windows-guide",
         "iceiceic3/technocore-did-creator",
@@ -1645,6 +1645,7 @@
         "olasmi02/technocore-buddy",
         "olto7/technocore_dart",
         "omerbek/technocore-signal-map",
+        "omerbek/technocore-sonnet-cli",
         "omerbek/technocore-tclk-proof",
         "oncen30/technocore-did-tool",
         "onchaindc/technocore-agent-contribution-kit",
@@ -1889,7 +1890,7 @@
       "description": "Contribution proofs found by code search, plus a direct probe of every discovered artifact repository for a root contribution-proof.json.",
       "method": "search/code 'technocore-contribution-proof-v1', all pages, unioned with a direct fetch per artifact repo",
       "count": 157,
-      "digest": "sha256:6df9117b8d97d1e37d594596f357e67f64675ec34f06865b32e71ccf1fdbffe8",
+      "digest": "sha256:57ba0ad224aebcdb12f540eaf56b2826574749ad968f17199d6bd3cd106f4be8",
       "identifiers": [
         "0o0r7/Fri/docs/PROJECT_CONTEXT.md",
         "0o0r7/Fri/flopkit-sdk-docs/docs-overhaul.patch",
@@ -1910,6 +1911,7 @@
         "244whopper-cyber/technocore-japanese-guide/contribution-proof.json",
         "3200-tech/technocore-cn-guide/contribution-proof.json",
         "ARR03/flop-airdrop-tool/contribution-proof.json",
+        "Abdulwasih29/technocore-flop-agent/contribution-proof.json",
         "AbstrusImad/technocore-room-metrics/contribution-proof.json",
         "Adelekejr/technocore-room-monitor/contribution-proof.json",
         "Admuad/technocore-studio/app.js",
@@ -1984,7 +1986,6 @@
         "kforc/technocore-proof/src/verification.ts",
         "khairounmohsine/technocore-did-activity-index/contribution-proof.json",
         "kiranoye94-cmd/technocore-monitor/contribution-proof.json",
-        "laobeizi1996/technocore-did-guide-zh/contribution-proof.json",
         "loneewolflone-debug/technocore-flow/contribution-proof.json",
         "m7mdd77/flop-technocore-agent/contribution-proof.json",
         "mehmetkr-31/technocore-turkce-rehber/README.md",
