@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-10T21:59:29Z",
+  "generated_at": "2026-09-11T00:14:47Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -620,8 +620,8 @@
     "issues": {
       "description": "Every issue against the upstream repo, all states.",
       "method": "gh issue list --repo flop-labs/technocore-chat --state all --limit 300",
-      "count": 183,
-      "digest": "sha256:370124db0108163ef2f7758a2c2571ff89892013749075d437eace1106d81c78",
+      "count": 184,
+      "digest": "sha256:0c646c680400af3622ea07baee242ef5333ab2c4cf89491cc633a6d335b18d60",
       "identifiers": [
         "issue#101",
         "issue#105",
@@ -804,6 +804,7 @@
         "issue#818",
         "issue#825",
         "issue#828",
+        "issue#833",
         "issue#85",
         "issue#95"
       ]
@@ -811,8 +812,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1061,
-      "digest": "sha256:6c41a91ef15b88fe70af70a8093aa7b63c0590d2312c4f48f45d09c4bd2dec31",
+      "count": 1064,
+      "digest": "sha256:0c11fdac8645274f2d2de5d4c3e48b8c253ec6e0789d4ebad4127d81e2c4c20c",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/Fri",
@@ -954,6 +955,7 @@
         "Devonlegend/technocore-cli",
         "Devonlegend/technocore-watcher",
         "Dexanode/technocore-did",
+        "Dext94/flop-agent-lab",
         "Dnyelfy/technocore-did-kit",
         "Dnyelfy/technocore-field",
         "Dnyelfy/technocore-vitals",
@@ -1465,6 +1467,7 @@
         "iamiskender/awesome-technocore",
         "iamiskender/iamiskender",
         "iammevak/technocore-room-monitor",
+        "iammikedavis/technocore-safe-did-windows",
         "iansamonte/technocore-preflight",
         "ibadanbuzz/technocore-did-windows-guide",
         "iceiceic3/technocore-did-creator",
@@ -1546,6 +1549,7 @@
         "kvzuobai/technocore-agent-workflows",
         "kyosuke25/agent-elite-wrestling",
         "kyosuke25/technocore-did-windows",
+        "laobeizi1996/technocore-did-guide-zh",
         "latest63/technocore-onboarding",
         "lela-lenin/lela-lenin",
         "lela-lenin/technocore-security-notes",
@@ -1880,8 +1884,8 @@
     "proofs": {
       "description": "Contribution proofs found by code search, plus a direct probe of every discovered artifact repository for a root contribution-proof.json.",
       "method": "search/code 'technocore-contribution-proof-v1', all pages, unioned with a direct fetch per artifact repo",
-      "count": 154,
-      "digest": "sha256:47d5b2e9ba10ea733a499e11960f808028346354ba6e1a2def7a14bde949988b",
+      "count": 153,
+      "digest": "sha256:c98b5e2016606db90045ad1f65ab41ea6c975302fc0c3e28e4d130b9ea0659c6",
       "identifiers": [
         "0o0r7/Fri/docs/PROJECT_CONTEXT.md",
         "0o0r7/flop-did-contributor-kit/technocore_agent.py",
@@ -1973,7 +1977,6 @@
         "kforc/technocore-proof/src/verification.ts",
         "khairounmohsine/technocore-did-activity-index/contribution-proof.json",
         "kiranoye94-cmd/technocore-monitor/contribution-proof.json",
-        "laobeizi1996/technocore-did-guide-zh/contribution-proof.json",
         "loneewolflone-debug/technocore-flow/contribution-proof.json",
         "m7mdd77/flop-technocore-agent/contribution-proof.json",
         "mehmetkr-31/technocore-turkce-rehber/README.md",
