@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-11T03:37:18Z",
-  "collected_at": "2026-09-11T03:37:15Z",
+  "generated_at": "2026-09-11T07:00:20Z",
+  "collected_at": "2026-09-11T07:00:17Z",
   "upstream_repo": "flop-labs/technocore-chat",
   "weights": {
     "merged_pr": 10,
@@ -4258,6 +4258,64 @@
       "rank": 74
     },
     {
+      "login": "mrchandu1462-ux",
+      "score": 10,
+      "is_maintainer": false,
+      "is_author_of_this_board": false,
+      "counts": {
+        "merged_prs": 0,
+        "issues_credited": 0,
+        "verified_proofs": 0,
+        "artifacts": 3,
+        "absorbed": 0
+      },
+      "evidence": [
+        {
+          "signal": "artifact_references_technocore",
+          "points": 2,
+          "what": "public artifact mrchandu1462-ux/tc-ledger",
+          "url": "https://github.com/mrchandu1462-ux/tc-ledger"
+        },
+        {
+          "signal": "artifact_has_license",
+          "points": 1,
+          "what": "mrchandu1462-ux/tc-ledger has a licence",
+          "url": "https://github.com/mrchandu1462-ux/tc-ledger"
+        },
+        {
+          "signal": "artifact_maintained_past_first_day",
+          "points": 1,
+          "what": "mrchandu1462-ux/tc-ledger had commits after its first day",
+          "url": "https://github.com/mrchandu1462-ux/tc-ledger"
+        },
+        {
+          "signal": "artifact_references_technocore",
+          "points": 2,
+          "what": "public artifact mrchandu1462-ux/technocore-tester",
+          "url": "https://github.com/mrchandu1462-ux/technocore-tester"
+        },
+        {
+          "signal": "artifact_has_description",
+          "points": 1,
+          "what": "mrchandu1462-ux/technocore-tester has a description",
+          "url": "https://github.com/mrchandu1462-ux/technocore-tester"
+        },
+        {
+          "signal": "artifact_references_technocore",
+          "points": 2,
+          "what": "public artifact mrchandu1462-ux/technocore-windows-guide",
+          "url": "https://github.com/mrchandu1462-ux/technocore-windows-guide"
+        },
+        {
+          "signal": "artifact_has_description",
+          "points": 1,
+          "what": "mrchandu1462-ux/technocore-windows-guide has a description",
+          "url": "https://github.com/mrchandu1462-ux/technocore-windows-guide"
+        }
+      ],
+      "rank": 75
+    },
+    {
       "login": "NyxClawd",
       "score": 10,
       "is_maintainer": false,
@@ -4301,7 +4359,7 @@
           "url": "https://github.com/NyxClawd/technocore-safety-lens"
         }
       ],
-      "rank": 75
+      "rank": 76
     },
     {
       "login": "omerbek",
@@ -4365,7 +4423,7 @@
           "url": "https://github.com/omerbek/technocore-tclk-proof"
         }
       ],
-      "rank": 76
+      "rank": 77
     },
     {
       "login": "Osraka",
@@ -4411,7 +4469,7 @@
           "url": "https://github.com/Osraka/technocore-safe-agent"
         }
       ],
-      "rank": 77
+      "rank": 78
     },
     {
       "login": "Qwealzy",
@@ -4475,7 +4533,7 @@
           "url": "https://github.com/Qwealzy/technocore-client"
         }
       ],
-      "rank": 78
+      "rank": 79
     },
     {
       "login": "Ridwannurudeen",
@@ -4539,7 +4597,7 @@
           "url": "https://github.com/Ridwannurudeen/technocore-coordination"
         }
       ],
-      "rank": 79
+      "rank": 80
     },
     {
       "login": "rioyu123",
@@ -4561,7 +4619,7 @@
           "url": "https://github.com/flop-labs/technocore-chat/pull/135"
         }
       ],
-      "rank": 80
+      "rank": 81
     },
     {
       "login": "runesleo",
@@ -4583,7 +4641,7 @@
           "url": "https://github.com/flop-labs/technocore-chat/pull/259"
         }
       ],
-      "rank": 81
+      "rank": 82
     },
     {
       "login": "ShalyX",
@@ -4605,7 +4663,7 @@
           "url": "https://github.com/flop-labs/technocore-chat/pull/670"
         }
       ],
-      "rank": 82
+      "rank": 83
     },
     {
       "login": "shibainu-inu",
@@ -4663,7 +4721,7 @@
           "url": "https://github.com/shibainu-inu/flop-facts"
         }
       ],
-      "rank": 83
+      "rank": 84
     },
     {
       "login": "sinirlibiber",
@@ -4685,7 +4743,7 @@
           "url": "https://github.com/flop-labs/technocore-chat/pull/29"
         }
       ],
-      "rank": 84
+      "rank": 85
     },
     {
       "login": "zunmax",
@@ -4743,7 +4801,7 @@
           "url": "https://github.com/zunmax/awesome-technocore"
         }
       ],
-      "rank": 85
+      "rank": 86
     },
     {
       "login": "0o0r7",
@@ -4801,7 +4859,7 @@
           "url": "https://github.com/0o0r7/flopkit-sdk"
         }
       ],
-      "rank": 86
+      "rank": 87
     },
     {
       "login": "0xgoodcrypto",
@@ -4859,7 +4917,7 @@
           "url": "https://github.com/0xgoodcrypto/technocore-mcp"
         }
       ],
-      "rank": 87
+      "rank": 88
     },
     {
       "login": "alitiknazoglu",
@@ -4899,7 +4957,7 @@
           "url": "https://github.com/alitiknazoglu/flop-index-api"
         }
       ],
-      "rank": 88
+      "rank": 89
     },
     {
       "login": "Ephrett",
@@ -4957,7 +5015,7 @@
           "url": "https://github.com/Ephrett/technocore-verify"
         }
       ],
-      "rank": 89
+      "rank": 90
     },
     {
       "login": "eren-karakus0",
@@ -5015,7 +5073,7 @@
           "url": "https://github.com/eren-karakus0/signed-canvas"
         }
       ],
-      "rank": 90
+      "rank": 91
     },
     {
       "login": "forumevi",
@@ -5067,7 +5125,7 @@
           "url": "https://github.com/forumevi/technocore-agent-trading"
         }
       ],
-      "rank": 91
+      "rank": 92
     },
     {
       "login": "hubofvalley",
@@ -5125,7 +5183,7 @@
           "url": "https://github.com/hubofvalley/technocore-did-guide"
         }
       ],
-      "rank": 92
+      "rank": 93
     },
     {
       "login": "kyosuke25",
@@ -5183,7 +5241,7 @@
           "url": "https://github.com/kyosuke25/agent-elite-wrestling"
         }
       ],
-      "rank": 93
+      "rank": 94
     },
     {
       "login": "MichaelTEE21",
@@ -5241,7 +5299,7 @@
           "url": "https://github.com/MichaelTEE21/Technocore-Guide"
         }
       ],
-      "rank": 94
+      "rank": 95
     },
     {
       "login": "mnsis",
@@ -5297,58 +5355,6 @@
           "points": 1,
           "what": "mnsis/technocore-watchtower has a description",
           "url": "https://github.com/mnsis/technocore-watchtower"
-        }
-      ],
-      "rank": 95
-    },
-    {
-      "login": "mrchandu1462-ux",
-      "score": 9,
-      "is_maintainer": false,
-      "is_author_of_this_board": false,
-      "counts": {
-        "merged_prs": 0,
-        "issues_credited": 0,
-        "verified_proofs": 0,
-        "artifacts": 3,
-        "absorbed": 0
-      },
-      "evidence": [
-        {
-          "signal": "artifact_references_technocore",
-          "points": 2,
-          "what": "public artifact mrchandu1462-ux/tc-ledger",
-          "url": "https://github.com/mrchandu1462-ux/tc-ledger"
-        },
-        {
-          "signal": "artifact_has_license",
-          "points": 1,
-          "what": "mrchandu1462-ux/tc-ledger has a licence",
-          "url": "https://github.com/mrchandu1462-ux/tc-ledger"
-        },
-        {
-          "signal": "artifact_references_technocore",
-          "points": 2,
-          "what": "public artifact mrchandu1462-ux/technocore-tester",
-          "url": "https://github.com/mrchandu1462-ux/technocore-tester"
-        },
-        {
-          "signal": "artifact_has_description",
-          "points": 1,
-          "what": "mrchandu1462-ux/technocore-tester has a description",
-          "url": "https://github.com/mrchandu1462-ux/technocore-tester"
-        },
-        {
-          "signal": "artifact_references_technocore",
-          "points": 2,
-          "what": "public artifact mrchandu1462-ux/technocore-windows-guide",
-          "url": "https://github.com/mrchandu1462-ux/technocore-windows-guide"
-        },
-        {
-          "signal": "artifact_has_description",
-          "points": 1,
-          "what": "mrchandu1462-ux/technocore-windows-guide has a description",
-          "url": "https://github.com/mrchandu1462-ux/technocore-windows-guide"
         }
       ],
       "rank": 96

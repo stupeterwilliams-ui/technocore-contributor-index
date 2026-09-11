@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-11T03:37:18Z",
+  "generated_at": "2026-09-11T07:00:20Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -1883,11 +1883,14 @@
     "proofs": {
       "description": "Contribution proofs found by code search, plus a direct probe of every discovered artifact repository for a root contribution-proof.json.",
       "method": "search/code 'technocore-contribution-proof-v1', all pages, unioned with a direct fetch per artifact repo",
-      "count": 154,
-      "digest": "sha256:47d5b2e9ba10ea733a499e11960f808028346354ba6e1a2def7a14bde949988b",
+      "count": 157,
+      "digest": "sha256:6df9117b8d97d1e37d594596f357e67f64675ec34f06865b32e71ccf1fdbffe8",
       "identifiers": [
         "0o0r7/Fri/docs/PROJECT_CONTEXT.md",
+        "0o0r7/Fri/flopkit-sdk-docs/docs-overhaul.patch",
+        "0o0r7/Fri/flopkit-sdk-docs/quickstart.md",
         "0o0r7/flop-did-contributor-kit/technocore_agent.py",
+        "0o0r7/flopkit-sdk/sdk/docs/quickstart.md",
         "0o0r7/flopkit-sdk/sdk/src/flopkit/proofs.py",
         "0xWarg2/technocore-kit/README.md",
         "0xWarg2/technocore-kit/contribution-proof.json",
