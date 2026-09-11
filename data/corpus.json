@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-11T19:32:53Z",
+  "generated_at": "2026-09-11T20:41:22Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -814,8 +814,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1071,
-      "digest": "sha256:67de8aaf344e33daf1ee4858a1fceb83b063b3910a3798669672c0ca7e0febec",
+      "count": 1072,
+      "digest": "sha256:eac6575eb93b867bcd6d2891090b7a8392de394e136ac1e539850cff302b2e88",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/Fri",
@@ -1247,6 +1247,7 @@
         "brkcinar/technocore-companion",
         "brkcinar/technocore-matrix",
         "brkcinar/technocore-websub",
+        "brunoerik417-ship-it/flop-agent",
         "btcmama08/technocore-kit",
         "btk080428/technocore-proof-explorer",
         "bulliscoming/technocore-guide",
@@ -1893,8 +1894,8 @@
     "proofs": {
       "description": "Contribution proofs found by code search, plus a direct probe of every discovered artifact repository for a root contribution-proof.json.",
       "method": "search/code 'technocore-contribution-proof-v1', all pages, unioned with a direct fetch per artifact repo",
-      "count": 157,
-      "digest": "sha256:57ba0ad224aebcdb12f540eaf56b2826574749ad968f17199d6bd3cd106f4be8",
+      "count": 156,
+      "digest": "sha256:95e53e14bebd93e4ccef4fc859cbe8a96c78e6fd7456ae48b50db8eb5ea2a8c9",
       "identifiers": [
         "0o0r7/Fri/docs/PROJECT_CONTEXT.md",
         "0o0r7/Fri/flopkit-sdk-docs/docs-overhaul.patch",
@@ -1910,7 +1911,6 @@
         "0xmugetso/technocore-inspector/contribution-proof.json",
         "0xnurrabby/technocore-beginner-guide/contribution-proof.json",
         "0xzahra/seykota-contributions/proof-gh.dolores.json",
-        "1Fuad01/technocore-evidence-kit/contribution-proof.json",
         "1azyd3v/technocore-did/contribution-proof.json",
         "244whopper-cyber/technocore-japanese-guide/contribution-proof.json",
         "3200-tech/technocore-cn-guide/contribution-proof.json",
@@ -1921,6 +1921,7 @@
         "Admuad/technocore-studio/app.js",
         "AdnanMrabet/technocore-did-fingerprint/contribution-proof.json",
         "Alex1357909/technocore-did-guide-ru/contribution-proof.json",
+        "Ansh77765/technocore-did-guide/contribution-proof.json",
         "AykoMoana/technocore-js/contribution-proof.json",
         "Batinho13/technocore-agent-guide/contribution-proof.json",
         "Bigoscrypt/technocore-did-toolkit/contribution-proof.json",
@@ -1959,7 +1960,6 @@
         "bactiar291/technocore-verify/contribution-proof.json",
         "btcmama08/technocore-kit/contribution-proof.json",
         "bulliscoming/technocore-guide/contribution-proof.json",
-        "chip1chapa/technocore-contribution-action/contribution-proof.json",
         "chip1chapa/technocore-room-analyzer/contribution-proof.json",
         "d4ncboz/technocore/contribution-proof.json",
         "defrankszn/technocore-lobby-analysis/technocore-analysis-proof.json",
