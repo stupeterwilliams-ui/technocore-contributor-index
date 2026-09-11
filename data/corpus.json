@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-11T07:00:20Z",
+  "generated_at": "2026-09-11T10:24:59Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -11,8 +11,8 @@
     "pulls": {
       "description": "Every pull request against the upstream repo, all states.",
       "method": "gh pr list --repo flop-labs/technocore-chat --state {merged,open,closed} --limit 300",
-      "count": 601,
-      "digest": "sha256:1028b39397f2b7ea05aa1ac43510d2ca424ad7c346f515237413f525e546e9de",
+      "count": 602,
+      "digest": "sha256:1921c25436b77f1f3eeb6097f7db2abbe06e1fed25f66b3986216a7ffa72d362",
       "identifiers": [
         "pr#1",
         "pr#10",
@@ -606,6 +606,7 @@
         "pr#830",
         "pr#831",
         "pr#832",
+        "pr#834",
         "pr#84",
         "pr#86",
         "pr#87",
@@ -812,8 +813,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1063,
-      "digest": "sha256:7c061d1557479be05d559b587900caba5297f423cc06233e357ac30de2db9c04",
+      "count": 1065,
+      "digest": "sha256:7d0440343ef9a264ebca3034cb3f57ea31664392e08c73d56e9a8eef22471b0f",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/Fri",
@@ -1293,6 +1294,7 @@
         "dalgonad/technocore-playground",
         "dalgonad/technocore-py",
         "damiaotothemoon-hash/technocore-contribution-kit",
+        "damienlenglet1-wq/technocore-android-guide",
         "danenright/technocore-contributor-onboarding",
         "danenright/technocore-deploy",
         "danenright/technocore-parcel",
@@ -1552,6 +1554,7 @@
         "lela-lenin/technocore-security-notes",
         "leoserein/serein-technocore",
         "levdur/technocore-keepalive",
+        "linny006/awesome-agent-skills",
         "liokapod/technocore-rb",
         "loneewolflone-debug/technocore-flow",
         "long1977/technocore-contribution",
