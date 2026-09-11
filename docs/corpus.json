@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-11T16:08:00Z",
+  "generated_at": "2026-09-11T17:16:36Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -813,8 +813,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1068,
-      "digest": "sha256:34c38562a037f4e89f5abb5cd3d7c26fa34d9ac59797f145d76c2d3e08a06e86",
+      "count": 1069,
+      "digest": "sha256:2294c42c98704abd5af4f583d96b34e9b9dca0fae453601ce44a3ba601717e21",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/Fri",
@@ -1042,6 +1042,7 @@
         "MiyukiNakama1/technocore-did-tools",
         "Mr0Muqeed/Flop-agent-one-click",
         "MrCartographer/technocore-path-mark",
+        "MrCartographer/technocore-tools",
         "MrFaruk0/technocore-conformance",
         "MrZeroYT/technocore-ts",
         "Mrcredible909/flop-technocore-guide",
