@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-11T00:14:47Z",
+  "generated_at": "2026-09-11T01:22:08Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -812,8 +812,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1064,
-      "digest": "sha256:0c11fdac8645274f2d2de5d4c3e48b8c253ec6e0789d4ebad4127d81e2c4c20c",
+      "count": 1063,
+      "digest": "sha256:58887cb9d786fcfd146d252b0632adf4bea14db0399d130c30bb391ac2708959",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/Fri",
@@ -1157,7 +1157,6 @@
         "abbacushitt/technocore-agents",
         "abhi5800/technochat",
         "abushaymau/technocore-windows-did-guide",
-        "ace-coderr/flop-technocore-agent",
         "actions-marketplace-validations/hazzanzico_technocore-signed-action",
         "addnad/technocore-ts",
         "adedayoduduyemi210411053-bit/technocore-buddy",
@@ -1884,8 +1883,8 @@
     "proofs": {
       "description": "Contribution proofs found by code search, plus a direct probe of every discovered artifact repository for a root contribution-proof.json.",
       "method": "search/code 'technocore-contribution-proof-v1', all pages, unioned with a direct fetch per artifact repo",
-      "count": 153,
-      "digest": "sha256:c98b5e2016606db90045ad1f65ab41ea6c975302fc0c3e28e4d130b9ea0659c6",
+      "count": 154,
+      "digest": "sha256:47d5b2e9ba10ea733a499e11960f808028346354ba6e1a2def7a14bde949988b",
       "identifiers": [
         "0o0r7/Fri/docs/PROJECT_CONTEXT.md",
         "0o0r7/flop-did-contributor-kit/technocore_agent.py",
@@ -1977,6 +1976,7 @@
         "kforc/technocore-proof/src/verification.ts",
         "khairounmohsine/technocore-did-activity-index/contribution-proof.json",
         "kiranoye94-cmd/technocore-monitor/contribution-proof.json",
+        "laobeizi1996/technocore-did-guide-zh/contribution-proof.json",
         "loneewolflone-debug/technocore-flow/contribution-proof.json",
         "m7mdd77/flop-technocore-agent/contribution-proof.json",
         "mehmetkr-31/technocore-turkce-rehber/README.md",
