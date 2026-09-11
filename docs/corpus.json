@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-11T12:41:45Z",
+  "generated_at": "2026-09-11T13:50:32Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -813,8 +813,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1064,
-      "digest": "sha256:34be3e06aab3d430f677f5337a65c83d92ee839136a01d275d5f07f094aaf9ad",
+      "count": 1063,
+      "digest": "sha256:4f66c250e28d919d562cfc6690b93d05b24323f203aa1909b67f7ce38fa4445f",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/Fri",
@@ -1435,7 +1435,6 @@
         "hanamaru777/technocore-safe-agent",
         "hariou/technocore-grokbot-ja",
         "harrxzz/technocore-agent-kit",
-        "haruketh/sonnet-chain",
         "hashimura-3rd/technocore-did-tool",
         "havelaw/technocore-ko",
         "hayulpapax/technocore-tc",
