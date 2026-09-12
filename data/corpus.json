@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-12T16:55:05Z",
+  "generated_at": "2026-09-12T18:02:58Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -11,8 +11,8 @@
     "pulls": {
       "description": "Every pull request against the upstream repo, all states.",
       "method": "gh pr list --repo flop-labs/technocore-chat --state {merged,open,closed} --limit 300",
-      "count": 605,
-      "digest": "sha256:14dd7ee6b5e6a2e7a0d6b2214d90fa087704c040c60588fccb4b80ee6aa5c29f",
+      "count": 606,
+      "digest": "sha256:a6e440c3514bea04638dc4e5c1be57e09c8caa6dc8e589cc16d9b9866cad37c9",
       "identifiers": [
         "pr#1",
         "pr#10",
@@ -610,6 +610,7 @@
         "pr#835",
         "pr#836",
         "pr#837",
+        "pr#838",
         "pr#84",
         "pr#86",
         "pr#87",
@@ -1891,10 +1892,11 @@
     "proofs": {
       "description": "Contribution proofs found by code search, plus a direct probe of every discovered artifact repository for a root contribution-proof.json.",
       "method": "search/code 'technocore-contribution-proof-v1', all pages, unioned with a direct fetch per artifact repo",
-      "count": 156,
-      "digest": "sha256:ca6c18009e4e26415712f8f00d4f209f2281968f86cc8da00b757341cf3c9b6c",
+      "count": 157,
+      "digest": "sha256:2d7801bc8aaf5273e673796e2ff73d48ea7a082b834209f3a5a64575e0ccfcb0",
       "identifiers": [
         "0o0r7/Fri/docs/PROJECT_CONTEXT.md",
+        "0o0r7/Fri/docs/fri-flop-ecosystem-knowledge-brief.md",
         "0o0r7/Fri/flopkit-sdk-docs/docs-overhaul.patch",
         "0o0r7/Fri/flopkit-sdk-docs/quickstart.md",
         "0o0r7/flop-did-contributor-kit/technocore_agent.py",

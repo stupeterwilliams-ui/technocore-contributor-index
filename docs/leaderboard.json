@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-12T16:55:05Z",
-  "collected_at": "2026-09-12T16:55:02Z",
+  "generated_at": "2026-09-12T18:02:58Z",
+  "collected_at": "2026-09-12T18:02:55Z",
   "upstream_repo": "flop-labs/technocore-chat",
   "weights": {
     "merged_pr": 10,
@@ -5147,6 +5147,64 @@
       "rank": 92
     },
     {
+      "login": "githubbjj",
+      "score": 9,
+      "is_maintainer": false,
+      "is_author_of_this_board": false,
+      "counts": {
+        "merged_prs": 0,
+        "issues_credited": 0,
+        "verified_proofs": 0,
+        "artifacts": 2,
+        "absorbed": 0
+      },
+      "evidence": [
+        {
+          "signal": "artifact_references_technocore",
+          "points": 2,
+          "what": "public artifact githubbjj/technocore-audit",
+          "url": "https://github.com/githubbjj/technocore-audit"
+        },
+        {
+          "signal": "artifact_has_license",
+          "points": 1,
+          "what": "githubbjj/technocore-audit has a licence",
+          "url": "https://github.com/githubbjj/technocore-audit"
+        },
+        {
+          "signal": "artifact_has_description",
+          "points": 1,
+          "what": "githubbjj/technocore-audit has a description",
+          "url": "https://github.com/githubbjj/technocore-audit"
+        },
+        {
+          "signal": "artifact_maintained_past_first_day",
+          "points": 1,
+          "what": "githubbjj/technocore-audit had commits after its first day",
+          "url": "https://github.com/githubbjj/technocore-audit"
+        },
+        {
+          "signal": "artifact_references_technocore",
+          "points": 2,
+          "what": "public artifact githubbjj/tclk-py",
+          "url": "https://github.com/githubbjj/tclk-py"
+        },
+        {
+          "signal": "artifact_has_license",
+          "points": 1,
+          "what": "githubbjj/tclk-py has a licence",
+          "url": "https://github.com/githubbjj/tclk-py"
+        },
+        {
+          "signal": "artifact_has_description",
+          "points": 1,
+          "what": "githubbjj/tclk-py has a description",
+          "url": "https://github.com/githubbjj/tclk-py"
+        }
+      ],
+      "rank": 93
+    },
+    {
       "login": "hubofvalley",
       "score": 9,
       "is_maintainer": false,
@@ -5202,7 +5260,7 @@
           "url": "https://github.com/hubofvalley/technocore-did-guide"
         }
       ],
-      "rank": 93
+      "rank": 94
     },
     {
       "login": "kyosuke25",
@@ -5260,7 +5318,7 @@
           "url": "https://github.com/kyosuke25/agent-elite-wrestling"
         }
       ],
-      "rank": 94
+      "rank": 95
     },
     {
       "login": "MichaelTEE21",
@@ -5318,7 +5376,7 @@
           "url": "https://github.com/MichaelTEE21/Technocore-Guide"
         }
       ],
-      "rank": 95
+      "rank": 96
     },
     {
       "login": "mnsis",
@@ -5376,7 +5434,7 @@
           "url": "https://github.com/mnsis/technocore-watchtower"
         }
       ],
-      "rank": 96
+      "rank": 97
     },
     {
       "login": "parkzen11",
@@ -5434,7 +5492,7 @@
           "url": "https://github.com/parkzen11/tclk-portfolio"
         }
       ],
-      "rank": 97
+      "rank": 98
     },
     {
       "login": "relvetic-netizen",
@@ -5492,7 +5550,7 @@
           "url": "https://github.com/relvetic-netizen/technocore-client"
         }
       ],
-      "rank": 98
+      "rank": 99
     },
     {
       "login": "thangvmt",
@@ -5550,7 +5608,7 @@
           "url": "https://github.com/thangvmt/technocore-mark"
         }
       ],
-      "rank": 99
+      "rank": 100
     },
     {
       "login": "0xgoodcrypto",
@@ -5602,7 +5660,7 @@
           "url": "https://github.com/0xgoodcrypto/technocore-mcp"
         }
       ],
-      "rank": 100
+      "rank": 101
     },
     {
       "login": "0xnurrabby",
@@ -5648,7 +5706,7 @@
           "url": "https://github.com/0xnurrabby/Flop-Didbook"
         }
       ],
-      "rank": 101
+      "rank": 102
     },
     {
       "login": "244whopper-cyber",
@@ -5700,7 +5758,7 @@
           "url": "https://github.com/244whopper-cyber/technocore-easy-setup"
         }
       ],
-      "rank": 102
+      "rank": 103
     },
     {
       "login": "alwialhuda11",
@@ -5752,7 +5810,7 @@
           "url": "https://github.com/alwialhuda11/technocore-client"
         }
       ],
-      "rank": 103
+      "rank": 104
     },
     {
       "login": "d4ncboz",
@@ -5804,7 +5862,7 @@
           "url": "https://github.com/d4ncboz/awesome-technocore"
         }
       ],
-      "rank": 104
+      "rank": 105
     },
     {
       "login": "deanetolan",
@@ -5856,7 +5914,7 @@
           "url": "https://github.com/deanetolan/deanetolan"
         }
       ],
-      "rank": 105
+      "rank": 106
     },
     {
       "login": "devorun",
@@ -5908,7 +5966,7 @@
           "url": "https://github.com/devorun/awesome-technocore"
         }
       ],
-      "rank": 106
+      "rank": 107
     },
     {
       "login": "dharmanan",
@@ -5960,7 +6018,7 @@
           "url": "https://github.com/dharmanan/technocore-agent-console"
         }
       ],
-      "rank": 107
+      "rank": 108
     },
     {
       "login": "egg2006",
@@ -6012,7 +6070,7 @@
           "url": "https://github.com/egg2006/technocore-logo"
         }
       ],
-      "rank": 108
+      "rank": 109
     },
     {
       "login": "flop-labs-dev",
@@ -6062,58 +6120,6 @@
           "points": 1,
           "what": "flop-labs-dev/tclk has a licence",
           "url": "https://github.com/flop-labs-dev/tclk"
-        }
-      ],
-      "rank": 109
-    },
-    {
-      "login": "githubbjj",
-      "score": 8,
-      "is_maintainer": false,
-      "is_author_of_this_board": false,
-      "counts": {
-        "merged_prs": 0,
-        "issues_credited": 0,
-        "verified_proofs": 0,
-        "artifacts": 2,
-        "absorbed": 0
-      },
-      "evidence": [
-        {
-          "signal": "artifact_references_technocore",
-          "points": 2,
-          "what": "public artifact githubbjj/tclk-py",
-          "url": "https://github.com/githubbjj/tclk-py"
-        },
-        {
-          "signal": "artifact_has_license",
-          "points": 1,
-          "what": "githubbjj/tclk-py has a licence",
-          "url": "https://github.com/githubbjj/tclk-py"
-        },
-        {
-          "signal": "artifact_has_description",
-          "points": 1,
-          "what": "githubbjj/tclk-py has a description",
-          "url": "https://github.com/githubbjj/tclk-py"
-        },
-        {
-          "signal": "artifact_references_technocore",
-          "points": 2,
-          "what": "public artifact githubbjj/technocore-audit",
-          "url": "https://github.com/githubbjj/technocore-audit"
-        },
-        {
-          "signal": "artifact_has_license",
-          "points": 1,
-          "what": "githubbjj/technocore-audit has a licence",
-          "url": "https://github.com/githubbjj/technocore-audit"
-        },
-        {
-          "signal": "artifact_has_description",
-          "points": 1,
-          "what": "githubbjj/technocore-audit has a description",
-          "url": "https://github.com/githubbjj/technocore-audit"
         }
       ],
       "rank": 110
