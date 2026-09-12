@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-12T09:01:25Z",
+  "generated_at": "2026-09-12T12:23:40Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -11,8 +11,8 @@
     "pulls": {
       "description": "Every pull request against the upstream repo, all states.",
       "method": "gh pr list --repo flop-labs/technocore-chat --state {merged,open,closed} --limit 300",
-      "count": 603,
-      "digest": "sha256:f2ad4e05fa64dcb2710ac0a57d3c409fdfef763466579edef636c5b4cd80d1c4",
+      "count": 604,
+      "digest": "sha256:8380ef34356f8243c7ecd15f12254e80b5d6b6ac23059029227aa1ca6b1aeabc",
       "identifiers": [
         "pr#1",
         "pr#10",
@@ -608,6 +608,7 @@
         "pr#832",
         "pr#834",
         "pr#835",
+        "pr#836",
         "pr#84",
         "pr#86",
         "pr#87",
@@ -1889,8 +1890,8 @@
     "proofs": {
       "description": "Contribution proofs found by code search, plus a direct probe of every discovered artifact repository for a root contribution-proof.json.",
       "method": "search/code 'technocore-contribution-proof-v1', all pages, unioned with a direct fetch per artifact repo",
-      "count": 157,
-      "digest": "sha256:e43f7da6f0157b3c4f531f77266266806910a212698d8ef96586af7bc2060d6e",
+      "count": 156,
+      "digest": "sha256:ca6c18009e4e26415712f8f00d4f209f2281968f86cc8da00b757341cf3c9b6c",
       "identifiers": [
         "0o0r7/Fri/docs/PROJECT_CONTEXT.md",
         "0o0r7/Fri/flopkit-sdk-docs/docs-overhaul.patch",
@@ -1916,7 +1917,6 @@
         "Admuad/technocore-studio/app.js",
         "AdnanMrabet/technocore-did-fingerprint/contribution-proof.json",
         "Alex1357909/technocore-did-guide-ru/contribution-proof.json",
-        "Ansh77765/technocore-did-guide/contribution-proof.json",
         "AykoMoana/technocore-js/contribution-proof.json",
         "Batinho13/technocore-agent-guide/contribution-proof.json",
         "Bigoscrypt/technocore-did-toolkit/contribution-proof.json",
