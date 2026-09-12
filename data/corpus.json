@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-12T18:55:47Z",
+  "generated_at": "2026-09-12T22:33:06Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -818,8 +818,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1067,
-      "digest": "sha256:60f1d41313e836879581cc96d0230e42a0f65a96458e5fc32edc9cfa226d8784",
+      "count": 1069,
+      "digest": "sha256:43a3dca1ae3bfee7d270ed966a8425875f8db472a369bf0ec9b002f2df0ea6ae",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/Fri",
@@ -1332,6 +1332,7 @@
         "dfihrn/flop-technocore-guide",
         "dharmanan/flop-status",
         "dharmanan/technocore-agent-console",
+        "dharmanan/technocore-sonnet",
         "dhasap/anatomi-technocore",
         "didin-lab/technocore-agent-onboarding",
         "discodirector/technocore-preflight",
@@ -1551,6 +1552,7 @@
         "krishna-505/technonoise",
         "krismodju/krismodju",
         "ksk7777m/flop-agent-intelligence",
+        "ktrxktr/agent-wallet",
         "kudalaut01/technocore-tc",
         "kurimanjuu9/aa-agent-toolkit",
         "kuroko9021/technocore-id",
