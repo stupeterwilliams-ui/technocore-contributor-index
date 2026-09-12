@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-12T13:31:14Z",
+  "generated_at": "2026-09-12T16:55:05Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -11,8 +11,8 @@
     "pulls": {
       "description": "Every pull request against the upstream repo, all states.",
       "method": "gh pr list --repo flop-labs/technocore-chat --state {merged,open,closed} --limit 300",
-      "count": 604,
-      "digest": "sha256:8380ef34356f8243c7ecd15f12254e80b5d6b6ac23059029227aa1ca6b1aeabc",
+      "count": 605,
+      "digest": "sha256:14dd7ee6b5e6a2e7a0d6b2214d90fa087704c040c60588fccb4b80ee6aa5c29f",
       "identifiers": [
         "pr#1",
         "pr#10",
@@ -609,6 +609,7 @@
         "pr#834",
         "pr#835",
         "pr#836",
+        "pr#837",
         "pr#84",
         "pr#86",
         "pr#87",
@@ -815,8 +816,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1068,
-      "digest": "sha256:adaa8c5f7ba05435ea3be99f82e0f34e41098aa25190e25b5ba609eed87a21ed",
+      "count": 1067,
+      "digest": "sha256:60f1d41313e836879581cc96d0230e42a0f65a96458e5fc32edc9cfa226d8784",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/Fri",
@@ -1607,7 +1608,6 @@
         "moc33/technocore-agent-bridge",
         "mochiexude/technocore-react",
         "mohamadgueniari/technocore-room-auditor",
-        "mohamedsilah/technocore-ghost-agent",
         "mojeebdev/didcore",
         "mokaria-dev/technocore-airdrop-bot",
         "mokkoripapa/technocore-preflight",
