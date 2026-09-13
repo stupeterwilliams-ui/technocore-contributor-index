@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-13T11:58:13Z",
-  "collected_at": "2026-09-13T11:58:10Z",
+  "generated_at": "2026-09-13T13:06:00Z",
+  "collected_at": "2026-09-13T13:05:57Z",
   "upstream_repo": "flop-labs/technocore-chat",
   "weights": {
     "merged_pr": 10,
@@ -32,7 +32,7 @@
   "totals": {
     "people_ranked": 875,
     "merged_prs_counted": 42,
-    "artifacts_counted": 1028,
+    "artifacts_counted": 1029,
     "verified_proofs": 115,
     "verified_proofs_by_canonicalisation": {
       "did-starter-json-v1": 113,
@@ -980,6 +980,58 @@
       "rank": 14
     },
     {
+      "login": "erkancamli",
+      "score": 22,
+      "is_maintainer": false,
+      "is_author_of_this_board": false,
+      "counts": {
+        "merged_prs": 0,
+        "issues_credited": 0,
+        "verified_proofs": 2,
+        "artifacts": 2,
+        "absorbed": 0
+      },
+      "evidence": [
+        {
+          "signal": "verified_proof",
+          "points": 8,
+          "what": "contribution proof for erkancamli/technocore-turkce-rehber, verified under did-starter-json-v1",
+          "url": "https://github.com/erkancamli/technocore-turkce-rehber/blob/HEAD/contribution-proof.json"
+        },
+        {
+          "signal": "verified_proof",
+          "points": 8,
+          "what": "contribution proof for erkancamli/technocore-pulse, verified under did-starter-json-v1",
+          "url": "https://github.com/erkancamli/technocore-pulse/blob/HEAD/contribution-proof.json"
+        },
+        {
+          "signal": "artifact_references_technocore",
+          "points": 2,
+          "what": "public artifact erkancamli/technocore-turkce-rehber",
+          "url": "https://github.com/erkancamli/technocore-turkce-rehber"
+        },
+        {
+          "signal": "artifact_has_description",
+          "points": 1,
+          "what": "erkancamli/technocore-turkce-rehber has a description",
+          "url": "https://github.com/erkancamli/technocore-turkce-rehber"
+        },
+        {
+          "signal": "artifact_references_technocore",
+          "points": 2,
+          "what": "public artifact erkancamli/technocore-pulse",
+          "url": "https://github.com/erkancamli/technocore-pulse"
+        },
+        {
+          "signal": "artifact_has_description",
+          "points": 1,
+          "what": "erkancamli/technocore-pulse has a description",
+          "url": "https://github.com/erkancamli/technocore-pulse"
+        }
+      ],
+      "rank": 15
+    },
+    {
       "login": "alisemut0711-dev",
       "score": 21,
       "is_maintainer": false,
@@ -1047,7 +1099,7 @@
           "url": "https://github.com/alisemut0711-dev/technocore-manual-id"
         }
       ],
-      "rank": 15
+      "rank": 16
     },
     {
       "login": "faroukobayanju",
@@ -1129,7 +1181,7 @@
           "url": "https://github.com/faroukobayanju/technocore-ai-manual-setup-guide"
         }
       ],
-      "rank": 16
+      "rank": 17
     },
     {
       "login": "Jr-kenny",
@@ -1175,7 +1227,7 @@
           "url": "https://github.com/Jr-kenny/technocore-guide"
         }
       ],
-      "rank": 17
+      "rank": 18
     },
     {
       "login": "dolmaciabdullah-byte",
@@ -1221,7 +1273,7 @@
           "url": "https://github.com/dolmaciabdullah-byte/technocore-did-tool"
         }
       ],
-      "rank": 18
+      "rank": 19
     },
     {
       "login": "luch91",
@@ -1249,7 +1301,7 @@
           "url": "https://github.com/flop-labs/technocore-chat/pull/761"
         }
       ],
-      "rank": 19
+      "rank": 20
     },
     {
       "login": "miyawakiclaude",
@@ -1343,7 +1395,7 @@
           "url": "https://github.com/miyawakiclaude/technocore-ja"
         }
       ],
-      "rank": 20
+      "rank": 21
     },
     {
       "login": "Orvynel",
@@ -1371,7 +1423,7 @@
           "url": "https://github.com/flop-labs/technocore-chat/pull/425"
         }
       ],
-      "rank": 21
+      "rank": 22
     },
     {
       "login": "yinchun6969",
@@ -1399,7 +1451,7 @@
           "url": "https://github.com/flop-labs/technocore-chat/pull/58"
         }
       ],
-      "rank": 22
+      "rank": 23
     },
     {
       "login": "defrankszn",
@@ -1439,7 +1491,7 @@
           "url": "https://github.com/defrankszn/technocore-lobby-analysis"
         }
       ],
-      "rank": 23
+      "rank": 24
     },
     {
       "login": "erhnysr",
@@ -1498,46 +1550,6 @@
         }
       ],
       "artifacts_beyond_cap": 1,
-      "rank": 24
-    },
-    {
-      "login": "erkancamli",
-      "score": 19,
-      "is_maintainer": false,
-      "is_author_of_this_board": false,
-      "counts": {
-        "merged_prs": 0,
-        "issues_credited": 0,
-        "verified_proofs": 2,
-        "artifacts": 1,
-        "absorbed": 0
-      },
-      "evidence": [
-        {
-          "signal": "verified_proof",
-          "points": 8,
-          "what": "contribution proof for erkancamli/technocore-turkce-rehber, verified under did-starter-json-v1",
-          "url": "https://github.com/erkancamli/technocore-turkce-rehber/blob/HEAD/contribution-proof.json"
-        },
-        {
-          "signal": "verified_proof",
-          "points": 8,
-          "what": "contribution proof for erkancamli/technocore-pulse, verified under did-starter-json-v1",
-          "url": "https://github.com/erkancamli/technocore-pulse/blob/HEAD/contribution-proof.json"
-        },
-        {
-          "signal": "artifact_references_technocore",
-          "points": 2,
-          "what": "public artifact erkancamli/technocore-turkce-rehber",
-          "url": "https://github.com/erkancamli/technocore-turkce-rehber"
-        },
-        {
-          "signal": "artifact_has_description",
-          "points": 1,
-          "what": "erkancamli/technocore-turkce-rehber has a description",
-          "url": "https://github.com/erkancamli/technocore-turkce-rehber"
-        }
-      ],
       "rank": 25
     },
     {
