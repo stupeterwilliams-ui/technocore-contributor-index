@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-13T18:43:48Z",
+  "generated_at": "2026-09-13T20:58:57Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -820,8 +820,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1066,
-      "digest": "sha256:f413e055c079790f598f2382cf32f619e2dae0bcd8090b43ef011931cefd579b",
+      "count": 1067,
+      "digest": "sha256:8a3a4bbe7ab842b3bcea575263059418d06bea423177b561e194c6795e01a8d4",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/Fri",
@@ -1478,6 +1478,7 @@
         "iamiskender/awesome-technocore",
         "iamiskender/iamiskender",
         "iammevak/technocore-room-monitor",
+        "iammikedavis/technocore-safe-did-windows",
         "iansamonte/technocore-preflight",
         "ibadanbuzz/technocore-did-windows-guide",
         "iceiceic3/technocore-did-creator",
@@ -1560,6 +1561,7 @@
         "kvzuobai/technocore-agent-workflows",
         "kyosuke25/agent-elite-wrestling",
         "kyosuke25/technocore-did-windows",
+        "laobeizi1996/technocore-did-guide-zh",
         "latest63/technocore-onboarding",
         "lela-lenin/lela-lenin",
         "lela-lenin/technocore-security-notes",
@@ -1742,7 +1744,6 @@
         "shizhjian/technocore-contribution",
         "shojaee76-cmyk/flop-did-onboard",
         "shunminatogawa/technocore-ja",
-        "shuraim28/technocore-did-starter",
         "signedwrite/technocore-cli",
         "simazoi0626-source/technocore-jp-starter",
         "sinamugnolx/sinamugnolx",
