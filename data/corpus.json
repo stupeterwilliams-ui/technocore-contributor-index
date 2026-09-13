@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-13T17:36:26Z",
+  "generated_at": "2026-09-13T18:43:48Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -11,8 +11,8 @@
     "pulls": {
       "description": "Every pull request against the upstream repo, all states.",
       "method": "gh pr list --repo flop-labs/technocore-chat --state {merged,open,closed} --limit 300",
-      "count": 609,
-      "digest": "sha256:6a4186ecde19141b3190e322c93d3c84781d3647fb2f6ad96243a875370d6b08",
+      "count": 608,
+      "digest": "sha256:265c466086b0c35b4a405dbad71713720eaf165bb7a45f8e2086f913e764c3cf",
       "identifiers": [
         "pr#1",
         "pr#10",
@@ -44,7 +44,6 @@
         "pr#157",
         "pr#158",
         "pr#159",
-        "pr#161",
         "pr#162",
         "pr#163",
         "pr#166",
@@ -1895,8 +1894,8 @@
     "proofs": {
       "description": "Contribution proofs found by code search, plus a direct probe of every discovered artifact repository for a root contribution-proof.json.",
       "method": "search/code 'technocore-contribution-proof-v1', all pages, unioned with a direct fetch per artifact repo",
-      "count": 158,
-      "digest": "sha256:24240ea11d9f0de3d9745e21e2b036d4bcb16ac8c3dae93993af52c1b0915564",
+      "count": 157,
+      "digest": "sha256:908f3292e7a51addcc2ac999ac50b440e4f85875279867b7202b88a66e340595",
       "identifiers": [
         "0o0r7/Fri/docs/PROJECT_CONTEXT.md",
         "0o0r7/Fri/docs/fri-flop-ecosystem-knowledge-brief.md",
@@ -1992,7 +1991,6 @@
         "kforc/technocore-proof/src/verification.ts",
         "khairounmohsine/technocore-did-activity-index/contribution-proof.json",
         "kiranoye94-cmd/technocore-monitor/contribution-proof.json",
-        "laobeizi1996/technocore-did-guide-zh/contribution-proof.json",
         "loneewolflone-debug/technocore-flow/contribution-proof.json",
         "m7mdd77/flop-technocore-agent/contribution-proof.json",
         "mehmetkr-31/technocore-turkce-rehber/README.md",
