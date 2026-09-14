@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-14T05:59:14Z",
+  "generated_at": "2026-09-14T07:06:59Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -11,8 +11,8 @@
     "pulls": {
       "description": "Every pull request against the upstream repo, all states.",
       "method": "gh pr list --repo flop-labs/technocore-chat --state {merged,open,closed} --limit 300",
-      "count": 609,
-      "digest": "sha256:6bd3a131e04680e664a1f5c428ed0423666231b57a2385bd141cfba69adb2072",
+      "count": 608,
+      "digest": "sha256:d0aafafd8db70f70f8ced8d0011acaed05d7c2abc7f252402dac44de78bd0c91",
       "identifiers": [
         "pr#1",
         "pr#10",
@@ -49,7 +49,6 @@
         "pr#166",
         "pr#169",
         "pr#17",
-        "pr#171",
         "pr#174",
         "pr#175",
         "pr#178",
@@ -822,8 +821,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1067,
-      "digest": "sha256:50e05f474574f93d2fcde48bd3b32e11b031033d3668ec8951570e8d240e001a",
+      "count": 1068,
+      "digest": "sha256:38adbedddfef2dd5afdac4c911040899302fb0dace65cc173236137312adccdd",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/Fri",
@@ -1743,6 +1742,7 @@
         "shibainu-inu/flop-facts",
         "shibainu-inu/hakoniwa",
         "shibainu-inu/technocore-inference-market",
+        "shiojpn/arxiv-trading-bot-research",
         "shizhjian/technocore-contribution",
         "shojaee76-cmyk/flop-did-onboard",
         "shunminatogawa/technocore-ja",
