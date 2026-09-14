@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-14T18:31:12Z",
+  "generated_at": "2026-09-14T19:42:15Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -11,8 +11,8 @@
     "pulls": {
       "description": "Every pull request against the upstream repo, all states.",
       "method": "gh pr list --repo flop-labs/technocore-chat --state {merged,open,closed} --limit 300",
-      "count": 613,
-      "digest": "sha256:1a6e128af930b79fd6f9815b8931fd731d0fb7763aaad456c811c6263c8816d6",
+      "count": 614,
+      "digest": "sha256:b6276a119e345abcc83eefbf83f44562e15dae254edf4b55ea4f85125b6b5804",
       "identifiers": [
         "pr#1",
         "pr#10",
@@ -619,6 +619,7 @@
         "pr#849",
         "pr#850",
         "pr#851",
+        "pr#852",
         "pr#86",
         "pr#87",
         "pr#88",
@@ -632,8 +633,8 @@
     "issues": {
       "description": "Every issue against the upstream repo, all states.",
       "method": "gh issue list --repo flop-labs/technocore-chat --state all --limit 300",
-      "count": 186,
-      "digest": "sha256:7f2a48f7f905394091c88038761c66957faa8b884066050ca7657571a744a847",
+      "count": 187,
+      "digest": "sha256:307ef4519da7000a278d5ead6a4d539251b5d8a78daa46cc425b76c558b0f9a8",
       "identifiers": [
         "issue#101",
         "issue#105",
@@ -820,14 +821,15 @@
         "issue#840",
         "issue#843",
         "issue#85",
+        "issue#853",
         "issue#95"
       ]
     },
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1077,
-      "digest": "sha256:de3e892c56c1193b36c920a0754812f61d921d3b52e3636ae400386005b1c7c2",
+      "count": 1075,
+      "digest": "sha256:5f66990eea1fae96f7991a937e675cdf8cde605970faaabba9eaa14425ada00f",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/Fri",
@@ -995,7 +997,6 @@
         "Guglielmo15/FLOP-Labs-Technocore-Tutorial-Italiano",
         "HZJ0523/technocore-guide-zh",
         "HelpKeepMyMoney/technocore-agent-identity",
-        "Herrsosa/technocore-secure-did",
         "HichamSlimani/technocore-append-only-checker",
         "Hoshinouva/technocore-did-agent",
         "HyperliquidIsGod/technocore-agent-node",
@@ -1086,7 +1087,6 @@
         "Promhze/technocore-sdk",
         "Qwealzy/tclk-audit",
         "Qwealzy/technocore-client",
-        "RIO8368/technocore-agent-contribution",
         "RZoir/technocore-protocol-deepdive",
         "RamaVenom/technocore-did-guide",
         "Ratchezz/technocore-did-monitor",
@@ -1157,7 +1157,6 @@
         "Wanbogang/awesome-technocore",
         "Wanbogang/technocore-python-client",
         "WilbertJk/technocore-did-gameplay",
-        "XdropAgent2/technocore-flop-contribution",
         "Xelp66/technocore-logo-competition",
         "Xelp66/technocore-safelens",
         "XieLeiaaa/technocore-room-panel",
@@ -1247,6 +1246,7 @@
         "blueclaw26/technocore-jp-guide",
         "bob7ak/technocore-did-guide",
         "bobbymarc00/coreflux-signer",
+        "bobbymarc00/technocore-contributor-guide",
         "boladeboss/technocore-guide",
         "bonaventure001/technocore-spam-check",
         "bono574-cloud/flop-bounty",
@@ -1313,6 +1313,7 @@
         "dalgonad/technocore-bot",
         "dalgonad/technocore-playground",
         "dalgonad/technocore-py",
+        "damiaotothemoon-hash/technocore-contribution-kit",
         "damienlenglet1-wq/technocore-android-guide",
         "danenright/technocore-contributor-onboarding",
         "danenright/technocore-deploy",
@@ -1446,7 +1447,6 @@
         "greyparcel/technocore-constellation",
         "greyparcel/technocore-roommap",
         "grimore8/technocore-agent",
-        "gunawanbud20-coder/technocore-receipt-verifier",
         "gusha625/technocore-mcp",
         "habluxy/Technocore.NET",
         "hahiri/technocore-did-agent",
