@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-14T10:30:57Z",
+  "generated_at": "2026-09-14T11:38:59Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -824,8 +824,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1072,
-      "digest": "sha256:7d28e58395ae5179098a40eddd2090156fc5b18525c964d68323f6a58d3e2e76",
+      "count": 1071,
+      "digest": "sha256:436da7047c56d792932342207fec167cad0902c4ec718eb8890be952b4f71fc4",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/Fri",
@@ -1015,7 +1015,6 @@
         "KanrojiTsuuka/technocore-agent-safety-toolkit",
         "Kastor13/technocore-mcp",
         "KattyFury/build-with-technocore",
-        "KendineCrypto/technoqueue",
         "Kewe63/technocore.chat-logo",
         "KirillNedoboy/technocore-contribution-kit",
         "Kohchan410/my-technocore-setup-notes",
@@ -1904,8 +1903,8 @@
     "proofs": {
       "description": "Contribution proofs found by code search, plus a direct probe of every discovered artifact repository for a root contribution-proof.json.",
       "method": "search/code 'technocore-contribution-proof-v1', all pages, unioned with a direct fetch per artifact repo",
-      "count": 157,
-      "digest": "sha256:908f3292e7a51addcc2ac999ac50b440e4f85875279867b7202b88a66e340595",
+      "count": 158,
+      "digest": "sha256:5180a3b297c381408e23d6531d270a3113e3644babbdc6a6d88e7ca10742372d",
       "identifiers": [
         "0o0r7/Fri/docs/PROJECT_CONTEXT.md",
         "0o0r7/Fri/docs/fri-flop-ecosystem-knowledge-brief.md",
@@ -1926,6 +1925,7 @@
         "244whopper-cyber/technocore-japanese-guide/contribution-proof.json",
         "3200-tech/technocore-cn-guide/contribution-proof.json",
         "ARR03/flop-airdrop-tool/contribution-proof.json",
+        "Abdulwasih29/technocore-flop-agent/contribution-proof.json",
         "AbstrusImad/technocore-room-metrics/contribution-proof.json",
         "Adelekejr/technocore-room-monitor/contribution-proof.json",
         "Admuad/technocore-studio/app.js",
