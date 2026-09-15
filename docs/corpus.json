@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-15T17:21:47Z",
+  "generated_at": "2026-09-15T18:29:53Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -11,8 +11,8 @@
     "pulls": {
       "description": "Every pull request against the upstream repo, all states.",
       "method": "gh pr list --repo flop-labs/technocore-chat --state {merged,open,closed} --limit 300",
-      "count": 615,
-      "digest": "sha256:2e7a4f4ab8058bcf84cde354cf3053e9f0c821483605f2a53d52f211faf6c605",
+      "count": 618,
+      "digest": "sha256:84aee6daab57f2e209cd558b54d82acc10b99d795a299a0514b7d44cc4630b58",
       "identifiers": [
         "pr#1",
         "pr#10",
@@ -621,6 +621,9 @@
         "pr#851",
         "pr#852",
         "pr#854",
+        "pr#855",
+        "pr#856",
+        "pr#857",
         "pr#86",
         "pr#87",
         "pr#88",
@@ -829,8 +832,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1075,
-      "digest": "sha256:ea5e25c8fbb43047f105c65ea4467dbca90b382e0f884c80393b90b5de96ee16",
+      "count": 1076,
+      "digest": "sha256:50533c3d4de18302b0a48e05d342366d03836c1a1af097699c0358a72d731594",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/Fri",
@@ -1308,6 +1311,7 @@
         "cumaaaaa/technocore-cli",
         "cunningjack99/technocore-windows-participation-kit",
         "cybersamrai/technocore-playbook",
+        "d3btCODE/technocore-verify",
         "d4ncboz/awesome-technocore",
         "d4ncboz/technocore",
         "dada050505/technocore-agent-inspector",
@@ -1912,8 +1916,8 @@
     "proofs": {
       "description": "Contribution proofs found by code search, plus a direct probe of every discovered artifact repository for a root contribution-proof.json.",
       "method": "search/code 'technocore-contribution-proof-v1', all pages, unioned with a direct fetch per artifact repo",
-      "count": 159,
-      "digest": "sha256:47869c396f83ce2d45fbf1e5b63f162e166bbedc4032d1301e08f816be1b696c",
+      "count": 161,
+      "digest": "sha256:8cf0824ea2ff2e5400b7a50a892c921ab3d03272444ea86346720062f3bcd43d",
       "identifiers": [
         "0o0r7/Fri/docs/PROJECT_CONTEXT.md",
         "0o0r7/Fri/docs/fri-flop-ecosystem-knowledge-brief.md",
@@ -1935,6 +1939,7 @@
         "244whopper-cyber/technocore-japanese-guide/contribution-proof.json",
         "3200-tech/technocore-cn-guide/contribution-proof.json",
         "ARR03/flop-airdrop-tool/contribution-proof.json",
+        "AbstrusImad/technocore-proof-checker/contribution-proof.json",
         "AbstrusImad/technocore-room-metrics/contribution-proof.json",
         "Adelekejr/technocore-room-monitor/contribution-proof.json",
         "Admuad/technocore-studio/app.js",
@@ -2043,6 +2048,7 @@
         "rann-xyz/technocore-did-tutorial/technocore_agent.py",
         "rann-xyz/technocore-did-tutorial/tools/proof_create.py",
         "retard-dev/technochad-hq/contribution-proof.json",
+        "rezkyrafael2901/technocore-did-health/contribution-proof.json",
         "rimurutempestxv/standalone-agent-monitoring-dashboard/contribution-proof.json",
         "ritesh59697/technocore-dashboard/contribution-proof.json",
         "rjuliant/technocore-client/contribution-proof.json",
