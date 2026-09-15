@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-15T15:05:05Z",
+  "generated_at": "2026-09-15T16:13:36Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -829,8 +829,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1074,
-      "digest": "sha256:7d6d26ca6dd008af9831996db9d13aed2036e92d5ebb28bf69b338dec297020e",
+      "count": 1072,
+      "digest": "sha256:467a8c0657f1e040d2ab1e19d385c47c60e41833c11bf93ebea5ce4d3fcf3f4b",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/Fri",
@@ -906,7 +906,6 @@
         "Admuad/technocore-studio",
         "AdnanMrabet/technocore-did-fingerprint",
         "Affanyudan/technocore-termux-proot-guide",
-        "AgentTeams/technocore-contribution-node",
         "Agozie180/flop-did-beginner-guide",
         "Alanwiz00/technocore-did-starter",
         "Alex1357909/technocore-did-guide-ru",
@@ -1320,7 +1319,6 @@
         "danenright/technocore-contributor-onboarding",
         "danenright/technocore-deploy",
         "danenright/technocore-parcel",
-        "daniel170999/DANFLOPFUN",
         "dannybyarun/technocore-archive",
         "dannybyarun/technocore-bridge",
         "dannybyarun/technocore-compute",
