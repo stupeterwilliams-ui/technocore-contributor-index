@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-15T11:40:53Z",
+  "generated_at": "2026-09-15T12:48:51Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -829,8 +829,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1073,
-      "digest": "sha256:19bc17ebd73fb6128f49ee34fd756bfcccd6c54a7fd28628d80f4b4c1f741782",
+      "count": 1074,
+      "digest": "sha256:7d6d26ca6dd008af9831996db9d13aed2036e92d5ebb28bf69b338dec297020e",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/Fri",
@@ -1019,7 +1019,6 @@
         "KanrojiTsuuka/technocore-agent-safety-toolkit",
         "Kastor13/technocore-mcp",
         "KattyFury/build-with-technocore",
-        "KendineCrypto/technoqueue",
         "Kewe63/technocore.chat-logo",
         "KirillNedoboy/technocore-contribution-kit",
         "Kohchan410/my-technocore-setup-notes",
@@ -1417,6 +1416,7 @@
         "flupyxyz/technocore-idn",
         "forumevi/awesome-technocore",
         "forumevi/technocore-agent-trading",
+        "forumevi/technocore-sonnet-challenge",
         "forumevi/technocore-tase",
         "framefamily/technocore-logo-contest",
         "framefriend/technocore-logo-contest",
@@ -1858,6 +1858,7 @@
         "wock9000/technocore-mcp",
         "wrvnnull/technocore-guide-id",
         "wuyueyelei/floppy-quiz-bot",
+        "wyc4t/proofline-technocore",
         "xadro23/technocore-did-quickstart",
         "xbross/technocore-agent",
         "xbyteid/technocore-tools",
