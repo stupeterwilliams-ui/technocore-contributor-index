@@ -1,7 +1,7 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-15T18:29:53Z",
+  "generated_at": "2026-09-15T19:38:03Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "known_incompleteness": [
     "GitHub code search does not index every repository and lags; proof discovery is best-effort even with the direct per-repo probe layered on top.",
@@ -1916,8 +1916,8 @@
     "proofs": {
       "description": "Contribution proofs found by code search, plus a direct probe of every discovered artifact repository for a root contribution-proof.json.",
       "method": "search/code 'technocore-contribution-proof-v1', all pages, unioned with a direct fetch per artifact repo",
-      "count": 161,
-      "digest": "sha256:8cf0824ea2ff2e5400b7a50a892c921ab3d03272444ea86346720062f3bcd43d",
+      "count": 162,
+      "digest": "sha256:434816f420d704f85c7aee4622f3e4cedd29ac74d4ab6723d2baf2f821a36307",
       "identifiers": [
         "0o0r7/Fri/docs/PROJECT_CONTEXT.md",
         "0o0r7/Fri/docs/fri-flop-ecosystem-knowledge-brief.md",
@@ -1985,6 +1985,7 @@
         "bulliscoming/technocore-guide/contribution-proof.json",
         "chip1chapa/technocore-contribution-action/contribution-proof.json",
         "chip1chapa/technocore-room-analyzer/contribution-proof.json",
+        "d3btCODE/technocore-verify/contribution-proof.json",
         "d4ncboz/technocore/contribution-proof.json",
         "defrankszn/technocore-lobby-analysis/technocore-analysis-proof.json",
         "defrankszn/technocore-lobby-analysis/technocore-workflow-proof.json",
