@@ -1,25 +1,33 @@
 #!/usr/bin/env python3
-"""Ask what a proof that does not verify here actually is.
+"""Ask what a proof that verifies under no known canonicalisation actually is.
 
-The board reports "does not verify" for most published contribution proofs, and that phrasing
-carries an accusation it has not earned. Three explanations fit the same observation, and they
-deserve very different words:
+**This program's original question has been answered, and the answer was not the one it assumed.**
+It was written when the board checked exactly one canonicalisation — the pipe-joined string
+technocore-sdk published — and reported the other 112 published proofs as "does not verify". It
+concluded, correctly on the evidence it had, that those were genuine signatures over some other
+canonical string. It then said that string could not be found. It could: it is
+`did-starter-json-v1`, defined by `contribution_payload` in `technocore_agent.py` of
+`zunmax/technocore-did-starter`, found by reading that source and reported by @githubbjj on
+flop-labs/technocore-chat#828. 112 of 114 published proofs verify under it. The collector now
+checks both rules, and those proofs score.
+
+What survives is the instrument, pointed at what is left. A proof matching neither rule is still
+one of three things, and they deserve very different words:
 
   1. the signature is fabricated — random bytes in a signature field nobody checks;
   2. the repository is a shell — a proof citing work that does not exist;
-  3. the proof is real and was signed over a different canonical string from ours.
+  3. the proof is real and signed under a third canonicalisation nobody here has found yet.
 
-Only the third is innocent, and it is the one the board's own methodology already admits is
-possible: `technocore-contribution-proof-v1` is in wide use with no agreed canonicalisation, so
-a publisher has no way to discover ours. Guessing between the three is not acceptable when the
-output is a public ranking of named people, so this computes the answer.
+The third is the one this program got wrong before by assuming it was unfindable, so it is worth
+saying plainly: a negative result here means "we did not find a rule that matches", never "this
+person fabricated something".
 
 Two tests, neither of which needs the signing message:
 
   * **Does the cited commit exist?** A fabricated proof has no reason to name a real one.
 
   * **Is the signature a structurally valid Ed25519 signature?** The low half is a scalar `S`
-    that a real signing operation always leaves below the group order `L ≈ 2**252`. Uniform
+    that a real signing operation always leaves below the group order `L ~ 2**252`. Uniform
     random bytes land below `L` about one time in sixteen. So a population of fabricated
     signatures shows roughly 94% failures on this test and a population of genuine ones shows
     none — and it separates them without knowing what was signed. It cannot prove any single
@@ -35,6 +43,8 @@ import concurrent.futures
 import json
 import pathlib
 import subprocess
+
+from fetch import MISSING, Unavailable, http_get
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 PROOFS = ROOT / "data" / "raw" / "proofs.json"
@@ -61,14 +71,15 @@ def commit_exists(repo: str, commit: str) -> bool | None:
 
     The three-way return is the point. An earlier version of this check ran four repositories
     through a shell loop, got a failed lookup for every one, and read that as four fabricated
-    proofs — a conclusion that survived until the same check over all 113 said 111 of them
-    exist. A lookup that could not run is not evidence of absence, and collapsing it into
-    `False` is how an instrument reports a finding it never made.
+    proofs — a conclusion that survived until the same check over the whole population said
+    almost all of them exist. A lookup that could not run is not evidence of absence, and
+    collapsing it into `False` is how an instrument reports a finding it never made.
     """
     result = subprocess.run(
         ["gh", "api", f"repos/{repo}/commits/{commit}", "--jq", ".sha"],
         capture_output=True,
         text=True,
+        check=False,
     )
     if result.returncode == 0:
         return True
@@ -79,14 +90,28 @@ def commit_exists(repo: str, commit: str) -> bool | None:
 
 
 def fetch(record: dict) -> dict:
+    """One proof, read and examined. `readable` is three-valued for the same reason
+    `commit_exists` is: a fetch that did not happen is not a file that cannot be read.
+
+    This function still conflated them after `commit_exists` had been fixed — an unreachable host
+    and a corrupt file both came back as `readable: False`, and this program's published output is
+    an argument about whether named people fabricated signatures. Getting that distinction wrong
+    is precisely the error the docstring above describes, one layer down.
+    """
     url = f"https://raw.githubusercontent.com/{record['repo']}/HEAD/{record['path']}"
-    body = subprocess.run(
-        ["curl", "-sL", "--max-time", "25", url], capture_output=True, text=True
-    ).stdout
+    try:
+        fetched = http_get(url, what=f"forensics {record['repo']}/{record['path']}")
+    except Unavailable as exc:
+        return {"repo": record["repo"], "readable": None, "note": exc.detail[:160]}
+    if fetched is MISSING:
+        return {"repo": record["repo"], "readable": False,
+                "note": "the host answered: no file at this path"}
+    _, body = fetched
     try:
         doc = json.loads(body)
     except Exception:  # noqa: BLE001
-        return {"repo": record["repo"], "readable": False}
+        return {"repo": record["repo"], "readable": False,
+                "note": "fetched but not parseable as JSON"}
     commit = doc.get("commit")
     return {
         "repo": record["repo"],
@@ -100,7 +125,10 @@ def fetch(record: dict) -> dict:
 
 def main() -> int:
     proofs = json.loads(PROOFS.read_text())
-    subjects = [p for p in proofs if (p.get("note") or "").startswith("well-formed")]
+    # Selected on the recorded fields, not on the wording of a note. The note text changed when
+    # the second canonicalisation was added, and a subject filter that reads prose silently
+    # selects nothing the moment someone rewrites a sentence.
+    subjects = [p for p in proofs if p.get("parsed") and not p.get("verifies")]
     with concurrent.futures.ThreadPoolExecutor(8) as pool:
         rows = list(pool.map(fetch, subjects))
 
@@ -111,8 +139,8 @@ def main() -> int:
 
     finding = {
         "schema": "proof-forensics-v1",
-        "subjects": "published proofs that are well-formed and do not verify against our "
-        "canonical string",
+        "subjects": "published proofs that are well-formed and verify under neither known "
+        "canonicalisation (technocore-sdk-pipe-v1, did-starter-json-v1)",
         "counts": {
             "subjects": len(subjects),
             "signatures_examined": len(examined),
@@ -120,14 +148,24 @@ def main() -> int:
             "commits_checked": len(commits),
             "commits_that_exist": real_commits,
             "lookups_that_failed": sum(1 for r in rows if r.get("commit_exists") is None),
+            # Published so a reader can see how much of this finding rests on questions that
+            # were actually answered. A subject whose proof could not be fetched is not a
+            # subject that failed anything.
+            "proofs_that_could_not_be_fetched": sum(1 for r in rows if r.get("readable") is None),
         },
         "reading": (
-            "Fabricated signatures would fail the scalar test about 94% of the time. These do "
-            "not fail it, and they cite commits that exist. They are genuine signatures over "
-            "some canonical string, and it is not ours — which makes 'does not verify' a "
-            "statement about the absence of an agreed canonicalisation, not about the people "
-            "who published them."
+            "Fabricated signatures would fail the scalar test about 94% of the time. A subject "
+            "that passes it and cites a commit that exists is a genuine signature over a "
+            "canonicalisation this board has not found — which is a statement about what we "
+            "know, not about the person who published it. That is not a hypothetical: this "
+            "program's earlier run said exactly that about 112 proofs, and the rule they use was "
+            "then found in zunmax/technocore-did-starter and reported by @githubbjj on "
+            "flop-labs/technocore-chat#828. Those now verify and score. Whatever is left here "
+            "should be read the same way — as an unfinished search."
         ),
+        "canonicalisations_checked_before_this_ran": [
+            "technocore-sdk-pipe-v1", "did-starter-json-v1",
+        ],
         "rows": sorted(rows, key=lambda r: r["repo"]),
     }
     OUT.write_text(json.dumps(finding, indent=2) + "\n")

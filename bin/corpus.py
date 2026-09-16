@@ -93,6 +93,16 @@ def main() -> int:
             "identifiers": identifiers,
         }
 
+    # What this run could not fetch, published beside what it did. A consumer comparing digests
+    # needs to know whether a difference is two people enumerating different worlds or one of
+    # them having been rate-limited mid-enumeration, and until now the manifest could not say.
+    # An empty list here is a claim: every question we asked got an answer.
+    try:
+        incidents = json.loads((RAW / "incidents.json").read_text())
+    except (OSError, ValueError):
+        incidents = {"count": None, "fetches_that_did_not_answer": [],
+                     "note": "this collection predates incident recording"}
+
     manifest = {
         "schema": "corpus-manifest-v1",
         "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
@@ -105,12 +115,21 @@ def main() -> int:
             "that is resolved. The full identifier lists are published so a mismatch can be "
             "diffed rather than only detected."
         ),
+        "fetch_incidents": incidents,
+        # Committed, unlike data/raw, so `git log -p data/corpus.json` is the durable record of
+        # whether the evidence-cache sweep is draining or stuck without anyone reconstructing it.
+        "evidence_cache_backlog": incidents.get("evidence_cache_backlog"),
         "known_incompleteness": [
             "GitHub code search does not index every repository and lags; proof discovery is "
             "best-effort even with the direct per-repo probe layered on top.",
             "GitHub search does not return some items that demonstrably exist — it will not "
             "surface an issue carrying this consumer's own comments — so any search-derived "
             "corpus should be treated as a lower bound.",
+            "Repository search is not stable near its 1000-result cap: consecutive runs of the "
+            "identical query return slightly different tails. The collector therefore re-probes "
+            "every repository the enumeration has previously returned, directly, and drops one "
+            "only when that probe answers 404. Anything else it cannot reach is listed under "
+            "fetch_incidents and the run is not published at all.",
         ],
         "sources": sources,
     }

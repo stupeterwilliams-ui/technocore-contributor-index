@@ -54,14 +54,14 @@ NOT_SCORED = {
         "top a board that counted it.",
     "stars, followers, and social engagement":
         "Downstream of who happened to see something. A board that scores attention scores itself.",
-    "contribution proofs we cannot check":
-        "Not an accusation, and the wording here used to imply one. 113 published proofs are "
-        "well-formed and do not verify against our canonical string; 111 cite commits that "
-        "exist, and 113 of 113 signatures carry a valid Ed25519 scalar, which fabricated bytes "
-        "fail about 94% of the time. They are real signatures over a canonical string that is "
-        "not ours. technocore-contribution-proof-v1 has no agreed canonicalisation, so a "
-        "publisher has no way to find ours and we have no way to check theirs. Scoring it would "
-        "be scoring a coin flip. See data/proof-forensics.json.",
+    "contribution proofs that verify under no known canonicalisation":
+        "This entry used to say we could not check anybody's proof, and that was wrong. Two "
+        "canonicalisations are in use and both are now checked. The one almost everyone uses, "
+        "did-starter-json-v1, is undocumented: it is defined by contribution_payload in "
+        "technocore_agent.py of zunmax/technocore-did-starter, and it was found by reading that "
+        "source and reported by @githubbjj on flop-labs/technocore-chat#828. Proofs that verify "
+        "under either rule score in full, and the rule that matched is recorded next to each "
+        "award. What still scores zero is a proof matching neither, because nobody can check it.",
     "more than three artifacts per person":
         "The signal is that you built something real, not that you opened many repositories. "
         "Without a cap the board rewards volume, which is the easiest way to game it.",
@@ -80,12 +80,14 @@ MAX_SCORED_ARTIFACTS = 3
 # Signals whose specification this board's author wrote. They score for everyone else and score
 # zero for us.
 #
-# `verified_proof` checks a proof against the canonical string published in technocore-sdk. That
-# is a real signal — a proof nobody can verify is not evidence — but we wrote the canonicalisation,
-# and at the time of writing we are the only ones who satisfy it. Counting it for ourselves moves
-# us from 55th to 6th, which is a rule its own author wrote and then won on. No amount of
-# disclosure makes that read honestly, so we simply do not take the points. Anyone else who
-# publishes a verifying proof gets all 8, and it takes about a minute.
+# `verified_proof` checks a proof against either canonicalisation in use. The forfeit was
+# introduced when only ours existed here and we were one of two people satisfying it — a rule its
+# own author wrote and then won on. That is no longer the situation: the rule 112 of 114 published
+# proofs use is `did-starter-json-v1`, which we did not write, and our own proof still verifies
+# only under the one we did write. So the conflict is unchanged for us specifically and the
+# forfeit stays. Dropping it is the one change here that would raise this author's own score, and
+# it is not made in the same commit that corrected the error — if it is made at all, it should be
+# argued separately and in public.
 SELF_AUTHORED_SIGNALS = {"verified_proof"}
 
 # The instrument does not score itself. This repository is a measuring tool for the ecosystem, not
@@ -119,12 +121,26 @@ def main() -> int:
             }
         return people[login]
 
-    def award(login: str, key: str, label: str, url: str) -> None:
+    def award(login: str, key: str, label: str, url: str, did: str | None = None) -> None:
         entry = person(login)
         forfeited = login == SELF and key in SELF_AUTHORED_SIGNALS
         points = 0 if forfeited else WEIGHTS[key]
         entry["score"] += points
         item = {"signal": key, "points": points, "what": label, "url": url}
+        if did:
+            # The did:key the proof binds, carried on the award rather than left in data/raw.
+            #
+            # data/raw is gitignored, and proofs.json was the only place this mapping existed — so
+            # the gated room's allow-list could not be computed from the repository at all. Two
+            # things follow from putting it here. A reader can check "membership is mechanical,
+            # nobody approves anyone" offline instead of making 170 HTTP requests to derive it,
+            # which is the difference between a claim and a checkable claim. And room-sync.sh can
+            # read committed state rather than a working copy, so the room follows what was
+            # published rather than whatever file happened to be on disk when its timer fired.
+            #
+            # The did is public key material already published in a public contribution-proof.json,
+            # and the URL beside it here is the file it came from.
+            item["did"] = did
         if forfeited:
             item["forfeited"] = (
                 "not scored: this board's author wrote the specification for this signal"
@@ -164,11 +180,17 @@ def main() -> int:
               row["url"])
         person(row["author"])["counts"]["absorbed"] += 1
 
-    # 3. Contribution proofs that actually verify.
+    # 3. Contribution proofs that actually verify, under whichever canonicalisation matched. The
+    # rule name travels with the award: "verified" on its own is not something a reader can
+    # reproduce, and which rule matched is the whole substance of what was checked.
+    proofs_by_rule: dict[str, int] = {}
     for proof in proofs:
         if proof.get("verifies"):
+            rule = proof.get("verifying_rule") or "unrecorded"
+            proofs_by_rule[rule] = proofs_by_rule.get(rule, 0) + 1
             award(proof["owner"], "verified_proof",
-                  f"verified contribution proof for {proof['repo']}", proof["url"])
+                  f"contribution proof for {proof['repo']}, verified under {rule}", proof["url"],
+                  did=proof.get("did"))
             person(proof["owner"])["counts"]["verified_proofs"] += 1
 
     # 4. Artifacts, scored on mechanical properties only, best few per person.
@@ -208,6 +230,49 @@ def main() -> int:
     for index, entry in enumerate(ranked, 1):
         entry["rank"] = index
 
+    # How close the Nth-place score is to moving.
+    #
+    # Consumers gate on it: the gated room at /r/d-contributor-index admits everyone scoring at or
+    # above the score at position ROOM_TOP_N, tie-inclusive. Whether that membership is stable
+    # between two collections taken minutes apart is therefore a question about this number, and
+    # on 2026-09-16 the answer was measured by hand — three collections an hour apart produced
+    # corpora of 954, 961 and 957 people and the identical allow-list, because what search drops
+    # and re-finds are artifact repositories worth two to five points while the cut sat at 14.
+    #
+    # That is a property of one day's distribution, not a guarantee, and a margin nobody is
+    # watching is a margin nobody will notice closing. So the board asserts it on every build
+    # instead: if the cut ever lands where the churn can reach it, this says so without anybody
+    # having to remember to check.
+    def cutoff_margin(position: int) -> dict | None:
+        if len(ranked) < position:
+            return None
+        cut = ranked[position - 1]["score"]
+        above = sum(1 for e in ranked if e["score"] > cut)
+        tied = sum(1 for e in ranked if e["score"] == cut)
+        lower = next((s for s in sorted({e["score"] for e in ranked}, reverse=True) if s < cut),
+                     None)
+        return {
+            "position": position,
+            "score": cut,
+            "people_above_it": above,
+            "people_tied_at_it": tied,
+            "admitted_tie_inclusive": above + tied,
+            # To raise the cut, enough people must climb past it to fill the positions outright.
+            "gains_needed_to_raise_it": position - above,
+            # To lower it, enough of those at or above must fall that position N reaches the next
+            # score down. This is the number to watch. It is tempting to read a widening cut as
+            # harmless because, relative to one board, it only admits — but anything describing a
+            # change in membership compares two boards, and moving either endpoint falsifies the
+            # description. A cut that drops onto a large tie re-admits everyone who was about to be
+            # removed, which makes an announcement of removals a fiction rather than an undercount.
+            # One point lost anywhere in the top N does it, and one artifact legitimately answering
+            # 404 is one point lost.
+            "losses_needed_to_lower_it": above + tied - position + 1,
+            "next_score_below": lower,
+        }
+
+    margins = {str(n): cutoff_margin(n) for n in (50,)}
+
     payload = {
         "generated_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
         "collected_at": meta.get("collected_at"),
@@ -224,15 +289,19 @@ def main() -> int:
             "public URL, the weights are above, and the programs that produce it are in the "
             "repository — re-run them and compare. Where a signal's specification was written by "
             "the author of this board (currently: verified contribution proofs), it scores for "
-            "everyone else and scores zero for the author. Counting it would have moved us from "
-            "55th to 6th on a rule we wrote ourselves. If these numbers cannot be reproduced "
-            "independently, the ranking is not worth anything."
+            "everyone else and scores zero for the author — and this author's own proof verifies "
+            "only under the canonicalisation this author wrote, so the forfeit still applies. "
+            "Proofs are checked against both canonicalisations in use, and each award records "
+            "which one matched. If these numbers cannot be reproduced independently, the ranking "
+            "is not worth anything."
         ),
+        "cutoff_margins": margins,
         "totals": {
             "people_ranked": len(ranked),
             "merged_prs_counted": sum(p["counts"]["merged_prs"] for p in ranked),
             "artifacts_counted": sum(p["counts"]["artifacts"] for p in ranked),
             "verified_proofs": sum(p["counts"]["verified_proofs"] for p in ranked),
+            "verified_proofs_by_canonicalisation": dict(sorted(proofs_by_rule.items())),
         },
         "leaderboard": ranked,
         "maintainers": [p for p in people.values() if p["is_maintainer"]],

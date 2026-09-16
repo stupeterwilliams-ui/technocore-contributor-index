@@ -1,0 +1,45 @@
+#!/usr/bin/env python3
+"""A `curl` that answers proof fetches from the scenario and can fail the way the real one does.
+
+Only the invocation `collect.py` actually makes is supported: `curl -sL --max-time N -w
+'\\n%{http_code}' <url>`. The important detail it reproduces is that a transport failure writes
+`000` as the status code and nothing as the body — which the old collector compared against
+"200", found unequal, and recorded as "no proof published here".
+"""
+import json
+import os
+import pathlib
+import sys
+
+SCENARIO = json.loads(pathlib.Path(os.environ["FAKE_SCENARIO"]).read_text())
+COUNTER = pathlib.Path(os.environ["FAKE_COUNTER"])
+
+url = sys.argv[-1]
+prefix = "https://raw.githubusercontent.com/"
+key = url[len(prefix):].replace("/HEAD/", "/") if url.startswith(prefix) else url
+
+
+def bump(name: str) -> int:
+    counts = json.loads(COUNTER.read_text()) if COUNTER.exists() else {}
+    counts[name] = counts.get(name, 0) + 1
+    COUNTER.write_text(json.dumps(counts))
+    return counts[name]
+
+
+for rule in SCENARIO.get("fail", []):
+    if rule["match"] not in f"proof {key}":
+        continue
+    if bump("fail:" + rule["match"]) <= rule.get("times", 1):
+        if rule["mode"] == "transport":
+            # curl could not complete the transfer at all: empty body, status 000, non-zero exit.
+            print("\n000", end="")
+            sys.exit(7)
+        print(f"\n{rule.get('status', '429')}", end="")   # rate limited, forbidden, 5xx…
+        sys.exit(0)
+
+body = SCENARIO.get("proofs", {}).get(key)
+if body is None:
+    print("\n404", end="")
+    sys.exit(0)
+print(json.dumps(body) + "\n200", end="")
+sys.exit(0)

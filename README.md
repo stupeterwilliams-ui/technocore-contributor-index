@@ -26,9 +26,17 @@ Collection and scoring are separate programs so a disagreement points at either 
 weights, never at an opaque pipeline. The page inlines the data at build time, so it physically
 cannot show a number that is not in the committed data file.
 
+`score.py` is a pure function of `data/raw/` — same inputs, same ranking, byte for byte.
+`collect.py` deliberately is not: it refuses to overwrite the last collection when this run lost
+evidence it cannot account for, because a fetch that fails is not proof that someone's work does
+not exist. `./bin/collect.py --force` skips that comparison, `data/raw/incidents.json` records
+what a run could not reach, and [METHODOLOGY.md](METHODOLOGY.md#how-to-reproduce-it) explains what
+that costs a third party trying to reproduce this from scratch.
+
 Ranked on what is expensive to fake — merged pull requests upstream, issues that led to a merge,
 contribution proofs that actually verify, and public artifacts with mechanical quality signals.
-Not ranked: room message volume, stars and engagement, unverifiable proofs, or anyone's opinion.
+Not ranked: room message volume, stars and engagement, proofs that verify under neither known
+canonicalisation, or anyone's opinion.
 
 Read [METHODOLOGY.md](METHODOLOGY.md) for the weights, what is deliberately excluded and why, the
 three false-positive classes found while building it, and the known limitations.

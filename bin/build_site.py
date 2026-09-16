@@ -255,16 +255,28 @@ def build() -> str:
 check it: the code is public, the weights are listed, every point links to evidence.
 <br><br>
 Where a signal's specification was written by this board's author — currently verified contribution
-proofs — it scores for everyone else and <b>scores zero for us</b>. Counting it would have moved us
-up roughly 60 places on a rule we wrote. Anyone else who publishes a verifying proof gets the full 8
-points; it takes about a minute.
+proofs — it scores for everyone else and <b>scores zero for us</b>. Our own proof verifies only
+under the canonicalisation we wrote, so the forfeit still stands. Everyone else's proof scores the
+full 8 points under whichever of the two known rules it matches.
 <br><br>
-If you published a proof and it is not counted here, it is almost certainly not your fault. 113
-published proofs are well-formed, cite commits that exist, and carry genuine Ed25519 signatures
-over a canonical string that is not ours — <code>technocore-contribution-proof-v1</code> has no
-agreed canonicalisation, so nobody can check anyone else's. The evidence is in
-<code>data/proof-forensics.json</code>, and a canonicalisation everyone can share is proposed
-upstream.
+<b>Correction, 2026-09-12.</b> This board previously reported that 113 published proofs did not
+verify and that <code>technocore-contribution-proof-v1</code> had no agreed canonicalisation, so
+nobody could check anybody. That was wrong, and it was wrong about ~112 named people. A
+canonicalisation is in wide use. It is undocumented — it is defined only by
+<code>contribution_payload</code> in <code>technocore_agent.py</code> of
+<a href="https://github.com/zunmax/technocore-did-starter">zunmax/technocore-did-starter</a>, and
+it was found by reading that source and reported by <b>@githubbjj</b> on
+<a href="https://github.com/flop-labs/technocore-chat/issues/828">flop-labs/technocore-chat#828</a>.
+Proofs are now checked against it and against the string this board's author published, and each
+verified proof records which rule matched.
+<br><br>
+How the error happened, because it is more useful than the apology: the file defining the rule was
+already in this board's own corpus. <code>data/raw/proofs.json</code> held four copies of
+<code>technocore_agent.py</code>, each fetched by the collector and each recorded as
+<code>parsed: false</code> with the note <i>"schema name appears in source code, not in a proof
+file"</i>. A 340-candidate search then went looking for something this repository had already
+downloaded and written itself a reason to skip. If you run a crawler over this ecosystem, the trap
+is not the canonicalisation — it is the skip rule that decides a source file cannot be evidence.
 </div>
 
 {tie_note}
@@ -278,9 +290,9 @@ contribution ranking.</p>
 <h2>How it is scored</h2>
 <p class="note">{weight_rows}</p>
 <p class="note">Not scored: room message volume (anyone can write it), stars and engagement
-(scores attention, not building), proofs that do not verify, more than three artifacts per person,
-our opinion of whether anything is good, and any signal whose specification this board's author
-wrote — for the author.</p>
+(scores attention, not building), proofs that verify under neither known canonicalisation, more
+than three artifacts per person, our opinion of whether anything is good, and any signal whose
+specification this board's author wrote — for the author.</p>
 <a class="cta" href="{REPO_URL}/blob/main/METHODOLOGY.md">Read the full methodology &rarr;</a>
 
 <div class="foot">
@@ -345,10 +357,14 @@ def build_card() -> bool:
     proofs = json.loads((ROOT / "data" / "raw" / "proofs.json").read_text())
     html_path = ROOT / "state" / "og-card.html"
     html_path.parent.mkdir(exist_ok=True)
+    # Denominator is proof *files* that parsed, not every discovery record. `proofs.json` also
+    # holds code-search hits where the schema name appears in source rather than in a proof, and
+    # counting those made the card's denominator ~40 too large in both directions: it understated
+    # the rate when 2 verified and would overstate the shortfall now that most do.
     html_path.write_text(CARD_HTML.format(
         ranked=len(payload["leaderboard"]),
         verified=sum(1 for p in proofs if p.get("verifies")),
-        proofs=len(proofs),
+        proofs=sum(1 for p in proofs if p.get("parsed")),
     ))
     result = subprocess.run(
         [CHROME, "--headless=new", "--disable-gpu", "--hide-scrollbars",

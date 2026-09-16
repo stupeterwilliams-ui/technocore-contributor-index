@@ -1,0 +1,100 @@
+#!/usr/bin/env python3
+"""A `gh` that answers from a scenario file and can be told to fail like the real one does.
+
+The bug these tests are about lives at the process boundary: what `gh` writes to stderr, what
+exit code it uses, and what the collector concludes from the pair. Mocking the Python function
+would test a paraphrase of the code rather than the code, so the fake is a real executable placed
+ahead of the real `gh` on PATH, and the failure strings below are copied verbatim from
+state/refresh.log and from a live rate-limit reproduction on 2026-09-16.
+"""
+import json
+import os
+import pathlib
+import sys
+
+SCENARIO = json.loads(pathlib.Path(os.environ["FAKE_SCENARIO"]).read_text())
+COUNTER = pathlib.Path(os.environ["FAKE_COUNTER"])
+
+FAILURES = {
+    # (exit code, stderr) — all observed in this repository's own logs.
+    "ratelimit": (1, "gh: API rate limit exceeded for user ID 257534982. If you reach out to "
+                     "GitHub Support for help, please include the request ID."),
+    "tls": (1, 'Get "https://api.github.com/repos/x/readme": tls: failed to verify certificate: '
+               "x509: certificate signed by unknown authority"),
+    "reset": (1, 'Get "https://api.github.com/search/repositories?page=5": read tcp '
+                 "192.168.8.110:52862->20.26.156.210:443: read: connection reset by peer"),
+    "notfound": (1, "gh: Not Found (HTTP 404)"),
+    "5xx": (1, "gh: Internal Server Error (HTTP 500)"),
+}
+
+
+def bump(key: str) -> int:
+    counts = json.loads(COUNTER.read_text()) if COUNTER.exists() else {}
+    counts[key] = counts.get(key, 0) + 1
+    COUNTER.write_text(json.dumps(counts))
+    return counts[key]
+
+
+def maybe_fail(key: str) -> None:
+    """Fail this request if the scenario says so, for as many attempts as it says."""
+    for rule in SCENARIO.get("fail", []):
+        if rule["match"] not in key:
+            continue
+        if bump("fail:" + rule["match"]) <= rule.get("times", 1):
+            code, message = FAILURES[rule["mode"]]
+            print(message, file=sys.stderr)
+            sys.exit(code)
+
+
+def emit(payload) -> None:
+    print(json.dumps(payload))
+    sys.exit(0)
+
+
+argv = sys.argv[1:]
+
+if argv[:1] == ["api"] and argv[1] == "rate_limit":
+    emit({"resources": {"search": {"remaining": 30, "reset": 0},
+                        "core": {"remaining": 5000, "reset": 0}}})
+
+if argv[:2] == ["pr", "list"]:
+    state = argv[argv.index("--state") + 1]
+    repo = argv[argv.index("--repo") + 1]
+    maybe_fail(f"pr list {repo} {state}")
+    emit(SCENARIO.get("pulls", {}).get(repo, {}).get(state, []))
+
+if argv[:2] == ["issue", "list"]:
+    maybe_fail("issue list")
+    emit(SCENARIO.get("issues", []))
+
+if argv[:1] == ["api"]:
+    target = argv[1] if argv[1] != "-X" else argv[3]
+    if target.endswith("/readme"):
+        repo = target[len("repos/"):-len("/readme")]
+        maybe_fail(f"readme {repo}")
+        text = SCENARIO.get("readmes", {}).get(repo)
+        if text is None:
+            print("gh: Not Found (HTTP 404)", file=sys.stderr)
+            sys.exit(1)
+        import base64
+        emit({"content": base64.b64encode(text.encode()).decode()})
+    if target.startswith("repos/") and "/issues/" in target and target.endswith("/comments"):
+        maybe_fail(f"comments {target}")
+        emit(SCENARIO.get("comments", {}).get(target, []))
+    if target.startswith("repos/") and target.count("/") == 2:
+        repo = target[len("repos/"):]
+        maybe_fail(f"repo {repo}")
+        row = SCENARIO.get("repos", {}).get(repo)
+        if row is None:
+            print("gh: Not Found (HTTP 404)", file=sys.stderr)
+            sys.exit(1)
+        emit(row)
+    if target in ("search/repositories", "search/code"):
+        query = next(a.split("=", 1)[1] for a in argv if a.startswith("q="))
+        page = int(next(a.split("=", 1)[1] for a in argv if a.startswith("page=")))
+        maybe_fail(f"{target} {query} page={page}")
+        pages = SCENARIO.get(target, {}).get(query, [])
+        emit({"items": pages[page - 1] if page <= len(pages) else []})
+
+print(f"fake gh: unhandled {argv}", file=sys.stderr)
+sys.exit(1)
