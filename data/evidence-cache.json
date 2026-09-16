@@ -6505,6 +6505,10 @@
 "note": "read from the pre-2026-09-16 bare-string cache format",
 "why": "README mentions technocore and 'technocore.chat'"
 },
+"pepedesigner/technocore-node-guide": {
+"checked_at": "2026-09-16T14:36:10Z",
+"why": "description mentions technocore and 'did:key'"
+},
 "pherm0007/technocore-guide": {
 "checked_at": "2026-09-16T12:58:55Z",
 "why": ""
