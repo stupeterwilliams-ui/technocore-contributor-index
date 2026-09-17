@@ -174,6 +174,46 @@ def gh_json(*args: str, what: str | None = None, attempts: int = 4) -> object:
     raise Unavailable(label, last)
 
 
+# How many rows a listing may return before we stop believing it is complete.
+#
+# `gh pr list --limit N` is a cap, not a page size: gh pages internally and stops at N. So a
+# repository with more than N matching rows returns exactly N of them, successfully, with no error,
+# no short page and nothing to detect. This is the one shape the three-outcome rule above does not
+# cover, because the fetch did answer — it answered a smaller question than the one we meant.
+#
+# It was live. The collector asked for 300 closed pull requests against a repository that has 407,
+# got 300, and the oldest in the window was #216. The window slides as new ones close, so pull
+# requests silently left the corpus one by one. Nobody lost points for those particular eight, but
+# `absorbed.py` asks the identical question with the identical limit, and absorbed contributions
+# score five points each — so the oldest hundred-odd closures were invisible to a scored signal.
+#
+# 5000 is not a guess about how large this repository gets. It is a number chosen so that hitting
+# it means something has gone wrong, and hitting it is *detected* rather than absorbed: the rule
+# below is that a listing returning exactly its limit has not proved anything, so raising the limit
+# only ever buys headroom, never silence.
+LIST_LIMIT = 5000
+
+
+def gh_list(*args: str, what: str, limit: int = LIST_LIMIT) -> list[dict]:
+    """A listing, with proof it was not truncated.
+
+    A full page is not a complete answer — the same reasoning that makes a short page the only
+    honest end-of-results signal for a paginator. If a listing comes back at exactly its limit, we
+    cannot distinguish "that is all of them" from "that is all you asked for", so it raises.
+    """
+    rows = gh_json(*args, "--limit", str(limit), what=what)
+    if rows is MISSING or rows is None:
+        raise Unavailable(what, "no listing returned")
+    if not isinstance(rows, list):
+        raise Unavailable(what, f"listing was {type(rows).__name__}, not a list")
+    if len(rows) >= limit:
+        raise Unavailable(
+            what,
+            f"returned exactly the {limit}-row limit, so it is complete-looking and may be "
+            f"partial. Raise LIST_LIMIT in bin/fetch.py; do not read this as the full set")
+    return rows
+
+
 def http_get(url: str, what: str | None = None, attempts: int = 3,
              timeout: int = 40) -> tuple[int, str] | object:
     """Fetch a URL. Returns (200, body), returns MISSING on 404, or raises Unavailable.

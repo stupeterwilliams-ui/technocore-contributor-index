@@ -42,13 +42,20 @@ OUT = ROOT / "data" / "corpus.json"
 SOURCES = {
     "pulls": {
         "description": "Every pull request against the upstream repo, all states.",
-        "method": "gh pr list --repo flop-labs/technocore-chat --state {merged,open,closed} "
-                  "--limit 300",
+        # What the enumeration covered, not what it requested. This said `--limit 300`, and that
+        # was both the literal command and a false description of the corpus: the repository had
+        # 407 closed pull requests, the call returned exactly 300 of them successfully, and the
+        # manifest published the number it asked for as though it were the number it got.
+        "method": "gh pr list --repo flop-labs/technocore-chat --state {merged,open,closed}, "
+                  "paged to exhaustion; a listing that comes back at exactly its row cap is "
+                  "refused rather than published, so a count here is the whole set or there is "
+                  "no manifest at all. See bin/fetch.py:gh_list.",
         "identity": lambda row: f"pr#{row['number']}",
     },
     "issues": {
         "description": "Every issue against the upstream repo, all states.",
-        "method": "gh issue list --repo flop-labs/technocore-chat --state all --limit 300",
+        "method": "gh issue list --repo flop-labs/technocore-chat --state all, paged to "
+                  "exhaustion; see the note on pulls above.",
         "identity": lambda row: f"issue#{row['number']}",
     },
     "artifacts": {

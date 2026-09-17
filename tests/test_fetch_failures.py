@@ -98,19 +98,24 @@ MUTATIONS = {
         ("        if not _retryable(last) or attempt == attempts:\n"
          "            return MISSING"),
     ),
-    # Property 1c and 1d: the two listing call sites refuse an empty listing on their own rather
-    # than relying on how `gh_json` classified the failure. Restoring `or []` is the mutation.
-    "pulls_accepts_an_empty_listing": (
-        "collect.py",
-        ('        if rows is MISSING or rows is None:\n'
-         '            raise Unavailable(f"pr list --state {state}", "no listing returned")'),
-        "        rows = rows if isinstance(rows, list) else []",
+    # Property 1c: a listing that did not answer is not an empty listing. This used to be two
+    # mutations, one per call site, because each site checked for itself. Both sites now go through
+    # `gh_list` — which had to happen anyway, to supply the row cap and prove it was not hit — so
+    # the defence lives in one place and so does the mutation. Fewer mutations here is the
+    # consolidation working rather than coverage lost.
+    "gh_list_accepts_an_empty_listing": (
+        "fetch.py",
+        ('    if rows is MISSING or rows is None:\n'
+         '        raise Unavailable(what, "no listing returned")'),
+        "    if rows is MISSING or rows is None:\n        rows = []",
     ),
-    "absorbed_accepts_an_empty_listing": (
-        "absorbed.py",
-        ("        if prs is MISSING or prs is None:\n"
-         '            raise Unavailable(f"closed prs {repo}", "no listing returned")'),
-        "        prs = prs if isinstance(prs, list) else []",
+    # Property 1e: a listing that returns exactly its row cap is not a complete listing.
+    "a_full_listing_is_believed": (
+        "fetch.py",
+        ("    if len(rows) >= limit:\n"
+         "        raise Unavailable("),
+        ("    if False:\n"
+         "        raise Unavailable("),
     ),
     # Property 2b: an unreadable previous collection is not treated as no previous collection.
     "unreadable_previous_is_treated_as_absent": (
@@ -151,7 +156,14 @@ def _stage(tmp_path: pathlib.Path, mutation: str | tuple[str, ...] | None = None
     """
     root = tmp_path / "board"
     (root / "data" / "raw").mkdir(parents=True)
-    shutil.copytree(REPO / "bin", root / "bin")
+    # Never copy __pycache__. Python validates a .pyc against the source's mtime and size, and a
+    # mutation that changes neither passes that check — so a staged copy carrying compiled bytecode
+    # can run the code from before the mutation. It bit for real: a test that rewrote
+    # `LIST_LIMIT = 40` to `LIST_LIMIT = 41` kept running 40, because the size is identical and
+    # both writes landed inside the same second. Every mutation in this file was exposed to that,
+    # silently, whenever the edit happened to preserve length.
+    shutil.copytree(REPO / "bin", root / "bin",
+                    ignore=shutil.ignore_patterns("__pycache__"))
     for name in (mutation,) if isinstance(mutation, str) else (mutation or ()):
         target, find, replace = MUTATIONS[name]
         path = root / "bin" / target
@@ -172,7 +184,15 @@ def _run(root: pathlib.Path, program: str, scenario: dict, *args: str):
     env = {**os.environ,
            "PATH": f"{FAKEBIN}:{os.environ['PATH']}",
            "FAKE_SCENARIO": str(scenario_file),
-           "FAKE_COUNTER": str(counter)}
+           "FAKE_COUNTER": str(counter),
+           # No bytecode, for any run. Python validates a .pyc against the source's mtime and
+           # size, and a mutation changing neither passes that check — so a second run in the same
+           # staged copy can execute the code from before the mutation. Ignoring __pycache__ on
+           # copy is not enough: the first subprocess writes its own. It bit for real, a rewrite of
+           # `LIST_LIMIT = 40` to `LIST_LIMIT = 41` kept running 40 because the size is identical
+           # and both writes landed inside the same second. Every mutation here was exposed to it
+           # whenever the edit happened to preserve length.
+           "PYTHONDONTWRITEBYTECODE": "1"}
     return subprocess.run([sys.executable, str(root / "bin" / program), *args],
                           capture_output=True, text=True, env=env, timeout=300, check=False)
 
@@ -512,6 +532,35 @@ def test_the_prose_check_actually_bites(tmp_path, edit, what):
     assert result.returncode == 1, f"the check passed {what}: {result.stdout}"
 
 
+def test_a_listing_that_fills_its_limit_is_refused_rather_than_believed(tmp_path):
+    """The one shape three outcomes do not cover: the fetch answered a smaller question.
+
+    `gh pr list --limit N` caps the result rather than paging past it, so a repository with more
+    than N matching rows returns exactly N, successfully, with no error and no short page. Live on
+    2026-09-17: 300 requested against 407 closed pull requests, the oldest in the window #216, and
+    the window slid as new ones closed. `absorbed.py` asked the identical question, and absorbed
+    contributions score five points each.
+    """
+    root = _stage(tmp_path)
+    many = [{"number": n, "author": {"login": f"u{n}"}, "title": "t",
+             "mergedAt": "2026-09-01T00:00:00Z", "createdAt": "2026-09-01T00:00:00Z",
+             "body": "", "url": "u"} for n in range(1, 41)]
+    scenario = {**SCENARIO,
+                "pulls": {"flop-labs/technocore-chat": {"merged": many, "open": [], "closed": []}}}
+    # Shrink the cap to the size of the fixture so the fixture fills it exactly.
+    fetch = root / "bin" / "fetch.py"
+    fetch.write_text(fetch.read_text().replace("LIST_LIMIT = 5000", "LIST_LIMIT = 40"))
+
+    result = _run(root, "collect.py", scenario)
+    assert result.returncode == 1, "a listing that filled its cap was published as complete"
+    assert "exactly the 40-row limit" in result.stderr, result.stderr
+
+    # One row short of the cap is proof of completeness, and must still pass.
+    fetch.write_text(fetch.read_text().replace("LIST_LIMIT = 40", "LIST_LIMIT = 41"))
+    assert _run(root, "collect.py", scenario).returncode == 0
+    assert len(_raw(root, "pulls")) == 40
+
+
 def test_a_failed_pull_request_listing_does_not_zero_everybody(clean):
     """`gh(...) or []` on the merged listing deletes ten points a head from everyone."""
     result = _run(clean, "collect.py",
@@ -615,18 +664,18 @@ def test_mutation_without_three_valued_gh_a_failed_readme_is_cached_as_no_eviden
 
 
 @pytest.mark.parametrize(("program", "source", "mutations"), [
-    ("collect.py", "pulls", ("pulls_accepts_an_empty_listing", "gh_is_two_valued_again",
+    ("collect.py", "pulls", ("gh_list_accepts_an_empty_listing", "gh_is_two_valued_again",
                              "guard_is_disabled")),
-    ("absorbed.py", "absorbed", ("absorbed_accepts_an_empty_listing", "gh_is_two_valued_again",
+    ("absorbed.py", "absorbed", ("gh_list_accepts_an_empty_listing", "gh_is_two_valued_again",
                                  "guard_is_disabled")),
 ])
 def test_mutation_a_failed_listing_becomes_an_empty_one(tmp_path, program, source, mutations):
     """All three defences off: a refused listing is read as "nobody did any of this".
 
     It takes all three, and finding that out is the useful part of writing the mutation down.
-    A refused pull request listing is caught by the call site refusing an empty list, and if that
-    goes by the fetch layer refusing to call a failure an answer, and if that goes by the guard
-    refusing to overwrite a collection that lost everything. Removing any one or any two of them
+    A refused pull request listing is caught by `gh_list` refusing to return an empty list, and if
+    that goes by the fetch layer refusing to call a failure an answer, and if that goes by the
+    guard refusing to overwrite a collection that lost everything. Removing any one or any two of them
     changes nothing observable. With all three gone, `absorbed.py` reproduces its 2026-09-15
     22:53 UTC behaviour exactly: 0 awards where the runs either side of it found 15.
     """

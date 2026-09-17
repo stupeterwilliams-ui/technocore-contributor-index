@@ -31,7 +31,7 @@ import sys
 import time
 
 import guard
-from fetch import MISSING, Incidents, Unavailable, gh_json, http_get
+from fetch import MISSING, Incidents, Unavailable, gh_json, gh_list, http_get
 
 # Imported at module scope on purpose: if the verifier is missing, this run must fail loudly
 # rather than record every proof as "could not verify", which looks identical to a bad signature.
@@ -83,14 +83,14 @@ def collect_pulls() -> list[dict]:
     print("pull requests")
     out = []
     for state in ("merged", "open", "closed"):
-        # No `or []` here, and none below. A failed listing of merged pull requests is not a repo
-        # with no merged pull requests; it is ten points a head silently deleted from everyone who
-        # has ever landed one. Let it raise and let the run be rejected.
-        rows = gh("pr", "list", "--repo", REPO, "--state", state, "--limit", "300",
-                  "--json", "number,author,title,createdAt,mergedAt,closedAt,body,url",
-                  what=f"pr list --state {state}")
-        if rows is MISSING or rows is None:
-            raise Unavailable(f"pr list --state {state}", "no listing returned")
+        # No `or []` here, and no fixed row cap either. `--limit 300` was here against a
+        # repository with 407 closed pull requests: the call succeeded, returned exactly 300, and
+        # the oldest hundred simply were not in the answer. `gh_list` supplies the limit and
+        # refuses any listing that comes back at exactly that limit, because a full page proves
+        # nothing about whether there is more.
+        rows = gh_list("pr", "list", "--repo", REPO, "--state", state,
+                       "--json", "number,author,title,createdAt,mergedAt,closedAt,body,url",
+                       what=f"pr list --state {state}")
         for row in rows:
             out.append({
                 "number": row["number"],
@@ -109,11 +109,9 @@ def collect_pulls() -> list[dict]:
 
 def collect_issues() -> list[dict]:
     print("issues")
-    rows = gh("issue", "list", "--repo", REPO, "--state", "all", "--limit", "300",
-              "--json", "number,author,title,state,stateReason,createdAt,url",
-              what="issue list")
-    if rows is MISSING or rows is None:
-        raise Unavailable("issue list", "no listing returned")
+    rows = gh_list("issue", "list", "--repo", REPO, "--state", "all",
+                   "--json", "number,author,title,state,stateReason,createdAt,url",
+                   what="issue list")
     return [{
         "number": r["number"],
         "author": (r.get("author") or {}).get("login"),

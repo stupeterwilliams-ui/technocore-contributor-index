@@ -36,7 +36,7 @@ import re
 import sys
 
 import guard
-from fetch import MISSING, Incidents, Unavailable, gh_json
+from fetch import MISSING, Incidents, Unavailable, gh_json, gh_list
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 OUT = ROOT / "data" / "raw" / "absorbed.json"
@@ -105,12 +105,12 @@ def _run() -> int:
     found, checked = [], 0
 
     for repo in REPOS:
-        # No `or []`. An empty listing here does not mean nothing was absorbed, it means we did
-        # not get to look, and the two differ by fifteen awards.
-        prs = gh("pr", "list", "--repo", repo, "--state", "closed", "--limit", "300",
-                 "--json", "number,title,author,mergedAt,url", what=f"closed prs {repo}")
-        if prs is MISSING or prs is None:
-            raise Unavailable(f"closed prs {repo}", "no listing returned")
+        # No `or []`, and no fixed row cap. Both faults were here at once: an empty listing read
+        # as "nothing was absorbed", and `--limit 300` against 407 closed pull requests, so the
+        # oldest hundred-odd closures were invisible to a signal worth five points each. A
+        # listing that returns exactly its limit is refused rather than believed.
+        prs = gh_list("pr", "list", "--repo", repo, "--state", "closed",
+                      "--json", "number,title,author,mergedAt,url", what=f"closed prs {repo}")
         unmerged = [p for p in prs if not p.get("mergedAt") and p.get("author")]
         merged_numbers = {p["number"] for p in prs if p.get("mergedAt")}
 
