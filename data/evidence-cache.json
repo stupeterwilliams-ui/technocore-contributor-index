@@ -1333,6 +1333,10 @@
 "note": "read from the pre-2026-09-16 bare-string cache format",
 "why": "description mentions technocore and 'flop labs'"
 },
+"Keleto44/Inside-a-TCLK-Message": {
+"checked_at": "2026-09-16T19:11:00Z",
+"why": ""
+},
 "KenKundert/quantiphy": {
 "checked_at": "2026-09-16T12:55:47Z",
 "why": ""
@@ -1453,6 +1457,10 @@
 "Lordskid/technocore-agent-performance": {
 "checked_at": "2026-09-16T12:55:51Z",
 "why": ""
+},
+"LoserXj/technocore-room-audit": {
+"checked_at": "2026-09-17T15:43:53Z",
+"why": "README mentions technocore and 'technocore.chat'"
 },
 "Lucretia/tamp": {
 "checked_at": "2026-09-16T12:55:52Z",
@@ -2077,6 +2085,10 @@
 "note": "read from the pre-2026-09-16 bare-string cache format",
 "why": "description mentions technocore and 'technocore.chat'"
 },
+"Saletaisst/The-GPU-Is-Becoming-a-Network-Resource": {
+"checked_at": "2026-09-17T12:16:48Z",
+"why": ""
+},
 "SalfianF/technocore-contribution": {
 "checked_at": null,
 "note": "read from the pre-2026-09-16 bare-string cache format",
@@ -2084,6 +2096,10 @@
 },
 "SamMonkey51/Stm32_Key_Led": {
 "checked_at": "2026-09-16T12:56:18Z",
+"why": ""
+},
+"SamirranTap/Imagine-an-AI-Agent-Buying-Compute": {
+"checked_at": "2026-09-17T18:01:56Z",
 "why": ""
 },
 "SamuelEbbz07/https-github.com-Badboy1307-OpenLane__Documentation": {
@@ -3698,6 +3714,10 @@
 "checked_at": null,
 "note": "read from the pre-2026-09-16 bare-string cache format",
 "why": "description mentions technocore and 'technocore.chat'"
+},
+"cryptoGODT/FLOP-Is-Not-Just-a-GPU-Network": {
+"checked_at": "2026-09-17T16:52:22Z",
+"why": ""
 },
 "cryptocattelugu/technocore-helper": {
 "checked_at": null,
@@ -8057,6 +8077,10 @@
 "zsuroy/iSuroy": {
 "checked_at": "2026-09-16T12:59:44Z",
 "why": ""
+},
+"zudoria/FLOP-Has-a-Timeout-Problem-And-That-s-a-Good-Thing": {
+"checked_at": "2026-09-16T19:11:01Z",
+"why": "README mentions technocore and 'technocore.chat'"
 },
 "zunmax/awesome-technocore": {
 "checked_at": null,
