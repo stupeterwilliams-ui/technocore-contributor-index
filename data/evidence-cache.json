@@ -5672,6 +5672,10 @@
 "note": "read from the pre-2026-09-16 bare-string cache format",
 "why": "README mentions technocore and 'flop labs'"
 },
+"lastbubble2035/tca": {
+"checked_at": "2026-09-18T00:52:25Z",
+"why": "description mentions technocore and 'technocore.chat'"
+},
 "latest63/technocore-onboarding": {
 "checked_at": null,
 "note": "read from the pre-2026-09-16 bare-string cache format",
