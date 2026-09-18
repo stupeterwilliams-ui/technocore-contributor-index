@@ -1560,6 +1560,10 @@
 "checked_at": "2026-09-16T12:55:55Z",
 "why": ""
 },
+"Mathidevdevil/VLSI-learnings-": {
+"checked_at": "2026-09-18T14:33:57Z",
+"why": ""
+},
 "MatrixSP/NXP-KV58": {
 "checked_at": "2026-09-16T12:55:56Z",
 "why": ""
@@ -4518,6 +4522,10 @@
 },
 "flopalpha/technocore-agent-reporting": {
 "checked_at": "2026-09-16T12:57:52Z",
+"why": ""
+},
+"flopalpha/technocore-signed-tape-tracer-and-conformance": {
+"checked_at": "2026-09-18T13:24:45Z",
 "why": ""
 },
 "flopbuilder-dev/technocore-room-slot-watcher": {
