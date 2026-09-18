@@ -4716,6 +4716,10 @@
 "checked_at": "2026-09-16T12:57:59Z",
 "why": ""
 },
+"grandbb/TechnocoreInspector": {
+"checked_at": "2026-09-18T03:08:29Z",
+"why": "README mentions technocore and 'technocore.chat'"
+},
 "greerso/flop-nostr": {
 "checked_at": null,
 "note": "read from the pre-2026-09-16 bare-string cache format",
