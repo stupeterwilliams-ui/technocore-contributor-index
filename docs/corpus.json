@@ -1,10 +1,10 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-18T07:46:41Z",
+  "generated_at": "2026-09-18T12:22:08Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "fetch_incidents": {
-    "collected_at": "2026-09-18T07:46:37Z",
+    "collected_at": "2026-09-18T12:22:04Z",
     "collection_accepted": true,
     "count": 0,
     "evidence_cache_backlog": {
@@ -2112,8 +2112,8 @@
     "proofs": {
       "description": "Contribution proofs found by code search, plus a direct probe of every discovered artifact repository for a root contribution-proof.json.",
       "method": "search/code 'technocore-contribution-proof-v1', all pages, unioned with a direct fetch per artifact repo",
-      "count": 175,
-      "digest": "sha256:59da975391f1e96467fde7b0555f136e84d619ee881584a528ad2abd6915dcec",
+      "count": 176,
+      "digest": "sha256:92025d2e78400a491370b760f7b65fd47b06473ce987e742300138ca692b7804",
       "identifiers": [
         "0o0r7/Fri/docs/PROJECT_CONTEXT.md",
         "0o0r7/Fri/docs/fri-flop-ecosystem-knowledge-brief.md",
@@ -2217,6 +2217,7 @@
         "jvaleskadevs/technocore-quickstart/contribution-proof.json",
         "k-cric/technocore-backup-tools/contribution-proof.json",
         "k-cric/technocore-backup-tools/proofs/2026-09-17-retained-gap.json",
+        "k-cric/technocore-backup-tools/proofs/2026-09-18-signature-boundaries.json",
         "keyneszeng/technocore-guide-zh/contribution-proof.json",
         "kforc/technocore-proof/src/__tests__/verification.test.ts",
         "kforc/technocore-proof/src/verification.ts",
