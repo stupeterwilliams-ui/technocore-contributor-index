@@ -2943,6 +2943,10 @@
 "note": "read from the pre-2026-09-16 bare-string cache format",
 "why": "description mentions technocore and 'technocore.chat'"
 },
+"ajanaCrypto/Why-Canonical-JSON-Matters-More-Than-It-Sounds": {
+"checked_at": "2026-09-18T18:00:50Z",
+"why": ""
+},
 "ajisma/did-key-validator": {
 "checked_at": null,
 "note": "read from the pre-2026-09-16 bare-string cache format",

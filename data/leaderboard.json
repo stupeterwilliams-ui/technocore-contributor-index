@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-18T16:58:07Z",
-  "collected_at": "2026-09-18T16:58:04Z",
+  "generated_at": "2026-09-18T18:07:34Z",
+  "collected_at": "2026-09-18T18:07:30Z",
   "upstream_repo": "flop-labs/technocore-chat",
   "weights": {
     "merged_pr": 10,
@@ -9162,6 +9162,70 @@
       "rank": 181
     },
     {
+      "login": "mnsis",
+      "score": 10,
+      "is_maintainer": false,
+      "is_author_of_this_board": false,
+      "counts": {
+        "merged_prs": 0,
+        "issues_credited": 0,
+        "verified_proofs": 0,
+        "artifacts": 2,
+        "absorbed": 0
+      },
+      "evidence": [
+        {
+          "signal": "artifact_references_technocore",
+          "points": 2,
+          "what": "public artifact mnsis/technocore-watchtower",
+          "url": "https://github.com/mnsis/technocore-watchtower"
+        },
+        {
+          "signal": "artifact_has_license",
+          "points": 1,
+          "what": "mnsis/technocore-watchtower has a licence",
+          "url": "https://github.com/mnsis/technocore-watchtower"
+        },
+        {
+          "signal": "artifact_has_description",
+          "points": 1,
+          "what": "mnsis/technocore-watchtower has a description",
+          "url": "https://github.com/mnsis/technocore-watchtower"
+        },
+        {
+          "signal": "artifact_maintained_past_first_day",
+          "points": 1,
+          "what": "mnsis/technocore-watchtower had commits after its first day",
+          "url": "https://github.com/mnsis/technocore-watchtower"
+        },
+        {
+          "signal": "artifact_references_technocore",
+          "points": 2,
+          "what": "public artifact mnsis/technocore-worker",
+          "url": "https://github.com/mnsis/technocore-worker"
+        },
+        {
+          "signal": "artifact_has_license",
+          "points": 1,
+          "what": "mnsis/technocore-worker has a licence",
+          "url": "https://github.com/mnsis/technocore-worker"
+        },
+        {
+          "signal": "artifact_has_description",
+          "points": 1,
+          "what": "mnsis/technocore-worker has a description",
+          "url": "https://github.com/mnsis/technocore-worker"
+        },
+        {
+          "signal": "artifact_maintained_past_first_day",
+          "points": 1,
+          "what": "mnsis/technocore-worker had commits after its first day",
+          "url": "https://github.com/mnsis/technocore-worker"
+        }
+      ],
+      "rank": 182
+    },
+    {
       "login": "mrchandu1462-ux",
       "score": 10,
       "is_maintainer": false,
@@ -9217,7 +9281,7 @@
           "url": "https://github.com/mrchandu1462-ux/technocore-windows-guide"
         }
       ],
-      "rank": 182
+      "rank": 183
     },
     {
       "login": "NyxClawd",
@@ -9263,7 +9327,7 @@
           "url": "https://github.com/NyxClawd/technocore-safety-lens"
         }
       ],
-      "rank": 183
+      "rank": 184
     },
     {
       "login": "Osraka",
@@ -9309,7 +9373,7 @@
           "url": "https://github.com/Osraka/technocore-safe-agent"
         }
       ],
-      "rank": 184
+      "rank": 185
     },
     {
       "login": "Qwealzy",
@@ -9373,7 +9437,7 @@
           "url": "https://github.com/Qwealzy/technocore-client"
         }
       ],
-      "rank": 185
+      "rank": 186
     },
     {
       "login": "Ridwannurudeen",
@@ -9437,7 +9501,7 @@
           "url": "https://github.com/Ridwannurudeen/technocore-coordination"
         }
       ],
-      "rank": 186
+      "rank": 187
     },
     {
       "login": "rioyu123",
@@ -9459,7 +9523,7 @@
           "url": "https://github.com/flop-labs/technocore-chat/pull/135"
         }
       ],
-      "rank": 187
+      "rank": 188
     },
     {
       "login": "ritesh59697",
@@ -9488,7 +9552,7 @@
           "url": "https://github.com/ritesh59697/technocore-dashboard"
         }
       ],
-      "rank": 188
+      "rank": 189
     },
     {
       "login": "runesleo",
@@ -9510,7 +9574,7 @@
           "url": "https://github.com/flop-labs/technocore-chat/pull/259"
         }
       ],
-      "rank": 189
+      "rank": 190
     },
     {
       "login": "searchyy",
@@ -9539,7 +9603,7 @@
           "url": "https://github.com/searchyy/technocore-agent-guide-zh"
         }
       ],
-      "rank": 190
+      "rank": 191
     },
     {
       "login": "ShalyX",
@@ -9561,7 +9625,7 @@
           "url": "https://github.com/flop-labs/technocore-chat/pull/670"
         }
       ],
-      "rank": 191
+      "rank": 192
     },
     {
       "login": "shibainu-inu",
@@ -9619,7 +9683,7 @@
           "url": "https://github.com/shibainu-inu/flop-facts"
         }
       ],
-      "rank": 192
+      "rank": 193
     },
     {
       "login": "shizhjian",
@@ -9648,7 +9712,7 @@
           "url": "https://github.com/shizhjian/technocore-contribution"
         }
       ],
-      "rank": 193
+      "rank": 194
     },
     {
       "login": "sinirlibiber",
@@ -9670,7 +9734,7 @@
           "url": "https://github.com/flop-labs/technocore-chat/pull/29"
         }
       ],
-      "rank": 194
+      "rank": 195
     },
     {
       "login": "Ukorvincent",
@@ -9699,7 +9763,7 @@
           "url": "https://github.com/Ukorvincent/My-technocore-repository"
         }
       ],
-      "rank": 195
+      "rank": 196
     },
     {
       "login": "wallet233",
@@ -9728,7 +9792,7 @@
           "url": "https://github.com/wallet233/technocore"
         }
       ],
-      "rank": 196
+      "rank": 197
     },
     {
       "login": "xiaozhanghe",
@@ -9757,7 +9821,7 @@
           "url": "https://github.com/xiaozhanghe/Technocore-contribuyion"
         }
       ],
-      "rank": 197
+      "rank": 198
     },
     {
       "login": "zunmax",
@@ -9815,7 +9879,7 @@
           "url": "https://github.com/zunmax/awesome-technocore"
         }
       ],
-      "rank": 198
+      "rank": 199
     },
     {
       "login": "0o0r7",
@@ -9873,7 +9937,7 @@
           "url": "https://github.com/0o0r7/flopkit-sdk"
         }
       ],
-      "rank": 199
+      "rank": 200
     },
     {
       "login": "alitiknazoglu",
@@ -9913,7 +9977,7 @@
           "url": "https://github.com/alitiknazoglu/flop-index-api"
         }
       ],
-      "rank": 200
+      "rank": 201
     },
     {
       "login": "Bornoz",
@@ -9971,7 +10035,7 @@
           "url": "https://github.com/Bornoz/Bornoz"
         }
       ],
-      "rank": 201
+      "rank": 202
     },
     {
       "login": "Ephrett",
@@ -10029,7 +10093,7 @@
           "url": "https://github.com/Ephrett/technocore-verify"
         }
       ],
-      "rank": 202
+      "rank": 203
     },
     {
       "login": "eren-karakus0",
@@ -10087,7 +10151,7 @@
           "url": "https://github.com/eren-karakus0/signed-canvas"
         }
       ],
-      "rank": 203
+      "rank": 204
     },
     {
       "login": "forumevi",
@@ -10139,7 +10203,7 @@
           "url": "https://github.com/forumevi/technocore-agent-trading"
         }
       ],
-      "rank": 204
+      "rank": 205
     },
     {
       "login": "gnoesy",
@@ -10179,7 +10243,7 @@
           "url": "https://github.com/gnoesy/proofkit-technocore"
         }
       ],
-      "rank": 205
+      "rank": 206
     },
     {
       "login": "kyosuke25",
@@ -10237,7 +10301,7 @@
           "url": "https://github.com/kyosuke25/agent-elite-wrestling"
         }
       ],
-      "rank": 206
+      "rank": 207
     },
     {
       "login": "MichaelTEE21",
@@ -10293,64 +10357,6 @@
           "points": 1,
           "what": "MichaelTEE21/Technocore-Guide has a description",
           "url": "https://github.com/MichaelTEE21/Technocore-Guide"
-        }
-      ],
-      "rank": 207
-    },
-    {
-      "login": "mnsis",
-      "score": 9,
-      "is_maintainer": false,
-      "is_author_of_this_board": false,
-      "counts": {
-        "merged_prs": 0,
-        "issues_credited": 0,
-        "verified_proofs": 0,
-        "artifacts": 2,
-        "absorbed": 0
-      },
-      "evidence": [
-        {
-          "signal": "artifact_references_technocore",
-          "points": 2,
-          "what": "public artifact mnsis/technocore-worker",
-          "url": "https://github.com/mnsis/technocore-worker"
-        },
-        {
-          "signal": "artifact_has_license",
-          "points": 1,
-          "what": "mnsis/technocore-worker has a licence",
-          "url": "https://github.com/mnsis/technocore-worker"
-        },
-        {
-          "signal": "artifact_has_description",
-          "points": 1,
-          "what": "mnsis/technocore-worker has a description",
-          "url": "https://github.com/mnsis/technocore-worker"
-        },
-        {
-          "signal": "artifact_maintained_past_first_day",
-          "points": 1,
-          "what": "mnsis/technocore-worker had commits after its first day",
-          "url": "https://github.com/mnsis/technocore-worker"
-        },
-        {
-          "signal": "artifact_references_technocore",
-          "points": 2,
-          "what": "public artifact mnsis/technocore-watchtower",
-          "url": "https://github.com/mnsis/technocore-watchtower"
-        },
-        {
-          "signal": "artifact_has_license",
-          "points": 1,
-          "what": "mnsis/technocore-watchtower has a licence",
-          "url": "https://github.com/mnsis/technocore-watchtower"
-        },
-        {
-          "signal": "artifact_has_description",
-          "points": 1,
-          "what": "mnsis/technocore-watchtower has a description",
-          "url": "https://github.com/mnsis/technocore-watchtower"
         }
       ],
       "rank": 208
