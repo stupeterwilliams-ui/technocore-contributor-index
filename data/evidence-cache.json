@@ -4061,6 +4061,10 @@
 "note": "read from the pre-2026-09-16 bare-string cache format",
 "why": "README mentions technocore and 'technocore.chat'"
 },
+"djd39448/flop-swap-desk": {
+"checked_at": "2026-09-18T20:18:26Z",
+"why": "README mentions technocore and 'flop-labs'"
+},
 "djd39448/openagentsearch": {
 "checked_at": null,
 "note": "read from the pre-2026-09-16 bare-string cache format",

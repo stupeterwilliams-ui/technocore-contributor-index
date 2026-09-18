@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-18T18:07:34Z",
-  "collected_at": "2026-09-18T18:07:30Z",
+  "generated_at": "2026-09-18T20:25:09Z",
+  "collected_at": "2026-09-18T20:25:06Z",
   "upstream_repo": "flop-labs/technocore-chat",
   "weights": {
     "merged_pr": 10,
@@ -44,7 +44,7 @@
   "totals": {
     "people_ranked": 969,
     "merged_prs_counted": 42,
-    "artifacts_counted": 1140,
+    "artifacts_counted": 1141,
     "verified_proofs": 132,
     "verified_proofs_by_canonicalisation": {
       "did-starter-json-v1": 130,
@@ -1792,6 +1792,76 @@
       "rank": 28
     },
     {
+      "login": "djd39448",
+      "score": 19,
+      "is_maintainer": false,
+      "is_author_of_this_board": false,
+      "counts": {
+        "merged_prs": 0,
+        "issues_credited": 1,
+        "verified_proofs": 0,
+        "artifacts": 2,
+        "absorbed": 1
+      },
+      "evidence": [
+        {
+          "signal": "issue_closed_by_merged_pr",
+          "points": 5,
+          "what": "issue #237 fixed by merged PR #246: notes: a reap's count rewrite can crash a concurrent create with FileNotFoundError (shared .notes-count.tmp) \u2014 surfaces as an ~18% flake in the global-cap process test",
+          "url": "https://github.com/flop-labs/technocore-chat/issues/237"
+        },
+        {
+          "signal": "absorbed_into_merged_pr",
+          "points": 5,
+          "what": "PR #268 closed for merged #244: fix(docs): render the retention floor through _size, not a whole-MiB shift (#242)",
+          "url": "https://github.com/flop-labs/technocore-chat/pull/268"
+        },
+        {
+          "signal": "artifact_references_technocore",
+          "points": 2,
+          "what": "public artifact djd39448/openagentsearch",
+          "url": "https://github.com/djd39448/openagentsearch"
+        },
+        {
+          "signal": "artifact_has_license",
+          "points": 1,
+          "what": "djd39448/openagentsearch has a licence",
+          "url": "https://github.com/djd39448/openagentsearch"
+        },
+        {
+          "signal": "artifact_has_description",
+          "points": 1,
+          "what": "djd39448/openagentsearch has a description",
+          "url": "https://github.com/djd39448/openagentsearch"
+        },
+        {
+          "signal": "artifact_maintained_past_first_day",
+          "points": 1,
+          "what": "djd39448/openagentsearch had commits after its first day",
+          "url": "https://github.com/djd39448/openagentsearch"
+        },
+        {
+          "signal": "artifact_references_technocore",
+          "points": 2,
+          "what": "public artifact djd39448/flop-swap-desk",
+          "url": "https://github.com/djd39448/flop-swap-desk"
+        },
+        {
+          "signal": "artifact_has_license",
+          "points": 1,
+          "what": "djd39448/flop-swap-desk has a licence",
+          "url": "https://github.com/djd39448/flop-swap-desk"
+        },
+        {
+          "signal": "artifact_has_description",
+          "points": 1,
+          "what": "djd39448/flop-swap-desk has a description",
+          "url": "https://github.com/djd39448/flop-swap-desk"
+        }
+      ],
+      "rank": 29
+    },
+    {
       "login": "erhnysr",
       "score": 19,
       "is_maintainer": false,
@@ -1848,7 +1918,7 @@
         }
       ],
       "artifacts_beyond_cap": 1,
-      "rank": 29
+      "rank": 30
     },
     {
       "login": "mehmetkr-31",
@@ -1919,7 +1989,7 @@
           "url": "https://github.com/mehmetkr-31/technocore-turkce-rehber"
         }
       ],
-      "rank": 30
+      "rank": 31
     },
     {
       "login": "teyrebaz33",
@@ -1959,7 +2029,7 @@
           "url": "https://github.com/teyrebaz33/technocore-toolkit"
         }
       ],
-      "rank": 31
+      "rank": 32
     },
     {
       "login": "brkcinar",
@@ -2036,7 +2106,7 @@
         }
       ],
       "artifacts_beyond_cap": 2,
-      "rank": 32
+      "rank": 33
     },
     {
       "login": "githubbjj",
@@ -2101,7 +2171,7 @@
           "url": "https://github.com/githubbjj/tclk-py"
         }
       ],
-      "rank": 33
+      "rank": 34
     },
     {
       "login": "hubofvalley",
@@ -2166,7 +2236,7 @@
           "url": "https://github.com/hubofvalley/technocore-did-guide"
         }
       ],
-      "rank": 34
+      "rank": 35
     },
     {
       "login": "0xnurrabby",
@@ -2219,7 +2289,7 @@
           "url": "https://github.com/0xnurrabby/Flop-Didbook"
         }
       ],
-      "rank": 35
+      "rank": 36
     },
     {
       "login": "244whopper-cyber",
@@ -2278,7 +2348,7 @@
           "url": "https://github.com/244whopper-cyber/technocore-easy-setup"
         }
       ],
-      "rank": 36
+      "rank": 37
     },
     {
       "login": "d4ncboz",
@@ -2337,7 +2407,7 @@
           "url": "https://github.com/d4ncboz/awesome-technocore"
         }
       ],
-      "rank": 37
+      "rank": 38
     },
     {
       "login": "eigenmaxi",
@@ -2396,7 +2466,7 @@
           "url": "https://github.com/eigenmaxi/technocore-did-tutorial"
         }
       ],
-      "rank": 38
+      "rank": 39
     },
     {
       "login": "antfleet-ops",
@@ -2424,7 +2494,7 @@
           "url": "https://github.com/flop-labs/technocore-chat/pull/331"
         }
       ],
-      "rank": 39
+      "rank": 40
     },
     {
       "login": "bunnyyxtan",
@@ -2513,58 +2583,6 @@
         }
       ],
       "artifacts_beyond_cap": 2,
-      "rank": 40
-    },
-    {
-      "login": "djd39448",
-      "score": 15,
-      "is_maintainer": false,
-      "is_author_of_this_board": false,
-      "counts": {
-        "merged_prs": 0,
-        "issues_credited": 1,
-        "verified_proofs": 0,
-        "artifacts": 1,
-        "absorbed": 1
-      },
-      "evidence": [
-        {
-          "signal": "issue_closed_by_merged_pr",
-          "points": 5,
-          "what": "issue #237 fixed by merged PR #246: notes: a reap's count rewrite can crash a concurrent create with FileNotFoundError (shared .notes-count.tmp) \u2014 surfaces as an ~18% flake in the global-cap process test",
-          "url": "https://github.com/flop-labs/technocore-chat/issues/237"
-        },
-        {
-          "signal": "absorbed_into_merged_pr",
-          "points": 5,
-          "what": "PR #268 closed for merged #244: fix(docs): render the retention floor through _size, not a whole-MiB shift (#242)",
-          "url": "https://github.com/flop-labs/technocore-chat/pull/268"
-        },
-        {
-          "signal": "artifact_references_technocore",
-          "points": 2,
-          "what": "public artifact djd39448/openagentsearch",
-          "url": "https://github.com/djd39448/openagentsearch"
-        },
-        {
-          "signal": "artifact_has_license",
-          "points": 1,
-          "what": "djd39448/openagentsearch has a licence",
-          "url": "https://github.com/djd39448/openagentsearch"
-        },
-        {
-          "signal": "artifact_has_description",
-          "points": 1,
-          "what": "djd39448/openagentsearch has a description",
-          "url": "https://github.com/djd39448/openagentsearch"
-        },
-        {
-          "signal": "artifact_maintained_past_first_day",
-          "points": 1,
-          "what": "djd39448/openagentsearch had commits after its first day",
-          "url": "https://github.com/djd39448/openagentsearch"
-        }
-      ],
       "rank": 41
     },
     {
