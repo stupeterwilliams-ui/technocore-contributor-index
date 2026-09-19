@@ -1,10 +1,10 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-19T10:05:23Z",
+  "generated_at": "2026-09-19T12:22:37Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "fetch_incidents": {
-    "collected_at": "2026-09-19T10:05:19Z",
+    "collected_at": "2026-09-19T12:22:33Z",
     "collection_accepted": true,
     "count": 0,
     "evidence_cache_backlog": {
@@ -916,8 +916,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1192,
-      "digest": "sha256:f3b3316e9a67792acf0133f59036c3b4dd1d53bacc3faa86019c0f42cea6c533",
+      "count": 1190,
+      "digest": "sha256:cd120a80d9afed0b4ab14a116abc058f77372267dfe21306c4cb24877404aac0",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/Fri",
@@ -1948,9 +1948,7 @@
         "sharken3948/technocore-sdk",
         "sharmaanurag2155-source/techno-core-xt",
         "shevardhani/technocore-onboard",
-        "shibainu-inu/flop-facts",
         "shibainu-inu/hakoniwa",
-        "shibainu-inu/technocore-inference-market",
         "shiojpn/arxiv-trading-bot-research",
         "shizhjian/technocore-contribution",
         "shojaee76-cmyk/flop-did-onboard",
