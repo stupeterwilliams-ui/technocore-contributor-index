@@ -2444,6 +2444,10 @@
 "checked_at": "2026-09-16T12:56:50Z",
 "why": ""
 },
+"TK3104/technocore-hub": {
+"checked_at": "2026-09-19T13:25:05Z",
+"why": ""
+},
 "TLanderon/fflop": {
 "checked_at": "2026-09-16T12:56:50Z",
 "why": ""
@@ -7976,6 +7980,10 @@
 "checked_at": null,
 "note": "read from the pre-2026-09-16 bare-string cache format",
 "why": "README mentions technocore and 'technocore.chat'"
+},
+"z6mkr/technocore-guide-fr": {
+"checked_at": "2026-09-19T13:25:05Z",
+"why": "description mentions technocore and 'flop labs'"
 },
 "zachbuilds26/technocore-monitor": {
 "checked_at": null,
