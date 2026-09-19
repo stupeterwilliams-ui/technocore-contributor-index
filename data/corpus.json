@@ -1,10 +1,10 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-19T15:49:13Z",
+  "generated_at": "2026-09-19T19:15:40Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "fetch_incidents": {
-    "collected_at": "2026-09-19T15:49:10Z",
+    "collected_at": "2026-09-19T19:15:35Z",
     "collection_accepted": true,
     "count": 0,
     "evidence_cache_backlog": {
@@ -34,8 +34,8 @@
     "pulls": {
       "description": "Every pull request against the upstream repo, all states.",
       "method": "gh pr list --repo flop-labs/technocore-chat --state {merged,open,closed}, paged to exhaustion; a listing that comes back at exactly its row cap is refused rather than published, so a count here is the whole set or there is no manifest at all. See bin/fetch.py:gh_list.",
-      "count": 677,
-      "digest": "sha256:248ceb90c08771c0a6d051861570a981216c6ff0add4d0346b76a4597d5ab5a2",
+      "count": 682,
+      "digest": "sha256:af3659936ec4a1a6768cfb493a8ffa790b70de9d507618c7f1aaf22f5544d297",
       "identifiers": [
         "pr#1",
         "pr#10",
@@ -703,7 +703,12 @@
         "pr#873",
         "pr#874",
         "pr#875",
+        "pr#876",
+        "pr#877",
+        "pr#878",
+        "pr#879",
         "pr#88",
+        "pr#880",
         "pr#89",
         "pr#9",
         "pr#90",
@@ -916,8 +921,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1191,
-      "digest": "sha256:3da1014bc45f1236938c2aa7db442449364e600fc99051222c4623c1742df81c",
+      "count": 1192,
+      "digest": "sha256:3a04f14e16b8947713d634335f26c3d7c5bfae78937c30754d87e000777f9d97",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/Fri",
@@ -1254,6 +1259,7 @@
         "SuperLeoooooo/technocore-logo",
         "SusiloMaarif/technocore-id-hunter-kit",
         "Syphiliis/flop-technocore-chat",
+        "TK3104/technocore-starter",
         "TakuBo03/technocore-japanese-guide",
         "TaraAlt/technocore-selfhost-guide",
         "Tayadesu/technocore-py",

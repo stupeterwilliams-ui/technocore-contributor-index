@@ -2448,6 +2448,10 @@
 "checked_at": "2026-09-19T13:25:05Z",
 "why": ""
 },
+"TK3104/technocore-starter": {
+"checked_at": "2026-09-19T19:09:21Z",
+"why": "README mentions technocore and 'technocore.chat'"
+},
 "TLanderon/fflop": {
 "checked_at": "2026-09-16T12:56:50Z",
 "why": ""

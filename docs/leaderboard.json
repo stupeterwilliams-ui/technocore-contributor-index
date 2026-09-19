@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-19T15:49:13Z",
-  "collected_at": "2026-09-19T15:49:10Z",
+  "generated_at": "2026-09-19T19:15:40Z",
+  "collected_at": "2026-09-19T19:15:35Z",
   "upstream_repo": "flop-labs/technocore-chat",
   "weights": {
     "merged_pr": 10,
@@ -42,9 +42,9 @@
     }
   },
   "totals": {
-    "people_ranked": 970,
+    "people_ranked": 971,
     "merged_prs_counted": 42,
-    "artifacts_counted": 1140,
+    "artifacts_counted": 1141,
     "verified_proofs": 132,
     "verified_proofs_by_canonicalisation": {
       "did-starter-json-v1": 130,
@@ -34756,6 +34756,28 @@
       "rank": 955
     },
     {
+      "login": "TK3104",
+      "score": 2,
+      "is_maintainer": false,
+      "is_author_of_this_board": false,
+      "counts": {
+        "merged_prs": 0,
+        "issues_credited": 0,
+        "verified_proofs": 0,
+        "artifacts": 1,
+        "absorbed": 0
+      },
+      "evidence": [
+        {
+          "signal": "artifact_references_technocore",
+          "points": 2,
+          "what": "public artifact TK3104/technocore-starter",
+          "url": "https://github.com/TK3104/technocore-starter"
+        }
+      ],
+      "rank": 956
+    },
+    {
       "login": "tokyob12",
       "score": 2,
       "is_maintainer": false,
@@ -34775,7 +34797,7 @@
           "url": "https://github.com/tokyob12/technocore-atlas"
         }
       ],
-      "rank": 956
+      "rank": 957
     },
     {
       "login": "tolga06060",
@@ -34797,7 +34819,7 @@
           "url": "https://github.com/tolga06060/Technocore-did-rehber"
         }
       ],
-      "rank": 957
+      "rank": 958
     },
     {
       "login": "tshwangq",
@@ -34819,7 +34841,7 @@
           "url": "https://github.com/tshwangq/flop-fly"
         }
       ],
-      "rank": 958
+      "rank": 959
     },
     {
       "login": "tufantoktar",
@@ -34841,7 +34863,7 @@
           "url": "https://github.com/tufantoktar/flop-agent-office"
         }
       ],
-      "rank": 959
+      "rank": 960
     },
     {
       "login": "unjaaku",
@@ -34863,7 +34885,7 @@
           "url": "https://github.com/unjaaku/technocore-guide-ja"
         }
       ],
-      "rank": 960
+      "rank": 961
     },
     {
       "login": "uzunkuyruk",
@@ -34885,7 +34907,7 @@
           "url": "https://github.com/uzunkuyruk/technocore-did-agent"
         }
       ],
-      "rank": 961
+      "rank": 962
     },
     {
       "login": "valendepaul2001",
@@ -34907,7 +34929,7 @@
           "url": "https://github.com/valendepaul2001/technocore-verificador-valen"
         }
       ],
-      "rank": 962
+      "rank": 963
     },
     {
       "login": "xiaohei-info",
@@ -34929,7 +34951,7 @@
           "url": "https://github.com/xiaohei-info/technocore-agent-cn"
         }
       ],
-      "rank": 963
+      "rank": 964
     },
     {
       "login": "XieLeiaaa",
@@ -34951,7 +34973,7 @@
           "url": "https://github.com/XieLeiaaa/technocore-room-panel"
         }
       ],
-      "rank": 964
+      "rank": 965
     },
     {
       "login": "Yaman5247",
@@ -34973,7 +34995,7 @@
           "url": "https://github.com/Yaman5247/nFLOP"
         }
       ],
-      "rank": 965
+      "rank": 966
     },
     {
       "login": "yarj0x",
@@ -34995,7 +35017,7 @@
           "url": "https://github.com/yarj0x/technocore-guida-italiana"
         }
       ],
-      "rank": 966
+      "rank": 967
     },
     {
       "login": "zagiscoming",
@@ -35017,7 +35039,7 @@
           "url": "https://github.com/zagiscoming/technocore-agent-kit"
         }
       ],
-      "rank": 967
+      "rank": 968
     },
     {
       "login": "Zaygal",
@@ -35039,7 +35061,7 @@
           "url": "https://github.com/Zaygal/technocore-agent-tools"
         }
       ],
-      "rank": 968
+      "rank": 969
     },
     {
       "login": "zmctinas",
@@ -35061,7 +35083,7 @@
           "url": "https://github.com/zmctinas/technocore-rs"
         }
       ],
-      "rank": 969
+      "rank": 970
     },
     {
       "login": "zudoria",
@@ -35083,7 +35105,7 @@
           "url": "https://github.com/zudoria/FLOP-Has-a-Timeout-Problem-And-That-s-a-Good-Thing"
         }
       ],
-      "rank": 970
+      "rank": 971
     }
   ],
   "maintainers": [
