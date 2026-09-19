@@ -3505,6 +3505,10 @@
 "checked_at": "2026-09-16T12:57:30Z",
 "why": ""
 },
+"buildlayer88/technocore-client": {
+"checked_at": "2026-09-19T09:59:01Z",
+"why": "description mentions technocore and 'technocore.chat'"
+},
 "bulliscoming/technocore-guide": {
 "checked_at": null,
 "note": "read from the pre-2026-09-16 bare-string cache format",
@@ -6612,6 +6616,10 @@
 "checked_at": null,
 "note": "read from the pre-2026-09-16 bare-string cache format",
 "why": "description mentions technocore and 'technocore.chat'"
+},
+"powelltammy871/tclkqx": {
+"checked_at": "2026-09-19T06:34:17Z",
+"why": ""
 },
 "pqtrung93/technocore-contributions": {
 "checked_at": null,

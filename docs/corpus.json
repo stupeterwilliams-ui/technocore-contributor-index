@@ -1,10 +1,10 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-18T20:25:09Z",
+  "generated_at": "2026-09-19T10:05:23Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "fetch_incidents": {
-    "collected_at": "2026-09-18T20:25:06Z",
+    "collected_at": "2026-09-19T10:05:19Z",
     "collection_accepted": true,
     "count": 0,
     "evidence_cache_backlog": {
@@ -917,7 +917,7 @@
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
       "count": 1192,
-      "digest": "sha256:cc281cc23b240a8dab122c429b28d8b9f7e8680eeb206ccf9763cbd60cfe35a0",
+      "digest": "sha256:f3b3316e9a67792acf0133f59036c3b4dd1d53bacc3faa86019c0f42cea6c533",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/Fri",
@@ -1398,6 +1398,7 @@
         "brunoerik417-ship-it/flop-agent",
         "btcmama08/technocore-kit",
         "btk080428/technocore-proof-explorer",
+        "buildlayer88/technocore-client",
         "bulliscoming/technocore-guide",
         "bunbun2t/Technocore-Windows-DID-Toolkit",
         "bunnyyxtan/bunnyyxtan",
@@ -2040,7 +2041,6 @@
         "valendepaul2001/technocore-verificador-valen",
         "vickman787/technocore-conformance",
         "vivaldi18/flop-register",
-        "vizzzix/technocore-client",
         "vlsss12/awesome-technocore",
         "vlsss12/technocore-agent-setup-guide",
         "vlsss12/technocore-health-check",
