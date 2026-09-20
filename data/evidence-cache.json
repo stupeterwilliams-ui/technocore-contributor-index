@@ -3575,6 +3575,10 @@
 "note": "read from the pre-2026-09-16 bare-string cache format",
 "why": "README mentions technocore and 'technocore.chat'"
 },
+"bvivi57/flop": {
+"checked_at": "2026-09-20T19:07:57Z",
+"why": "README mentions technocore and 'technocore.chat'"
+},
 "calvin19999/VSD": {
 "checked_at": "2026-09-16T12:57:31Z",
 "why": ""
