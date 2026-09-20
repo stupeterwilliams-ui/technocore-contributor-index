@@ -1,10 +1,10 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-20T21:31:04Z",
+  "generated_at": "2026-09-20T23:47:06Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "fetch_incidents": {
-    "collected_at": "2026-09-20T21:31:00Z",
+    "collected_at": "2026-09-20T23:47:03Z",
     "collection_accepted": true,
     "count": 0,
     "evidence_cache_backlog": {
@@ -922,8 +922,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1192,
-      "digest": "sha256:35cf8cb69c067ff10eea2013ecbeb23549354f42c8395812289148b5e47fe590",
+      "count": 1191,
+      "digest": "sha256:c1576acc19957b741feafe2870886c50d74844d9e6fe94fe234d90cb22528e6d",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/Fri",
@@ -1403,7 +1403,6 @@
         "brkcinar/technocore-companion",
         "brkcinar/technocore-matrix",
         "brkcinar/technocore-websub",
-        "brunoerik417-ship-it/flop-agent",
         "btcmama08/technocore-kit",
         "btk080428/technocore-proof-explorer",
         "bulliscoming/technocore-guide",
