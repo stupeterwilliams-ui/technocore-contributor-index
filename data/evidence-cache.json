@@ -921,6 +921,10 @@
 "note": "read from the pre-2026-09-16 bare-string cache format",
 "why": "description mentions technocore and 'technocore.chat'"
 },
+"Devonlegend/Devonlegend": {
+"checked_at": "2026-09-21T16:51:22Z",
+"why": "README mentions technocore and 'technocore-chat'"
+},
 "Devonlegend/awesome-technocore": {
 "checked_at": null,
 "note": "read from the pre-2026-09-16 bare-string cache format",
@@ -1111,6 +1115,10 @@
 },
 "GarbaBlockCT/flop_comp": {
 "checked_at": "2026-09-16T12:55:40Z",
+"why": ""
+},
+"Geek-squad4519/Payment-wq1tclky": {
+"checked_at": "2026-09-21T16:51:22Z",
 "why": ""
 },
 "GenerativeFF/technocore-agent-toolkit": {
@@ -7992,6 +8000,10 @@
 "yudaimorota/onchain-tax-jp": {
 "checked_at": null,
 "note": "read from the pre-2026-09-16 bare-string cache format",
+"why": "README mentions technocore and 'technocore.chat'"
+},
+"yunsunJo/technocore-kr-field-guide": {
+"checked_at": "2026-09-21T18:01:13Z",
 "why": "README mentions technocore and 'technocore.chat'"
 },
 "yusufky63/CoreMesh": {
