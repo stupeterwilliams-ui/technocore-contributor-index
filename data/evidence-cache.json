@@ -4901,6 +4901,10 @@
 "checked_at": "2026-09-16T12:58:01Z",
 "why": ""
 },
+"haribote-works/haribote-works": {
+"checked_at": "2026-09-21T19:09:54Z",
+"why": "README mentions technocore and 'technocore.chat'"
+},
 "hariou/technocore-grokbot-ja": {
 "checked_at": null,
 "note": "read from the pre-2026-09-16 bare-string cache format",
