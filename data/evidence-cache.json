@@ -7666,6 +7666,10 @@
 "note": "read from the pre-2026-09-16 bare-string cache format",
 "why": "README mentions technocore and 'technocore.chat'"
 },
+"ugozfb/tclk-windows-yerel-prova": {
+"checked_at": "2026-09-21T20:19:12Z",
+"why": "README mentions technocore and 'technocore.chat'"
+},
 "ugozfb/technocore-did-windows-rehberi": {
 "checked_at": null,
 "note": "read from the pre-2026-09-16 bare-string cache format",

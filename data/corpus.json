@@ -1,10 +1,10 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-21T19:16:29Z",
+  "generated_at": "2026-09-21T20:24:56Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "fetch_incidents": {
-    "collected_at": "2026-09-21T19:16:25Z",
+    "collected_at": "2026-09-21T20:24:53Z",
     "collection_accepted": true,
     "count": 0,
     "evidence_cache_backlog": {
@@ -923,8 +923,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1194,
-      "digest": "sha256:406329c2681432969d301f9f7718ead6573a88a42335b8cf5816668ccb99c894",
+      "count": 1195,
+      "digest": "sha256:da0f63d617d3116fc6e8427760d1bf0b80e5a49b0747a2f30bcd6cd503395e6e",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/Fri",
@@ -2039,6 +2039,7 @@
         "tulipoaaaaa/technocore-signed-evidence",
         "tunahanarik/technocore-station",
         "uesclei1988/technocore-did-guide",
+        "ugozfb/tclk-windows-yerel-prova",
         "ugozfb/technocore-did-windows-rehberi",
         "unjaaku/technocore-guide-ja",
         "uzunaruto/technocore-agent",
