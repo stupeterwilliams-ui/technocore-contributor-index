@@ -1,10 +1,10 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-21T21:33:57Z",
+  "generated_at": "2026-09-22T04:23:24Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "fetch_incidents": {
-    "collected_at": "2026-09-21T21:33:54Z",
+    "collected_at": "2026-09-22T04:23:20Z",
     "collection_accepted": true,
     "count": 0,
     "evidence_cache_backlog": {
@@ -923,8 +923,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1195,
-      "digest": "sha256:da0f63d617d3116fc6e8427760d1bf0b80e5a49b0747a2f30bcd6cd503395e6e",
+      "count": 1194,
+      "digest": "sha256:57383f64f3ca48d4f358ef8f9d9991877f00ee511b614fc255ed2a16c15a26c1",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/Fri",
@@ -1049,7 +1049,6 @@
         "Block-Baron/flop-airdrop-guide",
         "Bornoz/Bornoz",
         "Bornoz/prereg",
-        "Bytethebuilder/tclk-client-py",
         "CCCIC/technocore-kimchi",
         "CallmeMranonymous/technocore-safety-scan",
         "Camxo/technocore-agent-guide",
