@@ -1,10 +1,10 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-22T04:23:24Z",
+  "generated_at": "2026-09-22T13:34:35Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "fetch_incidents": {
-    "collected_at": "2026-09-22T04:23:20Z",
+    "collected_at": "2026-09-22T13:34:31Z",
     "collection_accepted": true,
     "count": 0,
     "evidence_cache_backlog": {
@@ -34,8 +34,8 @@
     "pulls": {
       "description": "Every pull request against the upstream repo, all states.",
       "method": "gh pr list --repo flop-labs/technocore-chat --state {merged,open,closed}, paged to exhaustion; a listing that comes back at exactly its row cap is refused rather than published, so a count here is the whole set or there is no manifest at all. See bin/fetch.py:gh_list.",
-      "count": 684,
-      "digest": "sha256:568d1c80e7b8eb46a98138872e106bdcb6f0df9a55e13159f250b75f376fdbcb",
+      "count": 689,
+      "digest": "sha256:05e4b9a09265e4d6ac99f34782379bed68d2e0df00e52f9c0e34dfe0050f275a",
       "identifiers": [
         "pr#1",
         "pr#10",
@@ -711,6 +711,11 @@
         "pr#880",
         "pr#881",
         "pr#882",
+        "pr#883",
+        "pr#884",
+        "pr#885",
+        "pr#886",
+        "pr#887",
         "pr#89",
         "pr#9",
         "pr#90",
@@ -923,8 +928,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1194,
-      "digest": "sha256:57383f64f3ca48d4f358ef8f9d9991877f00ee511b614fc255ed2a16c15a26c1",
+      "count": 1195,
+      "digest": "sha256:86e03a7fd79fe14be5c38c8669b6e3bd096b2bf923ada328f8534ac052d998a9",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/Fri",
@@ -1039,6 +1044,7 @@
         "Baophan00/flop-technocore-guide",
         "Batinho13/technocore-agent-guide",
         "BenderBot07/technoreceipt",
+        "BgeorgesEth/technocore-preuves",
         "BigLateef/technocore-termux-toolkit",
         "BigdraCo1/Technocore-mining-did",
         "Bigoscrypt/technocore-did-toolkit",
