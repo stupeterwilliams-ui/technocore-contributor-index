@@ -1,10 +1,10 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-22T14:43:33Z",
+  "generated_at": "2026-09-22T15:52:59Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "fetch_incidents": {
-    "collected_at": "2026-09-22T14:43:29Z",
+    "collected_at": "2026-09-22T15:52:55Z",
     "collection_accepted": true,
     "count": 0,
     "evidence_cache_backlog": {
@@ -731,8 +731,8 @@
     "issues": {
       "description": "Every issue against the upstream repo, all states.",
       "method": "gh issue list --repo flop-labs/technocore-chat --state all, paged to exhaustion; see the note on pulls above.",
-      "count": 189,
-      "digest": "sha256:bf8e46899ee9d7fc75425993a9b8aa1563f27f0adff3735a6db0d122da4706a8",
+      "count": 190,
+      "digest": "sha256:ae2aabd10b52f00c718bc1bcc650cb6504795143ee81c1d94ed1a786eb1db596",
       "identifiers": [
         "issue#101",
         "issue#105",
@@ -922,14 +922,15 @@
         "issue#853",
         "issue#859",
         "issue#861",
+        "issue#888",
         "issue#95"
       ]
     },
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1195,
-      "digest": "sha256:86e03a7fd79fe14be5c38c8669b6e3bd096b2bf923ada328f8534ac052d998a9",
+      "count": 1193,
+      "digest": "sha256:600eeeb133389eb5308793217df2335d91dfbc49592edbcc37f8a5c5367c7e7e",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/Fri",
@@ -2010,8 +2011,6 @@
         "suntzu93/FLOP-Labs-Technocore-Agent-Guide",
         "surixbt/technocore-did-guide",
         "t0muraaa/technocore-lurker",
-        "tangtrades/pplx-tangtrades-flop",
-        "tangtrades/starchild-tangtrades-flop",
         "tanyatyan20191/technocore-did-tool",
         "taufnashrul04/flop-did-launcher",
         "techbone/technocore-conformance",
