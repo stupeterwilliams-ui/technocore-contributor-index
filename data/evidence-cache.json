@@ -7472,6 +7472,10 @@
 "note": "read from the pre-2026-09-16 bare-string cache format",
 "why": "description mentions technocore and 'flop labs'"
 },
+"t0nius/technocore-proofs": {
+"checked_at": "2026-09-22T18:04:46Z",
+"why": "README mentions technocore and 'did:key'"
+},
 "tangtrades/pplx-tangtrades-flop": {
 "checked_at": null,
 "note": "read from the pre-2026-09-16 bare-string cache format",
