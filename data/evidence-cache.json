@@ -3296,6 +3296,10 @@
 "note": "read from the pre-2026-09-16 bare-string cache format",
 "why": "README mentions technocore and 'technocore.chat'"
 },
+"babiiih/technocore-game": {
+"checked_at": "2026-09-24T09:04:56Z",
+"why": ""
+},
 "bactiar291/technocore-verify": {
 "checked_at": null,
 "note": "read from the pre-2026-09-16 bare-string cache format",
