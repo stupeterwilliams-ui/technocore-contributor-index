@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-24T13:48:36Z",
-  "collected_at": "2026-09-24T13:48:32Z",
+  "generated_at": "2026-09-24T19:34:44Z",
+  "collected_at": "2026-09-24T19:34:39Z",
   "upstream_repo": "flop-labs/technocore-chat",
   "weights": {
     "merged_pr": 10,
@@ -10917,6 +10917,64 @@
       "rank": 217
     },
     {
+      "login": "sailorpepe",
+      "score": 9,
+      "is_maintainer": false,
+      "is_author_of_this_board": false,
+      "counts": {
+        "merged_prs": 0,
+        "issues_credited": 0,
+        "verified_proofs": 0,
+        "artifacts": 2,
+        "absorbed": 0
+      },
+      "evidence": [
+        {
+          "signal": "artifact_references_technocore",
+          "points": 2,
+          "what": "public artifact sailorpepe/undesirables-mcp-server",
+          "url": "https://github.com/sailorpepe/undesirables-mcp-server"
+        },
+        {
+          "signal": "artifact_has_license",
+          "points": 1,
+          "what": "sailorpepe/undesirables-mcp-server has a licence",
+          "url": "https://github.com/sailorpepe/undesirables-mcp-server"
+        },
+        {
+          "signal": "artifact_has_description",
+          "points": 1,
+          "what": "sailorpepe/undesirables-mcp-server has a description",
+          "url": "https://github.com/sailorpepe/undesirables-mcp-server"
+        },
+        {
+          "signal": "artifact_maintained_past_first_day",
+          "points": 1,
+          "what": "sailorpepe/undesirables-mcp-server had commits after its first day",
+          "url": "https://github.com/sailorpepe/undesirables-mcp-server"
+        },
+        {
+          "signal": "artifact_references_technocore",
+          "points": 2,
+          "what": "public artifact sailorpepe/sailorpepe",
+          "url": "https://github.com/sailorpepe/sailorpepe"
+        },
+        {
+          "signal": "artifact_has_description",
+          "points": 1,
+          "what": "sailorpepe/sailorpepe has a description",
+          "url": "https://github.com/sailorpepe/sailorpepe"
+        },
+        {
+          "signal": "artifact_maintained_past_first_day",
+          "points": 1,
+          "what": "sailorpepe/sailorpepe had commits after its first day",
+          "url": "https://github.com/sailorpepe/sailorpepe"
+        }
+      ],
+      "rank": 218
+    },
+    {
       "login": "0xgoodcrypto",
       "score": 8,
       "is_maintainer": false,
@@ -10966,7 +11024,7 @@
           "url": "https://github.com/0xgoodcrypto/technocore-mcp"
         }
       ],
-      "rank": 218
+      "rank": 219
     },
     {
       "login": "0xzahra",
@@ -10989,7 +11047,7 @@
           "did": "did:key:z6Mkp1xC6UtRr9QfLFGkYHDVW9Mw6qAVPjs3G62YEcbne74T"
         }
       ],
-      "rank": 219
+      "rank": 220
     },
     {
       "login": "Agozie180",
@@ -11041,7 +11099,7 @@
           "url": "https://github.com/Agozie180/flop-did-beginner-guide"
         }
       ],
-      "rank": 220
+      "rank": 221
     },
     {
       "login": "deanetolan",
@@ -11093,7 +11151,7 @@
           "url": "https://github.com/deanetolan/deanetolan"
         }
       ],
-      "rank": 221
+      "rank": 222
     },
     {
       "login": "devorun",
@@ -11145,7 +11203,7 @@
           "url": "https://github.com/devorun/awesome-technocore"
         }
       ],
-      "rank": 222
+      "rank": 223
     },
     {
       "login": "egg2006",
@@ -11197,7 +11255,7 @@
           "url": "https://github.com/egg2006/technocore-logo"
         }
       ],
-      "rank": 223
+      "rank": 224
     },
     {
       "login": "flop-labs-dev",
@@ -11249,7 +11307,7 @@
           "url": "https://github.com/flop-labs-dev/tclk"
         }
       ],
-      "rank": 224
+      "rank": 225
     },
     {
       "login": "infinity-nashi",
@@ -11301,7 +11359,7 @@
           "url": "https://github.com/infinity-nashi/technocore-conformance-ledger"
         }
       ],
-      "rank": 225
+      "rank": 226
     },
     {
       "login": "jesbennp",
@@ -11353,7 +11411,7 @@
           "url": "https://github.com/jesbennp/jesbennp"
         }
       ],
-      "rank": 226
+      "rank": 227
     },
     {
       "login": "juanashowerf",
@@ -11405,7 +11463,7 @@
           "url": "https://github.com/juanashowerf/juanashowerf"
         }
       ],
-      "rank": 227
+      "rank": 228
     },
     {
       "login": "kaylenenotca",
@@ -11457,7 +11515,7 @@
           "url": "https://github.com/kaylenenotca/kaylenenotca"
         }
       ],
-      "rank": 228
+      "rank": 229
     },
     {
       "login": "lela-lenin",
@@ -11509,7 +11567,7 @@
           "url": "https://github.com/lela-lenin/lela-lenin"
         }
       ],
-      "rank": 229
+      "rank": 230
     },
     {
       "login": "linny006",
@@ -11561,7 +11619,7 @@
           "url": "https://github.com/linny006/awesome-agent-skills"
         }
       ],
-      "rank": 230
+      "rank": 231
     },
     {
       "login": "maffmoff",
@@ -11611,58 +11669,6 @@
           "points": 1,
           "what": "maffmoff/technocore-safe-onboarding-ja has a description",
           "url": "https://github.com/maffmoff/technocore-safe-onboarding-ja"
-        }
-      ],
-      "rank": 231
-    },
-    {
-      "login": "sailorpepe",
-      "score": 8,
-      "is_maintainer": false,
-      "is_author_of_this_board": false,
-      "counts": {
-        "merged_prs": 0,
-        "issues_credited": 0,
-        "verified_proofs": 0,
-        "artifacts": 2,
-        "absorbed": 0
-      },
-      "evidence": [
-        {
-          "signal": "artifact_references_technocore",
-          "points": 2,
-          "what": "public artifact sailorpepe/undesirables-mcp-server",
-          "url": "https://github.com/sailorpepe/undesirables-mcp-server"
-        },
-        {
-          "signal": "artifact_has_license",
-          "points": 1,
-          "what": "sailorpepe/undesirables-mcp-server has a licence",
-          "url": "https://github.com/sailorpepe/undesirables-mcp-server"
-        },
-        {
-          "signal": "artifact_has_description",
-          "points": 1,
-          "what": "sailorpepe/undesirables-mcp-server has a description",
-          "url": "https://github.com/sailorpepe/undesirables-mcp-server"
-        },
-        {
-          "signal": "artifact_maintained_past_first_day",
-          "points": 1,
-          "what": "sailorpepe/undesirables-mcp-server had commits after its first day",
-          "url": "https://github.com/sailorpepe/undesirables-mcp-server"
-        },
-        {
-          "signal": "artifact_references_technocore",
-          "points": 2,
-          "what": "public artifact sailorpepe/sailorpepe",
-          "url": "https://github.com/sailorpepe/sailorpepe"
-        },
-        {
-          "signal": "artifact_maintained_past_first_day",
-          "points": 1,
-          "what": "sailorpepe/sailorpepe had commits after its first day",
-          "url": "https://github.com/sailorpepe/sailorpepe"
         }
       ],
       "rank": 232
