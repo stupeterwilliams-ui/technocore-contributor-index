@@ -1,10 +1,10 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-24T02:19:55Z",
+  "generated_at": "2026-09-24T03:27:56Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "fetch_incidents": {
-    "collected_at": "2026-09-24T02:19:51Z",
+    "collected_at": "2026-09-24T03:27:52Z",
     "collection_accepted": true,
     "count": 0,
     "evidence_cache_backlog": {
@@ -34,8 +34,8 @@
     "pulls": {
       "description": "Every pull request against the upstream repo, all states.",
       "method": "gh pr list --repo flop-labs/technocore-chat --state {merged,open,closed}, paged to exhaustion; a listing that comes back at exactly its row cap is refused rather than published, so a count here is the whole set or there is no manifest at all. See bin/fetch.py:gh_list.",
-      "count": 701,
-      "digest": "sha256:688358014fce0f72792efb8558e6f0a75cd5224d01120d20d56f60e4a990a888",
+      "count": 702,
+      "digest": "sha256:739d41b5fd92f8a2f516aa2a0b833ee2d2f32e37f136113ae74384ddf063417e",
       "identifiers": [
         "pr#1",
         "pr#10",
@@ -731,6 +731,7 @@
         "pr#90",
         "pr#900",
         "pr#901",
+        "pr#902",
         "pr#91",
         "pr#92",
         "pr#94",
