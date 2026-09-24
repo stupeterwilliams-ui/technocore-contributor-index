@@ -1,10 +1,10 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-24T11:29:52Z",
+  "generated_at": "2026-09-24T12:39:00Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "fetch_incidents": {
-    "collected_at": "2026-09-24T11:29:48Z",
+    "collected_at": "2026-09-24T12:38:56Z",
     "collection_accepted": true,
     "count": 0,
     "evidence_cache_backlog": {
@@ -950,8 +950,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1197,
-      "digest": "sha256:ba9157290c8fa2d654947c13e9a916346bb1c1f9c648ceb49dc490c7fc781371",
+      "count": 1198,
+      "digest": "sha256:e33fbe370629f7524340b88eac388521fc8eac0abdca60a658afc69a12dfd0c1",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/Fri",
@@ -1016,6 +1016,7 @@
         "2TheMoom/technocore-keyseal",
         "3200-tech/technocore-cn-guide",
         "486087411/technocore-hermes-kit",
+        "4lphav01d/technocore-toolkit",
         "7s4dtv665g-alt/miiin",
         "9XVENOM/technocore-flop-airdrop-DID-android-guide",
         "9ytshade/flop-master-guide",

@@ -357,6 +357,10 @@
 "note": "read from the pre-2026-09-16 bare-string cache format",
 "why": "README mentions technocore and 'technocore.chat'"
 },
+"4lphav01d/technocore-toolkit": {
+"checked_at": "2026-09-24T12:32:52Z",
+"why": "description mentions technocore and 'flop labs'"
+},
 "7s4dtv665g-alt/miiin": {
 "checked_at": null,
 "note": "read from the pre-2026-09-16 bare-string cache format",
