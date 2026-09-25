@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-25T13:50:26Z",
-  "collected_at": "2026-09-25T13:50:22Z",
+  "generated_at": "2026-09-25T14:59:51Z",
+  "collected_at": "2026-09-25T14:59:47Z",
   "upstream_repo": "flop-labs/technocore-chat",
   "weights": {
     "merged_pr": 10,
@@ -10632,7 +10632,7 @@
       "rank": 212
     },
     {
-      "login": "MichaelTEE21",
+      "login": "Mananze-OS",
       "score": 9,
       "is_maintainer": false,
       "is_author_of_this_board": false,
@@ -10647,44 +10647,44 @@
         {
           "signal": "artifact_references_technocore",
           "points": 2,
-          "what": "public artifact MichaelTEE21/-technocore-agent-registry",
-          "url": "https://github.com/MichaelTEE21/-technocore-agent-registry"
+          "what": "public artifact Mananze-OS/-technocore-agent-registry",
+          "url": "https://github.com/Mananze-OS/-technocore-agent-registry"
         },
         {
           "signal": "artifact_has_license",
           "points": 1,
-          "what": "MichaelTEE21/-technocore-agent-registry has a licence",
-          "url": "https://github.com/MichaelTEE21/-technocore-agent-registry"
+          "what": "Mananze-OS/-technocore-agent-registry has a licence",
+          "url": "https://github.com/Mananze-OS/-technocore-agent-registry"
         },
         {
           "signal": "artifact_has_description",
           "points": 1,
-          "what": "MichaelTEE21/-technocore-agent-registry has a description",
-          "url": "https://github.com/MichaelTEE21/-technocore-agent-registry"
+          "what": "Mananze-OS/-technocore-agent-registry has a description",
+          "url": "https://github.com/Mananze-OS/-technocore-agent-registry"
         },
         {
           "signal": "artifact_maintained_past_first_day",
           "points": 1,
-          "what": "MichaelTEE21/-technocore-agent-registry had commits after its first day",
-          "url": "https://github.com/MichaelTEE21/-technocore-agent-registry"
+          "what": "Mananze-OS/-technocore-agent-registry had commits after its first day",
+          "url": "https://github.com/Mananze-OS/-technocore-agent-registry"
         },
         {
           "signal": "artifact_references_technocore",
           "points": 2,
-          "what": "public artifact MichaelTEE21/Technocore-Guide",
-          "url": "https://github.com/MichaelTEE21/Technocore-Guide"
+          "what": "public artifact Mananze-OS/Technocore-Guide",
+          "url": "https://github.com/Mananze-OS/Technocore-Guide"
         },
         {
           "signal": "artifact_has_license",
           "points": 1,
-          "what": "MichaelTEE21/Technocore-Guide has a licence",
-          "url": "https://github.com/MichaelTEE21/Technocore-Guide"
+          "what": "Mananze-OS/Technocore-Guide has a licence",
+          "url": "https://github.com/Mananze-OS/Technocore-Guide"
         },
         {
           "signal": "artifact_has_description",
           "points": 1,
-          "what": "MichaelTEE21/Technocore-Guide has a description",
-          "url": "https://github.com/MichaelTEE21/Technocore-Guide"
+          "what": "Mananze-OS/Technocore-Guide has a description",
+          "url": "https://github.com/Mananze-OS/Technocore-Guide"
         }
       ],
       "rank": 213

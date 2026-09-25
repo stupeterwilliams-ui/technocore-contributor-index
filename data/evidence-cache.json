@@ -1587,6 +1587,14 @@
 "note": "read from the pre-2026-09-16 bare-string cache format",
 "why": "README mentions technocore and 'technocore.chat'"
 },
+"Mananze-OS/-technocore-agent-registry": {
+"checked_at": "2026-09-25T14:53:07Z",
+"why": "README mentions technocore and 'did:key'"
+},
+"Mananze-OS/Technocore-Guide": {
+"checked_at": "2026-09-25T14:53:07Z",
+"why": "README mentions technocore and 'technocore.chat'"
+},
 "ManjuLanjewar/vsd-hdp": {
 "checked_at": "2026-09-16T12:55:54Z",
 "why": ""

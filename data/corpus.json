@@ -1,10 +1,10 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-25T13:50:26Z",
+  "generated_at": "2026-09-25T14:59:51Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "fetch_incidents": {
-    "collected_at": "2026-09-25T13:50:22Z",
+    "collected_at": "2026-09-25T14:59:47Z",
     "collection_accepted": true,
     "count": 0,
     "evidence_cache_backlog": {
@@ -959,7 +959,7 @@
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
       "count": 1199,
-      "digest": "sha256:ef26411e884324d65a82cc7e9b83c1343546ddce6d0d72584adfbcf9274a7d8e",
+      "digest": "sha256:4eb875f77939113de3e92426496ff270263a331b35652453c81584e88d970ce1",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/Fri",
@@ -1203,12 +1203,12 @@
         "Makabeez/technocore-did-starter",
         "Makabeez/technocore-mark",
         "Makabeez/technocore-verify",
+        "Mananze-OS/-technocore-agent-registry",
+        "Mananze-OS/Technocore-Guide",
         "Mariukasfak/flop-evidence-scout",
         "Mayjor01/stacks-technocore-bridge",
         "MdDevCoder/technocore-agent-starter",
         "Megacollins/technocore-mcp",
-        "MichaelTEE21/-technocore-agent-registry",
-        "MichaelTEE21/Technocore-Guide",
         "MikkyTayan/skippy-technocore",
         "Miningelectroneum/technocore-py",
         "MiyukiNakama1/technocore-did-tools",
