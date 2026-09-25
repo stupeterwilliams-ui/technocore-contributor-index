@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-24T19:34:44Z",
-  "collected_at": "2026-09-24T19:34:39Z",
+  "generated_at": "2026-09-25T12:41:43Z",
+  "collected_at": "2026-09-25T12:41:39Z",
   "upstream_repo": "flop-labs/technocore-chat",
   "weights": {
     "merged_pr": 10,
@@ -42,9 +42,9 @@
     }
   },
   "totals": {
-    "people_ranked": 978,
+    "people_ranked": 979,
     "merged_prs_counted": 52,
-    "artifacts_counted": 1146,
+    "artifacts_counted": 1147,
     "verified_proofs": 133,
     "verified_proofs_by_canonicalisation": {
       "did-starter-json-v1": 131,
@@ -35280,6 +35280,28 @@
       "rank": 970
     },
     {
+      "login": "walegbenga",
+      "score": 2,
+      "is_maintainer": false,
+      "is_author_of_this_board": false,
+      "counts": {
+        "merged_prs": 0,
+        "issues_credited": 0,
+        "verified_proofs": 0,
+        "artifacts": 1,
+        "absorbed": 0
+      },
+      "evidence": [
+        {
+          "signal": "artifact_references_technocore",
+          "points": 2,
+          "what": "public artifact walegbenga/technocore-agent",
+          "url": "https://github.com/walegbenga/technocore-agent"
+        }
+      ],
+      "rank": 971
+    },
+    {
       "login": "xiaohei-info",
       "score": 2,
       "is_maintainer": false,
@@ -35299,7 +35321,7 @@
           "url": "https://github.com/xiaohei-info/technocore-agent-cn"
         }
       ],
-      "rank": 971
+      "rank": 972
     },
     {
       "login": "XieLeiaaa",
@@ -35321,7 +35343,7 @@
           "url": "https://github.com/XieLeiaaa/technocore-room-panel"
         }
       ],
-      "rank": 972
+      "rank": 973
     },
     {
       "login": "Yaman5247",
@@ -35343,7 +35365,7 @@
           "url": "https://github.com/Yaman5247/nFLOP"
         }
       ],
-      "rank": 973
+      "rank": 974
     },
     {
       "login": "yarj0x",
@@ -35365,7 +35387,7 @@
           "url": "https://github.com/yarj0x/technocore-guida-italiana"
         }
       ],
-      "rank": 974
+      "rank": 975
     },
     {
       "login": "zagiscoming",
@@ -35387,7 +35409,7 @@
           "url": "https://github.com/zagiscoming/technocore-agent-kit"
         }
       ],
-      "rank": 975
+      "rank": 976
     },
     {
       "login": "Zaygal",
@@ -35409,7 +35431,7 @@
           "url": "https://github.com/Zaygal/technocore-agent-tools"
         }
       ],
-      "rank": 976
+      "rank": 977
     },
     {
       "login": "zmctinas",
@@ -35431,7 +35453,7 @@
           "url": "https://github.com/zmctinas/technocore-rs"
         }
       ],
-      "rank": 977
+      "rank": 978
     },
     {
       "login": "zudoria",
@@ -35453,17 +35475,17 @@
           "url": "https://github.com/zudoria/FLOP-Has-a-Timeout-Problem-And-That-s-a-Good-Thing"
         }
       ],
-      "rank": 978
+      "rank": 979
     }
   ],
   "maintainers": [
     {
       "login": "sv",
-      "score": 1120,
+      "score": 1130,
       "is_maintainer": true,
       "is_author_of_this_board": false,
       "counts": {
-        "merged_prs": 109,
+        "merged_prs": 110,
         "issues_credited": 6,
         "verified_proofs": 0,
         "artifacts": 0,
@@ -36159,6 +36181,12 @@
           "points": 10,
           "what": "merged PR #909: test(store): hold the reaper off the global-cap race; pin the overlap contract",
           "url": "https://github.com/flop-labs/technocore-chat/pull/909"
+        },
+        {
+          "signal": "merged_pr",
+          "points": 10,
+          "what": "merged PR #914: fix(store): keep the counters when .counters cannot be read",
+          "url": "https://github.com/flop-labs/technocore-chat/pull/914"
         }
       ]
     }

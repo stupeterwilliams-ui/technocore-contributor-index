@@ -314,6 +314,10 @@
 "note": "read from the pre-2026-09-16 bare-string cache format",
 "why": "README mentions technocore and 'flop labs'"
 },
+"20kincbekar/tclkk": {
+"checked_at": "2026-09-25T05:43:45Z",
+"why": ""
+},
 "22century22/flp": {
 "checked_at": null,
 "note": "read from the pre-2026-09-16 bare-string cache format",
@@ -3007,6 +3011,10 @@
 "checked_at": "2026-09-18T18:00:50Z",
 "why": ""
 },
+"ajejdsn/dpd-201": {
+"checked_at": "2026-09-25T08:00:24Z",
+"why": ""
+},
 "ajisma/did-key-validator": {
 "checked_at": null,
 "note": "read from the pre-2026-09-16 bare-string cache format",
@@ -3311,6 +3319,10 @@
 },
 "baldwindouglas71/tclkqx": {
 "checked_at": "2026-09-20T08:49:45Z",
+"why": ""
+},
+"bansaretakara-ship-it/kur0nekospam-V4": {
+"checked_at": "2026-09-25T10:17:30Z",
 "why": ""
 },
 "baotl/smarthome": {
@@ -7858,6 +7870,10 @@
 "walaa-amer/VSD-HDP": {
 "checked_at": "2026-09-16T12:59:35Z",
 "why": ""
+},
+"walegbenga/technocore-agent": {
+"checked_at": "2026-09-25T12:35:05Z",
+"why": "README mentions technocore and 'technocore.chat'"
 },
 "walid1937/Technocore-Contributor-Wizard": {
 "checked_at": null,
