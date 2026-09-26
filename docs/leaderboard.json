@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-26T18:25:48Z",
-  "collected_at": "2026-09-26T18:25:44Z",
+  "generated_at": "2026-09-26T20:43:32Z",
+  "collected_at": "2026-09-26T20:43:28Z",
   "upstream_repo": "flop-labs/technocore-chat",
   "weights": {
     "merged_pr": 10,
@@ -2093,6 +2093,95 @@
       "rank": 34
     },
     {
+      "login": "UfukNode",
+      "score": 19,
+      "is_maintainer": false,
+      "is_author_of_this_board": false,
+      "counts": {
+        "merged_prs": 0,
+        "issues_credited": 0,
+        "verified_proofs": 0,
+        "artifacts": 3,
+        "absorbed": 1
+      },
+      "evidence": [
+        {
+          "signal": "absorbed_into_merged_pr",
+          "points": 5,
+          "what": "PR #519 closed for merged #163: fix(limit): serialize token bucket updates",
+          "url": "https://github.com/flop-labs/technocore-chat/pull/519"
+        },
+        {
+          "signal": "artifact_references_technocore",
+          "points": 2,
+          "what": "public artifact UfukNode/technocore-close-call-desk",
+          "url": "https://github.com/UfukNode/technocore-close-call-desk"
+        },
+        {
+          "signal": "artifact_has_license",
+          "points": 1,
+          "what": "UfukNode/technocore-close-call-desk has a licence",
+          "url": "https://github.com/UfukNode/technocore-close-call-desk"
+        },
+        {
+          "signal": "artifact_has_description",
+          "points": 1,
+          "what": "UfukNode/technocore-close-call-desk has a description",
+          "url": "https://github.com/UfukNode/technocore-close-call-desk"
+        },
+        {
+          "signal": "artifact_maintained_past_first_day",
+          "points": 1,
+          "what": "UfukNode/technocore-close-call-desk had commits after its first day",
+          "url": "https://github.com/UfukNode/technocore-close-call-desk"
+        },
+        {
+          "signal": "artifact_references_technocore",
+          "points": 2,
+          "what": "public artifact UfukNode/technocore-sonnet-team-desk",
+          "url": "https://github.com/UfukNode/technocore-sonnet-team-desk"
+        },
+        {
+          "signal": "artifact_has_license",
+          "points": 1,
+          "what": "UfukNode/technocore-sonnet-team-desk has a licence",
+          "url": "https://github.com/UfukNode/technocore-sonnet-team-desk"
+        },
+        {
+          "signal": "artifact_has_description",
+          "points": 1,
+          "what": "UfukNode/technocore-sonnet-team-desk has a description",
+          "url": "https://github.com/UfukNode/technocore-sonnet-team-desk"
+        },
+        {
+          "signal": "artifact_maintained_past_first_day",
+          "points": 1,
+          "what": "UfukNode/technocore-sonnet-team-desk had commits after its first day",
+          "url": "https://github.com/UfukNode/technocore-sonnet-team-desk"
+        },
+        {
+          "signal": "artifact_references_technocore",
+          "points": 2,
+          "what": "public artifact UfukNode/technocore-did-tool",
+          "url": "https://github.com/UfukNode/technocore-did-tool"
+        },
+        {
+          "signal": "artifact_has_license",
+          "points": 1,
+          "what": "UfukNode/technocore-did-tool has a licence",
+          "url": "https://github.com/UfukNode/technocore-did-tool"
+        },
+        {
+          "signal": "artifact_maintained_past_first_day",
+          "points": 1,
+          "what": "UfukNode/technocore-did-tool had commits after its first day",
+          "url": "https://github.com/UfukNode/technocore-did-tool"
+        }
+      ],
+      "artifacts_beyond_cap": 1,
+      "rank": 35
+    },
+    {
       "login": "mehmetkr-31",
       "score": 18,
       "is_maintainer": false,
@@ -2161,7 +2250,7 @@
           "url": "https://github.com/mehmetkr-31/technocore-turkce-rehber"
         }
       ],
-      "rank": 35
+      "rank": 36
     },
     {
       "login": "teyrebaz33",
@@ -2201,89 +2290,6 @@
           "url": "https://github.com/teyrebaz33/technocore-toolkit"
         }
       ],
-      "rank": 36
-    },
-    {
-      "login": "UfukNode",
-      "score": 18,
-      "is_maintainer": false,
-      "is_author_of_this_board": false,
-      "counts": {
-        "merged_prs": 0,
-        "issues_credited": 0,
-        "verified_proofs": 0,
-        "artifacts": 3,
-        "absorbed": 1
-      },
-      "evidence": [
-        {
-          "signal": "absorbed_into_merged_pr",
-          "points": 5,
-          "what": "PR #519 closed for merged #163: fix(limit): serialize token bucket updates",
-          "url": "https://github.com/flop-labs/technocore-chat/pull/519"
-        },
-        {
-          "signal": "artifact_references_technocore",
-          "points": 2,
-          "what": "public artifact UfukNode/technocore-sonnet-team-desk",
-          "url": "https://github.com/UfukNode/technocore-sonnet-team-desk"
-        },
-        {
-          "signal": "artifact_has_license",
-          "points": 1,
-          "what": "UfukNode/technocore-sonnet-team-desk has a licence",
-          "url": "https://github.com/UfukNode/technocore-sonnet-team-desk"
-        },
-        {
-          "signal": "artifact_has_description",
-          "points": 1,
-          "what": "UfukNode/technocore-sonnet-team-desk has a description",
-          "url": "https://github.com/UfukNode/technocore-sonnet-team-desk"
-        },
-        {
-          "signal": "artifact_maintained_past_first_day",
-          "points": 1,
-          "what": "UfukNode/technocore-sonnet-team-desk had commits after its first day",
-          "url": "https://github.com/UfukNode/technocore-sonnet-team-desk"
-        },
-        {
-          "signal": "artifact_references_technocore",
-          "points": 2,
-          "what": "public artifact UfukNode/technocore-did-tool",
-          "url": "https://github.com/UfukNode/technocore-did-tool"
-        },
-        {
-          "signal": "artifact_has_license",
-          "points": 1,
-          "what": "UfukNode/technocore-did-tool has a licence",
-          "url": "https://github.com/UfukNode/technocore-did-tool"
-        },
-        {
-          "signal": "artifact_maintained_past_first_day",
-          "points": 1,
-          "what": "UfukNode/technocore-did-tool had commits after its first day",
-          "url": "https://github.com/UfukNode/technocore-did-tool"
-        },
-        {
-          "signal": "artifact_references_technocore",
-          "points": 2,
-          "what": "public artifact UfukNode/technocore-close-call-desk",
-          "url": "https://github.com/UfukNode/technocore-close-call-desk"
-        },
-        {
-          "signal": "artifact_has_license",
-          "points": 1,
-          "what": "UfukNode/technocore-close-call-desk has a licence",
-          "url": "https://github.com/UfukNode/technocore-close-call-desk"
-        },
-        {
-          "signal": "artifact_has_description",
-          "points": 1,
-          "what": "UfukNode/technocore-close-call-desk has a description",
-          "url": "https://github.com/UfukNode/technocore-close-call-desk"
-        }
-      ],
-      "artifacts_beyond_cap": 1,
       "rank": 37
     },
     {
