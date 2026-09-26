@@ -6323,6 +6323,10 @@
 "checked_at": "2026-09-16T12:58:39Z",
 "why": ""
 },
+"muqaddashahzad/technocore-close-call-terminal": {
+"checked_at": "2026-09-26T17:11:02Z",
+"why": "description mentions technocore and '$flop'"
+},
 "muratrahmikurtul/technocore-signature-ledger": {
 "checked_at": null,
 "note": "read from the pre-2026-09-16 bare-string cache format",
