@@ -1,10 +1,10 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-26T10:24:38Z",
+  "generated_at": "2026-09-26T13:50:57Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "fetch_incidents": {
-    "collected_at": "2026-09-26T10:24:34Z",
+    "collected_at": "2026-09-26T13:50:54Z",
     "collection_accepted": true,
     "count": 0,
     "evidence_cache_backlog": {
@@ -964,8 +964,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1203,
-      "digest": "sha256:699dbb9e0473ad1192ea45cc5608c6820f99e63523761995434ecf9a4e16f60b",
+      "count": 1204,
+      "digest": "sha256:2cea12219cd92df015bf5a08c2b30fa531c6e168eb6a62d24a7b9e8873a70dcd",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/Fri",
@@ -1111,6 +1111,7 @@
         "DasRasyo/technocore-e2e",
         "Daviddforth/technocore-did-starter",
         "Davidwhitney123/technocore-agent-guide",
+        "Defarhad/close-call-challenge",
         "DefiDanny2/technocore-agent-health",
         "DefiDanny2/technocore-danny-agent",
         "DefiDanny2/technocore-field-notes",
