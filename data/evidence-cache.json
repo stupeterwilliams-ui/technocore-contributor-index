@@ -3136,6 +3136,10 @@
 "note": "read from the pre-2026-09-16 bare-string cache format",
 "why": "README mentions technocore and 'technocore.chat'"
 },
+"andrew-sum/close-call-identity": {
+"checked_at": "2026-09-26T05:44:46Z",
+"why": "README mentions technocore and 'technocore.chat'"
+},
 "andrgla/STA_k_worst_critical_paths": {
 "checked_at": "2026-09-16T12:57:14Z",
 "why": ""
@@ -5464,6 +5468,10 @@
 "checked_at": null,
 "note": "read from the pre-2026-09-16 bare-string cache format",
 "why": "README mentions technocore and 'technocore.chat'"
+},
+"jonesdawn710/tclkj": {
+"checked_at": "2026-09-26T05:44:47Z",
+"why": ""
 },
 "jong6598/technocore-safe-adapter": {
 "checked_at": null,
@@ -7880,6 +7888,10 @@
 "vvmcxa/flop-watch": {
 "checked_at": null,
 "note": "read from the pre-2026-09-16 bare-string cache format",
+"why": "README mentions technocore and 'technocore.chat'"
+},
+"vwbugowner1976/local-engineer": {
+"checked_at": "2026-09-26T04:36:25Z",
 "why": "README mentions technocore and 'technocore.chat'"
 },
 "vwbugowner1976/technocore-tech-radar": {
