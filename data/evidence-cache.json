@@ -1826,6 +1826,10 @@
 "note": "read from the pre-2026-09-16 bare-string cache format",
 "why": "README mentions technocore and 'technocore.chat'"
 },
+"Olyvia075/technocore-did-keeper": {
+"checked_at": "2026-09-26T10:18:15Z",
+"why": ""
+},
 "OoJae/dsh-technocore-watch": {
 "checked_at": null,
 "note": "read from the pre-2026-09-16 bare-string cache format",
@@ -3138,6 +3142,10 @@
 },
 "andrew-sum/close-call-identity": {
 "checked_at": "2026-09-26T05:44:46Z",
+"why": "README mentions technocore and 'technocore.chat'"
+},
+"andrew-sum/close-call-identity-2": {
+"checked_at": "2026-09-26T06:52:39Z",
 "why": "README mentions technocore and 'technocore.chat'"
 },
 "andrgla/STA_k_worst_critical_paths": {
