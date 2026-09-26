@@ -1306,6 +1306,10 @@
 "note": "read from the pre-2026-09-16 bare-string cache format",
 "why": "README mentions technocore and 'technocore.chat'"
 },
+"Jennycruzy/technocore-firebreak": {
+"checked_at": "2026-09-26T02:20:17Z",
+"why": "README mentions technocore and 'technocore-chat'"
+},
 "Jerry-aurcus/RTL_Design_and_Synthesis": {
 "checked_at": "2026-09-16T12:55:46Z",
 "why": ""
@@ -5357,6 +5361,10 @@
 "checked_at": null,
 "note": "read from the pre-2026-09-16 bare-string cache format",
 "why": "README mentions technocore and 'flop labs'"
+},
+"jdariko45/technocore": {
+"checked_at": "2026-09-26T03:28:38Z",
+"why": ""
 },
 "jduanen/EarCam": {
 "checked_at": "2026-09-16T12:58:12Z",

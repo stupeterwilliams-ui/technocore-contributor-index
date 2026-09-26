@@ -1,10 +1,10 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-26T00:10:08Z",
+  "generated_at": "2026-09-26T03:34:03Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "fetch_incidents": {
-    "collected_at": "2026-09-26T00:10:04Z",
+    "collected_at": "2026-09-26T03:33:59Z",
     "collection_accepted": true,
     "count": 0,
     "evidence_cache_backlog": {
@@ -963,8 +963,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1200,
-      "digest": "sha256:d99b5d8971740e8c2e949cf5c760de37a6e489690781c8efa99f15b045b9d957",
+      "count": 1201,
+      "digest": "sha256:1a2cf753f97a5f3102ab14da4d275b786e950aa8a9010f04964a5ed64ed0cabf",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0o0r7/Fri",
@@ -1165,6 +1165,7 @@
         "JaypeeNice/technocore-did-starter",
         "Jayprimecast/technocore-beginner-guide",
         "JellyTrapped/technocore-toolkit",
+        "Jennycruzy/technocore-firebreak",
         "Jilvert22/technocore-openssl",
         "JimmyOgb/awesome-technocore",
         "JoXp-ViBe/flop-agent",
