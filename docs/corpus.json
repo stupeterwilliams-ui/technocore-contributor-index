@@ -1,10 +1,10 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-26T20:43:32Z",
+  "generated_at": "2026-09-27T00:08:19Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "fetch_incidents": {
-    "collected_at": "2026-09-26T20:43:28Z",
+    "collected_at": "2026-09-27T00:08:15Z",
     "collection_accepted": true,
     "count": 0,
     "evidence_cache_backlog": {
@@ -34,8 +34,8 @@
     "pulls": {
       "description": "Every pull request against the upstream repo, all states.",
       "method": "gh pr list --repo flop-labs/technocore-chat --state {merged,open,closed}, paged to exhaustion; a listing that comes back at exactly its row cap is refused rather than published, so a count here is the whole set or there is no manifest at all. See bin/fetch.py:gh_list.",
-      "count": 722,
-      "digest": "sha256:b8a71136cb2128e0e86a1b2f801b13eb50669585c20fbddcc6bd61c62c592c00",
+      "count": 723,
+      "digest": "sha256:41455a4f1d0074bd61c743be44d33c0c813949b0bdf3d8531a1e5c092a5e4ac0",
       "identifiers": [
         "pr#1",
         "pr#10",
@@ -754,6 +754,7 @@
         "pr#924",
         "pr#926",
         "pr#927",
+        "pr#928",
         "pr#94",
         "pr#96",
         "pr#97",
@@ -967,10 +968,11 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1206,
-      "digest": "sha256:2de287c5223e4fce16ebab4b1238a0dab46d9094645b2d5c90d4088337fd3244",
+      "count": 1210,
+      "digest": "sha256:3a7b9762ae3e0cf427dfe6a0d851c79ca62335b47f8efdcffcaba9f8942f726f",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
+        "0andadream/technocore-community-leaderboard",
         "0o0r7/Fri",
         "0o0r7/flopkit-sdk",
         "0ogodboyo0/technocore-evidence-guide",
@@ -1124,6 +1126,7 @@
         "Devonlegend/technocore-cli",
         "Devonlegend/technocore-watcher",
         "Dexanode/technocore-did",
+        "Dext94/close-call-board",
         "Dext94/flop-agent-lab",
         "Dnyelfy/makbuz",
         "Dnyelfy/technocore-did-kit",
@@ -1179,6 +1182,7 @@
         "JspIIV/technocore-agent",
         "Jubbic/technocore-did-beginner-guide",
         "Judah5808/Technocore-agent-intelligence",
+        "JudeOlowu/flop-technocore-leaderboard",
         "KAOUTHAR91998/technocore-forge",
         "KLUinvest/technocore-guide-fr",
         "KanrojiTsuuka/technocore-agent-safety-toolkit",
@@ -1377,6 +1381,7 @@
         "aidilfahmi/technocore",
         "aidilfahmi/technocore-agent",
         "aikaopenclaw-spec/technocore-agent-starter",
+        "ailin546/close-call-board",
         "aiya-omg/technocore-agent-kit",
         "ajisma/did-key-validator",
         "aldiboncel49-lgtm/tcverify",

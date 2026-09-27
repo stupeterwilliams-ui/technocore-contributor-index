@@ -12,6 +12,10 @@
 "checked_at": "2026-09-16T12:55:07Z",
 "why": ""
 },
+"0andadream/technocore-community-leaderboard": {
+"checked_at": "2026-09-26T22:54:16Z",
+"why": "README mentions technocore and 'technocore.chat'"
+},
 "0o0r7/Fri": {
 "checked_at": null,
 "note": "read from the pre-2026-09-16 bare-string cache format",
@@ -977,6 +981,10 @@
 "note": "read from the pre-2026-09-16 bare-string cache format",
 "why": "README mentions technocore and 'technocore-chat'"
 },
+"Dext94/close-call-board": {
+"checked_at": "2026-09-27T00:02:54Z",
+"why": "README mentions technocore and 'technocore.chat'"
+},
 "Dext94/flop-agent-lab": {
 "checked_at": null,
 "note": "read from the pre-2026-09-16 bare-string cache format",
@@ -1356,6 +1364,10 @@
 "Judah5808/Technocore-agent-intelligence": {
 "checked_at": "2026-09-16T12:55:46Z",
 "why": "README mentions technocore and 'flop labs'"
+},
+"JudeOlowu/flop-technocore-leaderboard": {
+"checked_at": "2026-09-26T22:54:16Z",
+"why": "README mentions technocore and 'technocore.chat'"
 },
 "JustinFCalderon/rtl-program-placement": {
 "checked_at": "2026-09-16T12:55:47Z",
@@ -3024,6 +3036,10 @@
 "aikaopenclaw-spec/technocore-agent-starter": {
 "checked_at": null,
 "note": "read from the pre-2026-09-16 bare-string cache format",
+"why": "description mentions technocore and 'technocore.chat'"
+},
+"ailin546/close-call-board": {
+"checked_at": "2026-09-27T00:02:54Z",
 "why": "description mentions technocore and 'technocore.chat'"
 },
 "aiya-omg/technocore-agent-kit": {
