@@ -2,14 +2,14 @@
   "schema": "technocore-contributor-index-release-v1",
   "did": "did:key:z6MkfxUAYqWJmUfELN92iorwiGd1HoZUz11kGiPnxjhmDBZP",
   "signed": {
-    "leaderboard.json": "sha256:dabfed9d9216c0822b0be61334cd56d50350cd2bd4506b055a20f26d9514874c",
-    "corpus.json": "sha256:09e5010a8a5c9a0b457e672e553dee450ec8bcc9ba647002eb825841a4321245"
+    "leaderboard.json": "sha256:0bfefc10c0fb698a385ecda4cd04a0e34e9c877cf413e1f4242509d8003c7ae2",
+    "corpus.json": "sha256:91532a1a4ac903cb596bca378360274684a8f16b2c5dafe8ad1f62c40b850c0f"
   },
-  "payload": "technocore-contributor-index-release-v1|leaderboard.json:sha256:dabfed9d9216c0822b0be61334cd56d50350cd2bd4506b055a20f26d9514874c|corpus.json:sha256:09e5010a8a5c9a0b457e672e553dee450ec8bcc9ba647002eb825841a4321245",
-  "signature": "1xcisa8grujc4rctvJnJ1GABtGT0arL81bVHYPOdYFqvi2EZ7AAi2NUVCYInCG1IOIRK7BaILQUhbhoDtn3mDQ",
+  "payload": "technocore-contributor-index-release-v1|leaderboard.json:sha256:0bfefc10c0fb698a385ecda4cd04a0e34e9c877cf413e1f4242509d8003c7ae2|corpus.json:sha256:91532a1a4ac903cb596bca378360274684a8f16b2c5dafe8ad1f62c40b850c0f",
+  "signature": "vs5XA1k4YiNHq4BDBeyN6qxyylqPWNqD8gsyWEsnpwQ-eIjw9SG87IFh2gPLou8XIV15GQaptJMW95oy8EN-AA",
   "algorithm": "Ed25519 over the payload as UTF-8; the did:key is the public half (multicodec ed25519-pub, base58btc).",
   "verify": "Take sha256 of each file named in `signed`, rebuild `payload` as `technocore-contributor-index-release-v1|<leaderboard.json>|<corpus.json>` with each entry `<name>:sha256:<hex>` in that order, decode the did:key to the raw Ed25519 key, and verify the unpadded base64url signature over the payload's UTF-8 bytes. No private key and none of our code is needed.",
   "identity": "The same did:key this project's contribution proof is signed with, and the one named in its venue DID note at /kv/did-<first 2>/<remaining 14> \u2014 which names this GitHub account in return, so the binding is checkable in both directions rather than asserted in one.",
   "scope": "This attests the two files named above at this commit, and nothing else. It says they are the bytes we published: not that the ranking is correct, not that the corpus is complete \u2014 corpus.json states its own known incompleteness \u2014 and not that the weights are the right ones. Those are arguments, and a signature cannot settle an argument.",
-  "signed_at": "2026-09-27T05:49:42Z"
+  "signed_at": "2026-09-27T11:31:18Z"
 }

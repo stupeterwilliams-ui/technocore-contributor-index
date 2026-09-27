@@ -3083,6 +3083,10 @@
 "note": "read from the pre-2026-09-16 bare-string cache format",
 "why": "README mentions technocore and 'flop labs'"
 },
+"alieeryenleon/tclku": {
+"checked_at": "2026-09-27T10:16:38Z",
+"why": ""
+},
 "alinaivanovaoff/trapez_shaper": {
 "checked_at": "2026-09-16T12:57:12Z",
 "why": ""
@@ -3116,6 +3120,10 @@
 "checked_at": null,
 "note": "read from the pre-2026-09-16 bare-string cache format",
 "why": "description mentions technocore and '/kv/'"
+},
+"alpertungax1/technocore_dashboard": {
+"checked_at": "2026-09-27T11:25:22Z",
+"why": "README mentions technocore and 'technocore.chat'"
 },
 "alpha1one/technocore": {
 "checked_at": "2026-09-16T12:57:13Z",
@@ -4454,6 +4462,10 @@
 "checked_at": null,
 "note": "read from the pre-2026-09-16 bare-string cache format",
 "why": "description mentions technocore and 'flop labs'"
+},
+"ersinozkan1987-hub/technocore-close-call-leaderboard": {
+"checked_at": "2026-09-27T09:08:31Z",
+"why": "description mentions technocore and 'technocore.chat'"
 },
 "ersinozkan1987-hub/technocore-kibble-explorer": {
 "checked_at": null,
@@ -6613,6 +6625,10 @@
 "note": "read from the pre-2026-09-16 bare-string cache format",
 "why": "description mentions technocore and 'technocore.chat'"
 },
+"omerbek/close1-leaderboard": {
+"checked_at": "2026-09-27T10:16:39Z",
+"why": "README mentions technocore and 'technocore.chat'"
+},
 "omerbek/technocore-mark-hybrid": {
 "checked_at": "2026-09-16T12:58:52Z",
 "why": ""
@@ -7186,6 +7202,10 @@
 "seolater/technocore-did-guide": {
 "checked_at": "2026-09-16T12:59:08Z",
 "why": ""
+},
+"shadow4810/close-call-board": {
+"checked_at": "2026-09-27T11:25:22Z",
+"why": "description mentions technocore and 'technocore.chat'"
 },
 "shadow4810/technocore-guide-ja": {
 "checked_at": null,

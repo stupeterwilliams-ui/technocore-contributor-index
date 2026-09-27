@@ -1,10 +1,10 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-27T05:49:39Z",
+  "generated_at": "2026-09-27T11:31:15Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "fetch_incidents": {
-    "collected_at": "2026-09-27T05:49:36Z",
+    "collected_at": "2026-09-27T11:31:12Z",
     "collection_accepted": true,
     "count": 0,
     "evidence_cache_backlog": {
@@ -34,8 +34,8 @@
     "pulls": {
       "description": "Every pull request against the upstream repo, all states.",
       "method": "gh pr list --repo flop-labs/technocore-chat --state {merged,open,closed}, paged to exhaustion; a listing that comes back at exactly its row cap is refused rather than published, so a count here is the whole set or there is no manifest at all. See bin/fetch.py:gh_list.",
-      "count": 724,
-      "digest": "sha256:60b83b6c7dadc8ce3adfa64ed02ca9b74b722f435e2a43e913edaef4f6179ade",
+      "count": 726,
+      "digest": "sha256:bd67b5b29cd60855be1d65b9ca1bccd5501f1006c9d71ae4ccdf1c02e7fac2c2",
       "identifiers": [
         "pr#1",
         "pr#10",
@@ -756,6 +756,8 @@
         "pr#927",
         "pr#928",
         "pr#929",
+        "pr#930",
+        "pr#931",
         "pr#94",
         "pr#96",
         "pr#97",
@@ -969,8 +971,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1213,
-      "digest": "sha256:55d62f62471c921ce7d73b4d6e82a7ed6af7200fe43d51fdcd17eb3c2db2496a",
+      "count": 1217,
+      "digest": "sha256:042103b21d546c786f216bc1b006c8466146362563b106bd77a646a0ea547a7b",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0andadream/technocore-community-leaderboard",
@@ -1394,6 +1396,7 @@
         "alitiknazoglu/flop-index-api",
         "almondous/flop_flop",
         "alpertungax1/The_Living_Cyber-Metropolis",
+        "alpertungax1/technocore_dashboard",
         "alphabat81/technocore-flop-participation",
         "alstep07/technocore-signal",
         "alwialhuda11/technocore-client",
@@ -1604,6 +1607,7 @@
         "erhnysr/wisp",
         "erkancamli/technocore-pulse",
         "erkancamli/technocore-turkce-rehber",
+        "ersinozkan1987-hub/technocore-close-call-leaderboard",
         "ersinozkan1987-hub/technocore-kibble-explorer",
         "ersinozkan1987-hub/technocore-kibble-toolkit",
         "ersinozkan1987-hub/technocore-proof-checker",
@@ -1929,6 +1933,7 @@
         "oktavian3/technocore-verify",
         "olasmi02/technocore-buddy",
         "olto7/technocore_dart",
+        "omerbek/close1-leaderboard",
         "omerbek/technocore-signal-map",
         "omerbek/technocore-sonnet-cli",
         "omerbek/technocore-tclk-proof",
@@ -2013,6 +2018,7 @@
         "sekuler/technocore-leaderboard",
         "sekuler/technocore-tr-bridge",
         "selaslan72/technocore-proof-ledger",
+        "shadow4810/close-call-board",
         "shadow4810/technocore-guide-ja",
         "shaonturaj/TechnocoreKit",
         "shaqwtmg/technocore-did-guide",
