@@ -875,6 +875,10 @@
 "checked_at": "2026-09-16T12:55:29Z",
 "why": ""
 },
+"Dajakdl/technocore-operator": {
+"checked_at": "2026-09-27T12:33:47Z",
+"why": "description mentions technocore and 'technocore.chat'"
+},
 "Dalbybo/technocore-unity": {
 "checked_at": null,
 "note": "read from the pre-2026-09-16 bare-string cache format",
@@ -1737,6 +1741,10 @@
 },
 "MuhammadBoota09299/tri_mode_ethernet_mac_0_axi_pat_gen": {
 "checked_at": "2026-09-16T12:55:59Z",
+"why": ""
+},
+"N0V3R0N/technocore-challenge": {
+"checked_at": "2026-09-27T12:33:47Z",
 "why": ""
 },
 "N5342689605/technocore-signing": {
