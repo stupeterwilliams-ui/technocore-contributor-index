@@ -4328,6 +4328,10 @@
 "note": "read from the pre-2026-09-16 bare-string cache format",
 "why": "README mentions technocore and 'did:key'"
 },
+"ebnuw/close-call-leaderboard": {
+"checked_at": "2026-09-27T01:10:44Z",
+"why": "README mentions technocore and 'technocore.chat'"
+},
 "eduardo-s-freitas/technocore-portuguese-guide": {
 "checked_at": null,
 "note": "read from the pre-2026-09-16 bare-string cache format",
@@ -5556,6 +5560,10 @@
 "checked_at": null,
 "note": "read from the pre-2026-09-16 bare-string cache format",
 "why": "README mentions technocore and 'llms.txt'"
+},
+"jusdave01/technocore-did-guide": {
+"checked_at": "2026-09-27T01:10:44Z",
+"why": ""
 },
 "justin201507-rgb/technocore-field-notes": {
 "checked_at": null,
