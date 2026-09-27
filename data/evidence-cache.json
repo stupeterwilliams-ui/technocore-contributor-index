@@ -6613,6 +6613,10 @@
 "note": "read from the pre-2026-09-16 bare-string cache format",
 "why": "README mentions technocore and 'technocore.chat'"
 },
+"okayap700/technocore-agent": {
+"checked_at": "2026-09-27T20:35:02Z",
+"why": "README mentions technocore and 'flop labs'"
+},
 "oktavian3/technocore-proof-card": {
 "checked_at": null,
 "note": "read from the pre-2026-09-16 bare-string cache format",
