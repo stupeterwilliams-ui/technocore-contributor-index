@@ -1,10 +1,10 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-27T12:40:10Z",
+  "generated_at": "2026-09-27T14:57:21Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "fetch_incidents": {
-    "collected_at": "2026-09-27T12:40:07Z",
+    "collected_at": "2026-09-27T14:57:18Z",
     "collection_accepted": true,
     "count": 0,
     "evidence_cache_backlog": {
@@ -972,8 +972,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1218,
-      "digest": "sha256:5dc3ff8487991396fb12cae137f6a3cfaee9bd83a764fca92377e2a2dde5b4c9",
+      "count": 1219,
+      "digest": "sha256:ace6409cafbeb949733dead62ae92d8d004577c9edcfd41a2b26151132f8da58",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0andadream/technocore-community-leaderboard",
@@ -2059,6 +2059,7 @@
         "sorafukui/technocore-audit",
         "spacerug/technocore-agent-dashboard",
         "spinoza19/technocore-receipts",
+        "sprmn24/technocore-closecall-agent",
         "sprmn24/technocore-conformance",
         "ssiiki/technocore-quickstart",
         "staceemillei/staceemillei",
