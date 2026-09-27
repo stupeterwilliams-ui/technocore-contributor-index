@@ -3801,6 +3801,10 @@
 "checked_at": "2026-09-16T12:57:33Z",
 "why": ""
 },
+"congge918/technocore-close-call-radar": {
+"checked_at": "2026-09-27T04:35:33Z",
+"why": "README mentions technocore and 'technocore.chat'"
+},
 "congge918/technocore-handshake": {
 "checked_at": null,
 "note": "read from the pre-2026-09-16 bare-string cache format",
@@ -5737,6 +5741,10 @@
 "checked_at": null,
 "note": "read from the pre-2026-09-16 bare-string cache format",
 "why": "README mentions technocore and 'technocore.chat'"
+},
+"kikurage-en/close-call-board": {
+"checked_at": "2026-09-27T04:35:33Z",
+"why": "description mentions technocore and 'technocore.chat'"
 },
 "kilwa0/esp32c6-zigbee-router": {
 "checked_at": "2026-09-16T12:58:22Z",
