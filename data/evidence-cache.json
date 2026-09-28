@@ -3026,6 +3026,10 @@
 "note": "read from the pre-2026-09-16 bare-string cache format",
 "why": "README mentions technocore and 'technocore.chat'"
 },
+"ahmeye/tclkc": {
+"checked_at": "2026-09-28T04:32:57Z",
+"why": ""
+},
 "ai-ken-git/technocore-logo-jinken": {
 "checked_at": null,
 "note": "read from the pre-2026-09-16 bare-string cache format",
