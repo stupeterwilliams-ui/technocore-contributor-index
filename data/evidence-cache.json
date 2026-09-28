@@ -2515,6 +2515,10 @@
 "note": "read from the pre-2026-09-16 bare-string cache format",
 "why": "description mentions technocore and '$flop'"
 },
+"Svetlana6543-web/technocore-close1-toolkit": {
+"checked_at": "2026-09-28T20:41:36Z",
+"why": "README mentions technocore and 'technocore.chat'"
+},
 "SwarmUS/HiveConnect": {
 "checked_at": "2026-09-16T12:56:48Z",
 "why": ""
