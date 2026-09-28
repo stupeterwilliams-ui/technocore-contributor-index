@@ -1,10 +1,10 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-28T05:47:39Z",
+  "generated_at": "2026-09-28T10:23:32Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "fetch_incidents": {
-    "collected_at": "2026-09-28T05:47:35Z",
+    "collected_at": "2026-09-28T10:23:28Z",
     "collection_accepted": true,
     "count": 0,
     "evidence_cache_backlog": {
@@ -977,8 +977,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1220,
-      "digest": "sha256:10e4131083613a0b6a1328976405849805fb2d8a0d362351817fcb2e63685759",
+      "count": 1221,
+      "digest": "sha256:6579363324f6963a0a4c3eaf6c1417217b50d64f68f617a3b5df5977c277d5d5",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0andadream/technocore-community-leaderboard",
@@ -1194,6 +1194,7 @@
         "Judah5808/Technocore-agent-intelligence",
         "JudeOlowu/flop-technocore-leaderboard",
         "KAOUTHAR91998/technocore-forge",
+        "KLUinvest/technocore-close1-audit",
         "KLUinvest/technocore-guide-fr",
         "KanrojiTsuuka/technocore-agent-safety-toolkit",
         "Kastor13/technocore-mcp",
