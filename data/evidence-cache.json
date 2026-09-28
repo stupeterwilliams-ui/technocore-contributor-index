@@ -998,6 +998,10 @@
 "checked_at": "2026-09-16T12:55:33Z",
 "why": ""
 },
+"Dnyelfy/kapanis": {
+"checked_at": "2026-09-28T11:26:19Z",
+"why": "README mentions technocore and 'technocore.chat'"
+},
 "Dnyelfy/makbuz": {
 "checked_at": null,
 "note": "read from the pre-2026-09-16 bare-string cache format",
@@ -3331,6 +3335,10 @@
 "checked_at": null,
 "note": "read from the pre-2026-09-16 bare-string cache format",
 "why": "description mentions technocore and 'technocore.chat'"
+},
+"asamashisa-web/technocore-agent-starter": {
+"checked_at": "2026-09-28T12:36:00Z",
+"why": "README mentions technocore and 'technocore.chat'"
 },
 "ashika-ch/RISC-V-SoC-Tapeout-Program-My-Journey": {
 "checked_at": "2026-09-16T12:57:19Z",

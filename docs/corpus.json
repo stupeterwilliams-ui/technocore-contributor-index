@@ -1,10 +1,10 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-28T10:23:32Z",
+  "generated_at": "2026-09-28T12:42:01Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "fetch_incidents": {
-    "collected_at": "2026-09-28T10:23:28Z",
+    "collected_at": "2026-09-28T12:41:57Z",
     "collection_accepted": true,
     "count": 0,
     "evidence_cache_backlog": {
@@ -977,8 +977,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1221,
-      "digest": "sha256:6579363324f6963a0a4c3eaf6c1417217b50d64f68f617a3b5df5977c277d5d5",
+      "count": 1223,
+      "digest": "sha256:7de72b92a64b6c68531c1f508e77e674be08e59da2ae39cd8c61de30f6c38d8f",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0andadream/technocore-community-leaderboard",
@@ -1138,6 +1138,7 @@
         "Dexanode/technocore-did",
         "Dext94/close-call-board",
         "Dext94/flop-agent-lab",
+        "Dnyelfy/kapanis",
         "Dnyelfy/makbuz",
         "Dnyelfy/technocore-did-kit",
         "Dnyelfy/technocore-field",
@@ -1434,6 +1435,7 @@
         "ardianreffa/technocore-mac-guide",
         "arsyanendragalih/technocore-id-guide",
         "asa-ai-code/technocore-toolkit",
+        "asamashisa-web/technocore-agent-starter",
         "ava-world/technocore-did-termux-mobile",
         "aziraiga21/technocore-security-checklist",
         "b-bhu/technocore-safe-fetch",
