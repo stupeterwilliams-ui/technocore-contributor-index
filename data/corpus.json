@@ -1,10 +1,10 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-28T20:48:19Z",
+  "generated_at": "2026-09-29T10:54:32Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "fetch_incidents": {
-    "collected_at": "2026-09-28T20:48:14Z",
+    "collected_at": "2026-09-29T10:54:27Z",
     "collection_accepted": true,
     "count": 0,
     "evidence_cache_backlog": {
@@ -980,7 +980,7 @@
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
       "count": 1224,
-      "digest": "sha256:b3774652a76eaf3bf6a32ea081db96d8140052c914f87e4bb679a05a1d12a95e",
+      "digest": "sha256:c8b510026b8263578be2ac9274f94c1221c4f07bc5248bb070d07d2213fbd0cd",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0andadream/technocore-community-leaderboard",
@@ -1853,6 +1853,7 @@
         "long1977/technocore-contribution",
         "loopjockey/flopagent",
         "lopital2023-max/flop-sentinel",
+        "lototem/technocore-guide-fr",
         "loveissablisseth-code/bankr-technocore-agent",
         "lucaturtle/flop42-contributions",
         "luen-eth/technocore-turkce-rehber",
@@ -2040,7 +2041,6 @@
         "sharken3948/technocore-sdk",
         "sharmaanurag2155-source/techno-core-xt",
         "shevardhani/technocore-onboard",
-        "shibainu-inu/hakoniwa",
         "shiojpn/arxiv-trading-bot-research",
         "shizhjian/technocore-contribution",
         "shojaee76-cmyk/flop-did-onboard",
