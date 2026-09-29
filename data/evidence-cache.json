@@ -6442,6 +6442,10 @@
 "note": "read from the pre-2026-09-16 bare-string cache format",
 "why": "description mentions technocore and '$flop'"
 },
+"mztawash/xaud": {
+"checked_at": "2026-09-29T21:26:12Z",
+"why": "README mentions technocore and 'flop labs'"
+},
 "nabotz/technocore-agent-toolkit": {
 "checked_at": null,
 "note": "read from the pre-2026-09-16 bare-string cache format",

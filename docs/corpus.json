@@ -1,10 +1,10 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-29T19:11:35Z",
+  "generated_at": "2026-09-29T21:34:03Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "fetch_incidents": {
-    "collected_at": "2026-09-29T19:11:30Z",
+    "collected_at": "2026-09-29T21:33:58Z",
     "collection_accepted": true,
     "count": 0,
     "evidence_cache_backlog": {
@@ -980,8 +980,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1224,
-      "digest": "sha256:c8b510026b8263578be2ac9274f94c1221c4f07bc5248bb070d07d2213fbd0cd",
+      "count": 1225,
+      "digest": "sha256:b8d2a4438b1d7e8a12a4bfa60060ed0efc1e1e35b90f72a860810e61e8766801",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0andadream/technocore-community-leaderboard",
@@ -1917,6 +1917,7 @@
         "muratrahmikurtul/technocore-signature-ledger",
         "mystiquemide/technocore-onboarding-safety-kit",
         "mztacat/Simplified-FLOP-Labs-Technocore-Agent-Guid",
+        "mztawash/xaud",
         "nabotz/technocore-agent-toolkit",
         "nagumo-dawnlabs/technocore-keepalive",
         "nakcrypto/technocore-cli",
