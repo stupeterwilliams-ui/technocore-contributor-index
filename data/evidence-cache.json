@@ -1098,6 +1098,10 @@
 "note": "read from the pre-2026-09-16 bare-string cache format",
 "why": "description mentions technocore and 'technocore.chat'"
 },
+"Everett2134/order-completed-3tclk5": {
+"checked_at": "2026-09-29T17:52:34Z",
+"why": ""
+},
 "Faisalsathu786/agentid": {
 "checked_at": null,
 "note": "read from the pre-2026-09-16 bare-string cache format",
@@ -5377,6 +5381,10 @@
 "checked_at": null,
 "note": "read from the pre-2026-09-16 bare-string cache format",
 "why": "README mentions technocore and 'technocore.chat'"
+},
+"integra-lib/ads129x": {
+"checked_at": "2026-09-29T11:57:27Z",
+"why": ""
 },
 "iohxx/technocore-client": {
 "checked_at": null,
