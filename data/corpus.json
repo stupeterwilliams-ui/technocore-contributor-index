@@ -1,10 +1,10 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-30T05:39:23Z",
+  "generated_at": "2026-09-30T09:07:06Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "fetch_incidents": {
-    "collected_at": "2026-09-30T05:39:19Z",
+    "collected_at": "2026-09-30T09:07:01Z",
     "collection_accepted": true,
     "count": 0,
     "evidence_cache_backlog": {
@@ -781,8 +781,8 @@
     "issues": {
       "description": "Every issue against the upstream repo, all states.",
       "method": "gh issue list --repo flop-labs/technocore-chat --state all, paged to exhaustion; see the note on pulls above.",
-      "count": 197,
-      "digest": "sha256:af96fdd8a6bb1b07839d3b4271ee14a2f0666ab3460a73ecb2dfc4feecae8d9e",
+      "count": 198,
+      "digest": "sha256:ce10d6fce4486ac87c82dd1a40fe3987e6831c99afac87c75a432b5652b79ccc",
       "identifiers": [
         "issue#101",
         "issue#105",
@@ -980,14 +980,15 @@
         "issue#925",
         "issue#943",
         "issue#945",
+        "issue#947",
         "issue#95"
       ]
     },
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1229,
-      "digest": "sha256:afcbf16d2f847d8c5984dd05925c4cce0aacf223f3bf56d37b7fb5e4bb8ab971",
+      "count": 1230,
+      "digest": "sha256:07eb818957dbe774728aa311987260fb8d62f95b4ed1bcb20e3f51feb84cfb7c",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0andadream/technocore-community-leaderboard",
@@ -1038,6 +1039,7 @@
         "0xsheva/technocore-keyhole",
         "0xsoli/technocore-telegram-bot",
         "0xwhalelabs/technocore-protocol-observer",
+        "0xzahra/flop-inference-evidence",
         "0xzero1910/tc-cli",
         "0xzoz/awesome-technocore",
         "10tenchan109/technocore-census",
