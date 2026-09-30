@@ -1,10 +1,10 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-30T09:07:06Z",
+  "generated_at": "2026-09-30T11:25:55Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "fetch_incidents": {
-    "collected_at": "2026-09-30T09:07:01Z",
+    "collected_at": "2026-09-30T11:25:51Z",
     "collection_accepted": true,
     "count": 0,
     "evidence_cache_backlog": {
@@ -987,8 +987,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1230,
-      "digest": "sha256:07eb818957dbe774728aa311987260fb8d62f95b4ed1bcb20e3f51feb84cfb7c",
+      "count": 1231,
+      "digest": "sha256:77b2317fbc665f1bef5542c482d62f9071046fc30c9580e31311e8f27ed82851",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0andadream/technocore-community-leaderboard",
@@ -2012,6 +2012,7 @@
         "raya3211/technocore-chat-town",
         "raya3211/technocore-did-registry-mirror",
         "raya3211/technocore-tictactoe",
+        "reboursnaoki/flop-agent",
         "recails/technocore-nonce-inspector",
         "relvetic-netizen/technocore-census",
         "relvetic-netizen/technocore-client",

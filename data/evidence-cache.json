@@ -7023,6 +7023,10 @@
 "checked_at": "2026-09-16T12:59:00Z",
 "why": ""
 },
+"reboursnaoki/flop-agent": {
+"checked_at": "2026-09-30T11:19:32Z",
+"why": "README mentions technocore and 'technocore.chat'"
+},
 "recails/technocore-nonce-inspector": {
 "checked_at": null,
 "note": "read from the pre-2026-09-16 bare-string cache format",
