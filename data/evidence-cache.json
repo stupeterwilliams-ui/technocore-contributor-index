@@ -8432,5 +8432,13 @@
 "checked_at": null,
 "note": "read from the pre-2026-09-16 bare-string cache format",
 "why": "description mentions technocore and '$flop'"
+},
+"zwf5458/FLOP-Operator-Handbook": {
+"checked_at": "2026-09-30T04:24:31Z",
+"why": "README mentions technocore and 'technocore.chat'"
+},
+"zwf5458/FLOP-Pulse-Monitor": {
+"checked_at": "2026-09-30T04:24:31Z",
+"why": "README mentions technocore and 'technocore.chat'"
 }
 }

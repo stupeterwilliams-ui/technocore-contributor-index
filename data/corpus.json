@@ -1,10 +1,10 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-09-30T03:21:54Z",
+  "generated_at": "2026-09-30T04:30:17Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "fetch_incidents": {
-    "collected_at": "2026-09-30T03:21:51Z",
+    "collected_at": "2026-09-30T04:30:13Z",
     "collection_accepted": true,
     "count": 0,
     "evidence_cache_backlog": {
@@ -986,8 +986,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1227,
-      "digest": "sha256:f60b3e871ff1f5f282addeed477173d9525b6a64f91550325314943ac8bd1cce",
+      "count": 1229,
+      "digest": "sha256:afcbf16d2f847d8c5984dd05925c4cce0aacf223f3bf56d37b7fb5e4bb8ab971",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0andadream/technocore-community-leaderboard",
@@ -2215,14 +2215,16 @@
         "zudoria/FLOP-Has-a-Timeout-Problem-And-That-s-a-Good-Thing",
         "zunmax/awesome-technocore",
         "zunmax/technocore-agent-orchestrator",
-        "zunmax/technocore-did-starter"
+        "zunmax/technocore-did-starter",
+        "zwf5458/FLOP-Operator-Handbook",
+        "zwf5458/FLOP-Pulse-Monitor"
       ]
     },
     "proofs": {
       "description": "Contribution proofs found by code search, plus a direct probe of every discovered artifact repository for a root contribution-proof.json.",
       "method": "search/code 'technocore-contribution-proof-v1', all pages, unioned with a direct fetch per artifact repo",
-      "count": 178,
-      "digest": "sha256:3faeda7cd598231039f77c856a0edd9f23688b08a931e42bd0efaab9f626cbac",
+      "count": 179,
+      "digest": "sha256:87150631703819ceac8bca3604f6b59d1a5bc0f0aa66f553c40facc159038dd8",
       "identifiers": [
         "0o0r7/Fri/docs/PROJECT_CONTEXT.md",
         "0o0r7/Fri/docs/fri-flop-ecosystem-knowledge-brief.md",
@@ -2401,7 +2403,8 @@
         "zaddy6969/TECHNOCORE-DID-STARTER/contribution-proof.json",
         "zengjingsi/technocore-did-starter/contribution-proof.json",
         "zorba999/technocore-did-starter/contribution-proof.json",
-        "zunmax/technocore-did-starter/technocore_agent.py"
+        "zunmax/technocore-did-starter/technocore_agent.py",
+        "zwf5458/FLOP-Operator-Handbook/contribution-proof.json"
       ]
     }
   }
