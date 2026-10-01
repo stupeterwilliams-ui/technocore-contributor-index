@@ -2729,6 +2729,10 @@
 "note": "read from the pre-2026-09-16 bare-string cache format",
 "why": "README mentions technocore and 'did:key'"
 },
+"Unrecordedxyz/close-call-leaderboard": {
+"checked_at": "2026-10-01T18:31:12Z",
+"why": "README mentions technocore and 'technocore.chat'"
+},
 "Usha-Mounika/Samsung_PD": {
 "checked_at": "2026-09-16T12:57:00Z",
 "why": ""
