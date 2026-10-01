@@ -1,10 +1,10 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-10-01T00:10:16Z",
+  "generated_at": "2026-10-01T13:59:08Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "fetch_incidents": {
-    "collected_at": "2026-10-01T00:10:11Z",
+    "collected_at": "2026-10-01T13:59:04Z",
     "collection_accepted": true,
     "count": 0,
     "evidence_cache_backlog": {
@@ -2228,8 +2228,8 @@
     "proofs": {
       "description": "Contribution proofs found by code search, plus a direct probe of every discovered artifact repository for a root contribution-proof.json.",
       "method": "search/code 'technocore-contribution-proof-v1', all pages, unioned with a direct fetch per artifact repo",
-      "count": 180,
-      "digest": "sha256:386c098df18f5d803807cf4c96a5e6abdd6a5985a792b05924ff5ff34ecf609f",
+      "count": 181,
+      "digest": "sha256:5fc56e0590ebc375fe4d77a9b36482b522bd343aa425d91175ed917fccc6ae17",
       "identifiers": [
         "0o0r7/Fri/docs/PROJECT_CONTEXT.md",
         "0o0r7/Fri/docs/fri-flop-ecosystem-knowledge-brief.md",
@@ -2329,6 +2329,7 @@
         "heresyxx001/technocore-client-ts/contribution-proof.json",
         "heresyxx001/technocore-telegram-monitor/contribution-proof.json",
         "hubofvalley/technocore-did-guide/contribution-proof.json",
+        "hyperoxy/technocore-client/contribution-proof.json",
         "iyop666/technocore-py/contribution-proof.json",
         "jiangzhijie/technocore-hanrelay-zh/contribution-proof.json",
         "jvaleskadevs/technocore-quickstart/contribution-proof.json",
