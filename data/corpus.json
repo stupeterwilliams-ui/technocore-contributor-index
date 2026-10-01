@@ -1,10 +1,10 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-10-01T13:59:08Z",
+  "generated_at": "2026-10-01T17:28:14Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "fetch_incidents": {
-    "collected_at": "2026-10-01T13:59:04Z",
+    "collected_at": "2026-10-01T17:28:09Z",
     "collection_accepted": true,
     "count": 0,
     "evidence_cache_backlog": {
@@ -988,11 +988,12 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1232,
-      "digest": "sha256:1a6e1ab2413f8b52a6d006608d410348ba3b8da9a05f8b0610853c0b8bdb1268",
+      "count": 1233,
+      "digest": "sha256:181b6bfd2774e5446956009f3e5633b7b0798bcf6913c132d1ebc170fb28b3dc",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0andadream/technocore-community-leaderboard",
+        "0andadream/technocore-dashboard",
         "0o0r7/Fri",
         "0o0r7/flopkit-sdk",
         "0ogodboyo0/technocore-evidence-guide",

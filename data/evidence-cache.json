@@ -16,6 +16,10 @@
 "checked_at": "2026-09-26T22:54:16Z",
 "why": "README mentions technocore and 'technocore.chat'"
 },
+"0andadream/technocore-dashboard": {
+"checked_at": "2026-10-01T16:11:17Z",
+"why": "README mentions technocore and 'flop-labs'"
+},
 "0o0r7/Fri": {
 "checked_at": null,
 "note": "read from the pre-2026-09-16 bare-string cache format",
