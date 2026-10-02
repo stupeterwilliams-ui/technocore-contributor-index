@@ -7067,6 +7067,10 @@
 "note": "read from the pre-2026-09-16 bare-string cache format",
 "why": "README mentions technocore and 'technocore.chat'"
 },
+"renhi/technocore-contribution-notes": {
+"checked_at": "2026-10-02T10:37:59Z",
+"why": "README mentions technocore and 'technocore.chat'"
+},
 "renma45/technocore-tutorial": {
 "checked_at": null,
 "note": "read from the pre-2026-09-16 bare-string cache format",
