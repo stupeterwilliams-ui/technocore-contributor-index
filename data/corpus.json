@@ -1,10 +1,10 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-10-02T14:12:16Z",
+  "generated_at": "2026-10-02T15:22:30Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "fetch_incidents": {
-    "collected_at": "2026-10-02T14:12:13Z",
+    "collected_at": "2026-10-02T15:22:25Z",
     "collection_accepted": true,
     "count": 0,
     "evidence_cache_backlog": {
@@ -2236,8 +2236,8 @@
     "proofs": {
       "description": "Contribution proofs found by code search, plus a direct probe of every discovered artifact repository for a root contribution-proof.json.",
       "method": "search/code 'technocore-contribution-proof-v1', all pages, unioned with a direct fetch per artifact repo",
-      "count": 181,
-      "digest": "sha256:5fc56e0590ebc375fe4d77a9b36482b522bd343aa425d91175ed917fccc6ae17",
+      "count": 180,
+      "digest": "sha256:049044b161b7395c4dc735b0f38da2a8d1fa17359a587e3527a98d424282911c",
       "identifiers": [
         "0o0r7/Fri/docs/PROJECT_CONTEXT.md",
         "0o0r7/Fri/docs/fri-flop-ecosystem-knowledge-brief.md",
@@ -2293,7 +2293,6 @@
         "Nathbabu/technocore-explorer/contribution-proof.json",
         "RockDockMusic/technocore-nonce-reconciler/contribution-proof.json",
         "SalfianF/technocore-contribution/contribution-proof.json",
-        "Shaweeen/newpeee-technocore-field-notes/contribution-proof.json",
         "SipSplit/technocore-signal/contribution-proof.json",
         "Siriron/technocore-identity/public/index.html",
         "Siriron/technocore-identity/public/js/crypto-client.js",
