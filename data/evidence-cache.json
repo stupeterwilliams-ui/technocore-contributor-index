@@ -855,6 +855,10 @@
 "checked_at": "2026-09-16T12:55:28Z",
 "why": ""
 },
+"CryptaniC/technocore-agent-explorer": {
+"checked_at": "2026-10-02T23:21:17Z",
+"why": ""
+},
 "Crypto-Crood/technocore-termux-helper": {
 "checked_at": "2026-09-16T12:55:29Z",
 "why": ""
@@ -4744,6 +4748,10 @@
 "note": "read from the pre-2026-09-16 bare-string cache format",
 "why": "README mentions technocore and 'technocore.chat'"
 },
+"flopalpha/technocore-agent-heartbeat": {
+"checked_at": "2026-10-02T23:21:17Z",
+"why": ""
+},
 "flopalpha/technocore-agent-reporting": {
 "checked_at": "2026-09-16T12:57:52Z",
 "why": ""
@@ -6826,6 +6834,10 @@
 "checked_at": "2026-09-16T12:58:54Z",
 "why": ""
 },
+"paulocfmarques-collab/esp32_central": {
+"checked_at": "2026-10-02T22:11:26Z",
+"why": ""
+},
 "pcardaba/TimeIt": {
 "checked_at": "2026-09-16T12:58:55Z",
 "why": ""
@@ -7213,6 +7225,10 @@
 "samhitausharma-droid/Openlane-SKY130-WORKSHOP": {
 "checked_at": "2026-09-16T12:59:05Z",
 "why": ""
+},
+"sammy-XXIV/technocore-did-guide": {
+"checked_at": "2026-10-02T23:21:18Z",
+"why": "README mentions technocore and 'technocore.chat'"
 },
 "sammybr1m1xalt/kibble": {
 "checked_at": null,

@@ -1,10 +1,10 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-10-02T18:50:11Z",
+  "generated_at": "2026-10-02T23:27:24Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "fetch_incidents": {
-    "collected_at": "2026-10-02T18:50:07Z",
+    "collected_at": "2026-10-02T23:27:20Z",
     "collection_accepted": true,
     "count": 0,
     "evidence_cache_backlog": {
@@ -994,8 +994,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1236,
-      "digest": "sha256:1446005dbf87832c0c63ae1bf45c77e5927bcb7a29dbd59eab9974f63f5305d5",
+      "count": 1237,
+      "digest": "sha256:9db97791009d76e4387ccd3b6ef29e4859f7a5448fab0c10c4f31e86f3868aab",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0andadream/technocore-community-leaderboard",
@@ -2046,6 +2046,7 @@
         "sailorpepe/undesirables-mcp-server",
         "sajicosaji/technocore-note-refresh",
         "sajicosaji/technocore-note-refresh-v2",
+        "sammy-XXIV/technocore-did-guide",
         "sammybr1m1xalt/kibble-verifier",
         "sanshos1/technocore-room-exporter",
         "sanukiudonholic/technocore-agent-kit",
