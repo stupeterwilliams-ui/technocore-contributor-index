@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-02T10:44:48Z",
-  "collected_at": "2026-10-02T10:44:45Z",
+  "generated_at": "2026-10-02T13:03:19Z",
+  "collected_at": "2026-10-02T13:03:15Z",
   "upstream_repo": "flop-labs/technocore-chat",
   "weights": {
     "merged_pr": 10,
@@ -779,6 +779,77 @@
       "rank": 11
     },
     {
+      "login": "erhnysr",
+      "score": 25,
+      "is_maintainer": false,
+      "is_author_of_this_board": false,
+      "counts": {
+        "merged_prs": 1,
+        "issues_credited": 0,
+        "verified_proofs": 0,
+        "artifacts": 3,
+        "absorbed": 1
+      },
+      "evidence": [
+        {
+          "signal": "merged_pr",
+          "points": 10,
+          "what": "merged PR #491: fix(manifest): fullmatch the Host header so a trailing newline cannot reach published URLs",
+          "url": "https://github.com/flop-labs/technocore-chat/pull/491"
+        },
+        {
+          "signal": "absorbed_into_merged_pr",
+          "points": 5,
+          "what": "PR #691 closed for merged #163: fix(limit): eliminate move_to_end race in take() on _buckets OrderedDict",
+          "url": "https://github.com/flop-labs/technocore-chat/pull/691"
+        },
+        {
+          "signal": "artifact_references_technocore",
+          "points": 2,
+          "what": "public artifact erhnysr/wisp",
+          "url": "https://github.com/erhnysr/wisp"
+        },
+        {
+          "signal": "artifact_has_license",
+          "points": 1,
+          "what": "erhnysr/wisp has a licence",
+          "url": "https://github.com/erhnysr/wisp"
+        },
+        {
+          "signal": "artifact_maintained_past_first_day",
+          "points": 1,
+          "what": "erhnysr/wisp had commits after its first day",
+          "url": "https://github.com/erhnysr/wisp"
+        },
+        {
+          "signal": "artifact_references_technocore",
+          "points": 2,
+          "what": "public artifact erhnysr/awesome-technocore",
+          "url": "https://github.com/erhnysr/awesome-technocore"
+        },
+        {
+          "signal": "artifact_maintained_past_first_day",
+          "points": 1,
+          "what": "erhnysr/awesome-technocore had commits after its first day",
+          "url": "https://github.com/erhnysr/awesome-technocore"
+        },
+        {
+          "signal": "artifact_references_technocore",
+          "points": 2,
+          "what": "public artifact erhnysr/technocore-faucet-analysis",
+          "url": "https://github.com/erhnysr/technocore-faucet-analysis"
+        },
+        {
+          "signal": "artifact_has_description",
+          "points": 1,
+          "what": "erhnysr/technocore-faucet-analysis has a description",
+          "url": "https://github.com/erhnysr/technocore-faucet-analysis"
+        }
+      ],
+      "artifacts_beyond_cap": 1,
+      "rank": 12
+    },
+    {
       "login": "AbstrusImad",
       "score": 24,
       "is_maintainer": false,
@@ -842,7 +913,7 @@
           "url": "https://github.com/AbstrusImad/technocore-room-metrics"
         }
       ],
-      "rank": 12
+      "rank": 13
     },
     {
       "login": "almondous",
@@ -888,7 +959,7 @@
           "url": "https://github.com/almondous/flop_flop"
         }
       ],
-      "rank": 13
+      "rank": 14
     },
     {
       "login": "alwialhuda11",
@@ -954,7 +1025,7 @@
           "url": "https://github.com/alwialhuda11/technocore-client"
         }
       ],
-      "rank": 14
+      "rank": 15
     },
     {
       "login": "chip1chapa",
@@ -1020,7 +1091,7 @@
           "url": "https://github.com/chip1chapa/technocore-contribution-action"
         }
       ],
-      "rank": 15
+      "rank": 16
     },
     {
       "login": "domwalker203",
@@ -1086,71 +1157,6 @@
           "url": "https://github.com/domwalker203/technocore-signal-relay"
         }
       ],
-      "rank": 16
-    },
-    {
-      "login": "erhnysr",
-      "score": 24,
-      "is_maintainer": false,
-      "is_author_of_this_board": false,
-      "counts": {
-        "merged_prs": 1,
-        "issues_credited": 0,
-        "verified_proofs": 0,
-        "artifacts": 3,
-        "absorbed": 1
-      },
-      "evidence": [
-        {
-          "signal": "merged_pr",
-          "points": 10,
-          "what": "merged PR #491: fix(manifest): fullmatch the Host header so a trailing newline cannot reach published URLs",
-          "url": "https://github.com/flop-labs/technocore-chat/pull/491"
-        },
-        {
-          "signal": "absorbed_into_merged_pr",
-          "points": 5,
-          "what": "PR #691 closed for merged #163: fix(limit): eliminate move_to_end race in take() on _buckets OrderedDict",
-          "url": "https://github.com/flop-labs/technocore-chat/pull/691"
-        },
-        {
-          "signal": "artifact_references_technocore",
-          "points": 2,
-          "what": "public artifact erhnysr/wisp",
-          "url": "https://github.com/erhnysr/wisp"
-        },
-        {
-          "signal": "artifact_maintained_past_first_day",
-          "points": 1,
-          "what": "erhnysr/wisp had commits after its first day",
-          "url": "https://github.com/erhnysr/wisp"
-        },
-        {
-          "signal": "artifact_references_technocore",
-          "points": 2,
-          "what": "public artifact erhnysr/awesome-technocore",
-          "url": "https://github.com/erhnysr/awesome-technocore"
-        },
-        {
-          "signal": "artifact_maintained_past_first_day",
-          "points": 1,
-          "what": "erhnysr/awesome-technocore had commits after its first day",
-          "url": "https://github.com/erhnysr/awesome-technocore"
-        },
-        {
-          "signal": "artifact_references_technocore",
-          "points": 2,
-          "what": "public artifact erhnysr/technocore-faucet-analysis",
-          "url": "https://github.com/erhnysr/technocore-faucet-analysis"
-        },
-        {
-          "signal": "artifact_has_description",
-          "points": 1,
-          "what": "erhnysr/technocore-faucet-analysis has a description",
-          "url": "https://github.com/erhnysr/technocore-faucet-analysis"
-        }
-      ],
-      "artifacts_beyond_cap": 1,
       "rank": 17
     },
     {

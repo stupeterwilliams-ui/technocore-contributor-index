@@ -4760,6 +4760,10 @@
 "checked_at": "2026-09-18T13:24:45Z",
 "why": ""
 },
+"flopalpha/technocore-vps-health-telemetry-lens-for-technocore-agen": {
+"checked_at": "2026-10-02T12:56:24Z",
+"why": "README mentions technocore and 'did:key'"
+},
 "flopbuilder-dev/technocore-room-slot-watcher": {
 "checked_at": null,
 "note": "read from the pre-2026-09-16 bare-string cache format",
