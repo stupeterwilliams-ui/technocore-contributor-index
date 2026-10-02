@@ -4752,6 +4752,10 @@
 "checked_at": "2026-09-26T14:53:25Z",
 "why": "README mentions technocore and 'did:key'"
 },
+"flopalpha/technocore-hollow-check-mutation-guard-for-technocore-py": {
+"checked_at": "2026-10-02T02:35:02Z",
+"why": ""
+},
 "flopalpha/technocore-signed-tape-tracer-and-conformance": {
 "checked_at": "2026-09-18T13:24:45Z",
 "why": ""
@@ -7488,6 +7492,10 @@
 "checked_at": null,
 "note": "read from the pre-2026-09-16 bare-string cache format",
 "why": "README mentions technocore and 'technocore.chat'"
+},
+"snarsnat/tclk-deals": {
+"checked_at": "2026-10-02T02:35:02Z",
+"why": "description mentions technocore and 'technocore.chat'"
 },
 "snidova1/technocore-signature-verifier": {
 "checked_at": null,
