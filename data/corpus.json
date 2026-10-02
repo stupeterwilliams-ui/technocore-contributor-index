@@ -1,10 +1,10 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-10-02T15:22:30Z",
+  "generated_at": "2026-10-02T16:31:32Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "fetch_incidents": {
-    "collected_at": "2026-10-02T15:22:25Z",
+    "collected_at": "2026-10-02T16:31:28Z",
     "collection_accepted": true,
     "count": 0,
     "evidence_cache_backlog": {
@@ -34,8 +34,8 @@
     "pulls": {
       "description": "Every pull request against the upstream repo, all states.",
       "method": "gh pr list --repo flop-labs/technocore-chat --state {merged,open,closed}, paged to exhaustion; a listing that comes back at exactly its row cap is refused rather than published, so a count here is the whole set or there is no manifest at all. See bin/fetch.py:gh_list.",
-      "count": 742,
-      "digest": "sha256:be549571708c25243eae97032ef746ec1e81b33c8b1e367e54b1ff49efefdf21",
+      "count": 743,
+      "digest": "sha256:2c5c2278a3efc43b15e735c6593cfd66d9618d0fc3441f9313c5e27b6474819f",
       "identifiers": [
         "pr#1",
         "pr#10",
@@ -775,6 +775,7 @@
         "pr#948",
         "pr#950",
         "pr#951",
+        "pr#952",
         "pr#96",
         "pr#97",
         "pr#98",
@@ -784,8 +785,8 @@
     "issues": {
       "description": "Every issue against the upstream repo, all states.",
       "method": "gh issue list --repo flop-labs/technocore-chat --state all, paged to exhaustion; see the note on pulls above.",
-      "count": 199,
-      "digest": "sha256:8bd00878c5cc2a30a85734ab8c53704b926defae7b9e269bdc93f83ea560c453",
+      "count": 200,
+      "digest": "sha256:0fc04e931cc200f90991c688879425122d864049fb155500168c9ab8282c2900",
       "identifiers": [
         "issue#101",
         "issue#105",
@@ -985,14 +986,15 @@
         "issue#945",
         "issue#947",
         "issue#949",
-        "issue#95"
+        "issue#95",
+        "issue#953"
       ]
     },
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1237,
-      "digest": "sha256:c7365354a12ed35a2f75290b65d1e9fab9ac604e52bee4a526e1f3aef0db0f36",
+      "count": 1236,
+      "digest": "sha256:1446005dbf87832c0c63ae1bf45c77e5927bcb7a29dbd59eab9974f63f5305d5",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0andadream/technocore-community-leaderboard",
@@ -1328,7 +1330,6 @@
         "Sertug17/technocore-explorer",
         "Shahzuby/flop-agent-one-click",
         "ShaneKSEO/technocore-agent-security-harness",
-        "Shaweeen/newpeee-technocore-field-notes",
         "Shinshingooo/technocore-agent-kit",
         "Shun-toda/technocore-cc",
         "SifatHossain456/technocore-flop-agent-hub",
