@@ -1,10 +1,10 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-10-03T08:36:24Z",
+  "generated_at": "2026-10-03T14:23:11Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "fetch_incidents": {
-    "collected_at": "2026-10-03T08:36:20Z",
+    "collected_at": "2026-10-03T14:23:07Z",
     "collection_accepted": true,
     "count": 0,
     "evidence_cache_backlog": {
@@ -786,8 +786,8 @@
     "issues": {
       "description": "Every issue against the upstream repo, all states.",
       "method": "gh issue list --repo flop-labs/technocore-chat --state all, paged to exhaustion; see the note on pulls above.",
-      "count": 200,
-      "digest": "sha256:0fc04e931cc200f90991c688879425122d864049fb155500168c9ab8282c2900",
+      "count": 201,
+      "digest": "sha256:c33049f5e66cf70c959e5f587ab407d9badaeb5761256b0d8330348333a1d7c4",
       "identifiers": [
         "issue#101",
         "issue#105",
@@ -988,7 +988,8 @@
         "issue#947",
         "issue#949",
         "issue#95",
-        "issue#953"
+        "issue#953",
+        "issue#955"
       ]
     },
     "artifacts": {
