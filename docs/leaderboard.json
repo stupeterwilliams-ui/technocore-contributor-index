@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-02T23:27:24Z",
-  "collected_at": "2026-10-02T23:27:20Z",
+  "generated_at": "2026-10-03T08:36:23Z",
+  "collected_at": "2026-10-03T08:36:20Z",
   "upstream_repo": "flop-labs/technocore-chat",
   "weights": {
     "merged_pr": 10,
@@ -30937,34 +30937,6 @@
       "rank": 786
     },
     {
-      "login": "jawadvip1982-boop",
-      "score": 3,
-      "is_maintainer": false,
-      "is_author_of_this_board": false,
-      "counts": {
-        "merged_prs": 0,
-        "issues_credited": 0,
-        "verified_proofs": 0,
-        "artifacts": 1,
-        "absorbed": 0
-      },
-      "evidence": [
-        {
-          "signal": "artifact_references_technocore",
-          "points": 2,
-          "what": "public artifact jawadvip1982-boop/technocore-did-starter",
-          "url": "https://github.com/jawadvip1982-boop/technocore-did-starter"
-        },
-        {
-          "signal": "artifact_has_license",
-          "points": 1,
-          "what": "jawadvip1982-boop/technocore-did-starter has a licence",
-          "url": "https://github.com/jawadvip1982-boop/technocore-did-starter"
-        }
-      ],
-      "rank": 787
-    },
-    {
       "login": "Jay0xx",
       "score": 3,
       "is_maintainer": false,
@@ -30990,7 +30962,7 @@
           "url": "https://github.com/Jay0xx/technocore-monitor"
         }
       ],
-      "rank": 788
+      "rank": 787
     },
     {
       "login": "Jilvert22",
@@ -31018,7 +30990,7 @@
           "url": "https://github.com/Jilvert22/technocore-openssl"
         }
       ],
-      "rank": 789
+      "rank": 788
     },
     {
       "login": "joeboy001-byte",
@@ -31046,7 +31018,7 @@
           "url": "https://github.com/joeboy001-byte/technocore-evidence-checker"
         }
       ],
-      "rank": 790
+      "rank": 789
     },
     {
       "login": "jolajumoke",
@@ -31074,7 +31046,7 @@
           "url": "https://github.com/jolajumoke/technocore-beginner-guide"
         }
       ],
-      "rank": 791
+      "rank": 790
     },
     {
       "login": "joshberen",
@@ -31102,7 +31074,7 @@
           "url": "https://github.com/joshberen/technocore-did-guide"
         }
       ],
-      "rank": 792
+      "rank": 791
     },
     {
       "login": "JudeOlowu",
@@ -31130,7 +31102,7 @@
           "url": "https://github.com/JudeOlowu/flop-technocore-leaderboard"
         }
       ],
-      "rank": 793
+      "rank": 792
     },
     {
       "login": "jumfarm001",
@@ -31158,7 +31130,7 @@
           "url": "https://github.com/jumfarm001/technocore-cheatsheet"
         }
       ],
-      "rank": 794
+      "rank": 793
     },
     {
       "login": "jumfarm033815",
@@ -31186,7 +31158,7 @@
           "url": "https://github.com/jumfarm033815/tc-room-watch"
         }
       ],
-      "rank": 795
+      "rank": 794
     },
     {
       "login": "jumfarm0421301",
@@ -31214,7 +31186,7 @@
           "url": "https://github.com/jumfarm0421301/technocore-limits"
         }
       ],
-      "rank": 796
+      "rank": 795
     },
     {
       "login": "justuncase1210-del",
@@ -31242,7 +31214,7 @@
           "url": "https://github.com/justuncase1210-del/technocore-archive"
         }
       ],
-      "rank": 797
+      "rank": 796
     },
     {
       "login": "kabla1696-ctrl",
@@ -31270,7 +31242,7 @@
           "url": "https://github.com/kabla1696-ctrl/technocore-protocol-observatory"
         }
       ],
-      "rank": 798
+      "rank": 797
     },
     {
       "login": "kberkan",
@@ -31298,7 +31270,7 @@
           "url": "https://github.com/kberkan/technocore-logo-submission"
         }
       ],
-      "rank": 799
+      "rank": 798
     },
     {
       "login": "kenkenbobo",
@@ -31324,6 +31296,34 @@
           "points": 1,
           "what": "kenkenbobo/technocore-signer-mcp has a licence",
           "url": "https://github.com/kenkenbobo/technocore-signer-mcp"
+        }
+      ],
+      "rank": 799
+    },
+    {
+      "login": "kevalin-tech",
+      "score": 3,
+      "is_maintainer": false,
+      "is_author_of_this_board": false,
+      "counts": {
+        "merged_prs": 0,
+        "issues_credited": 0,
+        "verified_proofs": 0,
+        "artifacts": 1,
+        "absorbed": 0
+      },
+      "evidence": [
+        {
+          "signal": "artifact_references_technocore",
+          "points": 2,
+          "what": "public artifact kevalin-tech/flop-trading",
+          "url": "https://github.com/kevalin-tech/flop-trading"
+        },
+        {
+          "signal": "artifact_has_description",
+          "points": 1,
+          "what": "kevalin-tech/flop-trading has a description",
+          "url": "https://github.com/kevalin-tech/flop-trading"
         }
       ],
       "rank": 800

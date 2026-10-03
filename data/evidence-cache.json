@@ -5790,6 +5790,10 @@
 "checked_at": "2026-09-16T12:58:22Z",
 "why": ""
 },
+"kevalin-tech/flop-trading": {
+"checked_at": "2026-10-03T07:21:32Z",
+"why": "README mentions technocore and 'technocore.chat'"
+},
 "keyneszeng/technocore-guide-zh": {
 "checked_at": null,
 "note": "read from the pre-2026-09-16 bare-string cache format",
