@@ -392,6 +392,10 @@
 "note": "read from the pre-2026-09-16 bare-string cache format",
 "why": "description mentions technocore and 'flop labs'"
 },
+"A-Raphie/Technocore-Did-Starter": {
+"checked_at": "2026-10-04T13:17:32Z",
+"why": "README mentions technocore and 'flop labs'"
+},
 "A-Raphie/technocore-did-starter": {
 "checked_at": null,
 "note": "read from the pre-2026-09-16 bare-string cache format",
