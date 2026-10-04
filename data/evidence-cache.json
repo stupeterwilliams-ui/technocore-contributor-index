@@ -1610,6 +1610,10 @@
 "note": "read from the pre-2026-09-16 bare-string cache format",
 "why": "README mentions technocore and 'technocore.chat'"
 },
+"Makabeez/bountycourt-app": {
+"checked_at": "2026-10-03T20:04:00Z",
+"why": "README mentions technocore and 'technocore.chat'"
+},
 "Makabeez/credence-score": {
 "checked_at": null,
 "note": "read from the pre-2026-09-16 bare-string cache format",
@@ -4853,6 +4857,10 @@
 },
 "frstrtr/c2pool": {
 "checked_at": "2026-09-16T12:57:53Z",
+"why": ""
+},
+"frstrtr/technocore-site": {
+"checked_at": "2026-10-04T12:08:20Z",
 "why": ""
 },
 "fufellen/fpga_tdc_simulator": {

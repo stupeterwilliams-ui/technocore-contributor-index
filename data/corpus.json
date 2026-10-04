@@ -1,10 +1,10 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-10-03T16:42:06Z",
+  "generated_at": "2026-10-04T12:14:48Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "fetch_incidents": {
-    "collected_at": "2026-10-03T16:42:02Z",
+    "collected_at": "2026-10-04T12:14:44Z",
     "collection_accepted": true,
     "count": 0,
     "evidence_cache_backlog": {
@@ -995,8 +995,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1237,
-      "digest": "sha256:1f4f692e605f1adb624645be0bffd6bf57c02c1e15d2e1cccee6dd7a115315d3",
+      "count": 1238,
+      "digest": "sha256:53fc35f2d0a21a4bf43a561a917427e9caf71696c31fe7d8d16a92a0f84be7b8",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0andadream/technocore-community-leaderboard",
@@ -1245,6 +1245,7 @@
         "Magicianhax/technocore-js",
         "Maje53/technocore-explorer",
         "Makabeez/awesome-technocore",
+        "Makabeez/bountycourt-app",
         "Makabeez/credence-score",
         "Makabeez/tclk-arbiter",
         "Makabeez/technocore-did-starter",
