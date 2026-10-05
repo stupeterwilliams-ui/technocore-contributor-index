@@ -1,10 +1,10 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-10-05T13:48:12Z",
+  "generated_at": "2026-10-05T19:43:42Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "fetch_incidents": {
-    "collected_at": "2026-10-05T13:48:07Z",
+    "collected_at": "2026-10-05T19:43:38Z",
     "collection_accepted": true,
     "count": 0,
     "evidence_cache_backlog": {
@@ -998,8 +998,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1238,
-      "digest": "sha256:7b9eded880f13a6e6196575229a2fd417299808f00da49d23eb9a84a5cc88cb8",
+      "count": 1239,
+      "digest": "sha256:934de4c62990d4635706bb4515d0200d5bfbdb281f7e04f8f1d763b7996816e5",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0andadream/technocore-community-leaderboard",
@@ -1256,6 +1256,7 @@
         "Makabeez/technocore-verify",
         "Mananze-OS/-technocore-agent-registry",
         "Mananze-OS/Technocore-Guide",
+        "Marcus-AMan/technocore-signature-proof-guide",
         "Mariukasfak/flop-evidence-scout",
         "MdDevCoder/technocore-agent-starter",
         "Megacollins/technocore-mcp",
