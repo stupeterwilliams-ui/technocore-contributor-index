@@ -3266,6 +3266,10 @@
 "checked_at": "2026-09-16T12:57:15Z",
 "why": ""
 },
+"anneqaq/dsh-embedded-kit": {
+"checked_at": "2026-10-05T11:20:42Z",
+"why": ""
+},
 "anomaliagent007-hue/technocore-demo": {
 "checked_at": null,
 "note": "read from the pre-2026-09-16 bare-string cache format",
