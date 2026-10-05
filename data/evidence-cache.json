@@ -603,6 +603,10 @@
 "checked_at": "2026-09-16T12:55:20Z",
 "why": ""
 },
+"Asadlee24/Asadlee24": {
+"checked_at": "2026-10-05T07:49:24Z",
+"why": ""
+},
 "Asadlee24/technocore-agent-kit": {
 "checked_at": null,
 "note": "read from the pre-2026-09-16 bare-string cache format",
@@ -1427,6 +1431,10 @@
 "KattyFury/build-with-technocore": {
 "checked_at": null,
 "note": "read from the pre-2026-09-16 bare-string cache format",
+"why": "description mentions technocore and 'flop labs'"
+},
+"KattyFury/guide_floplabs_build-on-floplabs": {
+"checked_at": "2026-10-05T06:39:37Z",
 "why": "description mentions technocore and 'flop labs'"
 },
 "Keleto44/Inside-a-TCLK-Message": {
@@ -6134,6 +6142,10 @@
 "majiayu000/awesome-grok-bot": {
 "checked_at": "2026-09-16T12:58:27Z",
 "why": ""
+},
+"majorML/stacks-technocore-bridge": {
+"checked_at": "2026-10-05T10:10:06Z",
+"why": "README mentions technocore and 'technocore.chat'"
 },
 "mamadghavam/technocore-persian-guide": {
 "checked_at": "2026-09-16T12:58:27Z",

@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-04T18:02:56Z",
-  "collected_at": "2026-10-04T18:02:52Z",
+  "generated_at": "2026-10-05T10:17:46Z",
+  "collected_at": "2026-10-05T10:17:42Z",
   "upstream_repo": "flop-labs/technocore-chat",
   "weights": {
     "merged_pr": 10,
@@ -15468,26 +15468,26 @@
         {
           "signal": "artifact_references_technocore",
           "points": 2,
-          "what": "public artifact KattyFury/build-with-technocore",
-          "url": "https://github.com/KattyFury/build-with-technocore"
+          "what": "public artifact KattyFury/guide_floplabs_build-on-floplabs",
+          "url": "https://github.com/KattyFury/guide_floplabs_build-on-floplabs"
         },
         {
           "signal": "artifact_has_license",
           "points": 1,
-          "what": "KattyFury/build-with-technocore has a licence",
-          "url": "https://github.com/KattyFury/build-with-technocore"
+          "what": "KattyFury/guide_floplabs_build-on-floplabs has a licence",
+          "url": "https://github.com/KattyFury/guide_floplabs_build-on-floplabs"
         },
         {
           "signal": "artifact_has_description",
           "points": 1,
-          "what": "KattyFury/build-with-technocore has a description",
-          "url": "https://github.com/KattyFury/build-with-technocore"
+          "what": "KattyFury/guide_floplabs_build-on-floplabs has a description",
+          "url": "https://github.com/KattyFury/guide_floplabs_build-on-floplabs"
         },
         {
           "signal": "artifact_maintained_past_first_day",
           "points": 1,
-          "what": "KattyFury/build-with-technocore had commits after its first day",
-          "url": "https://github.com/KattyFury/build-with-technocore"
+          "what": "KattyFury/guide_floplabs_build-on-floplabs had commits after its first day",
+          "url": "https://github.com/KattyFury/guide_floplabs_build-on-floplabs"
         }
       ],
       "rank": 321
@@ -15949,6 +15949,46 @@
       "rank": 333
     },
     {
+      "login": "majorML",
+      "score": 5,
+      "is_maintainer": false,
+      "is_author_of_this_board": false,
+      "counts": {
+        "merged_prs": 0,
+        "issues_credited": 0,
+        "verified_proofs": 0,
+        "artifacts": 1,
+        "absorbed": 0
+      },
+      "evidence": [
+        {
+          "signal": "artifact_references_technocore",
+          "points": 2,
+          "what": "public artifact majorML/stacks-technocore-bridge",
+          "url": "https://github.com/majorML/stacks-technocore-bridge"
+        },
+        {
+          "signal": "artifact_has_license",
+          "points": 1,
+          "what": "majorML/stacks-technocore-bridge has a licence",
+          "url": "https://github.com/majorML/stacks-technocore-bridge"
+        },
+        {
+          "signal": "artifact_has_description",
+          "points": 1,
+          "what": "majorML/stacks-technocore-bridge has a description",
+          "url": "https://github.com/majorML/stacks-technocore-bridge"
+        },
+        {
+          "signal": "artifact_maintained_past_first_day",
+          "points": 1,
+          "what": "majorML/stacks-technocore-bridge had commits after its first day",
+          "url": "https://github.com/majorML/stacks-technocore-bridge"
+        }
+      ],
+      "rank": 334
+    },
+    {
       "login": "manekinekotaro",
       "score": 5,
       "is_maintainer": false,
@@ -15984,46 +16024,6 @@
           "points": 1,
           "what": "manekinekotaro/safe-technocore-kit had commits after its first day",
           "url": "https://github.com/manekinekotaro/safe-technocore-kit"
-        }
-      ],
-      "rank": 334
-    },
-    {
-      "login": "Mayjor01",
-      "score": 5,
-      "is_maintainer": false,
-      "is_author_of_this_board": false,
-      "counts": {
-        "merged_prs": 0,
-        "issues_credited": 0,
-        "verified_proofs": 0,
-        "artifacts": 1,
-        "absorbed": 0
-      },
-      "evidence": [
-        {
-          "signal": "artifact_references_technocore",
-          "points": 2,
-          "what": "public artifact Mayjor01/stacks-technocore-bridge",
-          "url": "https://github.com/Mayjor01/stacks-technocore-bridge"
-        },
-        {
-          "signal": "artifact_has_license",
-          "points": 1,
-          "what": "Mayjor01/stacks-technocore-bridge has a licence",
-          "url": "https://github.com/Mayjor01/stacks-technocore-bridge"
-        },
-        {
-          "signal": "artifact_has_description",
-          "points": 1,
-          "what": "Mayjor01/stacks-technocore-bridge has a description",
-          "url": "https://github.com/Mayjor01/stacks-technocore-bridge"
-        },
-        {
-          "signal": "artifact_maintained_past_first_day",
-          "points": 1,
-          "what": "Mayjor01/stacks-technocore-bridge had commits after its first day",
-          "url": "https://github.com/Mayjor01/stacks-technocore-bridge"
         }
       ],
       "rank": 335
