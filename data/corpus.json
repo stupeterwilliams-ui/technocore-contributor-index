@@ -1,10 +1,10 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-10-05T19:43:42Z",
+  "generated_at": "2026-10-06T05:07:57Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "fetch_incidents": {
-    "collected_at": "2026-10-05T19:43:38Z",
+    "collected_at": "2026-10-06T05:07:53Z",
     "collection_accepted": true,
     "count": 0,
     "evidence_cache_backlog": {
@@ -34,8 +34,8 @@
     "pulls": {
       "description": "Every pull request against the upstream repo, all states.",
       "method": "gh pr list --repo flop-labs/technocore-chat --state {merged,open,closed}, paged to exhaustion; a listing that comes back at exactly its row cap is refused rather than published, so a count here is the whole set or there is no manifest at all. See bin/fetch.py:gh_list.",
-      "count": 747,
-      "digest": "sha256:05dfb657794964ac2a599dd2a966b7cb7dba5c053651c417a960f38ace4cdc5b",
+      "count": 749,
+      "digest": "sha256:5eb322de533f868dbd48b2b7f3bba8261140972cdae359b00542971cdb22d91c",
       "identifiers": [
         "pr#1",
         "pr#10",
@@ -780,7 +780,9 @@
         "pr#956",
         "pr#957",
         "pr#958",
+        "pr#959",
         "pr#96",
+        "pr#960",
         "pr#97",
         "pr#98",
         "pr#99"
@@ -998,8 +1000,8 @@
     "artifacts": {
       "description": "Public repositories that reference Technocore, after the README check. Search is paginated to exhaustion; see collect.py:search_all.",
       "method": "search/repositories over 4 queries, all pages, then a per-repo reference check",
-      "count": 1239,
-      "digest": "sha256:934de4c62990d4635706bb4515d0200d5bfbdb281f7e04f8f1d763b7996816e5",
+      "count": 1240,
+      "digest": "sha256:404fd73b77c02f483b11c73fb91a7698240bf97f06e9f7e8e4baab6ed8a050e3",
       "identifiers": [
         "00anon0X/technocore-signed-did-client",
         "0andadream/technocore-community-leaderboard",
@@ -1792,6 +1794,7 @@
         "itskirit/technocore-sentinel",
         "iyop666/technocore-py",
         "jackL1020/technocore-cn-guide",
+        "jdariko45/ai-agents-production",
         "jeni3188/technocore-termux-guide",
         "jesbennp/jesbennp",
         "jesbennp/technocore-patterns",
