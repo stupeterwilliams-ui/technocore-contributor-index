@@ -1235,6 +1235,10 @@
 "checked_at": "2026-09-16T12:55:42Z",
 "why": ""
 },
+"HE-Lingfeng/technocore-receipts": {
+"checked_at": "2026-10-06T09:42:29Z",
+"why": "README mentions technocore and 'technocore.chat'"
+},
 "HZJ0523/technocore-guide-zh": {
 "checked_at": null,
 "note": "read from the pre-2026-09-16 bare-string cache format",
