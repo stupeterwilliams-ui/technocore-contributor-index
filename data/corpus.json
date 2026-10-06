@@ -1,10 +1,10 @@
 {
   "schema": "corpus-manifest-v1",
   "consumer": "https://github.com/stupeterwilliams-ui/technocore-contributor-index",
-  "generated_at": "2026-10-06T11:00:23Z",
+  "generated_at": "2026-10-06T21:36:29Z",
   "how_to_compare": "Enumerate the same sources yourself, take sha256 of your sorted identifiers joined by newlines with a trailing newline, and compare digests. Equal digests mean any disagreement between our rankings is about weights. Different digests mean we were not looking at the same corpus, and comparing the rankings tells you nothing until that is resolved. The full identifier lists are published so a mismatch can be diffed rather than only detected.",
   "fetch_incidents": {
-    "collected_at": "2026-10-06T11:00:18Z",
+    "collected_at": "2026-10-06T21:36:25Z",
     "collection_accepted": true,
     "count": 0,
     "evidence_cache_backlog": {
@@ -34,8 +34,8 @@
     "pulls": {
       "description": "Every pull request against the upstream repo, all states.",
       "method": "gh pr list --repo flop-labs/technocore-chat --state {merged,open,closed}, paged to exhaustion; a listing that comes back at exactly its row cap is refused rather than published, so a count here is the whole set or there is no manifest at all. See bin/fetch.py:gh_list.",
-      "count": 751,
-      "digest": "sha256:98b17d2b45d0e8bedfe2e3f83b83c3b4b7683420dd3f6fc57317ce36d02743bf",
+      "count": 754,
+      "digest": "sha256:a25534db18e70ad3dd94e2a097e66b692171ff420bdeb37cc49b37d6266eba2e",
       "identifiers": [
         "pr#1",
         "pr#10",
@@ -785,6 +785,9 @@
         "pr#960",
         "pr#961",
         "pr#962",
+        "pr#963",
+        "pr#964",
+        "pr#966",
         "pr#97",
         "pr#98",
         "pr#99"
@@ -793,8 +796,8 @@
     "issues": {
       "description": "Every issue against the upstream repo, all states.",
       "method": "gh issue list --repo flop-labs/technocore-chat --state all, paged to exhaustion; see the note on pulls above.",
-      "count": 201,
-      "digest": "sha256:c33049f5e66cf70c959e5f587ab407d9badaeb5761256b0d8330348333a1d7c4",
+      "count": 202,
+      "digest": "sha256:e9d46a35b070a3dc0130c75462760e6aebdfa2a90c7d165bb69413ae531679e5",
       "identifiers": [
         "issue#101",
         "issue#105",
@@ -996,7 +999,8 @@
         "issue#949",
         "issue#95",
         "issue#953",
-        "issue#955"
+        "issue#955",
+        "issue#965"
       ]
     },
     "artifacts": {

@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-06T11:00:23Z",
-  "collected_at": "2026-10-06T11:00:18Z",
+  "generated_at": "2026-10-06T21:36:29Z",
+  "collected_at": "2026-10-06T21:36:25Z",
   "upstream_repo": "flop-labs/technocore-chat",
   "weights": {
     "merged_pr": 10,
@@ -11238,6 +11238,64 @@
       "rank": 222
     },
     {
+      "login": "sprmn24",
+      "score": 9,
+      "is_maintainer": false,
+      "is_author_of_this_board": false,
+      "counts": {
+        "merged_prs": 0,
+        "issues_credited": 0,
+        "verified_proofs": 0,
+        "artifacts": 2,
+        "absorbed": 0
+      },
+      "evidence": [
+        {
+          "signal": "artifact_references_technocore",
+          "points": 2,
+          "what": "public artifact sprmn24/technocore-closecall-agent",
+          "url": "https://github.com/sprmn24/technocore-closecall-agent"
+        },
+        {
+          "signal": "artifact_has_license",
+          "points": 1,
+          "what": "sprmn24/technocore-closecall-agent has a licence",
+          "url": "https://github.com/sprmn24/technocore-closecall-agent"
+        },
+        {
+          "signal": "artifact_has_description",
+          "points": 1,
+          "what": "sprmn24/technocore-closecall-agent has a description",
+          "url": "https://github.com/sprmn24/technocore-closecall-agent"
+        },
+        {
+          "signal": "artifact_maintained_past_first_day",
+          "points": 1,
+          "what": "sprmn24/technocore-closecall-agent had commits after its first day",
+          "url": "https://github.com/sprmn24/technocore-closecall-agent"
+        },
+        {
+          "signal": "artifact_references_technocore",
+          "points": 2,
+          "what": "public artifact sprmn24/technocore-conformance",
+          "url": "https://github.com/sprmn24/technocore-conformance"
+        },
+        {
+          "signal": "artifact_has_description",
+          "points": 1,
+          "what": "sprmn24/technocore-conformance has a description",
+          "url": "https://github.com/sprmn24/technocore-conformance"
+        },
+        {
+          "signal": "artifact_maintained_past_first_day",
+          "points": 1,
+          "what": "sprmn24/technocore-conformance had commits after its first day",
+          "url": "https://github.com/sprmn24/technocore-conformance"
+        }
+      ],
+      "rank": 223
+    },
+    {
       "login": "0xgoodcrypto",
       "score": 8,
       "is_maintainer": false,
@@ -11287,7 +11345,7 @@
           "url": "https://github.com/0xgoodcrypto/technocore-mcp"
         }
       ],
-      "rank": 223
+      "rank": 224
     },
     {
       "login": "Agozie180",
@@ -11339,7 +11397,7 @@
           "url": "https://github.com/Agozie180/flop-did-beginner-guide"
         }
       ],
-      "rank": 224
+      "rank": 225
     },
     {
       "login": "deanetolan",
@@ -11391,7 +11449,7 @@
           "url": "https://github.com/deanetolan/deanetolan"
         }
       ],
-      "rank": 225
+      "rank": 226
     },
     {
       "login": "devorun",
@@ -11443,7 +11501,7 @@
           "url": "https://github.com/devorun/awesome-technocore"
         }
       ],
-      "rank": 226
+      "rank": 227
     },
     {
       "login": "Dext94",
@@ -11495,7 +11553,7 @@
           "url": "https://github.com/Dext94/close-call-board"
         }
       ],
-      "rank": 227
+      "rank": 228
     },
     {
       "login": "egg2006",
@@ -11547,7 +11605,7 @@
           "url": "https://github.com/egg2006/technocore-logo"
         }
       ],
-      "rank": 228
+      "rank": 229
     },
     {
       "login": "flop-labs-dev",
@@ -11599,7 +11657,7 @@
           "url": "https://github.com/flop-labs-dev/tclk"
         }
       ],
-      "rank": 229
+      "rank": 230
     },
     {
       "login": "infinity-nashi",
@@ -11651,7 +11709,7 @@
           "url": "https://github.com/infinity-nashi/technocore-conformance-ledger"
         }
       ],
-      "rank": 230
+      "rank": 231
     },
     {
       "login": "jesbennp",
@@ -11703,7 +11761,7 @@
           "url": "https://github.com/jesbennp/jesbennp"
         }
       ],
-      "rank": 231
+      "rank": 232
     },
     {
       "login": "juanashowerf",
@@ -11755,7 +11813,7 @@
           "url": "https://github.com/juanashowerf/juanashowerf"
         }
       ],
-      "rank": 232
+      "rank": 233
     },
     {
       "login": "kaylenenotca",
@@ -11807,7 +11865,7 @@
           "url": "https://github.com/kaylenenotca/kaylenenotca"
         }
       ],
-      "rank": 233
+      "rank": 234
     },
     {
       "login": "lela-lenin",
@@ -11859,7 +11917,7 @@
           "url": "https://github.com/lela-lenin/lela-lenin"
         }
       ],
-      "rank": 234
+      "rank": 235
     },
     {
       "login": "linny006",
@@ -11911,7 +11969,7 @@
           "url": "https://github.com/linny006/awesome-agent-skills"
         }
       ],
-      "rank": 235
+      "rank": 236
     },
     {
       "login": "maffmoff",
@@ -11963,7 +12021,7 @@
           "url": "https://github.com/maffmoff/technocore-safe-onboarding-ja"
         }
       ],
-      "rank": 236
+      "rank": 237
     },
     {
       "login": "SakiAoiaoi",
@@ -11997,7 +12055,7 @@
           "url": "https://github.com/SakiAoiaoi/technocore-signed-client"
         }
       ],
-      "rank": 237
+      "rank": 238
     },
     {
       "login": "sharken3948",
@@ -12049,7 +12107,7 @@
           "url": "https://github.com/sharken3948/technocore-sdk"
         }
       ],
-      "rank": 238
+      "rank": 239
     },
     {
       "login": "sinamugnolx",
@@ -12101,7 +12159,7 @@
           "url": "https://github.com/sinamugnolx/sinamugnolx"
         }
       ],
-      "rank": 239
+      "rank": 240
     },
     {
       "login": "skyemclar",
@@ -12153,7 +12211,7 @@
           "url": "https://github.com/skyemclar/skyemclar"
         }
       ],
-      "rank": 240
+      "rank": 241
     },
     {
       "login": "snoodoodles",
@@ -12203,58 +12261,6 @@
           "points": 1,
           "what": "snoodoodles/technocore-hermes has a description",
           "url": "https://github.com/snoodoodles/technocore-hermes"
-        }
-      ],
-      "rank": 241
-    },
-    {
-      "login": "sprmn24",
-      "score": 8,
-      "is_maintainer": false,
-      "is_author_of_this_board": false,
-      "counts": {
-        "merged_prs": 0,
-        "issues_credited": 0,
-        "verified_proofs": 0,
-        "artifacts": 2,
-        "absorbed": 0
-      },
-      "evidence": [
-        {
-          "signal": "artifact_references_technocore",
-          "points": 2,
-          "what": "public artifact sprmn24/technocore-conformance",
-          "url": "https://github.com/sprmn24/technocore-conformance"
-        },
-        {
-          "signal": "artifact_has_description",
-          "points": 1,
-          "what": "sprmn24/technocore-conformance has a description",
-          "url": "https://github.com/sprmn24/technocore-conformance"
-        },
-        {
-          "signal": "artifact_maintained_past_first_day",
-          "points": 1,
-          "what": "sprmn24/technocore-conformance had commits after its first day",
-          "url": "https://github.com/sprmn24/technocore-conformance"
-        },
-        {
-          "signal": "artifact_references_technocore",
-          "points": 2,
-          "what": "public artifact sprmn24/technocore-closecall-agent",
-          "url": "https://github.com/sprmn24/technocore-closecall-agent"
-        },
-        {
-          "signal": "artifact_has_license",
-          "points": 1,
-          "what": "sprmn24/technocore-closecall-agent has a licence",
-          "url": "https://github.com/sprmn24/technocore-closecall-agent"
-        },
-        {
-          "signal": "artifact_has_description",
-          "points": 1,
-          "what": "sprmn24/technocore-closecall-agent has a description",
-          "url": "https://github.com/sprmn24/technocore-closecall-agent"
         }
       ],
       "rank": 242
